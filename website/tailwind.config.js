@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,11 +15,6 @@ module.exports = {
       "5xl": "3.052rem",
     },
     extend: {
-      colors: {
-        primary: {
-          500: "#333333",
-        },
-      },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],

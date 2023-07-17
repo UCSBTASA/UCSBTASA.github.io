@@ -28,20 +28,20 @@ const NavBar = () => {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 About Us
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/programs">
               <li
                 className="ml-10 text-sm uppercase hover:border-b"
                 onMouseEnter={toggleProgramsMenu}
                 onMouseLeave={toggleProgramsMenu}
               >
                 Programs
-                {/* {showProgramsMenu && (
-                  <div className="dropdown-menu bg-gray-400 p-2 absolute">
+                {showProgramsMenu && (
+                  <div className="dropdown-menu bg-gray-400 p-2">
                     <ul className="">
                       <DropdownItem text="Big Little" link="/"></DropdownItem>
                       <DropdownItem text="Night Market" link="/"></DropdownItem>
@@ -51,26 +51,26 @@ const NavBar = () => {
                       ></DropdownItem>
                     </ul>
                   </div>
-                )} */}
+                )}
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/staff">
               <li className="ml-10 text-sm uppercase hover:border-b">Staff</li>
             </Link>
-            <Link href="/">
+            <Link href="/events">
               <li className="ml-10 text-sm uppercase hover:border-b">Events</li>
             </Link>
-            <Link href="/">
+            <Link href="/gallery">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Gallery
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/graduates">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Graduates
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
