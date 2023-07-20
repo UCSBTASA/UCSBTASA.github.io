@@ -1,7 +1,7 @@
-import Main from "./components/main";
-import NavBar from "./components/navbar";
-import Header from "./components/header";
-import Events from "./components/events";
+import Main from "./_components/main";
+import NavBar from "./_components/navbar";
+import Header from "./_components/header";
+import Events from "./_components/events";
 
 const Home = () => {
   return (

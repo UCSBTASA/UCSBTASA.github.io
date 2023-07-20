@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Header from "../components/header";
-import NavBar from "../components/navbar";
+import Header from "../_components/header";
+import NavBar from "../_components/navbar";
 
 import "./gallery.css";
 

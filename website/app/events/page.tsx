@@ -1,5 +1,5 @@
-import NavBar from "../components/navbar";
-import Header from "../components/header";
+import NavBar from "../_components/navbar";
+import Header from "../_components/header";
 import Link from "next/link";
 
 const page = () => {
