@@ -20,7 +20,7 @@ jobs:
           # update the Node version to meet your needs
           node-version: 19.7.0
           cache: npm
-          cache-dependancy-path: ./website/package-lock.json
+          cache-dependency-path: ./website/package-lock.json
 
       - name: Build
         run: |
