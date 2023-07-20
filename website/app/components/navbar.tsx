@@ -119,7 +119,7 @@ const NavBar = () => {
             </div>
             <div className="border-b border-gray-300 m-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Find out what we're about!
+                Find out what we&apos;re about!
               </p>
             </div>
             <div className="py-4 flex flex-col">

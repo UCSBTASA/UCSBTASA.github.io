@@ -8,15 +8,15 @@ const Main = () => {
           <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
             <Image
               src="/homepage/staff.jpg"
-              layout="fill"
               objectFit="cover"
+              fill={true}
               alt="TASA Staff Photo"
-              className="rounded-lg"
+              className="rounded-lg fill"
             />
             <div className="absolute inset-0 bg-black opacity-30 rounded-lg" />
             <div className="absolute inset-0 flex justify-center items-center">
               <h1 className="text-5xl font-bold text-white uppercase">
-                WELCOME TO UCSB'S TASA!
+                WELCOME TO UCSB&apos;S TASA!
               </h1>
             </div>
           </div>
@@ -32,9 +32,9 @@ const Main = () => {
             understanding. We prioritize creating a supportive network through
             study groups, mentorship, and social gatherings. Join us to immerse
             yourself in Taiwanese culture, whether you have roots or a
-            curiosity. Let's celebrate and promote Taiwanese culture, making
-            lasting memories and connections. Together, we create a vibrant
-            community where college life is enhanced by the richness of
+            curiosity. Let&apos;s celebrate and promote Taiwanese culture,
+            making lasting memories and connections. Together, we create a
+            vibrant community where college life is enhanced by the richness of
             Taiwanese heritage.
           </p>
         </div>
