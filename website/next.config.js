@@ -10,3 +10,8 @@ if (isGithubActions) {
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
 }
+
+module.exports = {
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+};
