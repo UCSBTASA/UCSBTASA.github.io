@@ -21,27 +21,29 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full z-100 py-4 border-b border-slate-900/10 lg:px-8 dark:border-slate-300/10 mx-4 lg:mx-0">
+    <div className="w-full z-100 py-4 border-b lg:px-8 dark:border-slate-300/10 mx-4 lg:mx-0">
       <div className="flex justify-center items-center w-full h-full px-2 2xl:px-16">
-        <div>
+        <div className="h-6 overflow-y-hidden">
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+                Home
+              </li>
             </Link>
             <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 About Us
               </li>
             </Link>
             <Link href="/programs">
               <li
-                className="ml-10 text-sm uppercase hover:border-b"
+                className="ml-10 text-sm uppercase"
                 onMouseEnter={toggleProgramsMenu}
                 onMouseLeave={toggleProgramsMenu}
               >
                 Programs
                 {showProgramsMenu && (
-                  <div className="dropdown-menu bg-gray-400 p-2">
+                  <div className="dropdown-menu bg-[#ffd1d8] p-2 absolute">
                     <ul className="">
                       <DropdownItem text="Big Little" link="/"></DropdownItem>
                       <DropdownItem text="Night Market" link="/"></DropdownItem>
@@ -55,23 +57,27 @@ const NavBar = () => {
               </li>
             </Link>
             <Link href="/staff">
-              <li className="ml-10 text-sm uppercase hover:border-b">Staff</li>
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+                Staff
+              </li>
             </Link>
             <Link href="/events">
-              <li className="ml-10 text-sm uppercase hover:border-b">Events</li>
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+                Events
+              </li>
             </Link>
             <Link href="/gallery">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Gallery
               </li>
             </Link>
             <Link href="/graduates">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Graduates
               </li>
             </Link>
             <Link href="/contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Contact
               </li>
             </Link>
@@ -83,14 +89,16 @@ const NavBar = () => {
       </div>
       <div
         className={
-          !nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          !nav
+            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 z-50"
+            : ""
         }
       >
         <div
           className={
             !nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
+              : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
           }
         >
           <div>
@@ -100,6 +108,7 @@ const NavBar = () => {
                 alt="/"
                 width="87"
                 height="35"
+                className="rounded-lg"
               ></Image>
               <div
                 onClick={handleNav}
@@ -176,7 +185,9 @@ function DropdownItem(props: DropdownItemProps) {
   return (
     <li className="dropdownItem">
       <Link href={props.link}>
-        <li className="text-sm uppercase hover:text-blue-500">{props.text}</li>
+        <li className="text-sm uppercase m-1 hover:text-blue-500">
+          {props.text}
+        </li>
       </Link>
     </li>
   );

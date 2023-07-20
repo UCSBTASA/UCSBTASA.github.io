@@ -15,6 +15,9 @@ module.exports = {
       "5xl": "3.052rem",
     },
     extend: {
+      colors: {
+        pink: "rgb(254, 191, 207)",
+      },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
