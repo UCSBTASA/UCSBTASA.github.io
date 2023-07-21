@@ -1,0 +1,7 @@
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.sw*
+
+# Ignore the build directory
+/out

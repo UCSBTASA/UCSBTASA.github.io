@@ -5,7 +5,7 @@ import Events from "./_components/events";
 
 const Home = () => {
   return (
-    <body className="no-header-page wsite-theme-light wsite-page-index">
+    <body className="">
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
       <Main></Main>

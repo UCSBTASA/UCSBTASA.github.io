@@ -104,7 +104,7 @@ const NavBar = () => {
           <div>
             <div className="flex w-full justify-between items-center">
               <Image
-                src="/../public/logo.jpeg"
+                src="/logo.jpeg"
                 alt="/"
                 width="87"
                 height="35"
@@ -124,28 +124,28 @@ const NavBar = () => {
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
-                <Link href="">
+                <Link href="/">
                   <li className="py-4 text-sm">Home</li>
                 </Link>
-                <Link href="">
+                <Link href="/about">
                   <li className="py-4 text-sm">About Us</li>
                 </Link>
-                <Link href="">
+                <Link href="/programs">
                   <li className="py-4 text-sm">Programs</li>
                 </Link>
-                <Link href="">
+                <Link href="/staff">
                   <li className="py-4 text-sm">Staff</li>
                 </Link>
-                <Link href="">
+                <Link href="/events">
                   <li className="py-4 text-sm">Events</li>
                 </Link>
-                <Link href="">
+                <Link href="/gallery">
                   <li className="py-4 text-sm">Gallery</li>
                 </Link>
-                <Link href="">
+                <Link href="/gradutes">
                   <li className="py-4 text-sm">Graduates</li>
                 </Link>
-                <Link href="">
+                <Link href="/contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>
               </ul>
