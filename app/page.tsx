@@ -5,12 +5,12 @@ import Events from "./_components/events";
 
 const Home = () => {
   return (
-    <body className="">
+    <div className="">
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
       <Main></Main>
       <Events></Events>
-    </body>
+    </div>
   );
 };
 

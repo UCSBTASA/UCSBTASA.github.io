@@ -5,8 +5,7 @@
 .DS_Store
 
 # Ignore the build directory
-/out
-
-/.next
-
-/node_modules
+out/
+.next/
+.swc/
+node_modules/
