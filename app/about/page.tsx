@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <body className="">
+    <div className="">
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
-      <div className="bg-[#cccccc] h-screen">
+      <div className="bg-gray-100 h-screen">
         <div className="main-wrap flex justify-center">
           <div className="content p-16 m-4 w-[60%] box-border bg-[#f7f7f7]">
             <div id="textBlock" className="text-center">
@@ -46,7 +46,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 
