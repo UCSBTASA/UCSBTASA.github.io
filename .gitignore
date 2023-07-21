@@ -5,3 +5,7 @@
 
 # Ignore the build directory
 /out
+
+/.next
+
+/node_modules

@@ -9,7 +9,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const [showProgramsMenu, setShowProgramsMenu] = useState(false);
 
   const handleNav = () => {
@@ -90,18 +90,18 @@ const NavBar = () => {
       <div
         className={
           !nav
-            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 z-50"
+            ? "md:hidden fixed left-0 top-0 w-full h-[110vh] bg-black/70 z-50"
             : ""
         }
       >
         <div
           className={
             !nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
-              : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
+              ? "fixed overflow-y-scroll left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
+              : "fixed overflow-y-scroll left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
           }
         >
-          <div>
+          <div className="">
             <div className="flex w-full justify-between items-center">
               <Image
                 src="/logo.jpeg"
