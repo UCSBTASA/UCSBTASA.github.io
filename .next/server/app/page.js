@@ -285,12 +285,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 5108:
+/***/ 2505:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4564, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 885, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 772, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 885, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 8262, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4249, 23))
 
@@ -481,7 +481,7 @@ const Events = ()=>{
 
 
 const Home = ()=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("body", {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: "",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(header/* default */.Z, {

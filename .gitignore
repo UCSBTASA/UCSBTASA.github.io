@@ -2,6 +2,10 @@
 .idea/
 .vscode/
 *.sw*
+.DS_Store
 
 # Ignore the build directory
-/out
+out/
+.next/
+.swc/
+node_modules/

@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <body className="">
+    <div className="">
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
-      <div className="bg-[#cccccc] h-screen">
+      <div className="bg-gray-100 h-auto">
         <div className="main-wrap flex justify-center">
-          <div className="content p-16 m-4 w-[60%] box-border bg-[#f7f7f7]">
+          <div className="content p-16 m-4 w-[60%] rounded-lg bg-[#ffffff]">
             <div id="textBlock" className="text-center">
               <h2 className="text-4xl">ABOUT US</h2>
               <p>
@@ -46,7 +46,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 

@@ -294,21 +294,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 8988:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5110))
-
-/***/ }),
-
-/***/ 8118:
+/***/ 8682:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4249, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4564, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 885, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 772, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 885, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 8262, 23))
+
+/***/ }),
+
+/***/ 3358:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7230, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5110))
 
 /***/ }),
 
@@ -324,20 +325,100 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7061);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2219);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3501);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
-const page = ()=>{
+
+const staffMembers = [
+    {
+        id: 1,
+        name: "Andrew Cheng",
+        position: "Co-President",
+        imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg"
+    },
+    {
+        id: 2,
+        name: "Jacqueline Vuong",
+        position: "Co-President",
+        imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg"
+    },
+    {
+        id: 3,
+        name: "Charliene Lien",
+        position: "External Vice President",
+        imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg"
+    },
+    {
+        id: 4,
+        name: "Chloe Wang",
+        position: "Internal Vice President",
+        imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg"
+    },
+    {
+        id: 5,
+        name: "Winbert Zhang",
+        position: "Treasurer",
+        imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg"
+    },
+    {
+        id: 6,
+        name: "Kaitlyn Pham",
+        position: "Secretary",
+        imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg"
+    }
+];
+const StaffPage = ()=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "flex flex-col items-center justify-center min-h-screen",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
                 title: "UCSB TASA"
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_navbar__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .ZP, {})
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_navbar__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .ZP, {}),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "px-4 py-8 text-center w-screen bg-gray-100",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "container mx-auto",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                            className: "text-5xl font-bold mb-4",
+                            children: "Meet Our Staff"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "grid grid-cols-1 lg:grid-cols-3 gap-6",
+                            children: staffMembers.map((staff)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "bg-white rounded-lg shadow p-4",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "mx-auto mb-4",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                                src: staff.imageUrl,
+                                                alt: staff.name,
+                                                width: 300,
+                                                height: 300,
+                                                className: "max-w-[100%] w-auto mx-auto mb-4"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: "text-xl font-semibold mb-2",
+                                            children: staff.name
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: "text-gray-600 mb-2",
+                                            children: staff.position
+                                        })
+                                    ]
+                                }, staff.id))
+                        })
+                    ]
+                })
+            })
         ]
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (page);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StaffPage);
 
 
 /***/ })
@@ -349,7 +430,7 @@ const page = ()=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [904,20], () => (__webpack_exec__(8561)));
+var __webpack_exports__ = __webpack_require__.X(0, [904,501,20], () => (__webpack_exec__(8561)));
 module.exports = __webpack_exports__;
 
 })();

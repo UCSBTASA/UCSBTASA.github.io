@@ -1,10 +1,10 @@
 {
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/about/page": "app/about/page.js",
   "/graduates/page": "app/graduates/page.js",
   "/events/page": "app/events/page.js",
-  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
   "/gallery/page": "app/gallery/page.js",
-  "/staff/page": "app/staff/page.js",
-  "/programs/page": "app/programs/page.js"
+  "/programs/page": "app/programs/page.js",
+  "/staff/page": "app/staff/page.js"
 }
