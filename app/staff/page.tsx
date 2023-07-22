@@ -78,14 +78,26 @@ const staffMembers = [
   },
   {
     id: 13,
-    name: "Austin Chen",
-    position: "Co-Recruitment Chair",
+    name: "Justin Lang",
+    position: "Co-Historian",
     imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
   },
   {
     id: 14,
-    name: "Max Wu",
-    position: "Co-Recruitment Chair",
+    name: "Emma Wang",
+    position: "Co-Historian",
+    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+  },
+  {
+    id: 15,
+    name: "Fiona Hosmer-Hughes",
+    position: "Cultural Chair",
+    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+  },
+  {
+    id: 16,
+    name: "Kelly Wang",
+    position: "Philanthropy Chair",
     imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
   },
 ];
@@ -107,7 +119,7 @@ const StaffPage = () => {
                     alt={staff.name}
                     width={300}
                     height={300}
-                    className="max-w-[100%] w-auto mx-auto mb-2"
+                    className="max-w-[100%] w-auto mx-auto mb-2 rounded-3xl"
                   />
                 </div>
                 <h2 className="text-black text-[0.9375rem]">{staff.name}</h2>
