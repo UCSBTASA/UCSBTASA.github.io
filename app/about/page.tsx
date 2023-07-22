@@ -7,7 +7,7 @@ const About = () => {
     <div className="">
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
-      <div className="bg-gray-100 h-auto">
+      <div className="bg-gray-100 min-h-screen">
         <div className="main-wrap flex justify-center">
           <div className="content p-16 m-4 w-[60%] rounded-lg bg-[#ffffff]">
             <div id="textBlock" className="text-center">
@@ -40,7 +40,7 @@ const About = () => {
                 >
                   Instagram
                 </Link>{" "}
-                for the latest updates! IG: tasa.ucsb Facebook: tasa.ucsb
+                for the latest updates!
               </p>
             </div>
           </div>
