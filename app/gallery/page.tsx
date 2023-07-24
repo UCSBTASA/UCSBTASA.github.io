@@ -103,8 +103,8 @@ const GalleryPage: React.FC = () => {
 
   const galleryItemStyle: React.CSSProperties = {
     position: 'relative',
-    width: '480px', // Fixed width for each image
-    height: '270px', // Fixed height for each image
+    width: '460px', // Fixed width for each image
+    height: '259px', // Fixed height for each image
     // Add any other styles specific to gallery items here...
   };
 
