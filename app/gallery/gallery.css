@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  place-items: center;
+  justify-content: center;
 }
 
 .gallery-item {
@@ -15,6 +17,10 @@
   height: 100%;
   background-size: cover; /* Ensure the image covers the container without zooming */
   background-position: center; /* Center the image within the container */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
 
 .image-title {
@@ -28,15 +34,33 @@
   font-family: Optima;
 }
 
-h2{
+h2 {
   text-align: center;
   font-size: 35px;
   /* font-weight: ; */
 }
+h3 {
+  text-align: center;
+  font-size: large;
+}
 /* Set the maximum number of columns here (e.g., 4) */
-@media (min-width: 769px) {
+@media (min-width: 1290px) {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-grid .gallery-item:nth-child(3n + 1):nth-last-child(1),
+  .gallery-grid .gallery-item:nth-child(3n + 1):nth-last-child(2) {
+    grid-column-start: 2;
+  }
+  /* .gallery-grid .gallery-item:nth-child(3n + 2):nth-last-child(-n + 2) {
+    grid-column-start: 2;
+  } */
+}
+
+
+@media (min-width: 860px) and (max-width: 1290px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
