@@ -8,10 +8,10 @@ const Main = () => {
           <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
             <Image
               src="/homepage/staff.jpg"
-              objectFit="cover"
               fill={true}
               alt="TASA Staff Photo"
               className="rounded-lg fill"
+              style={{ objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-black opacity-30 rounded-lg" />
             <div className="absolute inset-0 flex justify-center items-center">
