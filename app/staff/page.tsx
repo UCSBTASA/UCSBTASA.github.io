@@ -108,27 +108,25 @@ const StaffPage = () => {
       <Header title="UCSB TASA" />
       <NavBar />
       <div className="px-4 py-8 text-center w-screen bg-gray-100">
-        <div className="container mx-auto p-12 bg-white rounded-lg">
-          <h1 className="text-5xl font-bold mb-4 uppercase">Meet The Staff</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {staffMembers.map((staff) => (
-              <div key={staff.id} className="">
-                <div className="mx-auto">
-                  <Image
-                    src={staff.imageUrl}
-                    alt={staff.name}
-                    width={300}
-                    height={300}
-                    className="max-w-[100%] w-auto mx-auto mb-2 rounded-3xl"
-                  />
-                </div>
-                <h2 className="text-black text-[0.9375rem]">{staff.name}</h2>
-                <p className="text-[0.9375rem] text-[#00000080]">
-                  {staff.position}
-                </p>
+        <h1 className="text-4xl font-semibold mb-4">Meet The Staff</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-16 mt-16">
+          {staffMembers.map((staff) => (
+            <div key={staff.id} className="">
+              <div className="mx-auto">
+                <Image
+                  src={staff.imageUrl}
+                  alt={staff.name}
+                  width={250}
+                  height={250}
+                  className="max-w-[100%] w-auto mx-auto mb-2 rounded-full"
+                />
               </div>
-            ))}
-          </div>
+              <h2 className="text-black text-[0.9375rem] mt-6">{staff.name}</h2>
+              <p className="text-[0.9375rem] text-[#00000080] leading-16">
+                {staff.position}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
