@@ -20,7 +20,7 @@ const staffMembers = [
     id: 3,
     name: "Charliene Lien",
     position: "External Vice President",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/charliene_lien.jpeg",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const staffMembers = [
     id: 6,
     name: "Kaitlyn Pham",
     position: "Secretary",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/kaitlyn_pham.jpeg",
   },
   {
     id: 7,
@@ -80,13 +80,13 @@ const staffMembers = [
     id: 13,
     name: "Justin Lang",
     position: "Co-Historian",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/justin_lang.jpeg",
   },
   {
     id: 14,
     name: "Emma Wang",
     position: "Co-Historian",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/emma_wang.jpeg",
   },
   {
     id: 15,
