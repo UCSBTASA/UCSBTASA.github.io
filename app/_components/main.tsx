@@ -5,13 +5,12 @@ const Main = () => {
     <div className="w-full text-center bg-gray-100 py-8">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="my-8">
-          <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
+          <div className="relative w-full h-80 mb-4 rounded-lg overflow-hidden">
             <Image
               src="/homepage/staff.jpg"
               fill={true}
               alt="TASA Staff Photo"
-              className="rounded-lg fill"
-              style={{ objectFit: "cover" }}
+              className="rounded-lg object-cover bg-bottom bg-cover"
             />
             <div className="absolute inset-0 bg-black opacity-30 rounded-lg" />
             <div className="absolute inset-0 flex justify-center items-center">
