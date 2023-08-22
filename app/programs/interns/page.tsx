@@ -7,6 +7,9 @@ const Interns = () => {
     <div>
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
+      <div className="bg-gray-100 flex justify-center h-screen content-center flex-wrap">
+        <h1 className="text-4xl">Sorry, this page is under construction!</h1>
+      </div>
     </div>
   );
 };
