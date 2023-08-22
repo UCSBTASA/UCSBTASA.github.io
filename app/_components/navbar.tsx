@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
 
@@ -21,10 +22,10 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full z-100 py-4 border-b lg:px-8 dark:border-slate-300/10 mx-4 lg:mx-0">
-      <div className="flex justify-center items-center w-full h-full px-2 2xl:px-16">
+    <div className="w-full z-10 lg:py-4 border-b lg:px-8 dark:border-slate-300/10 h-[0px] p-0 m-0 lg:mx-0">
+      <div className="flex justify-center items-center w-full lg:h-full px-2 2xl:px-16 h-[0px] p-0 m-0">
         <div className="h-6 overflow-y-hidden">
-          <ul className="hidden md:flex">
+          <ul className="hidden lg:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Home
@@ -43,13 +44,19 @@ const NavBar = () => {
               >
                 Programs
                 {showProgramsMenu && (
-                  <div className="dropdown-menu bg-[#ffd1d8] p-2 absolute">
+                  <div className="dropdown-menu bg-[#ffd1d8] p-2 absolute z-10">
                     <ul className="">
-                      <DropdownItem text="Big Little" link="/"></DropdownItem>
-                      <DropdownItem text="Night Market" link="/"></DropdownItem>
+                      <DropdownItem
+                        text="Big Little"
+                        link="/programs/big-little"
+                      ></DropdownItem>
+                      <DropdownItem
+                        text="Night Market"
+                        link="/programs/night-market"
+                      ></DropdownItem>
                       <DropdownItem
                         text="Intern Program"
-                        link="/"
+                        link="/programs/interns"
                       ></DropdownItem>
                     </ul>
                   </div>
@@ -71,18 +78,21 @@ const NavBar = () => {
                 Gallery
               </li>
             </Link>
-            <Link href="/graduates">
+            {/* <Link href="/graduates">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Graduates
               </li>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Contact
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div
+            onClick={handleNav}
+            className="lg:hidden absolute top-0 left-0 mt-4 ml-8 sm:mt-8"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -90,15 +100,15 @@ const NavBar = () => {
       <div
         className={
           !nav
-            ? "md:hidden fixed left-0 top-0 w-full h-[110vh] bg-black/70 z-50"
+            ? "lg:hidden fixed left-0 top-0 w-full h-[110vh] bg-black/70 z-50"
             : ""
         }
       >
         <div
           className={
             !nav
-              ? "fixed overflow-y-scroll left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
-              : "fixed overflow-y-scroll left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
+              ? "fixed overflow-y-scroll left-0 top-0 w-[75%] sm:w-[60%] lg:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
+              : "fixed overflow-y-scroll left-[-100%] top-0 w-[75%] sm:w-[60%] lg:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
           }
         >
           <div className="">
@@ -118,7 +128,7 @@ const NavBar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 m-4">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] lg:w-[90%] py-4">
                 Find out what we&apos;re about!
               </p>
             </div>
@@ -142,9 +152,9 @@ const NavBar = () => {
                 <Link href="/gallery">
                   <li className="py-4 text-sm">Gallery</li>
                 </Link>
-                <Link href="/gradutes">
+                {/* <Link href="/gradutes">
                   <li className="py-4 text-sm">Graduates</li>
-                </Link>
+                </Link> */}
                 <Link href="/contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>
@@ -161,7 +171,7 @@ const NavBar = () => {
                   </Link>
                   <Link href="https://linktr.ee/tasaucsb" target="_">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                      <FaGithub />
+                      <SiLinktree />
                     </div>
                   </Link>
                   <Link href="mailto:tasa.ucsb@gmail.com" target="_">
@@ -169,11 +179,11 @@ const NavBar = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <Link href="https://linktr.ee/tasaucsb" target="_">
+                  {/* <Link href="https://linktr.ee/tasaucsb" target="_">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <BsFillPersonLinesFill />
                     </div>{" "}
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

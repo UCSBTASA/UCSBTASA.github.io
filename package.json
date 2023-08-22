@@ -18,11 +18,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
+    "rsuite": "^5.37.3",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
     "@types/node": "20.4.2",
-    "@types/react": "^18.2.15",
+    "@types/react": "18.2.15",
     "typescript": "5.1.6"
   }
 }
