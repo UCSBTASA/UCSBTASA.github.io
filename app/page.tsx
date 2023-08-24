@@ -11,7 +11,7 @@ const Home = () => {
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
       <Main></Main>
-      <Carousel></Carousel>
+      {/* <Carousel></Carousel> */}
       <Events></Events>
       <Footer></Footer>
     </div>
