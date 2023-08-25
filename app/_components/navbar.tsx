@@ -31,11 +31,11 @@ const NavBar = () => {
                 Home
               </li>
             </Link>
-            <Link href="/about">
+            {/* <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 About Us
               </li>
-            </Link>
+            </Link> */}
             <Link href="/programs">
               <li
                 className="ml-10 text-sm uppercase"
@@ -76,6 +76,11 @@ const NavBar = () => {
             <Link href="/gallery">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Gallery
+              </li>
+            </Link>
+            <Link href="/store">
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+                Store
               </li>
             </Link>
             {/* <Link href="/graduates">
@@ -151,6 +156,9 @@ const NavBar = () => {
                 </Link>
                 <Link href="/gallery">
                   <li className="py-4 text-sm">Gallery</li>
+                </Link>
+                <Link href="/store">
+                  <li className="py-4 text-sm">Store</li>
                 </Link>
                 {/* <Link href="/gradutes">
                   <li className="py-4 text-sm">Graduates</li>

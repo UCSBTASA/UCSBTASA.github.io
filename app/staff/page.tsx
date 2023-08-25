@@ -122,11 +122,11 @@ const StaffPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Header title="UCSB TASA" />
       <NavBar />
-      <div className="px-4 py-8 text-center w-screen bg-gray-100">
+      <div className="px-4 py-8 text-center bg-gray-100">
         <h2 className="text-3xl font-bold text-gray-900 uppercase">
           Meet the Staff!
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
           {staffMembers.map((staff) => (
             <div key={staff.id} className="">
               <div className="mx-auto">

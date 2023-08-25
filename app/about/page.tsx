@@ -7,7 +7,7 @@ const About = () => {
     <div className="">
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
-      <div className="bg-gray-100 min-h-screen">
+      {/* <div className="bg-gray-100 min-h-screen">
         <div className="main-wrap flex justify-center">
           <div className="content p-16 m-4 w-[60%] rounded-lg bg-[#ffffff]">
             <div id="textBlock" className="text-center">
@@ -45,7 +45,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

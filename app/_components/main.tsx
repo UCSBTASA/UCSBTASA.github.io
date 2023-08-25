@@ -22,7 +22,7 @@ const Main = () => {
           <h2 className="text-3xl font-bold text-gray-900 uppercase">
             OUR MISSION STATEMENT
           </h2>
-          <p className="text-lg max-w-3xl mx-auto text-gray-600 mt-4 px-4">
+          <p className="text-md lg:text-lg max-w-3xl mx-auto text-gray-600 mt-4 px-4">
             We are dedicated to enriching the college experience through
             Taiwanese culture. Our organization fosters community, friendship,
             and cultural awareness. We bring together like-minded individuals to
