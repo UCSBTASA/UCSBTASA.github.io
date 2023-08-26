@@ -6,26 +6,27 @@ import Footer from "../_components/footer";
 const Programs = () => {
   const programsData = [
     {
-      title: "Program 1",
-      image: "/program1.jpg",
+      title: "Big Little",
+      image: "/programs/big_little_cover.JPG",
       description:
-        "Description of Program 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Engage in our highly anticipated big-little mentorship program held each fall, fostering meaningful connections between experienced members and newcomers.",
       slug: "big-little",
     },
     {
-      title: "Program 2",
-      image: "/program2.jpg",
+      title: "Intern Program!",
+      image: "/programs/intern_program_cover.jpg",
       description:
-        "Description of Program 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      slug: "night-market",
-    },
-    {
-      title: "Program 3",
-      image: "/program3.jpg",
-      description:
-        "Description of Program 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Join our immersive organization intern program and gain hands-on experience, mentorship, and insights into the inner workings of our staff.",
       slug: "interns",
     },
+    {
+      title: "Night Market",
+      image: "/programs/night_market_cover.jpeg",
+      description:
+        "Experience the vibrant cultural exchange at our yearly night market event, where we bring together diverse Asian organizations for an unforgettable Taiwanese-themed night market extravaganza.",
+      slug: "night-market",
+    },
+    
   ];
 
   return (
@@ -42,7 +43,7 @@ const Programs = () => {
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-32 object-cover mb-4 rounded-md"
+                    className="w-full h-96 object-cover mb-4 rounded-md"
                   />
                 </Link>
                 <h2 className="text-lg font-semibold mb-2">{program.title}</h2>

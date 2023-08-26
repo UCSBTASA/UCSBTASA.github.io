@@ -3,6 +3,7 @@ import Header from "../_components/header";
 import NavBar from "../_components/navbar";
 
 import "./gallery.css";
+import Footer from "../_components/footer";
 
 // interface GalleryImage {
 //   id: number;
@@ -268,6 +269,7 @@ const GalleryPage: React.FC = () => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };
