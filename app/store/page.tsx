@@ -2,6 +2,7 @@ import NavBar from "../_components/navbar";
 import Header from "../_components/header";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../_components/footer";
 
 const Store = () => {
   const products = [
@@ -49,6 +50,7 @@ const Store = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

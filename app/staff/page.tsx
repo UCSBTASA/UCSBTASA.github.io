@@ -2,6 +2,7 @@ import NavBar from "../_components/navbar";
 import Header from "../_components/header";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "../_components/footer";
 
 const staffMembers = [
   {
@@ -163,6 +164,7 @@ const StaffPage = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
