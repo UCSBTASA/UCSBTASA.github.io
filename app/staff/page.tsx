@@ -8,113 +8,152 @@ const staffMembers = [
   {
     id: 1,
     name: "Andrew Cheng",
-    position: "Co-President",
+    position: "CO-PRESIDENT",
     hometown: "Santa Barbara, CA",
-    major: "Computer Science",
-    year: "Senior",
+    major: "Biopsychology and Pharmacology, 2024",
+    year: "Class of 2024",
     funFact: "I like trains",
-    bio: "Hi, I'm Andrew Cheng a senior studying Computer Science with a passion for innovation. Hailing from Santa Barbara, CA, they bring a unique perspective to our team. When they're not leading our club, they enjoy exploring the world of trains. Join us in celebrating their leadership and dedication to technology.",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/andrew.jpeg",
   },
   {
     id: 2,
     name: "Jacqueline Vuong",
     position: "Co-President",
-    hometown: "Santa Barbara, CA",
+    hometown: "San Ramon, CA",
     major: "Computer Science",
-    year: "Senior",
-    funFact: "I like trains",
-    bio: "Hi, I'm Andrew Cheng a senior studying Computer Science with a passion for innovation. Hailing from Santa Barbara, CA, they bring a unique perspective to our team. When they're not leading our club, they enjoy exploring the world of trains. Join us in celebrating their leadership and dedication to technology.",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    year: "Class of 2024",
+    funFact: "I eat Cheetos with chopsticks :>",
+    favFood: "Braised pork belly",
+    favMovie: "A Beautiful Mind",
+    imageUrl: "/staff_photos/jacqueline.jpeg",
   },
   {
     id: 3,
     name: "Charliene Lien",
     position: "External Vice President",
-    hometown: "Santa Barbara, CA",
-    major: "Computer Science",
-    year: "Senior",
-    funFact: "I like trains",
-    bio: "Hi, I'm Andrew Cheng a senior studying Computer Science with a passion for innovation. Hailing from Santa Barbara, CA, they bring a unique perspective to our team. When they're not leading our club, they enjoy exploring the world of trains. Join us in celebrating their leadership and dedication to technology.",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    hometown: "Chino, CA",
+    major: "Biopsychology",
+    year: "Class of 2025",
+    funFact: "I like ",
+    favFood: "My mom's dumplings",
+    favMovie: "Crazy Rich Asians",
+    imageUrl: "/staff_photos/charliene.jpg",
   },
   {
     id: 4,
     name: "Chloe Wang",
     position: "Internal Vice President",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    year: "Class of 2025",
+    major: "Cell and Developmental Biology",
+    imageUrl: "/staff_photos/chloe.jpeg",
   },
   {
     id: 5,
     name: "Winbert Zhang",
     position: "Treasurer",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/winbert.jpeg",
   },
   {
     id: 6,
     name: "Kaitlyn Pham",
     position: "Secretary",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/kaitlyn.jpeg",
   },
   {
     id: 7,
     name: "Sophia Yu",
     position: "Co-Activities Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/sophia.jpeg",
   },
   {
     id: 8,
     name: "Kyle Volpp",
     position: "Co-Activities Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/kyle.jpeg",
   },
   {
     id: 9,
     name: "Austin Chen",
     position: "Co-Recruitment Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/austin.jpeg",
   },
   {
     id: 10,
     name: "Max Wu",
     position: "Co-Recruitment Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/max.jpeg",
   },
   {
     id: 11,
     name: "Yelena Tao",
     position: "Co-Publicity Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/yelena.jpeg",
   },
   {
     id: 12,
     name: "Cleo Chen",
     position: "Co-Publicity Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/cleo.jpeg",
   },
   {
     id: 13,
     name: "Justin Lang",
     position: "Co-Historian",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/justin.jpeg",
   },
   {
     id: 14,
     name: "Emma Wang",
     position: "Co-Historian",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/emma.jpeg",
   },
   {
     id: 15,
     name: "Fiona Hosmer-Hughes",
     position: "Cultural Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/fiona.jpeg",
   },
   {
     id: 16,
     name: "Kelly Wang",
     position: "Philanthropy Chair",
-    imageUrl: "/staff_photos/sam-staff-photo_orig.jpeg",
+    imageUrl: "/staff_photos/kelly.jpeg",
+  },
+  {
+    id: 17,
+    name: "Ethan Lin",
+    position: "Logistics and Events Chair",
+    imageUrl:  "/staff_photos/ethan.jpeg",
+  },
+  {
+    id: 18,
+    name: "Deanna Hu",
+    position: "Logistics and Events Chair",
+    imageUrl:  "/staff_photos/deanna.jpeg",
+  },
+  {
+    id: 19,
+    name: "Samuel Zhu",
+    position: "General Staff",
+    imageUrl:  "/staff_photos/samuel.jpeg",
+  },
+  {
+    id: 20,
+    name: "Michelle Li",
+    position: "General Staff",
+    imageUrl:  "/staff_photos/michelle.jpeg",
+  },
+  {
+    id: 21,
+    name: "Kevin Deng",
+    position: "General Staff",
+    imageUrl:  "/staff_photos/kevin.jpeg",
+  },
+  {
+    id: 22,
+    name: "Grace Chen",
+    position: "General Staff",
+    imageUrl:  "/staff_photos/grace.jpeg",
   },
 ];
 
@@ -139,26 +178,31 @@ const StaffPage = () => {
                   className="max-w-[100%] w-auto mx-auto mb-2 rounded-full"
                 />
               </div>
-              <h2 className="text-black text-lg mt-6 font-semibold">
+              <h2 className="text-black text-2xl mt-6 font-semibold">
                 {staff.name}
               </h2>
-              <p className="text-md text-[#00000080] leading-16">
-                {staff.position}
+              <p>
+                <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
+                  {staff.position}
+                </p>
               </p>
-              <p className="text-md mt-6 text-[#00000080] leading-16">
-                {staff.bio}
-              </p>
-              {/* <p className="text-md text-[#00000080] leading-16">
+              <p className="text-md text-[#00000080] mt-3 leading-16">
                 {staff.year}
               </p>
               <p className="text-md text-[#00000080] leading-16">
-                {staff.major}
+                <strong>Major: </strong>{staff.major}
+              </p>              
+              <p className="text-md text-[#00000080] leading-16">
+                <strong>Hometown: </strong>{staff.hometown}
+              </p> 
+              <p className="text-md text-[#00000080] leading-16">
+                <strong>Fun Fact: </strong>{staff.funFact}
               </p>
               <p className="text-md text-[#00000080] leading-16">
-                {staff.funFact}
+                <strong>Favorite Movie: </strong>{staff.favMovie}
               </p>
-              <p className="text-md text-[#00000080] leading-16">
-                {staff.hometown}
+              {/* <p className="text-md text-[#00000080] leading-16">
+                <strong>Favorite Food: </strong>{staff.favFood}
               </p> */}
             </div>
           ))}
