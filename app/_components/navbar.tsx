@@ -51,12 +51,12 @@ const NavBar = () => {
                         link="/programs/big-little"
                       ></DropdownItem>
                       <DropdownItem
-                        text="Night Market"
-                        link="/programs/night-market"
-                      ></DropdownItem>
-                      <DropdownItem
                         text="Intern Program"
                         link="/programs/interns"
+                      ></DropdownItem>
+                      <DropdownItem
+                        text="Night Market"
+                        link="/programs/night-market"
                       ></DropdownItem>
                     </ul>
                   </div>

@@ -9,34 +9,70 @@ import Footer from "@/app/_components/footer";
 const BigLittle = () => {
   const events = [
     {
-      name: "Event 1",
-      description: "Description for Event 1",
+      name: "Virtual Speed Dating",
+      description: "Join us for Virtual Speed Dating!",
       date: "2023-08-25",
-      location: "Location 1",
+      location: "Zoom",
     },
     {
-      name: "Event 2",
-      description: "Description for Event 2",
+      name: "In Person Speed Dating",
+      description: "Come out to Lot 22 to meet your potential big/little!",
       date: "2023-09-10",
-      location: "Location 2",
+      location: "Lot 22 top floor",
     },
     {
-      name: "Event 3",
-      description: "Description for Event 3",
+      name: "Boba Mixer",
+      description: "Join us for a night of boba and fun!",
       date: "2023-10-05",
-      location: "Location 3",
+      location: "TBD",
     },
     {
-      name: "Event 4",
-      description: "Description for Event 4",
+      name: "Beach Day",
+      description: "Come out to the beach with us for a day of sun and fun!",
       date: "2023-11-20",
-      location: "Location 4",
+      location: "TBD",
     },
     {
-      name: "Event 5",
-      description: "Description for Event 5",
+      name: "Art and Game Night",
+      description:
+        "Enjoy a night of arts and crafts and games! Last chance to meet your potential big/little!",
       date: "2023-12-15",
-      location: "Location 5",
+      location: "TBD",
+    },
+  ];
+
+  const pickupPhotos = [
+    {
+      src: "/programs/pickup_1.jpg",
+      alt: "Big Little Pickup 1",
+    },
+    {
+      src: "/programs/pickup_2.jpg",
+      alt: "Big Little Pickup 2",
+    },
+    {
+      src: "/programs/pickup_3.jpg",
+      alt: "Big Little Pickup 3",
+    },
+    {
+      src: "/programs/pickup_4.jpg",
+      alt: "Big Little Pickup 4",
+    },
+    {
+      src: "/programs/pickup_5.jpg",
+      alt: "Big Little Pickup 5",
+    },
+    {
+      src: "/programs/pickup_6.jpg",
+      alt: "Big Little Pickup 6",
+    },
+    {
+      src: "/programs/pickup_7.jpg",
+      alt: "Big Little Pickup 7",
+    },
+    {
+      src: "/programs/pickup_8.jpg",
+      alt: "Big Little Pickup 8",
     },
   ];
 
@@ -48,9 +84,9 @@ const BigLittle = () => {
         <Image
           src="/programs/big_little.jpg"
           alt="Big Little Photo"
-          layout="fill"
-          objectFit="cover"
+          fill
           quality={100}
+          style={{ objectFit: "cover" }}
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
@@ -59,7 +95,7 @@ const BigLittle = () => {
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="mx-16 pt-16">
+      <div className="mx-4 lg:mx-16 pt-16">
         <div className="p-8 mb-8 flex flex-col md:flex-row">
           <div className="md:w-[60%] md:pr-4">
             <h2 className="text-3xl font-bold mb-4">WHAT IS BIG-LITTLE?</h2>
@@ -140,12 +176,30 @@ const BigLittle = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mx-16 pt-16">
+      <div className="mx-4 lg:mx-16">
         <div className="p-8 mb-8">
-          <h1 className="text-3xl">Fall Pickup 2022-2023</h1>
-          <div className=" bg-gray-200"></div>
+          <h1 className="text-4xl">Big Little Pickup 2022 Highlights</h1>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+            {pickupPhotos.map((photo, index) => (
+              <Link
+                key={index}
+                href={"https://photos.app.goo.gl/jg1EmfXvCc2yVdWL6"}
+                target="_"
+              >
+                <div className="group relative cursor-pointer">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={400}
+                    height={400}
+                    className="transition transform group-hover:scale-105"
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div> */}
+      </div>
 
       <Footer></Footer>
     </div>
