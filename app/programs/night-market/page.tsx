@@ -48,9 +48,9 @@ const NightMarket = () => {
         <Image
           src="/programs/night_market_cover.jpeg"
           alt="Big Little Photo"
-          layout="fill"
-          objectFit="cover"
+          fill
           quality={100}
+          style={{ objectFit: "cover" }}
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
@@ -93,6 +93,7 @@ const NightMarket = () => {
                   alt="Night Market"
                   width={400}
                   height={400}
+                  className="hover:scale-[102%] transition duration-300"
                 />
                 <p>TASA Night Market 2023 (click for full album)</p>
               </Link>

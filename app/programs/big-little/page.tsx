@@ -84,9 +84,9 @@ const BigLittle = () => {
         <Image
           src="/programs/big_little.jpg"
           alt="Big Little Photo"
-          layout="fill"
-          objectFit="cover"
+          fill
           quality={100}
+          style={{ objectFit: "cover" }}
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
