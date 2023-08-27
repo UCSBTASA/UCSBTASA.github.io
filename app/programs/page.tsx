@@ -40,12 +40,14 @@ const Programs = () => {
             {programsData.map((program, index) => (
               <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
                 <div className="mb-2">
-                  <Image
-                    src={program.image}
-                    alt={program.title}
-                    width={1920}
-                    height={1080}
-                  />
+                  <Link href={`/programs/${program.slug}`}>
+                    <Image
+                      src={program.image}
+                      alt={program.title}
+                      width={1920}
+                      height={1080}
+                    />
+                  </Link>
                 </div>
                 <h2 className="text-lg font-semibold mb-2">{program.title}</h2>
                 <p className="text-gray-600">{program.description}</p>

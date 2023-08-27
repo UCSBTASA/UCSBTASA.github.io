@@ -74,8 +74,8 @@ const Interns = () => {
           <div className="flex flex-wrap justify-center items-center md:w-[40%] md:pl-4 mt-4">
             <span className="table">
               <Image
-                src="/programs/intern_program_cover.JPG"
-                alt="Night Market"
+                src="/programs/intern_program_cover.jpg"
+                alt="Intern Program"
                 width={400}
                 height={400}
               />
