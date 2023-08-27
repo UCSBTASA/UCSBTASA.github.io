@@ -61,7 +61,7 @@ const NightMarket = () => {
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="mx-16 pt-16">
+      <div className="mx-4 lg:mx-16 pt-16">
         <div className="p-8 mb-8 flex flex-col md:flex-row">
           <div className="md:w-[60%] md:pr-4">
             <h2 className="text-3xl font-bold mb-4 uppercase">
@@ -100,7 +100,7 @@ const NightMarket = () => {
           </div>
         </div>
       </div>
-      <div className="mx-16 pt-16">
+      <div className="mx-4 lg:mx-16">
         <div className="p-8 mb-8">
           <h1 className="text-4xl">Night Market 2023 Highlights</h1>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
