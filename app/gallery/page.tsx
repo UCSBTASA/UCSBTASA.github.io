@@ -1,69 +1,7 @@
 import Image from "next/image";
 import Header from "../_components/header";
 import NavBar from "../_components/navbar";
-
-import "./gallery.css";
 import Footer from "../_components/footer";
-
-// interface GalleryImage {
-//   id: number;
-//   title: string;
-//   imageUrl: string;
-//   link: string;
-// }
-
-// const GalleryPage = () => {
-//   // Sample gallery images data
-//   const galleryImages: GalleryImage[] = [
-
-// Add more images here
-
-//   return (
-//     <div>
-//       <Header title="UCSB TASA"></Header>
-//       <NavBar></NavBar>
-//       <div className="gallery-container">
-//         <h2>Our Favorite Memories </h2>
-//         <div className="gallery-grid grid-cols-1 gap-y-`0 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-//           {galleryImages.map((image) => (
-//             <div key={image.id} className="gallery-item">
-//               <a href={image.link} target="_blank" rel="noopener noreferrer">
-//                 <Image
-//                   width={500}
-//                   height={500}
-//                   src={image.imageUrl}
-//                   alt={image.title}
-//                 ></Image>
-//                 <div className="image-title">{image.title}</div>
-//               </a>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// // export default function Gallery(){
-
-// // }
-
-// // function Image(url: string, title: string){
-// //   return(
-// //     <a href="#" className="group">
-// //       <div className = "aspect-w-1 aspect-h-1 xl:aspect-w-7 xlaspect-h-8 w-full overflow-hidden rounded-lg bg-gray-200">
-// //         <img
-// //           alt = {title}
-// //           src = {url}
-// //           className = "group-hover:opacity-75"
-// //          />
-// //       </div>
-// //     </a>
-
-// //   )
-// // }
-// // export default GalleryPage;
-// import React from 'react';
 
 interface GalleryImage {
   id: number;
@@ -73,7 +11,6 @@ interface GalleryImage {
 }
 
 const GalleryPage: React.FC = () => {
-  // Sample gallery images data
   const galleryImages2022_2023: GalleryImage[] = [
     {
       id: 1,
@@ -215,61 +152,60 @@ const GalleryPage: React.FC = () => {
       imageUrl: "/gallery_photos/fall_gm_1.jpg",
       link: "https://photos.app.goo.gl/tkxS6kjqoTziYkSP9",
     },
-    // Your image data here...
   ];
-
-  const galleryItemStyle: React.CSSProperties = {
-    position: "relative",
-    width: "500px", // Fixed width for each image
-    height: "281px", // Fixed height for each image
-    // Add any other styles specific to gallery items here...
-  };
-
-  const imageTitleStyle: React.CSSProperties = {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-    color: "#fff",
-    padding: "5px 10px",
-    width: "100%",
-    // Add any other styles specific to image titles here...
-  };
 
   return (
     <div className="gallery-container">
-      <Header title="UCSB TASA"></Header>
-      <NavBar></NavBar>
-      <h2>Our Favorite Memories</h2>
-      <h3>2022-2023</h3>
-      <div className="gallery-grid">
-        {galleryImages2022_2023.map((image) => (
-          <div key={image.id} className="gallery-item" style={galleryItemStyle}>
-            <a href={image.link} target="_blank" rel="noopener noreferrer">
-              <div
-                className="gallery-image"
-                style={{ backgroundImage: `url(${image.imageUrl})` }}
-              />
-              <div className="image-title">{image.title}</div>
-            </a>
-          </div>
-        ))}
+      <Header title="UCSB TASA" />
+      <NavBar />
+      <div className="mx-4 lg:mx-16 mb-8 mt-4">
+        <h2 className="text-4xl font-semibold text-center">
+          Our Favorite Memories
+        </h2>
+        <h3 className="text-lg font-semibold mb-2">2022-2023</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {galleryImages2022_2023.map((image) => (
+            <div key={image.id} className="relative">
+              <a
+                href={image.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
+              >
+                <div
+                  className="h-44 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${image.imageUrl})` }}
+                />
+                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                  {image.title}
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+        <h3 className="text-lg font-semibold my-4">2021-2022</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {galleryImages2021_2022.map((image) => (
+            <div key={image.id} className="relative">
+              <a
+                href={image.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              >
+                <div
+                  className="h-44 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${image.imageUrl})` }}
+                />
+                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                  {image.title}
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
-      <h3> 2021-2022 </h3>
-      <div className="gallery-grid">
-        {galleryImages2021_2022.map((image) => (
-          <div key={image.id} className="gallery-item" style={galleryItemStyle}>
-            <a href={image.link} target="_blank" rel="noopener noreferrer">
-              <div
-                className="gallery-image"
-                style={{ backgroundImage: `url(${image.imageUrl})` }}
-              />
-              <div className="image-title">{image.title}</div>
-            </a>
-          </div>
-        ))}
-      </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
