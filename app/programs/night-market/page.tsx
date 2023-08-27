@@ -11,7 +11,7 @@ const NightMarket = () => {
       alt: "Night Market Photo 1",
     },
     {
-      src: "/programs/night_market_2.jpg",
+      src: "/programs/night_market_2.JPG",
       alt: "Night Market Photo 2",
     },
     {
@@ -19,7 +19,7 @@ const NightMarket = () => {
       alt: "Night Market Photo 3",
     },
     {
-      src: "/programs/night_market_4.jpg",
+      src: "/programs/night_market_4.JPG",
       alt: "Night Market Photo 4",
     },
     {
@@ -35,7 +35,7 @@ const NightMarket = () => {
       alt: "Night Market Photo 7",
     },
     {
-      src: "/programs/night_market_8.jpg",
+      src: "/programs/night_market_8.JPG",
       alt: "Night Market Photo 8",
     },
   ];
