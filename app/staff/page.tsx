@@ -240,7 +240,7 @@ const StaffPage = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="items-center justify-center min-h-screen">
         <Header title="UCSB TASA" />
         <NavBar />
         <div className="px-4 py-8 text-center bg-gray-100">
@@ -250,22 +250,20 @@ const StaffPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
             {staffMembers.map((staff) => (
               <div key={staff.id} className="">
-                <div className="mx-auto">
+                <div className="">
                   <Image
                     src={staff.imageUrl}
                     alt={staff.name}
                     width={250}
                     height={250}
-                    className="max-w-[75%] w-auto mx-auto mb-2 rounded-full"
+                    className="max-w-[300px] lg:max-w-[75%] w-auto mx-auto mb-2 rounded-full hover:scale-95 transition duration-300 ease-in-out"
                   />
                 </div>
                 <h2 className="text-black text-2xl mt-6 font-semibold">
                   {staff.name}
                 </h2>
-                <p>
-                  <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
-                    {staff.position.toUpperCase()}
-                  </p>
+                <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
+                  {staff.position}
                 </p>
                 {/* <p className="text-md text-[#00000080] mt-3 leading-16">
                   {staff.year}
