@@ -39,25 +39,25 @@ const GalleryPage: React.FC = () => {
     {
       id: 5,
       title: "Big-Little Reveal!",
-      imageUrl: "/gallery_photos/2022-2023/reveal.jpg",
+      imageUrl: "/gallery_photos/2022-2023/reveal.JPG",
       link: "https://photos.app.goo.gl/ftun1Z3b2zyNV5hj9 ",
     },
     {
       id: 6,
       title: "Boba Mixer",
-      imageUrl: "/gallery_photos/2022-2023/boba_mixer.jpg",
+      imageUrl: "/gallery_photos/2022-2023/boba_mixer.JPG",
       link: "https://photos.app.goo.gl/J4Bwr6yfXCHx6NvC9 ",
     },
     {
       id: 7,
       title: "Arts and Crafts Night",
-      imageUrl: "/gallery_photos/2022-2023/arts_and_crafts_night.jpg",
+      imageUrl: "/gallery_photos/2022-2023/arts_and_crafts_night.JPG",
       link: "https://photos.app.goo.gl/Gv2VYKLW4Evup4Q57 ",
     },
     {
       id: 8, 
       title: "Fall GM #1",
-      imageUrl: "/gallery_photos/2022-2023/fall_gm_1.jpg",
+      imageUrl: "/gallery_photos/2022-2023/fall_gm_1.JPG",
       link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA"
     }
     
