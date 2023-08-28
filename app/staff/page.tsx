@@ -176,7 +176,7 @@ const StaffPage = () => {
                     alt={staff.name}
                     width={250}
                     height={250}
-                    className="max-w-[300px] lg:max-w-[75%] w-auto mx-auto mb-2 rounded-full"
+                    className="max-w-[300px] lg:max-w-[75%] w-auto mx-auto mb-2 rounded-full hover:scale-95 transition duration-300 ease-in-out"
                   />
                 </div>
                 <h2 className="text-black text-2xl mt-6 font-semibold">
