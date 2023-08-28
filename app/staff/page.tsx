@@ -27,7 +27,7 @@ const StaffPage = () => {
       funFact: "I eat Cheetos with chopsticks :>",
       favFood: "Braised pork belly",
       favMovie: "A Beautiful Mind",
-      imageUrl: "/staff_photos/jacqueline.jpg",
+      imageUrl: "/staff_photos/jacqueline.JPG",
     },
     {
       id: 3,
@@ -60,7 +60,7 @@ const StaffPage = () => {
       hometown: "Cupertino, CA",
       favMovie: "WALL-E",
       funFact: "I play poker!",      
-      imageUrl: "/staff_photos/winbert.jpg",
+      imageUrl: "/staff_photos/winbert.JPG",
     },
     {
       id: 6,
@@ -130,7 +130,7 @@ const StaffPage = () => {
       hometown: "Sunnyvale, CA",
       favMovie: "Incantation",
       funFact: "I have 15 piercings :-D",    
-      imageUrl: "/staff_photos/cleo.jpg",
+      imageUrl: "/staff_photos/cleo.JPG",
     },
     {
       id: 13,
@@ -204,7 +204,7 @@ const StaffPage = () => {
       hometown: "San Jose",
       favMovie: "12 Angry Men",
       funFact: "I have perfect pitch",
-      imageUrl: "/staff_photos/samuel.jpg",
+      imageUrl: "/staff_photos/samuel.JPG",
     },
     {
       id: 20,
@@ -249,7 +249,7 @@ const StaffPage = () => {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
             {staffMembers.map((staff) => (
-              <div key={staff.id} className="">
+              <div key={staff.id} className="flex flex-col items-center justify-center">
                 <div className="">
                   <Image
                     src={staff.imageUrl}
