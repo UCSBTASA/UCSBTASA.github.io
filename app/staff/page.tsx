@@ -263,7 +263,7 @@ const StaffPage = () => {
                   {staff.name}
                 </h2>
                 <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
-                  {staff.position}
+                  {staff.position.toUpperCase()}
                 </p>
                 {/* <p className="text-md text-[#00000080] mt-3 leading-16">
                   {staff.year}
