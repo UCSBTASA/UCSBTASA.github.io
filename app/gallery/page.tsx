@@ -36,6 +36,31 @@ const GalleryPage: React.FC = () => {
       imageUrl: "/gallery_photos/2022-2023/tfti_pic1.jpeg",
       link: "https://photos.google.com/share/AF1QipOvihJ7pwsQKulGg6Z0H17Yc7zOf-zHlcdN4M7moj-q8DSLIWGi-T8qxM_Ce5q6NQ?key=T3Y3MTJCYTg5T09KS0xzQnVtTGYzT3VMUFZDYTFn",
     },
+    {
+      id: 5,
+      title: "Big-Little Reveal!",
+      imageUrl: "/gallery_photos/2022-2023/reveal.jpg",
+      link: "https://photos.app.goo.gl/ftun1Z3b2zyNV5hj9 ",
+    },
+    {
+      id: 6,
+      title: "Boba Mixer",
+      imageUrl: "/gallery_photos/2022-2023/boba_mixer.jpg",
+      link: "https://photos.app.goo.gl/J4Bwr6yfXCHx6NvC9 ",
+    },
+    {
+      id: 7,
+      title: "Arts and Crafts Night",
+      imageUrl: "/gallery_photos/2022-2023/arts_and_crafts_night.jpg",
+      link: "https://photos.app.goo.gl/Gv2VYKLW4Evup4Q57 ",
+    },
+    {
+      id: 8, 
+      title: "Fall GM #1",
+      imageUrl: "/gallery_photos/2022-2023/fall_gm_1.jpg",
+      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA"
+    }
+    
   ];
   const galleryImages2021_2022: GalleryImage[] = [
     {
@@ -332,7 +357,7 @@ const GalleryPage: React.FC = () => {
                   style={{ backgroundImage: `url(${image.imageUrl})` }}
                 />
                 <div className="bg-opacity-75 bg-black text-white py-2 text-center">
-                  {image.title}
+                  {image.title.toUpperCase()}
                 </div>
               </a>
             </div>
