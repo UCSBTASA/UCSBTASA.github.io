@@ -57,7 +57,7 @@ const StaffPage = () => {
       name: "Winbert Zhang",
       position: "Treasurer",
       major: "Computer Science",
-      hometown: "San Jose, CA",
+      hometown: "Cupertino, CA",
       favMovie: "WALL-E",
       funFact: "I play poker!",      
       imageUrl: "/staff_photos/winbert.jpg",
