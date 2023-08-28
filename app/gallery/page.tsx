@@ -15,25 +15,25 @@ const GalleryPage: React.FC = () => {
     {
       id: 1,
       title: "TASA NIGHT MARKET",
-      imageUrl: "/gallery_photos/cover_tasa_night_market.jpeg",
+      imageUrl: "/gallery_photos/2022-2023/cover_tasa_night_market.jpeg",
       link: "https://photos.app.goo.gl/fxtr9tYq2iVUuMw48",
     },
     {
       id: 2,
       title: "PIE A STAFF!",
-      imageUrl: "/gallery_photos/cover_pie_a_staff.jpeg",
+      imageUrl: "/gallery_photos/2022-2023/cover_pie_a_staff.jpeg",
       link: "https://photos.google.com/share/AF1QipOU7MuDdpIRaLBgivG1b36e0MUaTxei0uFM_PoP19XpKyUcN8gODa_C_Nl86KHtig?key=cGxxcVRKZFlYTlFtNkxONFdaT0xjM3B3ODRSS1ZB",
     },
     {
       id: 3,
       title: "HOT POT NIGHT",
-      imageUrl: "/gallery_photos/cover_hot_pot_night.jpeg",
+      imageUrl: "/gallery_photos/2022-2023/cover_hot_pot_night.jpeg",
       link: "https://photos.google.com/share/AF1QipPvefBpB52uzvDiGbIsoHbUD4b2ie1eKx5ZcBJBhmBi9TbOVpDJBotqQQv6JyJnDA?key=eGtOeW9la0pZX09qSVZ0TlNBZFZvM3BmcWFxQjB3",
     },
     {
       id: 4,
       title: "TFTI",
-      imageUrl: "/gallery_photos/tfti_pic1.jpeg",
+      imageUrl: "/gallery_photos/2022-2023/tfti_pic1.jpeg",
       link: "https://photos.google.com/share/AF1QipOvihJ7pwsQKulGg6Z0H17Yc7zOf-zHlcdN4M7moj-q8DSLIWGi-T8qxM_Ce5q6NQ?key=T3Y3MTJCYTg5T09KS0xzQnVtTGYzT3VMUFZDYTFn",
     },
   ];
@@ -41,119 +41,274 @@ const GalleryPage: React.FC = () => {
     {
       id: 1,
       title: "TASA BANQUET",
-      imageUrl: "/gallery_photos/tasa_banquet.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/tasa_banquet.jpeg",
       link: "https://photos.app.goo.gl/C3VArv3kYLCCyiaE8",
     },
     {
       id: 2,
       title: "TASA NIGHT MARKET 2022",
-      imageUrl: "/gallery_photos/tasa_night_market.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/tasa_night_market.jpeg",
       link: "https://photos.app.goo.gl/3HYqstDRAwaBbdQM8",
     },
     {
       id: 3,
       title: "SPRING GM #2 ",
-      imageUrl: "/gallery_photos/spring_gm_2_2022.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/spring_gm_2_2022.jpeg",
       link: "https://photos.app.goo.gl/u9kLJ4LhAtzwNfZM6",
     },
     {
       id: 4,
       title: "TFTI",
-      imageUrl: "/gallery_photos/tfti_2022.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/tfti.jpg",
       link: "https://photos.app.goo.gl/dPNG3VNiSp5WD4Zq9",
     },
     {
       id: 5,
       title: "SPRING GM #1",
-      imageUrl: "/gallery_photos/spring_gm_1_2022.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/spring_gm_1_2022.jpeg",
       link: "https://photos.app.goo.gl/JfUSpPrU1jkftu5r7",
     },
     {
       id: 6,
       title: "IM VOLLEYBALL",
-      imageUrl: "/gallery_photos/im_vball_2022.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/im_vball_2022.jpeg",
       link: "https://photos.app.goo.gl/yk9jmELhXYUNquct7",
     },
     {
       id: 7,
       title: "TASA AMAZING RACE",
-      imageUrl: "/gallery_photos/tasa_amazing_race.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/tasa_amazing_race.jpeg",
       link: "https://photos.app.goo.gl/UPRsroXeUj2SisT77",
     },
     {
       id: 8,
       title: "NIN-TASA OLYMPICS",
-      imageUrl: "/gallery_photos/nin_tasa.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/nin_tasa.jpeg",
       link: "https://photos.app.goo.gl/gUcFvehieLjn4rzQ9",
     },
     {
       id: 9,
       title: "WINTER GM #3",
-      imageUrl: "/gallery_photos/winter_gm_3_2022.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/winter_gm_3_2022.jpeg",
       link: "https://photos.app.goo.gl/4559grdfixcemNp36",
     },
     {
       id: 10,
       title: "TASA X KASA MASHUP",
-      imageUrl: "/gallery_photos/tasa_kasa_2021.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/tasa_kasa_2021.jpeg",
       link: "https://photos.app.goo.gl/eUJwN9vHWxnXjNTu6",
     },
     {
       id: 11,
       title: "DUMPLING NIGHT",
-      imageUrl: "/gallery_photos/dumpling_night_2021.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/dumpling_night_2021.jpeg",
       link: "https://photos.app.goo.gl/wSQFQzbTWtAQy6TXA",
     },
     {
       id: 12,
       title: "CASINO NIGHT",
-      imageUrl: "/gallery_photos/casino_night_2021.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/casino_night_2021.jpg",
       link: "https://photos.app.goo.gl/p8Qd7AWg3wc1Jp3WA",
     },
     {
       id: 13,
       title: "FIELD DAY",
-      imageUrl: "/gallery_photos/field_day.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/field_day.jpeg",
       link: "https://photos.app.goo.gl/XHid9EvMS6xvSVXE9",
     },
     {
       id: 14,
       title: "BIG/LITTLE REVEAL",
-      imageUrl: "/gallery_photos/big_little_pickup.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/big_little_pickup.jpeg",
       link: "https://ucsbtasa.weebly.com/gallery.html#:~:text=DUMPLING%20NIGHT-,BIG/LITTLE%20REVEAL,-BEACH%20FIELD%20DAY",
     },
     {
       id: 15,
       title: "FALL GM #2",
-      imageUrl: "/gallery_photos/fall_gm_2.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/fall_gm_2.jpeg",
       link: "https://photos.app.goo.gl/xwMHj6PuuJ7LviqL7",
     },
     {
       id: 16,
       title: "ARTS & GAMES NIGHT",
-      imageUrl: "/gallery_photos/arts_crafts.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/arts_crafts.jpeg",
       link: "https://photos.app.goo.gl/xjeBZngxRKXJoXEP6",
     },
     {
       id: 17,
       title: "BEACH FIELD DAY",
-      imageUrl: "/gallery_photos/beach_field_day.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/beach_field_day.jpeg",
       link: "https://photos.app.goo.gl/NXSf9BKLkkXER2qX6",
     },
     {
       id: 18,
       title: "OUTDOOR DINING - PICKUP",
-      imageUrl: "/gallery_photos/outdoor-dining-pickup.jpeg",
+      imageUrl: "/gallery_photos/2021-2022/outdoor-dining-pickup.jpeg",
       link: "https://photos.app.goo.gl/63o7YrdQX7Ft3Dkm6",
     },
     {
       id: 19,
       title: "FALL GM #1",
-      imageUrl: "/gallery_photos/fall_gm_1.jpg",
+      imageUrl: "/gallery_photos/2021-2022/fall_gm_1.jpg",
       link: "https://photos.app.goo.gl/tkxS6kjqoTziYkSP9",
     },
   ];
-
+  const galleryImages2019_2020: GalleryImage[] = [
+    {
+      id: 1,
+      title: "HOT POT NIGHT",
+      imageUrl: "/gallery_photos/2019-2020/hot_pot_night.jpg",
+      link: "https://flic.kr/s/aHsmLiyxS2",
+    },
+    {
+      id: 2,
+      title: "WINTER RETREAT",
+      imageUrl: "/gallery_photos/2019-2020/winter_retreat.jpg",
+      link: "https://flic.kr/s/aHsmKHAh9C",
+    },
+    {
+      id: 3,
+      title: "FALL BANQUET",
+      imageUrl: "/gallery_photos/2019-2020/fall_banquet.jpg",
+      link: "https://flic.kr/s/aHsmJBWGmQ",
+    },
+    {
+      id: 4,
+      title: "GENERAL MEETING #3",
+      imageUrl: "/gallery_photos/2019-2020/gm_3.jpg",
+      link: "https://flic.kr/s/aHsmJuoHns"
+    },
+    {
+      id: 5,
+      title: "DUMPLING NIGHT",
+      imageUrl: "/gallery_photos/2019-2020/dumpling_night.jpeg",
+      link: "https://flic.kr/s/aHsmJdsutE"
+    },
+    {
+      id: 6,
+      title: "REVEAL",
+      imageUrl: "/gallery_photos/2019-2020/reveal.jpg",
+      link: "https://flic.kr/s/aHsmJ9QVNi"
+    },
+    {
+      id: 7,
+      title: "DESTRESS SOCIAL",
+      imageUrl: "/gallery_photos/2019-2020/destress_social.jpg",
+      link: "https://flic.kr/s/aHsmJ2LuK7"
+    },
+    {
+      id: 8,
+      title: "MEET & GREET",
+      imageUrl: "/gallery_photos/2019-2020/meet_and_greet.jpg",
+      link: "https://flic.kr/s/aHsmHY4Sr9"
+    },
+    {
+      id: 9,
+      title: "SPEED DATING",
+      imageUrl: "/gallery_photos/2019-2020/speed_dating.jpg",
+      link: "https://flic.kr/s/aHsmHTp68i"
+    },
+    {
+      id: 10,
+      title: "FIELD DAY",
+      imageUrl: "/gallery_photos/2019-2020/field_day.jpg",
+      link: "https://flic.kr/s/aHsmHNZgTM"
+    },
+    {
+      id: 11,
+      title: "GENERAL MEETING #2",
+      imageUrl: "/gallery_photos/2019-2020/gm_2.jpg",
+      link: "https://flic.kr/s/aHsmHH616D"
+    },
+    {
+      id: 12,
+      title: "GENERAL MEETING #1",
+      imageUrl: "/gallery_photos/2019-2020/gm_1.jpg",
+      link: "https://flic.kr/s/aHsmHFKKSV"
+    },
+    {
+      id: 13,
+      title: "BEACH BBQ",
+      imageUrl: "/gallery_photos/2019-2020/beach_bbq.jpg",
+      link: "https://flic.kr/s/aHsmHDZpni"
+    },
+    {
+      id: 14,
+      title: "INTERN FIELD DAY",
+      imageUrl: "/gallery_photos/2019-2020/intern_field_day.jpg",
+      link: "https://flic.kr/s/aHsmLGUBrU"
+    },
+  ];
+  const galleryImages2018_2019: GalleryImage [] = [
+    {
+      id: 1,
+      title: "senior appreciation",
+      imageUrl: "/gallery_photos/2018-2019/senior_appreciation.jpg",
+      link: "https://flic.kr/s/aHsmE2RyvR",
+    },
+    {
+      id: 2,
+      title: "bird box field day",
+      imageUrl: "/gallery_photos/2018-2019/bird_box_field_day.jpg",
+      link: "https://flic.kr/s/aHsmDzxmbj",
+    },
+    {
+      id: 3,
+      title: "hot pot night",
+      imageUrl: "/gallery_photos/2018-2019/hot_pot_night.jpg",
+      link: "https://flic.kr/s/aHskNwUW6K",
+    },
+    {
+      id: 4,
+      title: "winter retreat",
+      imageUrl: "/gallery_photos/2018-2019/winter_retreat.jpg",
+      link: "https://flic.kr/s/aHsmupvPFo",
+    },
+    {
+      id: 5,
+      title: "reveal",
+      imageUrl: "/gallery_photos/2018-2019/reveal.jpg",
+      link: "https://flic.kr/s/aHsmviTR7B",
+    },
+    {
+      id: 6,
+      title: "fall gm",
+      imageUrl: "/gallery_photos/2018-2019/fall_gm.jpg",
+      link: "https://flic.kr/s/aHsmrsQxBM",
+    },
+    {
+      id: 7,
+      title: "beach bbq",
+      imageUrl: "/gallery_photos/2018-2019/beach_bbq.jpg",
+      link: "https://flic.kr/s/aHskKvw8kq",
+    },
+  ];
+  const galleryImages2017_2018: GalleryImage [] = [
+    {
+      id: 1,
+      title: "spring banquet",
+      imageUrl: "/gallery_photos/2017-2018/spring_banquet.jpg",
+      link: "https://flic.kr/s/aHskzgotik",
+    },
+    {
+      id: 3,
+      title: "night market pt.1",
+      imageUrl: "/gallery_photos/2017-2018/night_market_1.jpg",
+      link: "https://flic.kr/s/aHskBi5H3o",
+    },
+    {
+      id: 2,
+      title: "night market pt.2",
+      imageUrl: "/gallery_photos/2017-2018/night_market_2.jpg",
+      link: "https://flic.kr/s/aHsmb17z1h",
+    },
+    {
+      id: 4,
+      title: "winter retreat",
+      imageUrl: "/gallery_photos/2017-2018/winter_retreat.jpg",
+      link: "https://flic.kr/s/aHskvmtf73",
+    },
+  ];
   return (
     <div className="gallery-container">
       <Header title="UCSB TASA" />
@@ -199,6 +354,69 @@ const GalleryPage: React.FC = () => {
                 />
                 <div className="bg-opacity-75 bg-black text-white py-2 text-center">
                   {image.title}
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+        <h3 className="text-lg font-semibold my-4">2019-2020</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {galleryImages2019_2020.map((image) => (
+            <div key={image.id} className="relative">
+              <a
+                href={image.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              >
+                <div
+                  className="h-44 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${image.imageUrl})` }}
+                />
+                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                  {image.title}
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+        <h3 className="text-lg font-semibold my-4">2018-2019</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {galleryImages2018_2019.map((image) => (
+            <div key={image.id} className="relative">
+              <a
+                href={image.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              >
+                <div
+                  className="h-44 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${image.imageUrl})` }}
+                />
+                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                  {image.title.toUpperCase()}
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+        <h3 className="text-lg font-semibold my-4">2017-2018</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {galleryImages2017_2018.map((image) => (
+            <div key={image.id} className="relative">
+              <a
+                href={image.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              >
+                <div
+                  className="h-44 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${image.imageUrl})` }}
+                />
+                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                  {image.title.toUpperCase()}
                 </div>
               </a>
             </div>
