@@ -73,6 +73,16 @@ const StaffPage = () => {
       imageUrl: "/staff_photos/kaitlyn.jpeg",
     },
     {
+      id: 6,
+      name: "Brandon Liang",
+      position: "Board Advisor",
+      major: "Biology / Econ & Accounting",
+      hometown: "Los Angeles",
+      favMovie: "Spirited Away",
+      funFact: "I can read and write in 4 different languages!",
+      imageUrl: "/staff_photos/brandon.jpeg"
+    },
+    {
       id: 7,
       name: "Sophia Yu",
       major: "History of Public Policy and Law",
