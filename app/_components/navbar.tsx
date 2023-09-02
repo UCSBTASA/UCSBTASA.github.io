@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
 
@@ -30,11 +31,11 @@ const NavBar = () => {
                 Home
               </li>
             </Link>
-            <Link href="/about">
+            {/* <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 About Us
               </li>
-            </Link>
+            </Link> */}
             <Link href="/programs">
               <li
                 className="ml-10 text-sm uppercase"
@@ -50,12 +51,12 @@ const NavBar = () => {
                         link="/programs/big-little"
                       ></DropdownItem>
                       <DropdownItem
-                        text="Night Market"
-                        link="/programs/night-market"
-                      ></DropdownItem>
-                      <DropdownItem
                         text="Intern Program"
                         link="/programs/interns"
+                      ></DropdownItem>
+                      <DropdownItem
+                        text="Night Market"
+                        link="/programs/night-market"
                       ></DropdownItem>
                     </ul>
                   </div>
@@ -77,11 +78,16 @@ const NavBar = () => {
                 Gallery
               </li>
             </Link>
-            <Link href="/graduates">
+            <Link href="/store">
+              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+                Store
+              </li>
+            </Link>
+            {/* <Link href="/graduates">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Graduates
               </li>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Contact
@@ -151,9 +157,12 @@ const NavBar = () => {
                 <Link href="/gallery">
                   <li className="py-4 text-sm">Gallery</li>
                 </Link>
-                <Link href="/gradutes">
-                  <li className="py-4 text-sm">Graduates</li>
+                <Link href="/store">
+                  <li className="py-4 text-sm">Store</li>
                 </Link>
+                {/* <Link href="/gradutes">
+                  <li className="py-4 text-sm">Graduates</li>
+                </Link> */}
                 <Link href="/contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>
@@ -170,7 +179,7 @@ const NavBar = () => {
                   </Link>
                   <Link href="https://linktr.ee/tasaucsb" target="_">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                      <FaGithub />
+                      <SiLinktree />
                     </div>
                   </Link>
                   <Link href="mailto:tasa.ucsb@gmail.com" target="_">
@@ -178,11 +187,11 @@ const NavBar = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <Link href="https://linktr.ee/tasaucsb" target="_">
+                  {/* <Link href="https://linktr.ee/tasaucsb" target="_">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <BsFillPersonLinesFill />
                     </div>{" "}
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

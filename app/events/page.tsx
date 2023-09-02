@@ -1,14 +1,28 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
-import Link from "next/link";
+'use client'
+import React from "react";
+import Calendar from "@ericz1803/react-google-calendar"; // Make sure to install the package
+import NavBar from "@/app/_components/navbar";
+import Header from "@/app/_components/header";
+import Footer from "@/app/_components/footer";
 
-const page = () => {
+const CalendarPage = () => {
+  const API_KEY = "AIzaSyAseRAvL7ui7fqMWasarDQBoAYYbUjtnuc";
+  const calendars = [
+    { calendarId: "7hptoesel85ltt2ndeg0dtptec@group.calendar.google.com" },
+    // You can add more calendar entries here if needed
+  ];
+
   return (
-    <div>
-      <Header title="UCSB TASA"></Header>
-      <NavBar></NavBar>
+    <div className="app-container">
+      <Header title="UCSB TASA" /> {/* Adjust the title */}
+      <NavBar />
+      <div className="calendar-container">
+        <Calendar apiKey={API_KEY} calendars={calendars} />
+      </div>
+      <Footer />
     </div>
   );
 };
 
-export default page;
+export default CalendarPage;
+

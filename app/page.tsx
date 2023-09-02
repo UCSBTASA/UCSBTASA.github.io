@@ -2,6 +2,8 @@ import Main from "./_components/main";
 import NavBar from "./_components/navbar";
 import Header from "./_components/header";
 import Events from "./_components/events";
+import Carousel from "./_components/carousel";
+import Footer from "./_components/footer";
 
 const Home = () => {
   return (
@@ -9,7 +11,9 @@ const Home = () => {
       <Header title="UCSB TASA"></Header>
       <NavBar></NavBar>
       <Main></Main>
+      {/* <Carousel></Carousel> */}
       <Events></Events>
+      <Footer></Footer>
     </div>
   );
 };
