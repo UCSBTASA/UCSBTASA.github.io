@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@ericz1803/react-google-calendar": "^4.3.1",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
+    "encoding": "^0.1.13",
     "typescript": "5.1.6"
   }
 }
