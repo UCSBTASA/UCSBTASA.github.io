@@ -5,7 +5,7 @@ interface Props {
 const Header = ({ title }: Props) => {
   return (
     <div className="wrapper block text-center">
-      <span className="wsite-logo">
+      <span className="wsite-logo"> 
         <a href="">
           <span
             id="wsite-title"

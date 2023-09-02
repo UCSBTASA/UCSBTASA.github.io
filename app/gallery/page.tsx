@@ -4,66 +4,6 @@ import NavBar from "../_components/navbar";
 
 import "./gallery.css";
 
-// interface GalleryImage {
-//   id: number;
-//   title: string;
-//   imageUrl: string;
-//   link: string;
-// }
-
-// const GalleryPage = () => {
-//   // Sample gallery images data
-//   const galleryImages: GalleryImage[] = [
-
-// Add more images here
-
-//   return (
-//     <div>
-//       <Header title="UCSB TASA"></Header>
-//       <NavBar></NavBar>
-//       <div className="gallery-container">
-//         <h2>Our Favorite Memories </h2>
-//         <div className="gallery-grid grid-cols-1 gap-y-`0 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-//           {galleryImages.map((image) => (
-//             <div key={image.id} className="gallery-item">
-//               <a href={image.link} target="_blank" rel="noopener noreferrer">
-//                 <Image
-//                   width={500}
-//                   height={500}
-//                   src={image.imageUrl}
-//                   alt={image.title}
-//                 ></Image>
-//                 <div className="image-title">{image.title}</div>
-//               </a>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// // export default function Gallery(){
-
-// // }
-
-// // function Image(url: string, title: string){
-// //   return(
-// //     <a href="#" className="group">
-// //       <div className = "aspect-w-1 aspect-h-1 xl:aspect-w-7 xlaspect-h-8 w-full overflow-hidden rounded-lg bg-gray-200">
-// //         <img
-// //           alt = {title}
-// //           src = {url}
-// //           className = "group-hover:opacity-75"
-// //          />
-// //       </div>
-// //     </a>
-
-// //   )
-// // }
-// // export default GalleryPage;
-// import React from 'react';
-
 interface GalleryImage {
   id: number;
   title: string;
