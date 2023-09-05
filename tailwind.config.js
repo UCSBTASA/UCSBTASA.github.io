@@ -17,18 +17,22 @@ module.exports = {
       "5xl": "3.052rem",
     },
     screen: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
     },
     extend: {
       colors: {
-        'pink': "rgb(254, 191, 207)"
+        pink: "rgb(254, 191, 207)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
+        synonym: ["Synonym", "sans-serif"],
+        amulya: ["Amulya", "sans-serif"],
+        satoshi: ["Satoshi", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
     },
   },
