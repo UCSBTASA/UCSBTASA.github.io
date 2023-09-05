@@ -8,7 +8,7 @@ interface props {
 }
 
 const FadeInTransition = ({ children }: props) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
