@@ -3,6 +3,7 @@ import Header from "../_components/header";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../_components/footer";
+import ScrollTransition from "@/app/_components/scroll-transition";
 
 const StaffPage = () => {
   const staffMembers = [
@@ -36,7 +37,8 @@ const StaffPage = () => {
       hometown: "Chino, CA",
       major: "Biopsychology",
       year: "Class of 2025",
-      funFact: "I am sorta psychic, like i have a fifth sense (like karen smith from mean girls) ",
+      funFact:
+        "I am sorta psychic, like i have a fifth sense (like karen smith from mean girls) ",
       favFood: "My mom's dumplings",
       favMovie: "Crazy Rich Asians",
       imageUrl: "/staff_photos/charliene.jpg",
@@ -59,7 +61,7 @@ const StaffPage = () => {
       major: "Computer Science",
       hometown: "Cupertino, CA",
       favMovie: "WALL-E",
-      funFact: "I play poker!",      
+      funFact: "I play poker!",
       imageUrl: "/staff_photos/winbert.JPG",
     },
     {
@@ -69,7 +71,8 @@ const StaffPage = () => {
       major: "General Biology",
       hometown: "Los Altos, CA",
       favMovie: "The Glory",
-      funFact: "Certified muscle mommy, in n out order is a double meat w/ grilled onions only ",      
+      funFact:
+        "Certified muscle mommy, in n out order is a double meat w/ grilled onions only ",
       imageUrl: "/staff_photos/kaitlyn.jpeg",
     },
     {
@@ -80,7 +83,7 @@ const StaffPage = () => {
       hometown: "Los Angeles",
       favMovie: "Spirited Away",
       funFact: "I can read and write in 4 different languages!",
-      imageUrl: "/staff_photos/brandon.jpeg"
+      imageUrl: "/staff_photos/brandon.jpeg",
     },
     {
       id: 7,
@@ -89,7 +92,8 @@ const StaffPage = () => {
       position: "Co-Activities Chair",
       hometown: "Charlottesville, VA",
       favMovie: "Ocean's 11",
-      funFact: "I am anti purple grapes, green grapes are superior and I will die on that hill.",   
+      funFact:
+        "I am anti purple grapes, green grapes are superior and I will die on that hill.",
       imageUrl: "/staff_photos/sophia.jpg",
     },
     {
@@ -99,7 +103,7 @@ const StaffPage = () => {
       major: "Statistics and Data Science",
       hometown: "Hacienda Heights, CA",
       favMovie: "Tenet",
-      funFact: "elite from the free throw line😤",      
+      funFact: "elite from the free throw line😤",
       imageUrl: "/staff_photos/kyle.jpeg",
     },
     {
@@ -109,7 +113,7 @@ const StaffPage = () => {
       major: "Mechanical Engineering",
       hometown: "San Jose, CA",
       favMovie: "Black Panther",
-      funFact: "I can juggle three tennis balls",      
+      funFact: "I can juggle three tennis balls",
       imageUrl: "/staff_photos/austin.jpeg",
     },
     {
@@ -119,7 +123,7 @@ const StaffPage = () => {
       major: "Electrical Engineering",
       hometown: "San Jose, CA",
       favMovie: "3 Idiots",
-      funFact: "I can wiggle my ears",      
+      funFact: "I can wiggle my ears",
       imageUrl: "/staff_photos/max.jpeg",
     },
     {
@@ -129,7 +133,7 @@ const StaffPage = () => {
       major: "Cell and Developmental Biology",
       hometown: "Palo Alto, CA",
       favMovie: "Jujutsu Kaisen 0",
-      funFact: "I sneeze in chains",    
+      funFact: "I sneeze in chains",
       imageUrl: "/staff_photos/yelena.jpg",
     },
     {
@@ -139,7 +143,7 @@ const StaffPage = () => {
       major: "Economics and Communication",
       hometown: "Sunnyvale, CA",
       favMovie: "Incantation",
-      funFact: "I have 15 piercings :-D",    
+      funFact: "I have 15 piercings :-D",
       imageUrl: "/staff_photos/cleo.JPG",
     },
     {
@@ -149,9 +153,8 @@ const StaffPage = () => {
       major: "Computer Science",
       hometown: "San Jose, CA",
       favMovie: "Your Name",
-      funFact: "I have accidental ER trips every year :D",      
+      funFact: "I have accidental ER trips every year :D",
       imageUrl: "/staff_photos/justin.jpg",
-
     },
     {
       id: 14,
@@ -160,20 +163,20 @@ const StaffPage = () => {
       major: "Pre-Biology",
       hometown: "Fremont, CA",
       favMovie: "Frozen",
-      funFact: "I learned Taiwanese entirely from listening in on my family's conversations 😌",
+      funFact:
+        "I learned Taiwanese entirely from listening in on my family's conversations 😌",
       imageUrl: "/staff_photos/emma.jpeg",
-
     },
     {
       id: 15,
       name: "Fiona Hosmer-Hughes",
       position: "Cultural Chair",
-      major: "History of Art and Architecture / Psychological and Brain Sciences",
+      major:
+        "History of Art and Architecture / Psychological and Brain Sciences",
       hometown: "San Francisco, CA",
       favMovie: "Kiki's Delivery Service",
       funFact: "I have 5 jobs",
       imageUrl: "/staff_photos/fiona.jpeg",
-
     },
     {
       id: 16,
@@ -184,7 +187,6 @@ const StaffPage = () => {
       favMovie: "The Wind Rises",
       funFact: "I love walking around the parks in sf",
       imageUrl: "/staff_photos/kelly.jpeg",
-
     },
     {
       id: 17,
@@ -203,7 +205,8 @@ const StaffPage = () => {
       major: "Economics / Statistics and Data Science",
       hometown: "San Diego, CA",
       favMovie: "Everything Everywhere All At Once",
-      funFact: "I have old people joints and am always cracking my back or neck",
+      funFact:
+        "I have old people joints and am always cracking my back or neck",
       imageUrl: "/staff_photos/deanna.jpeg",
     },
     {
@@ -259,42 +262,46 @@ const StaffPage = () => {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
             {staffMembers.map((staff) => (
-              <div key={staff.id} className="flex flex-col items-center justify-center">
-                <div className="">
-                  <Image
-                    src={staff.imageUrl}
-                    alt={staff.name}
-                    width={250}
-                    height={250}
-                    className="max-w-[300px] lg:max-w-[75%] w-auto mx-auto mb-2 rounded-full hover:scale-95 transition duration-300 ease-in-out"
-                  />
-                </div>
-                <h2 className="text-black text-2xl mt-6 font-semibold">
-                  {staff.name}
-                </h2>
-                <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
-                  {staff.position.toUpperCase()}
-                </p>
-                {/* <p className="text-md text-[#00000080] mt-3 leading-16">
+              <div
+                key={staff.id}
+                className="flex flex-col items-center justify-center"
+              >
+                <ScrollTransition>
+                  <div className="">
+                    <Image
+                      src={staff.imageUrl}
+                      alt={staff.name}
+                      width={250}
+                      height={250}
+                      className="max-w-[300px] lg:max-w-[75%] w-auto mx-auto mb-2 rounded-full hover:scale-95 transition duration-300 ease-in-out"
+                    />
+                  </div>
+                  <h2 className="text-black text-2xl mt-6 font-semibold">
+                    {staff.name}
+                  </h2>
+                  <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
+                    {staff.position.toUpperCase()}
+                  </p>
+                  {/* <p className="text-md text-[#00000080] mt-3 leading-16">
                   {staff.year}
                 </p> */}
-                <p className="text-md text-[#00000080] mt-2 leading-16">
-                  <strong>Major: </strong>
-                  {staff.major}
-                </p>
-                <p className="text-md text-[#00000080] leading-16">
-                  <strong>Hometown: </strong>
-                  {staff.hometown}
-                </p>                
-                <p className="text-md text-[#00000080] leading-16">
-                  <strong>Favorite Movie: </strong>
-                  {staff.favMovie}
-                </p>
-                <p className="text-md text-[#00000080] leading-16">
-                  <strong>Fun Fact: </strong>
-                  {staff.funFact}
-                </p>
-
+                  <p className="text-md text-[#00000080] mt-2 leading-16">
+                    <strong>Major: </strong>
+                    {staff.major}
+                  </p>
+                  <p className="text-md text-[#00000080] leading-16">
+                    <strong>Hometown: </strong>
+                    {staff.hometown}
+                  </p>
+                  <p className="text-md text-[#00000080] leading-16">
+                    <strong>Favorite Movie: </strong>
+                    {staff.favMovie}
+                  </p>
+                  <p className="text-md text-[#00000080] leading-16">
+                    <strong>Fun Fact: </strong>
+                    {staff.funFact}
+                  </p>
+                </ScrollTransition>
                 {/* <p className="text-md text-[#00000080] leading-16">
                 <strong>Favorite Food: </strong>{staff.favFood}
               </p> */}

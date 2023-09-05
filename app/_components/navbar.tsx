@@ -22,12 +22,12 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full z-10 lg:py-4 border-b lg:px-8 dark:border-slate-300/10 h-[0px] p-0 m-0 lg:mx-0">
+    <div className="w-full z-10 lg:py-4 border-b border-black lg:px-8 dark:border-slate-300/10 h-[0px] p-0 m-0 lg:mx-0">
       <div className="flex justify-center items-center w-full lg:h-full px-2 2xl:px-16 h-[0px] p-0 m-0">
         <div className="h-6 overflow-y-hidden">
           <ul className="hidden lg:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+              <li className="text-black ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Home
               </li>
             </Link>
@@ -38,13 +38,13 @@ const NavBar = () => {
             </Link> */}
             <Link href="/programs">
               <li
-                className="ml-10 text-sm uppercase"
+                className="ml-10 text-sm uppercase text-black"
                 onMouseEnter={toggleProgramsMenu}
                 onMouseLeave={toggleProgramsMenu}
               >
                 Programs
                 {showProgramsMenu && (
-                  <div className="dropdown-menu bg-[#ffd1d8] p-2 absolute z-10">
+                  <div className="bg-[#ffd1d8] dropdown-menu rounded-sm text-black p-2 absolute z-10 shadow-gray-400 shadow-lg">
                     <ul className="">
                       <DropdownItem
                         text="Big Little"
@@ -64,22 +64,22 @@ const NavBar = () => {
               </li>
             </Link>
             <Link href="/staff">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Staff
               </li>
             </Link>
             <Link href="/events">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Events
               </li>
             </Link>
             <Link href="/gallery">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Gallery
               </li>
             </Link>
             <Link href="/store">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Store
               </li>
             </Link>
@@ -89,7 +89,7 @@ const NavBar = () => {
               </li>
             </Link> */}
             <Link href="/contact">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Contact
               </li>
             </Link>
@@ -131,11 +131,6 @@ const NavBar = () => {
               >
                 <AiOutlineClose></AiOutlineClose>
               </div>
-            </div>
-            <div className="border-b border-gray-300 m-4">
-              <p className="w-[85%] lg:w-[90%] py-4">
-                Find out what we&apos;re about!
-              </p>
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
