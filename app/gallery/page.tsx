@@ -339,7 +339,7 @@ const GalleryPage: React.FC = () => {
       <Header title="UCSB TASA" />
       <NavBar />
       <div className="bg-gray-100">
-        <div className="mx-4 lg:mx-16 mb-8 mt-4 ">
+        <div className="mx-4 lg:mx-16 pt-4 pb-8">
           <h2 className="text-4xl font-semibold text-center">
             Our Favorite Memories
           </h2>
