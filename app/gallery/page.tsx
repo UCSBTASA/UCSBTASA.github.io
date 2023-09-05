@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../_components/header";
 import NavBar from "../_components/navbar";
 import Footer from "../_components/footer";
+import ScrollTransition from "../_components/scroll-transition";
 
 interface GalleryImage {
   id: number;
@@ -55,12 +56,11 @@ const GalleryPage: React.FC = () => {
       link: "https://photos.app.goo.gl/Gv2VYKLW4Evup4Q57 ",
     },
     {
-      id: 8, 
+      id: 8,
       title: "Fall GM #1",
       imageUrl: "/gallery_photos/2022-2023/fall_gm_1.JPG",
-      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA"
-    }
-    
+      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA",
+    },
   ];
   const galleryImages2021_2022: GalleryImage[] = [
     {
@@ -201,70 +201,70 @@ const GalleryPage: React.FC = () => {
       id: 4,
       title: "GENERAL MEETING #3",
       imageUrl: "/gallery_photos/2019-2020/gm_3.jpg",
-      link: "https://flic.kr/s/aHsmJuoHns"
+      link: "https://flic.kr/s/aHsmJuoHns",
     },
     {
       id: 5,
       title: "DUMPLING NIGHT",
       imageUrl: "/gallery_photos/2019-2020/dumpling_night.jpeg",
-      link: "https://flic.kr/s/aHsmJdsutE"
+      link: "https://flic.kr/s/aHsmJdsutE",
     },
     {
       id: 6,
       title: "REVEAL",
       imageUrl: "/gallery_photos/2019-2020/reveal.jpg",
-      link: "https://flic.kr/s/aHsmJ9QVNi"
+      link: "https://flic.kr/s/aHsmJ9QVNi",
     },
     {
       id: 7,
       title: "DESTRESS SOCIAL",
       imageUrl: "/gallery_photos/2019-2020/destress_social.jpg",
-      link: "https://flic.kr/s/aHsmJ2LuK7"
+      link: "https://flic.kr/s/aHsmJ2LuK7",
     },
     {
       id: 8,
       title: "MEET & GREET",
       imageUrl: "/gallery_photos/2019-2020/meet_and_greet.jpg",
-      link: "https://flic.kr/s/aHsmHY4Sr9"
+      link: "https://flic.kr/s/aHsmHY4Sr9",
     },
     {
       id: 9,
       title: "SPEED DATING",
       imageUrl: "/gallery_photos/2019-2020/speed_dating.jpg",
-      link: "https://flic.kr/s/aHsmHTp68i"
+      link: "https://flic.kr/s/aHsmHTp68i",
     },
     {
       id: 10,
       title: "FIELD DAY",
       imageUrl: "/gallery_photos/2019-2020/field_day.jpg",
-      link: "https://flic.kr/s/aHsmHNZgTM"
+      link: "https://flic.kr/s/aHsmHNZgTM",
     },
     {
       id: 11,
       title: "GENERAL MEETING #2",
       imageUrl: "/gallery_photos/2019-2020/gm_2.jpg",
-      link: "https://flic.kr/s/aHsmHH616D"
+      link: "https://flic.kr/s/aHsmHH616D",
     },
     {
       id: 12,
       title: "GENERAL MEETING #1",
       imageUrl: "/gallery_photos/2019-2020/gm_1.jpg",
-      link: "https://flic.kr/s/aHsmHFKKSV"
+      link: "https://flic.kr/s/aHsmHFKKSV",
     },
     {
       id: 13,
       title: "BEACH BBQ",
       imageUrl: "/gallery_photos/2019-2020/beach_bbq.jpg",
-      link: "https://flic.kr/s/aHsmHDZpni"
+      link: "https://flic.kr/s/aHsmHDZpni",
     },
     {
       id: 14,
       title: "INTERN FIELD DAY",
       imageUrl: "/gallery_photos/2019-2020/intern_field_day.jpg",
-      link: "https://flic.kr/s/aHsmLGUBrU"
+      link: "https://flic.kr/s/aHsmLGUBrU",
     },
   ];
-  const galleryImages2018_2019: GalleryImage [] = [
+  const galleryImages2018_2019: GalleryImage[] = [
     {
       id: 1,
       title: "senior appreciation",
@@ -308,7 +308,7 @@ const GalleryPage: React.FC = () => {
       link: "https://flic.kr/s/aHskKvw8kq",
     },
   ];
-  const galleryImages2017_2018: GalleryImage [] = [
+  const galleryImages2017_2018: GalleryImage[] = [
     {
       id: 1,
       title: "spring banquet",
@@ -335,117 +335,129 @@ const GalleryPage: React.FC = () => {
     },
   ];
   return (
-    <div className="gallery-container">
+    <div className="gallery-container ">
       <Header title="UCSB TASA" />
       <NavBar />
-      <div className="mx-4 lg:mx-16 mb-8 mt-4">
-        <h2 className="text-4xl font-semibold text-center">
-          Our Favorite Memories
-        </h2>
-        <h3 className="text-lg font-semibold mb-2">2022-2023</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {galleryImages2022_2023.map((image) => (
-            <div key={image.id} className="relative">
-              <a
-                href={image.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              >
-                <div
-                  className="h-44 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${image.imageUrl})` }}
-                />
-                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
-                  {image.title.toUpperCase()}
+      <div className="bg-gray-100">
+        <div className="mx-4 lg:mx-16 mb-8 mt-4 ">
+          <h2 className="text-4xl font-semibold text-center">
+            Our Favorite Memories
+          </h2>
+          <h3 className="text-lg font-semibold mb-2">2022-2023</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages2022_2023.map((image) => (
+              <ScrollTransition>
+                <div key={image.id} className="relative">
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                  >
+                    <div
+                      className="h-44 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${image.imageUrl})` }}
+                    />
+                    <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                      {image.title.toUpperCase()}
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          ))}
-        </div>
-        <h3 className="text-lg font-semibold my-4">2021-2022</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {galleryImages2021_2022.map((image) => (
-            <div key={image.id} className="relative">
-              <a
-                href={image.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
-              >
-                <div
-                  className="h-44 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${image.imageUrl})` }}
-                />
-                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
-                  {image.title}
+              </ScrollTransition>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold my-4">2021-2022</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages2021_2022.map((image) => (
+              <ScrollTransition>
+                <div key={image.id} className="relative">
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+                  >
+                    <div
+                      className="h-44 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${image.imageUrl})` }}
+                    />
+                    <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                      {image.title}
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          ))}
-        </div>
-        <h3 className="text-lg font-semibold my-4">2019-2020</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {galleryImages2019_2020.map((image) => (
-            <div key={image.id} className="relative">
-              <a
-                href={image.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
-              >
-                <div
-                  className="h-44 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${image.imageUrl})` }}
-                />
-                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
-                  {image.title}
+              </ScrollTransition>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold my-4">2019-2020</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages2019_2020.map((image) => (
+              <ScrollTransition>
+                <div key={image.id} className="relative">
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+                  >
+                    <div
+                      className="h-44 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${image.imageUrl})` }}
+                    />
+                    <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                      {image.title}
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          ))}
-        </div>
-        <h3 className="text-lg font-semibold my-4">2018-2019</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {galleryImages2018_2019.map((image) => (
-            <div key={image.id} className="relative">
-              <a
-                href={image.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
-              >
-                <div
-                  className="h-44 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${image.imageUrl})` }}
-                />
-                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
-                  {image.title.toUpperCase()}
+              </ScrollTransition>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold my-4">2018-2019</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages2018_2019.map((image) => (
+              <ScrollTransition>
+                <div key={image.id} className="relative">
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+                  >
+                    <div
+                      className="h-44 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${image.imageUrl})` }}
+                    />
+                    <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                      {image.title.toUpperCase()}
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          ))}
-        </div>
-        <h3 className="text-lg font-semibold my-4">2017-2018</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {galleryImages2017_2018.map((image) => (
-            <div key={image.id} className="relative">
-              <a
-                href={image.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
-              >
-                <div
-                  className="h-44 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${image.imageUrl})` }}
-                />
-                <div className="bg-opacity-75 bg-black text-white py-2 text-center">
-                  {image.title.toUpperCase()}
+              </ScrollTransition>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold my-4">2017-2018</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages2017_2018.map((image) => (
+              <ScrollTransition>
+                <div key={image.id} className="relative">
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+                  >
+                    <div
+                      className="h-44 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${image.imageUrl})` }}
+                    />
+                    <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                      {image.title.toUpperCase()}
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          ))}
+              </ScrollTransition>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />

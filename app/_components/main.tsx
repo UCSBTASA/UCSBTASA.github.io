@@ -4,7 +4,7 @@ import ScrollTransition from "./scroll-transition";
 const Main = () => {
   return (
     <div>
-      <div className="relative h-80 lg:h-[80vh]">
+      <div className="relative h-80 lg:h-[85vh]">
         <Image
           src="/homepage/market2.jpg"
           alt="Homepage Photo"
