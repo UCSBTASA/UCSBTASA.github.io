@@ -347,7 +347,10 @@ const GalleryPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2022_2023.map((image) => (
               <ScrollTransition>
-                <div key={image.id} className="relative">
+                <div
+                  key={image.id}
+                  className="relative hover:shadow-xl transition duration-300"
+                >
                   <a
                     href={image.link}
                     target="_blank"
@@ -355,7 +358,7 @@ const GalleryPage: React.FC = () => {
                     className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
                   >
                     <div
-                      className="h-44 bg-cover bg-center"
+                      className="h-48 bg-cover bg-center"
                       style={{ backgroundImage: `url(${image.imageUrl})` }}
                     />
                     <div className="bg-opacity-75 bg-black text-white py-2 text-center">
@@ -370,7 +373,10 @@ const GalleryPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2021_2022.map((image) => (
               <ScrollTransition>
-                <div key={image.id} className="relative">
+                <div
+                  key={image.id}
+                  className="relative hover:shadow-xl transition duration-300"
+                >
                   <a
                     href={image.link}
                     target="_blank"
@@ -378,7 +384,7 @@ const GalleryPage: React.FC = () => {
                     className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
                   >
                     <div
-                      className="h-44 bg-cover bg-center"
+                      className="h-48 bg-cover bg-center"
                       style={{ backgroundImage: `url(${image.imageUrl})` }}
                     />
                     <div className="bg-opacity-75 bg-black text-white py-2 text-center">
@@ -393,15 +399,18 @@ const GalleryPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2019_2020.map((image) => (
               <ScrollTransition>
-                <div key={image.id} className="relative">
+                <div
+                  key={image.id}
+                  className="relative hover:shadow-xl transition duration-300"
+                >
                   <a
                     href={image.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
+                    className="block overflow-hidden rounded-lg"
                   >
                     <div
-                      className="h-44 bg-cover bg-center"
+                      className="h-48 bg-cover bg-center"
                       style={{ backgroundImage: `url(${image.imageUrl})` }}
                     />
                     <div className="bg-opacity-75 bg-black text-white py-2 text-center">
@@ -416,7 +425,10 @@ const GalleryPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2018_2019.map((image) => (
               <ScrollTransition>
-                <div key={image.id} className="relative">
+                <div
+                  key={image.id}
+                  className="relative hover:shadow-xl transition duration-300"
+                >
                   <a
                     href={image.link}
                     target="_blank"
@@ -424,7 +436,7 @@ const GalleryPage: React.FC = () => {
                     className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
                   >
                     <div
-                      className="h-44 bg-cover bg-center"
+                      className="h-48 bg-cover bg-center"
                       style={{ backgroundImage: `url(${image.imageUrl})` }}
                     />
                     <div className="bg-opacity-75 bg-black text-white py-2 text-center">
@@ -439,7 +451,10 @@ const GalleryPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2017_2018.map((image) => (
               <ScrollTransition>
-                <div key={image.id} className="relative">
+                <div
+                  key={image.id}
+                  className="relative hover:shadow-xl transition duration-300"
+                >
                   <a
                     href={image.link}
                     target="_blank"
@@ -447,7 +462,7 @@ const GalleryPage: React.FC = () => {
                     className="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300"
                   >
                     <div
-                      className="h-44 bg-cover bg-center"
+                      className="h-48 bg-cover bg-center"
                       style={{ backgroundImage: `url(${image.imageUrl})` }}
                     />
                     <div className="bg-opacity-75 bg-black text-white py-2 text-center">
