@@ -4,14 +4,35 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const NavBar = () => {
   const [nav, setNav] = useState(true);
   const [showProgramsMenu, setShowProgramsMenu] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setNav(true); // Close the navigation menu when clicked outside
+      }
+    }
+
+    if (!nav) {
+      // Attach the event listener when the menu is open
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      // Remove the event listener when the menu is closed
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      // Cleanup: remove the event listener when the component unmounts
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [nav]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -45,20 +66,18 @@ const NavBar = () => {
                 Programs
                 {showProgramsMenu && (
                   <div className="bg-[#ffd1d8] dropdown-menu rounded-sm text-black p-2 absolute z-10 shadow-gray-400 shadow-lg">
-                    <ul className="">
-                      <DropdownItem
-                        text="Big Little"
-                        link="/programs/big-little"
-                      ></DropdownItem>
-                      <DropdownItem
-                        text="Intern Program"
-                        link="/programs/interns"
-                      ></DropdownItem>
-                      <DropdownItem
-                        text="Night Market"
-                        link="/programs/night-market"
-                      ></DropdownItem>
-                    </ul>
+                    <DropdownItem
+                      text="Big Little"
+                      link="/programs/big-little"
+                    ></DropdownItem>
+                    <DropdownItem
+                      text="Intern Program"
+                      link="/programs/interns"
+                    ></DropdownItem>
+                    <DropdownItem
+                      text="Night Market"
+                      link="/programs/night-market"
+                    ></DropdownItem>
                   </div>
                 )}
               </li>
@@ -78,11 +97,11 @@ const NavBar = () => {
                 Gallery
               </li>
             </Link>
-            <Link href="/store">
+            {/* <Link href="/store">
               <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Store
               </li>
-            </Link>
+            </Link> */}
             {/* <Link href="/graduates">
               <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
                 Graduates
@@ -110,6 +129,7 @@ const NavBar = () => {
         }
       >
         <div
+          ref={navRef}
           className={
             !nav
               ? "fixed overflow-y-scroll left-0 top-0 w-[75%] sm:w-[60%] lg:w-[45%] h-[110vh] bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
@@ -121,8 +141,8 @@ const NavBar = () => {
               <Image
                 src="/logo.jpeg"
                 alt="/"
-                width="87"
-                height="35"
+                width={87}
+                height={87}
                 className="rounded-lg"
               ></Image>
               <div
@@ -137,9 +157,9 @@ const NavBar = () => {
                 <Link href="/">
                   <li className="py-4 text-sm">Home</li>
                 </Link>
-                <Link href="/about">
+                {/* <Link href="/about">
                   <li className="py-4 text-sm">About Us</li>
-                </Link>
+                </Link> */}
                 <Link href="/programs">
                   <li className="py-4 text-sm">Programs</li>
                 </Link>
@@ -152,9 +172,9 @@ const NavBar = () => {
                 <Link href="/gallery">
                   <li className="py-4 text-sm">Gallery</li>
                 </Link>
-                <Link href="/store">
+                {/* <Link href="/store">
                   <li className="py-4 text-sm">Store</li>
-                </Link>
+                </Link> */}
                 {/* <Link href="/gradutes">
                   <li className="py-4 text-sm">Graduates</li>
                 </Link> */}
@@ -182,11 +202,6 @@ const NavBar = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  {/* <Link href="https://linktr.ee/tasaucsb" target="_">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                      <BsFillPersonLinesFill />
-                    </div>{" "}
-                  </Link> */}
                 </div>
               </div>
             </div>
@@ -204,13 +219,9 @@ interface DropdownItemProps {
 
 function DropdownItem(props: DropdownItemProps) {
   return (
-    <li className="dropdownItem">
-      <Link href={props.link}>
-        <li className="text-sm uppercase m-1 hover:text-blue-500">
-          {props.text}
-        </li>
-      </Link>
-    </li>
+    <Link href={props.link}>
+      <p className="text-sm uppercase m-1 hover:text-blue-500">{props.text}</p>
+    </Link>
   );
 }
 

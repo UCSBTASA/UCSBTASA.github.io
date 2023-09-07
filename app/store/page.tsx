@@ -3,6 +3,7 @@ import Header from "../_components/header";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../_components/footer";
+import Construction from "../_components/under_construction";
 
 const Store = () => {
   const products = [
@@ -32,8 +33,13 @@ const Store = () => {
     <div>
       <Header title="UCSB TASA" />
       <NavBar />
-      <div className="px-4 py-8 text-center w-screen bg-gray-100">
+      <></>
+      {/* <div className="px-4 py-8 text-center w-screen bg-gray-100">
         <h2 className="text-3xl font-bold text-gray-900 uppercase">Store</h2>
+        <p className="text-gray-600">
+          If you'd like to purchase any of our merch, please fill out the order
+          form and we'll reach out to you about pickup options!
+        </p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
           {products.map((product, index) => (
             <div key={index} className="bg-white p-4 border rounded shadow">
@@ -49,7 +55,8 @@ const Store = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+      <Construction></Construction>
       <Footer></Footer>
     </div>
   );

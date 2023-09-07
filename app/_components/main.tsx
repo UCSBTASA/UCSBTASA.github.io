@@ -10,6 +10,7 @@ const Main = () => {
           alt="Homepage Photo"
           fill
           quality={100}
+          priority={true}
           style={{ objectFit: "cover", objectPosition: "bottom" }}
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
