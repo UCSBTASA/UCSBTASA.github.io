@@ -8,7 +8,7 @@ const Programs = () => {
   const programsData = [
     {
       title: "Big Little",
-      image: "/programs/big_little_cover.JPG",
+      image: "/programs/pickup.JPG",
       description:
         "Engage in our highly anticipated big-little mentorship program held each fall, fostering meaningful connections between experienced members and newcomers.",
       slug: "big-little",
@@ -22,7 +22,7 @@ const Programs = () => {
     },
     {
       title: "Night Market",
-      image: "/programs/night_market_cover.jpeg",
+      image: "/programs/nm_cover.jpeg",
       description:
         "Experience the vibrant cultural exchange at our yearly night market event, where we bring together diverse Asian organizations for an unforgettable Taiwanese-themed night market extravaganza.",
       slug: "night-market",
@@ -37,7 +37,7 @@ const Programs = () => {
         <div className="mx-4 lg:mx-16 py-8">
           <h1 className="text-2xl font-bold mb-4">Our Programs</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {programsData.map((program, index) => (
+            {programsData.map((program) => (
               <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
                 <div className="mb-2">
                   <Link href={`/programs/${program.slug}`}>
@@ -46,6 +46,7 @@ const Programs = () => {
                       alt={program.title}
                       width={1920}
                       height={1080}
+                      priority={true}
                     />
                   </Link>
                 </div>
