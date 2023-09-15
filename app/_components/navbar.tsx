@@ -38,9 +38,9 @@ const NavBar = () => {
     setNav(!nav);
   };
 
-  const toggleProgramsMenu = () => {
-    setShowProgramsMenu(!showProgramsMenu);
-  };
+  // const toggleProgramsMenu = () => {
+  //   setShowProgramsMenu(!showProgramsMenu);
+  // };
 
   return (
     <div className="w-full z-10 lg:py-4 border-b border-black lg:px-8 dark:border-slate-300/10 h-[0px] p-0 m-0 lg:mx-0">
@@ -58,13 +58,9 @@ const NavBar = () => {
               </li>
             </Link> */}
             <Link href="/programs">
-              <li
-                className="ml-10 text-sm uppercase text-black"
-                onMouseEnter={toggleProgramsMenu}
-                onMouseLeave={toggleProgramsMenu}
-              >
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Programs
-                {showProgramsMenu && (
+                {/* {showProgramsMenu && (
                   <div className="bg-[#ffd1d8] dropdown-menu rounded-sm text-black p-2 absolute z-10 shadow-gray-400 shadow-lg">
                     <DropdownItem
                       text="Big Little"
@@ -79,7 +75,7 @@ const NavBar = () => {
                       link="/programs/night-market"
                     ></DropdownItem>
                   </div>
-                )}
+                )} */}
               </li>
             </Link>
             <Link href="/staff">

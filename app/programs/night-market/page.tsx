@@ -51,6 +51,7 @@ const NightMarket = () => {
           alt="Big Little Photo"
           fill
           quality={100}
+          priority={true}
           style={{ objectFit: "cover" }}
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
