@@ -6,42 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/app/_components/footer";
 import ScrollTransition from "@/app/_components/scroll-transition";
+import events from "@/app/_data/bigLittleEvents";
 
 const BigLittle = () => {
-  const events = [
-    {
-      name: "Virtual Speed Dating",
-      description: "Join us for Virtual Speed Dating!",
-      date: "2023-08-25",
-      location: "Zoom",
-    },
-    {
-      name: "In Person Speed Dating",
-      description: "Come out to Lot 22 to meet your potential big/little!",
-      date: "2023-09-10",
-      location: "Lot 22 top floor",
-    },
-    {
-      name: "Boba Mixer",
-      description: "Join us for a night of boba and fun!",
-      date: "2023-10-05",
-      location: "TBD",
-    },
-    {
-      name: "Beach Day",
-      description: "Come out to the beach with us for a day of sun and fun!",
-      date: "2023-11-20",
-      location: "TBD",
-    },
-    {
-      name: "Art and Game Night",
-      description:
-        "Enjoy a night of arts and crafts and games! Last chance to meet your potential big/little!",
-      date: "2023-12-15",
-      location: "TBD",
-    },
-  ];
-
   const pickupPhotos = [
     {
       src: "/programs/pickup_1.JPG",
