@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "../_components/footer";
 import ScrollTransition from "@/app/_components/scroll-transition";
+import MemberCoin from "../_components/member_coin";
 
 const StaffPage = () => {
   const staffMembers = [
@@ -268,12 +269,10 @@ const StaffPage = () => {
               >
                 <ScrollTransition>
                   <div className="">
-                    <Image
-                      src={staff.imageUrl}
-                      alt={staff.name}
-                      width={250}
-                      height={250}
-                      className="max-w-[300px] lg:max-w-[75%] w-auto mx-auto mb-2 rounded-full hover:scale-95 transition duration-300 ease-in-out"
+                    <MemberCoin 
+                      imageUrl = {staff.imageUrl}
+                      imageUrlBack = {staff.imageUrlBack ? staff.imageUrlBack : "/staff_photos/sam-staff-photo_orig.jpeg"}
+                      name = {staff.name}
                     />
                   </div>
                   <h2 className="text-black text-2xl mt-6 font-semibold">
