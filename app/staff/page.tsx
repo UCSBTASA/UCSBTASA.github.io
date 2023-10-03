@@ -18,6 +18,7 @@ const StaffPage = () => {
       favMovie: "Under the Red Hood",
       funFact: "You'll never know my next move",
       imageUrl: "/staff_photos/andrew.jpg",
+      imageUrlBack: "/staff_photos/andrew_back.jpg",
     },
     {
       id: 2,
@@ -30,6 +31,7 @@ const StaffPage = () => {
       favFood: "Braised pork belly",
       favMovie: "A Beautiful Mind",
       imageUrl: "/staff_photos/jacqueline.JPG",
+      imageUrlBack: "/staff_photos/jacqueline_back.jpg",
     },
     {
       id: 3,
@@ -43,6 +45,7 @@ const StaffPage = () => {
       favFood: "My mom's dumplings",
       favMovie: "Crazy Rich Asians",
       imageUrl: "/staff_photos/charliene.jpg",
+      imageUrlBack: "/staff_photos/charliene_back.jpg",
     },
     {
       id: 4,
@@ -54,6 +57,7 @@ const StaffPage = () => {
       favMovie: "Grown-Ups",
       funFact: "I sneeze 3.5 times in a row when I eat too much",
       imageUrl: "/staff_photos/chloe.jpg",
+      imageUrlBack: "/staff_photos/chloe_back.jpg",
     },
     {
       id: 5,
@@ -64,6 +68,7 @@ const StaffPage = () => {
       favMovie: "WALL-E",
       funFact: "I play poker!",
       imageUrl: "/staff_photos/winbert.JPG",
+      imageUrlBack: "/staff_photos/winbert_back.jpg",
     },
     {
       id: 6,
@@ -75,6 +80,7 @@ const StaffPage = () => {
       funFact:
         "Certified muscle mommy, in n out order is a double meat w/ grilled onions only ",
       imageUrl: "/staff_photos/kaitlyn.jpeg",
+      imageUrlBack: "/staff_photos/kaitlyn_back.jpg",
     },
     {
       id: 6,
@@ -85,6 +91,7 @@ const StaffPage = () => {
       favMovie: "Spirited Away",
       funFact: "I can read and write in 4 different languages!",
       imageUrl: "/staff_photos/brandon.jpeg",
+      imageUrlBack: "/staff_photos/brandon_back.jpg",
     },
     {
       id: 7,
@@ -96,6 +103,7 @@ const StaffPage = () => {
       funFact:
         "I am anti purple grapes, green grapes are superior and I will die on that hill.",
       imageUrl: "/staff_photos/sophia.jpg",
+      imageUrlBack: "/staff_photos/sophia_back.jpg",
     },
     {
       id: 8,
@@ -106,6 +114,7 @@ const StaffPage = () => {
       favMovie: "Tenet",
       funFact: "elite from the free throw line😤",
       imageUrl: "/staff_photos/kyle.jpeg",
+      imageUrlBack: "/staff_photos/kyle_back.jpg",
     },
     {
       id: 9,
@@ -116,6 +125,8 @@ const StaffPage = () => {
       favMovie: "Black Panther",
       funFact: "I can juggle three tennis balls",
       imageUrl: "/staff_photos/austin.jpeg",
+      imageUrlBack: "/staff_photos/austin_back.jpg",
+
     },
     {
       id: 10,
@@ -126,6 +137,7 @@ const StaffPage = () => {
       favMovie: "3 Idiots",
       funFact: "I can wiggle my ears",
       imageUrl: "/staff_photos/max.jpeg",
+      imageUrlBack: "/staff_photos/max_back.jpg",
     },
     {
       id: 11,
@@ -136,6 +148,7 @@ const StaffPage = () => {
       favMovie: "Jujutsu Kaisen 0",
       funFact: "I sneeze in chains",
       imageUrl: "/staff_photos/yelena.jpg",
+      imageUrlBack: "/staff_photos/yelena_back.jpg",
     },
     {
       id: 12,
@@ -146,6 +159,7 @@ const StaffPage = () => {
       favMovie: "Incantation",
       funFact: "I have 15 piercings :-D",
       imageUrl: "/staff_photos/cleo.JPG",
+      imageUrlBack: "/staff_photos/cleo_back.jpg",
     },
     {
       id: 13,
@@ -156,6 +170,7 @@ const StaffPage = () => {
       favMovie: "Your Name",
       funFact: "I have accidental ER trips every year :D",
       imageUrl: "/staff_photos/justin.jpg",
+      imageUrlBack: "/staff_photos/justin_back.jpg",
     },
     {
       id: 14,
@@ -167,6 +182,7 @@ const StaffPage = () => {
       funFact:
         "I learned Taiwanese entirely from listening in on my family's conversations 😌",
       imageUrl: "/staff_photos/emma.jpeg",
+      imageUrlBack: "/staff_photos/emma_back.jpg",
     },
     {
       id: 15,
@@ -178,6 +194,7 @@ const StaffPage = () => {
       favMovie: "Kiki's Delivery Service",
       funFact: "I have 5 jobs",
       imageUrl: "/staff_photos/fiona.jpeg",
+      imageUrlBack: "/staff_photos/fiona_back.jpg",
     },
     {
       id: 16,
@@ -188,6 +205,7 @@ const StaffPage = () => {
       favMovie: "The Wind Rises",
       funFact: "I love walking around the parks in sf",
       imageUrl: "/staff_photos/kelly.jpeg",
+      imageUrlBack: "/staff_photos/kelly_back.jpg",
     },
     {
       id: 17,
@@ -198,6 +216,7 @@ const StaffPage = () => {
       favMovie: "Everything Everywhere All At Once",
       funFact: "I look like the good dinosaur",
       imageUrl: "/staff_photos/ethan.jpg",
+      imageUrlBack: "/staff_photos/ethan_back.jpg",
     },
     {
       id: 18,
@@ -209,6 +228,7 @@ const StaffPage = () => {
       funFact:
         "I have old people joints and am always cracking my back or neck",
       imageUrl: "/staff_photos/deanna.jpeg",
+      imageUrlBack: "/staff_photos/deanna_back.jpg",
     },
     {
       id: 19,
@@ -219,6 +239,7 @@ const StaffPage = () => {
       favMovie: "12 Angry Men",
       funFact: "I have perfect pitch",
       imageUrl: "/staff_photos/samuel.JPG",
+      imageUrlBack: "/staff_photos/samuel_back.jpg",
     },
     {
       id: 20,
@@ -229,6 +250,7 @@ const StaffPage = () => {
       favMovie: "Ratatouille",
       funFact: "I can lucid dream",
       imageUrl: "/staff_photos/michelle.jpeg",
+      imageUrlBack: "/staff_photos/michelle_back.jpg",
     },
     {
       id: 21,
@@ -239,6 +261,7 @@ const StaffPage = () => {
       favMovie: "The Hangover",
       funFact: "I like seeing the world through hiking, even the cardio part",
       imageUrl: "/staff_photos/kevin.jpeg",
+      imageUrlBack: "/staff_photos/kevin_back.jpg",
     },
     {
       id: 22,
@@ -249,6 +272,7 @@ const StaffPage = () => {
       favMovie: "Howl's Moving Castle",
       funFact: "I have a resting sad face but I promise I'm happy",
       imageUrl: "/staff_photos/grace.jpeg",
+      imageUrlBack: "/staff_photos/grace_back.jpg",
     },
   ];
 
@@ -271,7 +295,7 @@ const StaffPage = () => {
                   <div className="">
                     <MemberCoin 
                       imageUrl = {staff.imageUrl}
-                      imageUrlBack = {staff.imageUrlBack ? staff.imageUrlBack : "/staff_photos/sam-staff-photo_orig.jpeg"}
+                      imageUrlBack = {"/staff_photos/sam-staff-photo_orig.jpeg"}
                       name = {staff.name}
                     />
                   </div>
