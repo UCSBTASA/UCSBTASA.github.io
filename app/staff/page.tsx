@@ -30,7 +30,7 @@ const StaffPage = () => {
       funFact: "I eat Cheetos with chopsticks :>",
       favFood: "Braised pork belly",
       favMovie: "A Beautiful Mind",
-      imageUrl: "/staff_photos/jacqueline.jpg",
+      imageUrl: "/staff_photos/jacqueline.JPG",
       imageUrlBack: "/staff_photos/jacqueline_flip.jpg",
     },
     {
@@ -67,7 +67,7 @@ const StaffPage = () => {
       hometown: "Cupertino, CA",
       favMovie: "WALL-E",
       funFact: "I play poker!",
-      imageUrl: "/staff_photos/winbert.jpg",
+      imageUrl: "/staff_photos/winbert.JPG",
       imageUrlBack: "/staff_photos/winbert_flip.jpg",
     },
     {
@@ -158,7 +158,7 @@ const StaffPage = () => {
       favMovie: "Incantation",
       funFact: "I have 15 piercings :-D",
       imageUrl: "/staff_photos/cleo.jpg",
-      imageUrlBack: "/staff_photos/cleo_flip.jpg",
+      imageUrlBack: "/staff_photos/cleo_flip.JPG",
     },
     {
       id: 13,
