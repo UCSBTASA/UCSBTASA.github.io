@@ -18,7 +18,7 @@ const StaffPage = () => {
       favMovie: "Under the Red Hood",
       funFact: "You'll never know my next move",
       imageUrl: "/staff_photos/andrew.jpg",
-      imageUrlBack: "/staff_photos/andrew_back.jpg",
+      imageUrlBack: "/staff_photos/andrew_flip.jpg",
     },
     {
       id: 2,
@@ -30,8 +30,8 @@ const StaffPage = () => {
       funFact: "I eat Cheetos with chopsticks :>",
       favFood: "Braised pork belly",
       favMovie: "A Beautiful Mind",
-      imageUrl: "/staff_photos/jacqueline.JPG",
-      imageUrlBack: "/staff_photos/jacqueline_back.jpg",
+      imageUrl: "/staff_photos/jacqueline.jpg",
+      imageUrlBack: "/staff_photos/jacqueline_flip.jpg",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const StaffPage = () => {
       favFood: "My mom's dumplings",
       favMovie: "Crazy Rich Asians",
       imageUrl: "/staff_photos/charliene.jpg",
-      imageUrlBack: "/staff_photos/charliene_back.jpg",
+      imageUrlBack: "/staff_photos/charliene_flip.jpg",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const StaffPage = () => {
       favMovie: "Grown-Ups",
       funFact: "I sneeze 3.5 times in a row when I eat too much",
       imageUrl: "/staff_photos/chloe.jpg",
-      imageUrlBack: "/staff_photos/chloe_back.jpg",
+      imageUrlBack: "/staff_photos/chloe_flip.jpg",
     },
     {
       id: 5,
@@ -67,8 +67,8 @@ const StaffPage = () => {
       hometown: "Cupertino, CA",
       favMovie: "WALL-E",
       funFact: "I play poker!",
-      imageUrl: "/staff_photos/winbert.JPG",
-      imageUrlBack: "/staff_photos/winbert_back.jpg",
+      imageUrl: "/staff_photos/winbert.jpg",
+      imageUrlBack: "/staff_photos/winbert_flip.jpg",
     },
     {
       id: 6,
@@ -79,8 +79,8 @@ const StaffPage = () => {
       favMovie: "The Glory",
       funFact:
         "Certified muscle mommy, in n out order is a double meat w/ grilled onions only ",
-      imageUrl: "/staff_photos/kaitlyn.jpeg",
-      imageUrlBack: "/staff_photos/kaitlyn_back.jpg",
+      imageUrl: "/staff_photos/kaitlyn.jpg",
+      imageUrlBack: "/staff_photos/kaitlyn_flip.jpg",
     },
     {
       id: 6,
@@ -90,8 +90,8 @@ const StaffPage = () => {
       hometown: "Los Angeles",
       favMovie: "Spirited Away",
       funFact: "I can read and write in 4 different languages!",
-      imageUrl: "/staff_photos/brandon.jpeg",
-      imageUrlBack: "/staff_photos/brandon_back.jpg",
+      imageUrl: "/staff_photos/brandon.jpg",
+      imageUrlBack: "/staff_photos/brandon_flip.jpg",
     },
     {
       id: 7,
@@ -103,7 +103,7 @@ const StaffPage = () => {
       funFact:
         "I am anti purple grapes, green grapes are superior and I will die on that hill.",
       imageUrl: "/staff_photos/sophia.jpg",
-      imageUrlBack: "/staff_photos/sophia_back.jpg",
+      imageUrlBack: "/staff_photos/sophia_flip.jpg",
     },
     {
       id: 8,
@@ -113,8 +113,8 @@ const StaffPage = () => {
       hometown: "Hacienda Heights, CA",
       favMovie: "Tenet",
       funFact: "elite from the free throw line😤",
-      imageUrl: "/staff_photos/kyle.jpeg",
-      imageUrlBack: "/staff_photos/kyle_back.jpg",
+      imageUrl: "/staff_photos/kyle.jpg",
+      imageUrlBack: "/staff_photos/kyle_flip.jpg",
     },
     {
       id: 9,
@@ -124,9 +124,8 @@ const StaffPage = () => {
       hometown: "San Jose, CA",
       favMovie: "Black Panther",
       funFact: "I can juggle three tennis balls",
-      imageUrl: "/staff_photos/austin.jpeg",
-      imageUrlBack: "/staff_photos/austin_back.jpg",
-
+      imageUrl: "/staff_photos/austin.jpg",
+      imageUrlBack: "/staff_photos/austin_flip.jpg",
     },
     {
       id: 10,
@@ -136,8 +135,8 @@ const StaffPage = () => {
       hometown: "San Jose, CA",
       favMovie: "3 Idiots",
       funFact: "I can wiggle my ears",
-      imageUrl: "/staff_photos/max.jpeg",
-      imageUrlBack: "/staff_photos/max_back.jpg",
+      imageUrl: "/staff_photos/max.jpg",
+      imageUrlBack: "/staff_photos/max_flip.jpg",
     },
     {
       id: 11,
@@ -148,7 +147,7 @@ const StaffPage = () => {
       favMovie: "Jujutsu Kaisen 0",
       funFact: "I sneeze in chains",
       imageUrl: "/staff_photos/yelena.jpg",
-      imageUrlBack: "/staff_photos/yelena_back.jpg",
+      imageUrlBack: "/staff_photos/yelena_flip.jpg",
     },
     {
       id: 12,
@@ -158,8 +157,8 @@ const StaffPage = () => {
       hometown: "Sunnyvale, CA",
       favMovie: "Incantation",
       funFact: "I have 15 piercings :-D",
-      imageUrl: "/staff_photos/cleo.JPG",
-      imageUrlBack: "/staff_photos/cleo_back.jpg",
+      imageUrl: "/staff_photos/cleo.jpg",
+      imageUrlBack: "/staff_photos/cleo_flip.jpg",
     },
     {
       id: 13,
@@ -170,7 +169,7 @@ const StaffPage = () => {
       favMovie: "Your Name",
       funFact: "I have accidental ER trips every year :D",
       imageUrl: "/staff_photos/justin.jpg",
-      imageUrlBack: "/staff_photos/justin_back.jpg",
+      imageUrlBack: "/staff_photos/justin_flip.jpg",
     },
     {
       id: 14,
@@ -181,8 +180,8 @@ const StaffPage = () => {
       favMovie: "Frozen",
       funFact:
         "I learned Taiwanese entirely from listening in on my family's conversations 😌",
-      imageUrl: "/staff_photos/emma.jpeg",
-      imageUrlBack: "/staff_photos/emma_back.jpg",
+      imageUrl: "/staff_photos/emma.jpg",
+      imageUrlBack: "/staff_photos/emma_flip.jpg",
     },
     {
       id: 15,
@@ -193,8 +192,8 @@ const StaffPage = () => {
       hometown: "San Francisco, CA",
       favMovie: "Kiki's Delivery Service",
       funFact: "I have 5 jobs",
-      imageUrl: "/staff_photos/fiona.jpeg",
-      imageUrlBack: "/staff_photos/fiona_back.jpg",
+      imageUrl: "/staff_photos/fiona.jpg",
+      imageUrlBack: "/staff_photos/fiona_flip.jpg",
     },
     {
       id: 16,
@@ -204,8 +203,8 @@ const StaffPage = () => {
       hometown: "Palo Alto, CA",
       favMovie: "The Wind Rises",
       funFact: "I love walking around the parks in sf",
-      imageUrl: "/staff_photos/kelly.jpeg",
-      imageUrlBack: "/staff_photos/kelly_back.jpg",
+      imageUrl: "/staff_photos/kelly.jpg",
+      imageUrlBack: "/staff_photos/kelly_flip.jpg",
     },
     {
       id: 17,
@@ -216,7 +215,7 @@ const StaffPage = () => {
       favMovie: "Everything Everywhere All At Once",
       funFact: "I look like the good dinosaur",
       imageUrl: "/staff_photos/ethan.jpg",
-      imageUrlBack: "/staff_photos/ethan_back.jpg",
+      imageUrlBack: "/staff_photos/ethan_flip.jpg",
     },
     {
       id: 18,
@@ -227,8 +226,8 @@ const StaffPage = () => {
       favMovie: "Everything Everywhere All At Once",
       funFact:
         "I have old people joints and am always cracking my back or neck",
-      imageUrl: "/staff_photos/deanna.jpeg",
-      imageUrlBack: "/staff_photos/deanna_back.jpg",
+      imageUrl: "/staff_photos/deanna.jpg",
+      imageUrlBack: "/staff_photos/deanna_flip.jpg",
     },
     {
       id: 19,
@@ -238,8 +237,8 @@ const StaffPage = () => {
       hometown: "San Jose",
       favMovie: "12 Angry Men",
       funFact: "I have perfect pitch",
-      imageUrl: "/staff_photos/samuel.JPG",
-      imageUrlBack: "/staff_photos/samuel_back.jpg",
+      imageUrl: "/staff_photos/samuel.jpg",
+      imageUrlBack: "/staff_photos/samuel_flip.jpg",
     },
     {
       id: 20,
@@ -249,8 +248,8 @@ const StaffPage = () => {
       hometown: "San Gabriel, CA",
       favMovie: "Ratatouille",
       funFact: "I can lucid dream",
-      imageUrl: "/staff_photos/michelle.jpeg",
-      imageUrlBack: "/staff_photos/michelle_back.jpg",
+      imageUrl: "/staff_photos/mimi.jpg",
+      imageUrlBack: "/staff_photos/mimi_flip.jpg",
     },
     {
       id: 21,
@@ -260,8 +259,8 @@ const StaffPage = () => {
       hometown: "San Jose, CA",
       favMovie: "The Hangover",
       funFact: "I like seeing the world through hiking, even the cardio part",
-      imageUrl: "/staff_photos/kevin.jpeg",
-      imageUrlBack: "/staff_photos/kevin_back.jpg",
+      imageUrl: "/staff_photos/kevin.jpg",
+      imageUrlBack: "/staff_photos/kevin_flip.jpg",
     },
     {
       id: 22,
@@ -271,8 +270,8 @@ const StaffPage = () => {
       hometown: "San Diego, CA",
       favMovie: "Howl's Moving Castle",
       funFact: "I have a resting sad face but I promise I'm happy",
-      imageUrl: "/staff_photos/grace.jpeg",
-      imageUrlBack: "/staff_photos/grace_back.jpg",
+      imageUrl: "/staff_photos/grace.jpg",
+      imageUrlBack: "/staff_photos/grace_flip.jpg",
     },
   ];
 
@@ -293,10 +292,10 @@ const StaffPage = () => {
               >
                 <ScrollTransition>
                   <div className="">
-                    <MemberCoin 
-                      imageUrl = {staff.imageUrl}
-                      imageUrlBack = {"/staff_photos/sam-staff-photo_orig.jpeg"}
-                      name = {staff.name}
+                    <MemberCoin
+                      imageUrl={staff.imageUrl}
+                      imageUrlBack={staff.imageUrlBack}
+                      name={staff.name}
                     />
                   </div>
                   <h2 className="text-black text-2xl mt-6 font-semibold">
