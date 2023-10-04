@@ -304,9 +304,6 @@ const StaffPage = () => {
                   <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
                     {staff.position.toUpperCase()}
                   </p>
-                  {/* <p className="text-md text-[#00000080] mt-3 leading-16">
-                  {staff.year}
-                </p> */}
                   <p className="text-md text-[#00000080] mt-2 leading-16">
                     <strong>Major: </strong>
                     {staff.major}
@@ -324,9 +321,6 @@ const StaffPage = () => {
                     {staff.funFact}
                   </p>
                 </ScrollTransition>
-                {/* <p className="text-md text-[#00000080] leading-16">
-                <strong>Favorite Food: </strong>{staff.favFood}
-              </p> */}
               </div>
             ))}
           </div>
