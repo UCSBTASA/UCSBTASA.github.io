@@ -157,7 +157,7 @@ const StaffPage = () => {
       hometown: "Sunnyvale, CA",
       favMovie: "Incantation",
       funFact: "I have 15 piercings :-D",
-      imageUrl: "/staff_photos/cleo.jpg",
+      imageUrl: "/staff_photos/cleo.JPG",
       imageUrlBack: "/staff_photos/cleo_flip.JPG",
     },
     {
