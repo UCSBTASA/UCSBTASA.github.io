@@ -237,7 +237,7 @@ const StaffPage = () => {
       hometown: "San Jose",
       favMovie: "12 Angry Men",
       funFact: "I have perfect pitch",
-      imageUrl: "/staff_photos/samuel.jpg",
+      imageUrl: "/staff_photos/samuel.JPG",
       imageUrlBack: "/staff_photos/samuel_flip.jpg",
     },
     {
