@@ -25,7 +25,7 @@ const StaffPage = () => {
       name: "Jacqueline Vuong",
       position: "CO-PRESIDENT",
       hometown: "San Ramon, CA",
-      major: "Computer Science",
+      major: "Psych and Brain Sciences & Communication, Applied Psych minor",
       year: "Class of 2024",
       funFact: "I eat Cheetos with chopsticks :>",
       favFood: "Braised pork belly",
@@ -304,7 +304,7 @@ const StaffPage = () => {
                   <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
                     {staff.position.toUpperCase()}
                   </p>
-                  <p className="text-md text-[#00000080] mt-2 leading-16">
+                  <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
                     <strong>Major: </strong>
                     {staff.major}
                   </p>
