@@ -25,7 +25,7 @@ const StaffPage = () => {
       name: "Jacqueline Vuong",
       position: "CO-PRESIDENT",
       hometown: "San Ramon, CA",
-      major: "Psych and Brain Sciences & Communication, Applied Psych minor",
+      major: "Psychological and Brain Sciences & Communication, Applied Psych",
       year: "Class of 2024",
       funFact: "I eat Cheetos with chopsticks :>",
       favFood: "Braised pork belly",

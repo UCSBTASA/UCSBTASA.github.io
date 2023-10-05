@@ -27,8 +27,8 @@ const events = [
     id: 4,
     title: "Big Little Pickup: In Person Speed Dating",
     date: "2023-10-13",
-    startTime: "20:00",
-    endTime: "22:00",
+    startTime: "18:45",
+    endTime: "21:00",
     location: "Lot 22 Top Flor",
   },
   {
