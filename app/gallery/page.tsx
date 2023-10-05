@@ -22,7 +22,7 @@ const GalleryPage: React.FC = () => {
     {
       id: 2,
       title: "SUNSET HIKE",
-      imageUrl: "/gallery_photos/2023-2024/sunset_hike_v2.JPG",
+      imageUrl: "/gallery_photos/2023-2024/sunset_hike_v2.jpg",
       link: "https://photos.app.goo.gl/w1P36VshSBY9hPwg6" 
     },
   ]
