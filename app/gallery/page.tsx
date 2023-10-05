@@ -10,8 +10,22 @@ interface GalleryImage {
   imageUrl: string;
   link: string;
 }
-
+let i = 0
 const GalleryPage: React.FC = () => {
+  const galleryImages2023_2024: GalleryImage[] =[
+    {
+      id: 1,
+      title: "99 RISING",
+      imageUrl: "/gallery_photos/2023-2024/99_rising.JPG",
+      link: "https://photos.app.goo.gl/zRTubmnRG6VAyxGf7" 
+    },
+    {
+      id: 2,
+      title: "SUNSET HIKE",
+      imageUrl: "/gallery_photos/2023-2024/sunset_hike_v2.JPG",
+      link: "https://photos.app.goo.gl/w1P36VshSBY9hPwg6" 
+    },
+  ]
   const galleryImages2022_2023: GalleryImage[] = [
     {
       id: 1,
@@ -343,6 +357,32 @@ const GalleryPage: React.FC = () => {
           <h2 className="text-4xl font-semibold text-center">
             Our Favorite Memories
           </h2>
+          <h3 className="text-lg font-semibold mb-2">2023-2024</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages2023_2024.reverse().map((image) => (
+              <ScrollTransition>
+                <div
+                  key={image.id}
+                  className="relative hover:shadow-xl transition duration-300"
+                >
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                  >
+                    <div
+                      className="h-48 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${image.imageUrl})` }}
+                    />
+                    <div className="bg-opacity-75 bg-black text-white py-2 text-center">
+                      {image.title.toUpperCase()}
+                    </div>
+                  </a>
+                </div>
+              </ScrollTransition>
+            ))}
+          </div>
           <h3 className="text-lg font-semibold mb-2">2022-2023</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2022_2023.map((image) => (
