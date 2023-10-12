@@ -14,7 +14,7 @@ const FamilyTrees = () => {
         slug: "hufuwu",
       },
       {
-        title: "HuFuWu, Cassidy's Line",
+        title: "HuFuWu, Casidy's Line",
         image: "/famTrees_photos/hufuwu_2.png",
         slug: "hufuwu",
       },
