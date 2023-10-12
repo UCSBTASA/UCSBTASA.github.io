@@ -93,6 +93,11 @@ const NavBar = () => {
                 Gallery
               </li>
             </Link>
+            <Link href="/famTrees">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
+                Family Trees
+              </li>
+            </Link>
             {/* <Link href="/store">
               <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Store
