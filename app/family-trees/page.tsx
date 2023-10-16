@@ -68,11 +68,31 @@ const FamilyTrees = () => {
         image: "/famTrees_photos/tt.png",
         slug: "tt",
       },
-    //   {
-    //     title: "",
-    //     image: "/famTrees_photos/",
-    //     slug: "",
-    //   },
+      {
+        title: "Dragon",
+        image: "/famTrees_photos/dragon.png",
+        slug: "dragon",
+      },
+      {
+        title: "Best",
+        image: "/famTrees_photos/best.png",
+        slug: "best",
+      },
+      {
+        title: "Seal",
+        image: "/famTrees_photos/seal.png",
+        slug: "seal",
+      },
+      {
+        title: "Van",
+        image: "/famTrees_photos/van.png",
+        slug: "van",
+      },
+      // {
+      //   title: "",
+      //   image: "/famTrees_photos/",
+      //   slug: "",
+      // },
     ];
     const [isImageClicked, setImageClicked] = useState(false);
     const [clickedImage, setClickedImage] = useState<string | null>(null);

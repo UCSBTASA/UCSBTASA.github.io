@@ -93,7 +93,7 @@ const NavBar = () => {
                 Gallery
               </li>
             </Link>
-            <Link href="/famTrees">
+            <Link href="/family-trees">
               <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Family Trees
               </li>
