@@ -17,8 +17,28 @@ const Events = () => {
       day: "numeric",
       timeZone: "UTC",
     };
+    const numToDay = (num: number) => {
+      num = (num + 1)%7;
+      switch (num) {
+        case 0:
+          return "Sunday";
+        case 1:
+          return "Monday";
+        case 2:
+          return "Tuesday";
+        case 3:
+          return "Wednesday";
+        case 4:
+          return "Thursday";
+        case 5:
+          return "Friday";
+        default:
+          return "Saturday";
+      }
+    }
     const formattedDate = new Date(date).toLocaleDateString("en-US", options);
-    return formattedDate;
+    const dayOfWeek = numToDay(new Date(date).getDay());
+    return dayOfWeek + ", " + formattedDate;
   };
 
   const currentDate = new Date();
