@@ -42,9 +42,9 @@ const events = [
   {
     id: 6,
     title: "Big Little Pickup: Arts and Crafts Night",
-    date: "2023-10-25",
-    startTime: "20:00",
-    endTime: "22:00",
+    date: "2023-10-24",
+    startTime: "21:00",
+    endTime: "23:00",
     location: "SRB Multipurpose Room",
   },
 ];
