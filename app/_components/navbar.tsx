@@ -173,6 +173,9 @@ const NavBar = () => {
                 <Link href="/gallery">
                   <li className="py-4 text-sm">Gallery</li>
                 </Link>
+                <Link href="/family-trees">
+                  <li className="py-4 text-sm">Family Trees</li>
+                </Link>
                 {/* <Link href="/store">
                   <li className="py-4 text-sm">Store</li>
                 </Link> */}
