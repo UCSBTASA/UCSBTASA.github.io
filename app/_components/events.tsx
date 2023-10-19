@@ -18,7 +18,7 @@ const Events = () => {
       timeZone: "UTC",
     };
     const numToDay = (num: number) => {
-      num = (num + 1)%7;
+      num = (num)%7;
       switch (num) {
         case 0:
           return "Sunday";
