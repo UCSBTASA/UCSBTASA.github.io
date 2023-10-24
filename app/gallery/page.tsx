@@ -159,7 +159,7 @@ const GalleryPage: React.FC = () => {
       id: 14,
       title: "BIG/LITTLE REVEAL",
       imageUrl: "/gallery_photos/2021-2022/big_little_pickup.jpeg",
-      link: "https://ucsbtasa.weebly.com/gallery.html#:~:text=DUMPLING%20NIGHT-,BIG/LITTLE%20REVEAL,-BEACH%20FIELD%20DAY",
+      link: "https://photos.app.goo.gl/DwP9oyotjdGSKTdG8",
     },
     {
       id: 15,
