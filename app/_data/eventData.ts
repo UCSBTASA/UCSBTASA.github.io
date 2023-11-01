@@ -47,6 +47,46 @@ const events = [
     endTime: "23:00",
     location: "SRB Multipurpose Room",
   },
+  {
+    id: 7,
+    title: "TASA x Vons Fundraiser",
+    date: "2023-11-04",
+    startTime: "15:00",
+    endTime: "20:00",
+    location: "Von's Chicken",
+  },
+  {
+    id: 8,
+    title: "TASA Big Little Pickup Reveal",
+    date: "2023-11-04",
+    startTime: "16:00",
+    endTime: "18:00",
+    location: "Top of Lot 22",
+  },
+  {
+    id: 9,
+    title: "Dumpling Night!",
+    date: "2023-11-05",
+    startTime: "19:00",
+    endTime: "21:00",
+    location: "SRB Multipurpose Room",
+  },
+  {
+    id: 10,
+    title: "Dumpling Night!",
+    date: "2023-11-05",
+    startTime: "19:00",
+    endTime: "21:00",
+    location: "SRB Multipurpose Room",
+  },
+  {
+    id: 11,
+    title: "Dumpling Night!",
+    date: "2023-11-05",
+    startTime: "19:00",
+    endTime: "21:00",
+    location: "SRB Multipurpose Room",
+  },
 ];
 
 export default events;
