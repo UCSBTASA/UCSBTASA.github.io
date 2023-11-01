@@ -73,19 +73,19 @@ const events = [
   },
   {
     id: 10,
-    title: "Dumpling Night!",
-    date: "2023-11-05",
+    title: "TASA Movie Night",
+    date: "2023-11-09",
     startTime: "19:00",
     endTime: "21:00",
-    location: "SRB Multipurpose Room",
+    location: "TBD",
   },
   {
     id: 11,
-    title: "Dumpling Night!",
-    date: "2023-11-05",
+    title: "Tanghulu Night",
+    date: "2023-11-16",
     startTime: "19:00",
     endTime: "21:00",
-    location: "SRB Multipurpose Room",
+    location: "TBD",
   },
 ];
 
