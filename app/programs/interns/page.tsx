@@ -8,21 +8,21 @@ const Interns = () => {
   const internTestimonials = [
     {
       name: "Charliene Lien",
-      imageSrc: "/staff_photos/sam-staff-photo_orig.jpeg",
+      imageSrc: "/staff_photos/charliene.jpg",
       experience:
-        "I had an amazing time interning with TASA! Working behind the scenes of events like Night Market and collaborating with the team taught me valuable skills and gave me unforgettable memories.",
+        "Being a tasa intern was one of the coolest experiences I’ve ever been a part of at UCSB. Not only was I able to meet some of my closest friends, but I was also able to learn how TASA runs their events behind the scenes. My favorite part of it all was the ability to express my creativity in a productive and fun environment towards exciting events such as night market and the intern event (Nin-TASA Olympics). Being an intern has inspired me to continue to work on cool projects for the community as a tasa staff member!",
     },
     {
       name: "Justin Lang",
-      imageSrc: "/staff_photos/sam-staff-photo_orig.jpeg",
+      imageSrc: "/staff_photos/justin.jpg",
       experience:
         "I had an amazing time interning with TASA! Working behind the scenes of events like Night Market and collaborating with the team taught me valuable skills and gave me unforgettable memories.",
     },
     {
       name: "Winbert Zhang",
-      imageSrc: "/staff_photos/sam-staff-photo_orig.jpeg",
+      imageSrc: "/staff_photos/winbert.JPG",
       experience:
-        "I had an amazing time interning with TASA! Working behind the scenes of events like Night Market and collaborating with the team taught me valuable skills and gave me unforgettable memories.",
+        "My TASA intern experience was really rewarding as I got a chance to work with a group of passionate individuals to create events for our community. I was able to learn a lot about the inner workings of TASA and the amount of effort that goes into planning events. I also got to meet a lot of new people and make new friends. My favorite projects were working on the 2022 TASA Merch and helping plan the Night Market! Overall, I had a great time and would definitely recommend applying to be an intern!",
     },
   ];
 
@@ -60,7 +60,7 @@ const Interns = () => {
             </p>
             <br />
             <p className="text-gray-700">
-              Applications open Fall, keep an eye out for announcements!
+              Applications open Winter, keep an eye out for announcements!
             </p>
             {/* <Link href="/apply">
               <button
@@ -99,13 +99,13 @@ const Interns = () => {
                   <Image
                     src={testimonial.imageSrc}
                     alt={testimonial.name}
-                    width={100}
-                    height={100}
+                    width={150}
+                    height={150}
                     className="rounded-full"
                   />
                 </div>
                 <p className="mt-2 font-semibold">{testimonial.name}</p>
-                <p className="text-gray-700">{testimonial.experience}</p>
+                <p className="mt-2 text-gray-700">{testimonial.experience}</p>
               </div>
             ))}
           </div>
