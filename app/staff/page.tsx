@@ -241,17 +241,6 @@ const StaffPage = () => {
       imageUrlBack: "/staff_photos/samuel_flip.jpg",
     },
     {
-      id: 20,
-      name: "Michelle Li",
-      position: "General Staff",
-      major: "Communication",
-      hometown: "San Gabriel, CA",
-      favMovie: "Ratatouille",
-      funFact: "I can lucid dream",
-      imageUrl: "/staff_photos/mimi.jpg",
-      imageUrlBack: "/staff_photos/mimi_flip.jpg",
-    },
-    {
       id: 21,
       name: "Kevin Deng",
       position: "General Staff",
