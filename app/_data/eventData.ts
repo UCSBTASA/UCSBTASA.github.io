@@ -65,7 +65,7 @@ const events = [
   },
   {
     id: 9,
-    title: "Dumpling Night!",
+    title: "Tanghulu and Trivia Night",
     date: "2023-11-05",
     startTime: "19:00",
     endTime: "21:00",
@@ -81,8 +81,8 @@ const events = [
   },
   {
     id: 11,
-    title: "Tanghulu Night",
-    date: "2023-11-16",
+    title: "Dumpling Night!",
+    date: "2023-11-12",
     startTime: "19:00",
     endTime: "21:00",
     location: "TBD",

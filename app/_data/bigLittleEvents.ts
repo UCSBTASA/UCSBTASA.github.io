@@ -28,7 +28,14 @@ const events = [
       description:
         "Enjoy a night of arts and crafts and games! Last chance to meet your potential big/little!",
       date: "2023-10-25",
-      location: "TBD",
+      location: "SRB MPR",
+    },
+    {
+      name: "Pickup Reveal!",
+      description:
+        "Find out who your big is at the top of lot 22!",
+      date: "2023-11-04",
+      location: "Top of Lot 22",
     },
   ];
 export default events;
