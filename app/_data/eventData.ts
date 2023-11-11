@@ -81,18 +81,10 @@ const events = [
   },
   {
     id: 11,
-    title: "Fam Dumpling Kit Day 1",
+    title: "Fam Dumpling Kit Distribution",
     date: "2023-11-18",
     startTime: "18:00",
-    endTime: "19:00",
-    location: "Check TASA Messenger for location!",
-  },
-  {
-    id: 11,
-    title: "Fam Dumpling Kit Day 2",
-    date: "2023-11-19",
-    startTime: "18:00",
-    endTime: "19:00",
+    endTime: "19:30",
     location: "Check TASA Messenger for location!",
   },
 ];
