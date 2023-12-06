@@ -25,6 +25,42 @@ const GalleryPage: React.FC = () => {
       imageUrl: "/gallery_photos/2023-2024/sunset_hike_v2.jpg",
       link: "https://photos.app.goo.gl/w1P36VshSBY9hPwg6" 
     },
+    {
+      id: 3,
+      title: "FALL GM #1",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_1.jpeg",
+      link: "https://photos.app.goo.gl/jGdTJG6jam3W17jUA" 
+    },
+    {
+      id: 4,
+      title: "SPEED-DATING",
+      imageUrl: "/gallery_photos/2023-2024/speed_dating.jpeg",
+      link: "https://photos.app.goo.gl/sfYwA4i6pjBurXmr7" 
+    },
+    {
+      id: 5,
+      title: "BOBA MIXER",
+      imageUrl: "/gallery_photos/2023-2024/boba_mixer.jpg",
+      link: "https://photos.app.goo.gl/Ntz4qjtexx3ZXMT2A" 
+    },
+    {
+      id: 6,
+      title: "BEACH DAY",
+      imageUrl: "/gallery_photos/2023-2024/beach_day.jpg",
+      link: "https://photos.app.goo.gl/DQNLa3J3rRwX3WPAA" 
+    },
+    {
+      id: 7,
+      title: "ARTS AND CRAFTS NIGHT",
+      imageUrl: "/gallery_photos/2023-2024/arts_crafts.jpg",
+      link: "https://photos.app.goo.gl/kBKUCuU5q7qnXEsx9" 
+    },
+    {
+      id: 8,
+      title: "PICKUP REVEAL",
+      imageUrl: "/gallery_photos/2023-2024/pickup_reveal.jpg",
+      link: "https://photos.app.goo.gl/9iKiirF2Hatk8hibA" 
+    },
   ]
   const galleryImages2022_2023: GalleryImage[] = [
     {
@@ -159,7 +195,7 @@ const GalleryPage: React.FC = () => {
       id: 14,
       title: "BIG/LITTLE REVEAL",
       imageUrl: "/gallery_photos/2021-2022/big_little_pickup.jpeg",
-      link: "https://ucsbtasa.weebly.com/gallery.html#:~:text=DUMPLING%20NIGHT-,BIG/LITTLE%20REVEAL,-BEACH%20FIELD%20DAY",
+      link: "https://photos.app.goo.gl/DwP9oyotjdGSKTdG8",
     },
     {
       id: 15,
