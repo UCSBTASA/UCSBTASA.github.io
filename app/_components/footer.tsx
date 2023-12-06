@@ -9,7 +9,7 @@ const Footer = () => {
         <p className="text-lg font-semibold mb-2">Connect with Us!</p>
         <div className="flex justify-center space-x-4">
           <a
-            href="https://www.instagram.com/ucsbtasa/"
+            href="https://www.instagram.com/tasa.ucsb/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-300 transition duration-300"
