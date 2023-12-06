@@ -64,7 +64,7 @@ const GalleryPage: React.FC = () => {
     {
       id: 9,
       title: "Fall GM #1",
-      imageUrl: "/gallery_photos/2023-2024/fall_gm_1-2.JPG",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_1-2.jpg",
       link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA",
     },
     {
