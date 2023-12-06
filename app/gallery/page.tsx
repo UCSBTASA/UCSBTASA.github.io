@@ -61,6 +61,30 @@ const GalleryPage: React.FC = () => {
       imageUrl: "/gallery_photos/2023-2024/pickup_reveal.jpg",
       link: "https://photos.app.goo.gl/9iKiirF2Hatk8hibA" 
     },
+    {
+      id: 9,
+      title: "Fall GM #1",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_1-2.JPG",
+      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA",
+    },
+    {
+      id: 10,
+      title: "TangHulu Night",
+      imageUrl: "/gallery_photos/2023-2024/tanghulu_night.jpg",
+      link: "https://photos.app.goo.gl/QAoYYhQhD5HgfxnH7",
+    },
+    {
+      id: 11,
+      title: "Fall GM #2",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_2.jpeg",
+      link: "https://photos.app.goo.gl/eCW7o7uHKypQ6mio9",
+    },
+    {
+      id: 12,
+      title: "Fall Banquet",
+      imageUrl: "/gallery_photos/2023-2024/fall_banquet.jpg",
+      link: "https://photos.app.goo.gl/JVMRY3DKDW45CRM87",
+    },
   ]
   const galleryImages2022_2023: GalleryImage[] = [
     {
@@ -104,12 +128,6 @@ const GalleryPage: React.FC = () => {
       title: "Arts and Crafts Night",
       imageUrl: "/gallery_photos/2022-2023/arts_and_crafts_night.JPG",
       link: "https://photos.app.goo.gl/Gv2VYKLW4Evup4Q57 ",
-    },
-    {
-      id: 8,
-      title: "Fall GM #1",
-      imageUrl: "/gallery_photos/2022-2023/fall_gm_1.JPG",
-      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA",
     },
   ];
   const galleryImages2021_2022: GalleryImage[] = [
