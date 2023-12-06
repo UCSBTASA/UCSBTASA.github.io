@@ -18,7 +18,7 @@ const Events = () => {
       timeZone: "UTC",
     };
     const numToDay = (num: number) => {
-      num = (num)%7;
+      num = num % 7;
       switch (num) {
         case 0:
           return "Sunday";
@@ -35,7 +35,7 @@ const Events = () => {
         default:
           return "Saturday";
       }
-    }
+    };
     const formattedDate = new Date(date).toLocaleDateString("en-US", options);
     const dayOfWeek = numToDay(new Date(date).getDay());
     return dayOfWeek + ", " + formattedDate;
@@ -45,6 +45,10 @@ const Events = () => {
   const futureDate = new Date();
   futureDate.setDate(currentDate.getDate() - 1);
 
+  const upcomingEvents = events.filter(
+    (event) => new Date(event.date) >= futureDate
+  );
+
   return (
     <div className="bg-gray-100 py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,10 +56,16 @@ const Events = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Upcoming Events
           </h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {events
-              .filter((event) => new Date(event.date) >= futureDate) // Filter events with dates in the future
-              .map((event) => (
+
+          {upcomingEvents.length === 0 ? (
+            <div className="bg-white rounded-lg shadow p-4 mb-4 w-1/4">
+              <p className="text-lg text-gray-600">
+                No events yet, check back soon!
+              </p>
+            </div>
+          ) : (
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {upcomingEvents.map((event) => (
                 <div key={event.id} className="bg-white rounded-lg shadow p-4">
                   <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                   <p className="text-gray-600 mb-2">
@@ -70,7 +80,8 @@ const Events = () => {
                   </p>
                 </div>
               ))}
-          </div>
+            </div>
+          )}
         </FadeInTransition>
       </div>
     </div>
