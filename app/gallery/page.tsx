@@ -63,24 +63,18 @@ const GalleryPage: React.FC = () => {
     },
     {
       id: 9,
-      title: "Fall GM #1",
-      imageUrl: "/gallery_photos/2023-2024/fall_gm_1-2.jpg",
-      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA",
-    },
-    {
-      id: 10,
       title: "TangHulu Night",
       imageUrl: "/gallery_photos/2023-2024/tanghulu_night.jpg",
       link: "https://photos.app.goo.gl/QAoYYhQhD5HgfxnH7",
     },
     {
-      id: 11,
+      id: 10,
       title: "Fall GM #2",
       imageUrl: "/gallery_photos/2023-2024/fall_gm_2.jpeg",
       link: "https://photos.app.goo.gl/eCW7o7uHKypQ6mio9",
     },
     {
-      id: 12,
+      id: 11,
       title: "Fall Banquet",
       imageUrl: "/gallery_photos/2023-2024/fall_banquet.jpg",
       link: "https://photos.app.goo.gl/JVMRY3DKDW45CRM87",
