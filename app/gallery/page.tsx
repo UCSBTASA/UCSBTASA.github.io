@@ -79,6 +79,12 @@ const GalleryPage: React.FC = () => {
       imageUrl: "/gallery_photos/2023-2024/fall_banquet.jpg",
       link: "https://photos.app.goo.gl/JVMRY3DKDW45CRM87",
     },
+    {
+      id: 12,
+      title: "Fall GM #3",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_3.jpg",
+      link: "https://photos.app.goo.gl/JVMRY3DKDW45CRM87",
+    },
   ]
   const galleryImages2022_2023: GalleryImage[] = [
     {
