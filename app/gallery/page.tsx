@@ -411,7 +411,7 @@ const GalleryPage: React.FC = () => {
           <h2 className="text-4xl font-semibold text-center">
             Our Favorite Memories
           </h2>
-          <h3 className="text-lg font-semibold mb-2">2023-2024</h3>
+          <h3 className="text-lg font-semibold my-4">2023-2024</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2023_2024.reverse().map((image) => (
               <ScrollTransition>
@@ -437,7 +437,7 @@ const GalleryPage: React.FC = () => {
               </ScrollTransition>
             ))}
           </div>
-          <h3 className="text-lg font-semibold mb-2">2022-2023</h3>
+          <h3 className="text-lg font-semibold my-4">2022-2023</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2022_2023.map((image) => (
               <ScrollTransition>
