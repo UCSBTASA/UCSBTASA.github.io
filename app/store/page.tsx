@@ -1,9 +1,9 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
+import NavBar from "../../components/navbar";
+import Header from "../../components/header";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "../_components/footer";
-import Construction from "../_components/under_construction";
+import Footer from "../../components/footer";
+import Construction from "../../components/under_construction";
 
 const Store = () => {
   const products = [

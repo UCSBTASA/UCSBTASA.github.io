@@ -1,9 +1,9 @@
-import Main from "./_components/main";
-import NavBar from "./_components/navbar";
-import Header from "./_components/header";
-import Events from "./_components/events";
-import Carousel from "./_components/carousel";
-import Footer from "./_components/footer";
+import Main from "../components/main";
+import NavBar from "../components/navbar";
+import Header from "../components/header";
+import Events from "../components/events";
+import Carousel from "../components/carousel";
+import Footer from "../components/footer";
 
 const Home = () => {
   return (

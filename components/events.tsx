@@ -1,5 +1,5 @@
 import FadeInTransition from "./scroll-transition";
-import events from "../_data/eventData";
+import events from "../data/eventData";
 
 const Events = () => {
   const formatTime = (time: string) => {

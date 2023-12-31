@@ -1,8 +1,8 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
+import NavBar from "../../components/navbar";
+import Header from "../../components/header";
 import Link from "next/link";
 import Iframe from "react-iframe";
-import Footer from "../_components/footer";
+import Footer from "../../components/footer";
 
 const page = () => {
   return (

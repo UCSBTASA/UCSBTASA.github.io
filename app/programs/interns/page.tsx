@@ -1,6 +1,6 @@
-import NavBar from "@/app/_components/navbar";
-import Header from "@/app/_components/header";
-import Footer from "@/app/_components/footer";
+import NavBar from "@/components/navbar";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -1,12 +1,12 @@
 "use client";
 
-import NavBar from "@/app/_components/navbar";
-import Header from "@/app/_components/header";
+import NavBar from "@/components/navbar";
+import Header from "@/components/header";
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "@/app/_components/footer";
-import ScrollTransition from "@/app/_components/scroll-transition";
-import events from "@/app/_data/bigLittleEvents";
+import Footer from "@/components/footer";
+import ScrollTransition from "@/components/scroll-transition";
+import events from "@/data/bigLittleEvents";
 
 const BigLittle = () => {
   const pickupPhotos = [

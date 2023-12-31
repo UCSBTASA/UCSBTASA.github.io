@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Header from "../_components/header";
-import NavBar from "../_components/navbar";
-import Footer from "../_components/footer";
-import ScrollTransition from "../_components/scroll-transition";
+import Header from "../../components/header";
+import NavBar from "../../components/navbar";
+import Footer from "../../components/footer";
+import ScrollTransition from "../../components/scroll-transition";
 
 interface GalleryImage {
   id: number;
@@ -10,21 +10,22 @@ interface GalleryImage {
   imageUrl: string;
   link: string;
 }
-let i = 0
+let i = 0;
 const GalleryPage: React.FC = () => {
-  const galleryImages2023_2024: GalleryImage[] =[
+  const galleryImages2023_2024: GalleryImage[] = [
     {
       id: 1,
       title: "99 RISING",
       imageUrl: "/gallery_photos/2023-2024/99_rising.JPG",
-      link: "https://photos.app.goo.gl/zRTubmnRG6VAyxGf7" 
+      link: "https://photos.app.goo.gl/zRTubmnRG6VAyxGf7",
     },
     {
       id: 2,
       title: "SUNSET HIKE",
       imageUrl: "/gallery_photos/2023-2024/sunset_hike_v2.jpg",
-      link: "https://photos.app.goo.gl/w1P36VshSBY9hPwg6" 
+      link: "https://photos.app.goo.gl/w1P36VshSBY9hPwg6",
     },
+<<<<<<< Updated upstream
     {
       id: 3,
       title: "FALL GM #1",
@@ -62,6 +63,9 @@ const GalleryPage: React.FC = () => {
       link: "https://photos.app.goo.gl/9iKiirF2Hatk8hibA" 
     },
   ]
+=======
+  ];
+>>>>>>> Stashed changes
   const galleryImages2022_2023: GalleryImage[] = [
     {
       id: 1,

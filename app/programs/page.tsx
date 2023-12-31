@@ -1,7 +1,7 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
+import NavBar from "../../components/navbar";
+import Header from "../../components/header";
 import Link from "next/link";
-import Footer from "../_components/footer";
+import Footer from "../../components/footer";
 import Image from "next/image";
 
 const Programs = () => {
