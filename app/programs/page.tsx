@@ -1,7 +1,4 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
 import Link from "next/link";
-import Footer from "../_components/footer";
 import Image from "next/image";
 
 const Programs = () => {
@@ -31,8 +28,6 @@ const Programs = () => {
 
   return (
     <div>
-      <Header title="UCSB TASA"></Header>
-      <NavBar></NavBar>
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 py-8">
           <h1 className="text-2xl font-bold mb-4">Our Programs</h1>
@@ -57,7 +52,6 @@ const Programs = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

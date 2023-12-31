@@ -1,12 +1,6 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
-import Link from "next/link";
-
 const About = () => {
   return (
     <div className="">
-      <Header title="UCSB TASA"></Header>
-      <NavBar></NavBar>
       {/* <div className="bg-gray-100 min-h-screen">
         <div className="main-wrap flex justify-center">
           <div className="content p-16 m-4 w-[60%] rounded-lg bg-[#ffffff]">

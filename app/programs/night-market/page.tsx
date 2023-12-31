@@ -1,50 +1,14 @@
-import NavBar from "@/app/_components/navbar";
-import Header from "@/app/_components/header";
-import Footer from "@/app/_components/footer";
+import NavBar from "@/components/navbar";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
-import ScrollTransition from "@/app/_components/scroll-transition";
+import ScrollTransition from "@/components/scroll-transition";
+import nightMarketPhotos from "@/data/photoLists/nightMarket";
 
 const NightMarket = () => {
-  const nightMarketPhotos = [
-    {
-      src: "/programs/night_market_1.jpg",
-      alt: "Night Market Photo 1",
-    },
-    {
-      src: "/programs/night_market_2.JPG",
-      alt: "Night Market Photo 2",
-    },
-    {
-      src: "/programs/night_market_3.jpg",
-      alt: "Night Market Photo 3",
-    },
-    {
-      src: "/programs/night_market_4.JPG",
-      alt: "Night Market Photo 4",
-    },
-    {
-      src: "/programs/night_market_5.jpg",
-      alt: "Night Market Photo 5",
-    },
-    {
-      src: "/programs/night_market_6.jpg",
-      alt: "Night Market Photo 6",
-    },
-    {
-      src: "/programs/night_market_7.jpg",
-      alt: "Night Market Photo 7",
-    },
-    {
-      src: "/programs/night_market_8.JPG",
-      alt: "Night Market Photo 8",
-    },
-  ];
-
   return (
     <div>
-      <Header title="UCSB TASA"></Header>
-      <NavBar></NavBar>
       <div className="relative h-80 lg:h-[85vh]">
         <Image
           src="/programs/night_market_cover.jpeg"
@@ -133,7 +97,6 @@ const NightMarket = () => {
           </ScrollTransition>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };
