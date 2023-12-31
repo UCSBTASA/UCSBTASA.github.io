@@ -10,26 +10,22 @@ import { useState, useEffect, useRef } from "react";
 
 const NavBar = () => {
   const [nav, setNav] = useState(true);
-  const [showProgramsMenu, setShowProgramsMenu] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
-        setNav(true); // Close the navigation menu when clicked outside
+        setNav(true);
       }
     }
 
     if (!nav) {
-      // Attach the event listener when the menu is open
       document.addEventListener("mousedown", handleClickOutside);
     } else {
-      // Remove the event listener when the menu is closed
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      // Cleanup: remove the event listener when the component unmounts
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [nav]);
@@ -38,12 +34,8 @@ const NavBar = () => {
     setNav(!nav);
   };
 
-  // const toggleProgramsMenu = () => {
-  //   setShowProgramsMenu(!showProgramsMenu);
-  // };
-
   return (
-    <div className="w-full z-10 lg:py-4 border-b border-black lg:px-8 dark:border-slate-300/10 h-[0px] p-0 m-0 lg:mx-0">
+    <div className="w-full z-10 lg:pt-4 lg:pb-6 border-b border-black lg:px-8 dark:border-slate-300/10 h-[0px] p-0 m-0 lg:mx-0">
       <div className="flex justify-center items-center w-full lg:h-full px-2 2xl:px-16 h-[0px] p-0 m-0">
         <div className="h-6 overflow-y-hidden">
           <ul className="hidden lg:flex">
@@ -52,30 +44,9 @@ const NavBar = () => {
                 Home
               </li>
             </Link>
-            {/* <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
-                About Us
-              </li>
-            </Link> */}
             <Link href="/programs">
               <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Programs
-                {/* {showProgramsMenu && (
-                  <div className="bg-[#ffd1d8] dropdown-menu rounded-sm text-black p-2 absolute z-10 shadow-gray-400 shadow-lg">
-                    <DropdownItem
-                      text="Big Little"
-                      link="/programs/big-little"
-                    ></DropdownItem>
-                    <DropdownItem
-                      text="Intern Program"
-                      link="/programs/interns"
-                    ></DropdownItem>
-                    <DropdownItem
-                      text="Night Market"
-                      link="/programs/night-market"
-                    ></DropdownItem>
-                  </div>
-                )} */}
               </li>
             </Link>
             <Link href="/staff">
@@ -98,16 +69,6 @@ const NavBar = () => {
                 Family Trees
               </li>
             </Link>
-            {/* <Link href="/store">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Store
-              </li>
-            </Link> */}
-            {/* <Link href="/graduates">
-              <li className="ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
-                Graduates
-              </li>
-            </Link> */}
             <Link href="/contact">
               <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
                 Contact
@@ -158,9 +119,6 @@ const NavBar = () => {
                 <Link href="/">
                   <li className="py-4 text-sm">Home</li>
                 </Link>
-                {/* <Link href="/about">
-                  <li className="py-4 text-sm">About Us</li>
-                </Link> */}
                 <Link href="/programs">
                   <li className="py-4 text-sm">Programs</li>
                 </Link>
@@ -176,12 +134,6 @@ const NavBar = () => {
                 <Link href="/family-trees">
                   <li className="py-4 text-sm">Family Trees</li>
                 </Link>
-                {/* <Link href="/store">
-                  <li className="py-4 text-sm">Store</li>
-                </Link> */}
-                {/* <Link href="/gradutes">
-                  <li className="py-4 text-sm">Graduates</li>
-                </Link> */}
                 <Link href="/contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>

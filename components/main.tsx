@@ -1,24 +1,24 @@
 import Image from "next/image";
 import ScrollTransition from "./scroll-transition";
+import { FaInstagram, FaLink } from "react-icons/fa";
 
 const Main = () => {
   return (
     <div>
       <div className="relative h-80 lg:h-[85vh]">
         <Image
-          src="/homepage/market2.jpg"
-          alt="Homepage Photo"
+          src="/homepage/all_staff.jpg"
+          alt="Staff Cover Photo"
           fill
           quality={100}
           priority={true}
-          style={{ objectFit: "cover", objectPosition: "bottom" }}
+          style={{ objectFit: "cover", objectPosition: "center" }}
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
             <h1 className="text-4xl font-semibold mb-4 uppercase">
               TAIWANESE AMERICAN STUDENT ASSOCIATION
             </h1>
-            <p className="text-lg font-semibold mb-4 uppercase">UCSB TASA</p>
           </div>
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -50,15 +50,28 @@ const Main = () => {
                 meet our officers and TASA fams. Stay updated by following our
                 Instagram and Facebook, or by subscribing to our Mailing List!
               </p>
+              <div className="flex justify-center space-x-6 mt-6">
+                <a
+                  href="https://www.instagram.com/tasa.ucsb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="text-4xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
+                </a>
+                <a
+                  href="https://linktr.ee/tasaucsb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Linktree"
+                >
+                  <FaLink className="text-4xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
+                </a>
+              </div>
             </ScrollTransition>
           </div>
         </div>
       </div>
-      {/* <div className="w-full text-center bg-gray-100 py-8">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="my-8"></div>
-        </div>
-      </div> */}
     </div>
   );
 };

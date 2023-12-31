@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import familyTrees from "@/data/familytrees";
+import ScrollTransition from "@/components/scroll-transition";
 
 const FamilyTrees = () => {
   const [isImageClicked, setImageClicked] = useState(false);
@@ -18,23 +19,25 @@ const FamilyTrees = () => {
           <h1 className="text-2xl text-center font-bold mb-4">TASA's FAMS!</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {familyTrees.map((famTrees) => (
-              <div
-                className={`bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 cursor-pointer ${
-                  isImageClicked ? "h-full" : ""
-                }`}
-                onClick={() => handleImageClick(famTrees.image)}
-              >
-                <div className="mb-2">
-                  <img
-                    src={famTrees.image}
-                    alt={famTrees.title}
-                    className={`w-full ${isImageClicked ? "h-full" : ""}`}
-                  />
+              <ScrollTransition>
+                <div
+                  className={`bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 cursor-pointer ${
+                    isImageClicked ? "h-full" : ""
+                  }`}
+                  onClick={() => handleImageClick(famTrees.image)}
+                >
+                  <div className="mb-2">
+                    <img
+                      src={famTrees.image}
+                      alt={famTrees.title}
+                      className={`w-full ${isImageClicked ? "h-full" : ""}`}
+                    />
+                  </div>
+                  <h2 className="text-xl text-center font-semibold mb-2">
+                    {famTrees.title}
+                  </h2>
                 </div>
-                <h2 className="text-xl text-center font-semibold mb-2">
-                  {famTrees.title}
-                </h2>
-              </div>
+              </ScrollTransition>
             ))}
           </div>
 
