@@ -62,6 +62,36 @@ const GalleryPage: React.FC = () => {
       imageUrl: "/gallery_photos/2023-2024/pickup_reveal.jpg",
       link: "https://photos.app.goo.gl/9iKiirF2Hatk8hibA" 
     },
+    {
+      id: 9,
+      title: "TangHulu Night",
+      imageUrl: "/gallery_photos/2023-2024/tanghulu_night.jpg",
+      link: "https://photos.app.goo.gl/QAoYYhQhD5HgfxnH7",
+    },
+    {
+      id: 10,
+      title: "Fall GM #2",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_2.jpeg",
+      link: "https://photos.app.goo.gl/eCW7o7uHKypQ6mio9",
+    },
+    {
+      id: 11,
+      title: "Fall Banquet",
+      imageUrl: "/gallery_photos/2023-2024/fall_banquet.jpg",
+      link: "https://photos.app.goo.gl/JVMRY3DKDW45CRM87",
+    },
+    {
+      id: 12,
+      title: "Fall GM #3",
+      imageUrl: "/gallery_photos/2023-2024/fall_gm_3.jpg",
+      link: "https://photos.app.goo.gl/sHpQCUj34VxgGhnx6",
+    },
+    {
+      id: 13,
+      title: "Fall Fundraisers!",
+      imageUrl: "/gallery_photos/2023-2024/fall_fundraiser.jpeg",
+      link: "https://photos.app.goo.gl/7P7S6eRfPcPuVryW7",
+    },
   ]
 =======
   ];
@@ -108,12 +138,6 @@ const GalleryPage: React.FC = () => {
       title: "Arts and Crafts Night",
       imageUrl: "/gallery_photos/2022-2023/arts_and_crafts_night.JPG",
       link: "https://photos.app.goo.gl/Gv2VYKLW4Evup4Q57 ",
-    },
-    {
-      id: 8,
-      title: "Fall GM #1",
-      imageUrl: "/gallery_photos/2022-2023/fall_gm_1.JPG",
-      link: "https://photos.app.goo.gl/yGMAUodVDF1iJhaCA",
     },
   ];
   const galleryImages2021_2022: GalleryImage[] = [
@@ -397,7 +421,7 @@ const GalleryPage: React.FC = () => {
           <h2 className="text-4xl font-semibold text-center">
             Our Favorite Memories
           </h2>
-          <h3 className="text-lg font-semibold mb-2">2023-2024</h3>
+          <h3 className="text-lg font-semibold my-4">2023-2024</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2023_2024.reverse().map((image) => (
               <ScrollTransition>
@@ -423,7 +447,7 @@ const GalleryPage: React.FC = () => {
               </ScrollTransition>
             ))}
           </div>
-          <h3 className="text-lg font-semibold mb-2">2022-2023</h3>
+          <h3 className="text-lg font-semibold my-4">2022-2023</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages2022_2023.map((image) => (
               <ScrollTransition>
