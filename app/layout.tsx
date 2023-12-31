@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Header from "@/components/header";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Header title="UCSB TASA"></Header>
         <NavBar />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
