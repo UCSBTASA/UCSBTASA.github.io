@@ -58,26 +58,37 @@ const Events = () => {
           </h2>
 
           {upcomingEvents.length === 0 ? (
-            <div className="bg-white rounded-lg shadow p-4 mb-4 w-1/4">
-              <p className="text-lg text-gray-600">
-                No events yet, check back soon!
-              </p>
+            <div className="w-72">
+              <div className="bg-white rounded-lg shadow p-4 mb-4">
+                <p className="text-lg text-gray-600">
+                  No events yet, check back soon!
+                </p>
+              </div>
             </div>
           ) : (
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {upcomingEvents.map((event) => (
-                <div key={event.id} className="bg-white rounded-lg shadow p-4">
-                  <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                  <p className="text-gray-600 mb-2">
-                    <strong>Date:</strong> {formatDate(event.date)}
-                  </p>
-                  <p className="text-gray-600 mb-2">
-                    <strong>Time:</strong> {formatTime(event.startTime)} -{" "}
-                    {formatTime(event.endTime)} PST
-                  </p>
-                  <p className="text-gray-600">
-                    <strong>Location:</strong> {event.location}
-                  </p>
+                <div className="w-full">
+                  <div
+                    key={event.title}
+                    className="bg-white rounded-lg shadow p-4"
+                  >
+                    <h3 className="text-xl font-bold mb-2">{event.title}</h3>
+                    <p className="text-gray-600 mb-2">
+                      <strong>Date: </strong> {formatDate(event.date)}
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      <strong>Time: </strong>
+                      {event.customTime
+                        ? event.customTime
+                        : `${formatTime(event.startTime)} - ${formatTime(
+                            event.endTime
+                          )} PST`}
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Location:</strong> {event.location}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

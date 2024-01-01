@@ -1,6 +1,5 @@
 const events = [
   {
-    id: 1,
     title: "99 Rising Tabling",
     date: "2023-9-29",
     startTime: "09:00",
@@ -8,7 +7,6 @@ const events = [
     location: "HSSB Courtyard",
   },
   {
-    id: 2,
     title: "Fall Kickoff General Meeting",
     date: "2023-10-09",
     startTime: "20:00",
@@ -16,7 +14,6 @@ const events = [
     location: "Broida 1610",
   },
   {
-    id: 3,
     title: "Big Little Pickup: Virtual Speed Dating",
     date: "2023-10-11",
     startTime: "20:00",
@@ -24,7 +21,6 @@ const events = [
     location: "Zoom",
   },
   {
-    id: 4,
     title: "Big Little Pickup: In Person Speed Dating",
     date: "2023-10-13",
     startTime: "18:45",
@@ -32,7 +28,6 @@ const events = [
     location: "Lot 22 Top Flor",
   },
   {
-    id: 5,
     title: "Big Little Pickup: Beach Day",
     date: "2023-10-21",
     startTime: "14:00",
@@ -40,7 +35,6 @@ const events = [
     location: "Goleta Beach",
   },
   {
-    id: 6,
     title: "Big Little Pickup: Arts and Crafts Night",
     date: "2023-10-24",
     startTime: "21:00",
@@ -48,7 +42,6 @@ const events = [
     location: "SRB Multipurpose Room",
   },
   {
-    id: 7,
     title: "TASA x Vons Fundraiser",
     date: "2023-11-04",
     startTime: "15:00",
@@ -56,7 +49,6 @@ const events = [
     location: "Von's Chicken",
   },
   {
-    id: 8,
     title: "TASA Big Little Pickup Reveal",
     date: "2023-11-04",
     startTime: "16:00",
@@ -64,7 +56,6 @@ const events = [
     location: "Top of Lot 22",
   },
   {
-    id: 9,
     title: "Tanghulu and Trivia Night",
     date: "2023-11-05",
     startTime: "19:00",
@@ -72,7 +63,6 @@ const events = [
     location: "SRB Multipurpose Room",
   },
   {
-    id: 10,
     title: "TASA Movie Night",
     date: "2023-11-09",
     startTime: "19:00",
@@ -80,7 +70,6 @@ const events = [
     location: "TBD",
   },
   {
-    id: 11,
     title: "TASA GM 3",
     date: "2023-11-13",
     startTime: "20:00",
@@ -88,12 +77,73 @@ const events = [
     location: "Broida 1610",
   },
   {
-    id: 11,
     title: "Fam Dumpling Kit Distribution",
     date: "2023-11-18",
     startTime: "18:00",
     endTime: "19:30",
     location: "Check TASA Messenger for details and location!",
+  },
+  {
+    title: "TASA Winter Retreat",
+    date: "2024-1-13",
+    customTime: "Overnight",
+    startTime: "",
+    endTime: "",
+    location: "Frazier Park",
+  },
+  {
+    title: "TASA x UCLA TFTI",
+    date: "2024-1-13",
+    customTime: "Overnight",
+    startTime: "",
+    endTime: "",
+    location: "UCLA",
+  },
+  {
+    title: "Winter GM 1 W/ Hochaya",
+    date: "2024-1-22",
+    startTime: "20:00",
+    endTime: "22:00",
+    location: "TD-W 1701",
+  },
+  {
+    title: "Pickup Coloring Night!",
+    date: "2024-1-24",
+    customTime: "TBD",
+    startTime: "20:00",
+    endTime: "22:00",
+    location: "Arts 1353, 1356, 1349",
+  },
+  {
+    title: "Field Day!",
+    date: "2024-1-26",
+    customTime: "TBD",
+    startTime: "20:00",
+    endTime: "22:00",
+    location: "Student Health Lawn",
+  },
+  // {
+  //   title: "Online Gaming Tournament!",
+  //   date: "2024-2-2",
+  //   customTime: "TBD",
+  //   startTime: "20:00",
+  //   endTime: "22:00",
+  //   location: "Discord",
+  // },
+  // {
+  //   title: "Winter Big/Little Reveal",
+  //   date: "2024-2-4",
+  //   customTime: "TBD",
+  //   startTime: "20:00",
+  //   endTime: "22:00",
+  //   location: "Lot 22",
+  // },
+  {
+    title: "Winter GM #2",
+    date: "2024-2-5",
+    startTime: "20:00",
+    endTime: "22:00",
+    location: "TD-W 1701",
   },
 ];
 
