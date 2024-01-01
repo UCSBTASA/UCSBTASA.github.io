@@ -93,7 +93,7 @@ const events = [
   },
   {
     title: "TASA x UCLA TFTI",
-    date: "2024-1-13",
+    date: "2024-1-27",
     customTime: "Overnight",
     startTime: "",
     endTime: "",
@@ -122,22 +122,6 @@ const events = [
     endTime: "22:00",
     location: "Student Health Lawn",
   },
-  // {
-  //   title: "Online Gaming Tournament!",
-  //   date: "2024-2-2",
-  //   customTime: "TBD",
-  //   startTime: "20:00",
-  //   endTime: "22:00",
-  //   location: "Discord",
-  // },
-  // {
-  //   title: "Winter Big/Little Reveal",
-  //   date: "2024-2-4",
-  //   customTime: "TBD",
-  //   startTime: "20:00",
-  //   endTime: "22:00",
-  //   location: "Lot 22",
-  // },
   {
     title: "Winter GM #2",
     date: "2024-2-5",

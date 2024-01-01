@@ -27,7 +27,7 @@ const Main = () => {
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="my-8">
             <ScrollTransition>
-              <h2 className="text-3xl font-raleway text-gray-900 uppercase">
+              <h2 className="text-3xl font-bold font-raleway text-gray-900 uppercase">
                 Welcome to UCSB&apos;s TASA!
               </h2>
               <p className="text-raleway text-md lg:text-lg max-w-3xl mx-auto text-gray-600 mt-4 px-4">
