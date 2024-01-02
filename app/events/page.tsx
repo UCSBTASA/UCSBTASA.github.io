@@ -1,14 +1,8 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
-import Link from "next/link";
 import Iframe from "react-iframe";
-import Footer from "../_components/footer";
 
 const page = () => {
   return (
     <div>
-      <Header title="UCSB TASA"></Header>
-      <NavBar></NavBar>
       <div className="bg-gray-100">
         <div className="text-center justify-center mx-4 lg:mx-16 pt-4">
           <h1>Upcoming Events!</h1>
@@ -22,7 +16,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
