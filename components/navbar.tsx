@@ -74,6 +74,11 @@ const NavBar = () => {
                 Contact
               </li>
             </Link>
+            <Link href="/store">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
+                Store
+              </li>
+            </Link>
           </ul>
           <div
             onClick={handleNav}
@@ -136,6 +141,9 @@ const NavBar = () => {
                 </Link>
                 <Link href="/contact">
                   <li className="py-4 text-sm">Contact</li>
+                </Link>
+                <Link href="/store">
+                  <li className="py-4 text-sm">Store</li>
                 </Link>
               </ul>
               <div className="p-3">
