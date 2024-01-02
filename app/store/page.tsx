@@ -1,9 +1,4 @@
-import NavBar from "../_components/navbar";
-import Header from "../_components/header";
-import Image from "next/image";
-import Link from "next/link";
-import Footer from "../_components/footer";
-import Construction from "../_components/under_construction";
+import Construction from "@/components/under_construction";
 
 const Store = () => {
   const products = [
@@ -19,16 +14,6 @@ const Store = () => {
       imageFront: "/store/tshirtfront2023.jpg",
       imageBack: "/store/tshirtback2023.jpg",
     },
-    // {
-    //   name: "Keychain 1",
-    //   price: 9.99,
-    //   imageSrc: "/keychain1.jpg",
-    // },
-    // {
-    //   name: "Keychain 2",
-    //   price: 7.99,
-    //   imageSrc: "/keychain2.jpg",
-    // },
   ];
 
   return (
