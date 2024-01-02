@@ -142,6 +142,9 @@ const NavBar = () => {
                 <Link href="/contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>
+                <Link href="/store">
+                  <li className="py-4 text-sm">Store</li>
+                </Link>
               </ul>
               <div className="p-3">
                 <p className="uppercase tracking-widest text-[#5651e5]">
