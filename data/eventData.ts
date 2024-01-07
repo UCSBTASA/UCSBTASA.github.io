@@ -3,6 +3,7 @@ const events =
   {
     "title": "99 Rising Tabling",
     "date": "2023-9-29",
+    "customTime": "test",
     "startTime": "9:00",
     "endTime": "14:00",
     "location": "HSSB Courtyard"
