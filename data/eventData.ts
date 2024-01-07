@@ -1,27 +1,6 @@
 const events = 
 [
   {
-    "title": "",
-    "date": "",
-    "startTime": "",
-    "endTime": "",
-    "location": ""
-  },
-  {
-    "title": "",
-    "date": "",
-    "startTime": "",
-    "endTime": "",
-    "location": ""
-  },
-  {
-    "title": "",
-    "date": "",
-    "startTime": "",
-    "endTime": "",
-    "location": ""
-  },
-  {
     "title": "99 Rising Tabling",
     "date": "2023-9-29",
     "startTime": "9:00",
