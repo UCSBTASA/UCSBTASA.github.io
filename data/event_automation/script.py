@@ -21,8 +21,11 @@ for index, row in records_df.iterrows():
         "date": row["Date (YYYY-MM-DD)"],
         "startTime": row["Start Time"],
         "endTime": row["End Time"],
-        "location": row["Location"]
+        "location": row["Location"],
+        "customTime" : "",
     }
+    if event["endTime"]  == "":
+        event["customTime"] = event["startTime"]
     events.append(event)
 
 # Output the JSON data

@@ -79,11 +79,13 @@ const Events = () => {
                     </p>
                     <p className="text-gray-600 mb-2">
                       <strong>Time: </strong>
-                      {event.customTime
-                        ? event.customTime
-                        : `${formatTime(event.startTime)} - ${formatTime(
-                            event.endTime
-                          )} PST`}
+                      {event.endTime === "" ? (
+                        <span>{event.customTime}</span>
+                      ) : (
+                        `${formatTime(event.startTime)} - ${formatTime(
+                          event.endTime
+                        )} PST`
+                      )}
                     </p>
                     <p className="text-gray-600">
                       <strong>Location:</strong> {event.location}
