@@ -1,25 +1,25 @@
 const events = 
 [
   {
-    "title": "Website Meeting",
-    "date": "2024-1-27",
-    "startTime": "17:00",
-    "endTime": "19:00",
-    "location": "Home"
+    "title": "",
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "location": ""
   },
   {
-    "title": "test2",
-    "date": "2024-01-28",
-    "startTime": "22:00",
-    "endTime": "24:00",
-    "location": "LSB"
+    "title": "",
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "location": ""
   },
   {
-    "title": "test6",
-    "date": "2024-01-28",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "location": "MOON"
+    "title": "",
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "location": ""
   },
   {
     "title": "99 Rising Tabling",
