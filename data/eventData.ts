@@ -105,14 +105,6 @@ const events =
     "customTime": "Overnight"
   },
   {
-    "title": "TASA x UCLA TFTI",
-    "date": "2024-1-27",
-    "startTime": "Overnight",
-    "endTime": "",
-    "location": "UCLA",
-    "customTime": "Overnight"
-  },
-  {
     "title": "Winter GM 1 W/ Hochaya",
     "date": "2024-1-22",
     "startTime": "20:00",
@@ -135,6 +127,14 @@ const events =
     "endTime": "",
     "location": "Student Health Lawn",
     "customTime": "TBD"
+  },
+  {
+    "title": "TASA x UCLA TFTI",
+    "date": "2024-1-27",
+    "startTime": "Overnight",
+    "endTime": "",
+    "location": "UCLA",
+    "customTime": "Overnight"
   },
   {
     "title": "Winter GM #2",
