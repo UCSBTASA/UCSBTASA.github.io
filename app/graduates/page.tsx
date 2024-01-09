@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { getAlumniSheet } from "../../libs/sheets";
+import { getGoogleSheetsData } from "@/server/gsheets";
 
 interface Alumni {
   name: string;
@@ -7,24 +7,32 @@ interface Alumni {
   bio: string;
   linkedin: string;
 }
-export default function IndexPage({ alumni }: { alumni: Alumni[] }) {
+export default async function IndexPage() {
+  const alumniData = await getGoogleSheetsData("alumni");
+  const alumni = alumniData
+    ?.map(
+      (alum: any[]) =>
+        ({
+          name: alum[0],
+          year: alum[1],
+          bio: alum[2],
+          linkedin: alum[3],
+        } as Alumni)
+    )
+    .slice(1, alumniData.length); // remove the header
+
   return (
     <>
-      <Head>
-        <title>Title - FrasNym</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      {alumni[0].name}
+      <div>
+        {alumni?.map((post: Alumni) => (
+          <div key={post.name}>
+            <h1>{post.name}</h1>
+            <p>{post.year}</p>
+            <p>{post.bio}</p>
+            <p>{post.linkedin}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
-}
-
-export async function getStaticProps(context) {
-  const alumni = await getAlumniSheet();
-  return {
-    props: {
-      alumni: alumni.slice(1, alumni.length), // remove sheet header
-    },
-    revalidate: 1, // In seconds
-  };
 }
