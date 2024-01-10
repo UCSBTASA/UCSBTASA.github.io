@@ -2,7 +2,7 @@ import subprocess
 import shutil
 
 # Run the Python script and capture its output
-python_script = "script.py"
+python_script = "script_2.py"
 result = subprocess.run(["python", python_script], capture_output=True, text=True)
 
 # Check if the Python script ran successfully
