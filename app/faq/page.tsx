@@ -4,22 +4,20 @@ import faqData from "@/data/faqData";
 const faqPage = () => {
     return(
         <div>
-            <div className="items-center justify-center min-h-screen">
-                <div className="px-4 py-8 text-center bg-gray-100">
-                    <h2 className="text-3xl font-bold text-gray-900 uppercase">
+            <div className="px-4 py-8 bg-gray-100">
+                <h2 className="text-3xl text-center font-bold text-gray-900 uppercase">
                     Frequently Asked Questions
-                    </h2>
-                    {faqData.map((faqs)=>(
-                        <div className="flex flex-col items-center justify-center">
-                            <h2 className="text-black text-2xl mt-6 font-semibold">
-                                {faqs.question}
-                            </h2>
-                            <p className="text-md text-[#8888888] mt-3 leading-20">
-                                {faqs.answer}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                </h2>
+                {faqData.map((faqs)=>(
+                    <div className="flex flex-col lg:px-55 md:px-32 sm:px-8">
+                        <h2 className="text-black text-xl mt-6 mb-2 font-medium">
+                            Q: {faqs.question}
+                        </h2>
+                        <p>
+                            A: {faqs.answer}
+                        </p>
+                    </div>
+                ))}
             </div>
         </div>
     );
