@@ -9,3 +9,6 @@ out/
 .next/
 .swc/
 node_modules/
+
+# Ignore environment variables
+.env.local
