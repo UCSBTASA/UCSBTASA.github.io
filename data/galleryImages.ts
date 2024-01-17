@@ -84,6 +84,12 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/fall_fundraiser.jpeg",
     link: "https://photos.app.goo.gl/7P7S6eRfPcPuVryW7",
   },
+  {
+    id: 14,
+    title: "Winter Retreat!",
+    imageUrl: "/gallery_photos/2023-2024/winter_retreat.jpeg",
+    link: "https://photos.app.goo.gl/i4xEX91w2PWWcz2i6"
+  },
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {
