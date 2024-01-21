@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ScrollTransition from "./scroll-transition";
 import { FaInstagram, FaLink } from "react-icons/fa";
+import FakeCarousel from "@/components/fakecarousel"
 
 const Main = () => {
   return (
@@ -26,6 +27,7 @@ const Main = () => {
       <div className="w-full text-center bg-gray-100 py-8">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="my-8">
+            <div>
             <ScrollTransition>
               <h2 className="text-3xl font-bold font-raleway text-gray-900 uppercase">
                 Welcome to UCSB&apos;s TASA!
@@ -68,7 +70,9 @@ const Main = () => {
                   <FaLink className="text-4xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
                 </a>
               </div>
+            <FakeCarousel/>
             </ScrollTransition>
+            </div>
           </div>
         </div>
       </div>
