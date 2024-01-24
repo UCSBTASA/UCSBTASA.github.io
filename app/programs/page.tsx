@@ -30,22 +30,23 @@ const Programs = () => {
     <div>
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 py-8">
-          <h1 className="text-2xl font-bold mb-4">Our Programs</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4">Our Programs</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programsData.map((program) => (
               <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
-                <div className="mb-2">
-                  <Link href={`/programs/${program.slug}`}>
-                    <Image
-                      src={program.image}
-                      alt={program.title}
-                      width={1920}
-                      height={1080}
-                      priority={true}
-                    />
-                  </Link>
+                <div className="relative pb-[60%]">
+                  <Image
+                    src={program.image}
+                    alt={program.title}
+                    fill
+                    objectFit="cover"
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    priority={true}
+                  />
                 </div>
-                <h2 className="text-lg font-semibold mb-2">{program.title}</h2>
+                <h2 className="text-xl font-semibold mt-2 mb-2">
+                  {program.title}
+                </h2>
                 <p className="text-gray-600">{program.description}</p>
               </div>
             ))}
