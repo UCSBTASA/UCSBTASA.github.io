@@ -91,7 +91,7 @@ const NavBar = () => {
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
                 {navLinks.map((link) => (
-                  <li key={link.href} className="py-4 text-sm">
+                  <li key={link.href} className="py-4 text-md">
                     <Link href={link.href}>{link.name}</Link>
                   </li>
                 ))}
