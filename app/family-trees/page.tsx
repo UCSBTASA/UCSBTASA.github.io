@@ -16,7 +16,7 @@ const FamilyTrees = () => {
     <div>
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 py-8">
-          <h1 className="text-2xl text-center font-bold mb-4">TASA's FAMS!</h1>
+          <h1 className="text-4xl text-center font-bold mb-8">TASA's FAMS!</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {familyTrees.map((famTrees) => (
               <ScrollTransition>
