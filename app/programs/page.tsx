@@ -35,14 +35,16 @@ const Programs = () => {
             {programsData.map((program) => (
               <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
                 <div className="relative pb-[60%]">
-                  <Image
-                    src={program.image}
-                    alt={program.title}
-                    fill
-                    objectFit="cover"
-                    className="absolute top-0 left-0 w-full h-full object-cover"
-                    priority={true}
-                  />
+                  <Link href={`/programs/${program.slug}`}>
+                    <Image
+                      src={program.image}
+                      alt={program.title}
+                      fill
+                      objectFit="cover"
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      priority={true}
+                    />{" "}
+                  </Link>
                 </div>
                 <h2 className="text-xl font-semibold mt-2 mb-2">
                   {program.title}
