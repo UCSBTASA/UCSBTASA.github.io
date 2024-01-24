@@ -43,17 +43,17 @@ const Interns = () => {
             </p>
             <br />
             <p className="text-gray-700 mb-4">
-              Intern applications can be found here! Applications are due by
-              <strong> 11:59 PM on Sunday, January 14th, 2024.</strong>
+              Intern applications closed for 2024! Please check back next year!
+              {/* <strong> 11:59 PM on Sunday, January 14th, 2024.</strong> */}
             </p>
-            <Link
+            {/* <Link
               href="https://forms.gle/TcsDn8EGMSZ9KhSt8"
               className="inline-block bg-blue-400 text-white font-bold mt-2 py-2 px-4 rounded hover:bg-blue-300 transition-colors duration-300 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
             >
               Apply Now!
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-wrap justify-center items-center md:w-[40%] md:pl-4 mt-4 b">
             <span className="table">
