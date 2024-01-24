@@ -43,7 +43,7 @@ const Programs = () => {
                       objectFit="cover"
                       className="absolute top-0 left-0 w-full h-full object-cover"
                       priority={true}
-                    />{" "}
+                    />
                   </Link>
                 </div>
                 <h2 className="text-xl font-semibold mt-2 mb-2">
