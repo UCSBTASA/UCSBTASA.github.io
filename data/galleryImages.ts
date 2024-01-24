@@ -95,6 +95,12 @@ export const galleryImages2023_2024: GalleryImage[] = [
     title: "Winter Speed Dating!",
     imageUrl: "/gallery_photos/2023-2024/winter_speed_dating.jpeg",
     link: "https://photos.app.goo.gl/PfHUNYoUADvN1FYi9"
+  },
+  {
+    id: 16,
+    title: "Winter GM #1!",
+    imageUrl: "/gallery_photos/2023-2024/winter_gm_1.jpeg",
+    link: "https://photos.app.goo.gl/6N8GoeynJefjaM9H6"
   }
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
