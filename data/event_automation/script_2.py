@@ -40,7 +40,6 @@ for index, row in records_df.iterrows():
     }
     # Changing the date to YYYY-MM-DD
     event["date"] = changeDate(event["date"])
-        
     # Check cases in which customTime is necessary
     if (len(event["time"]) > 0):
         if not event["time"][0].isnumeric():
@@ -48,6 +47,7 @@ for index, row in records_df.iterrows():
             if event["customTime"].lower() == "tbd":
                 event["customTime"] = event["customTime"].upper()
         else:
+            # print(event["time"])
             event["time"] = event["time"].upper()
             
     # Check if can/should be added to event list
