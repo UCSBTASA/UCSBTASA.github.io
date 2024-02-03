@@ -70,7 +70,6 @@ const Main = () => {
                   <FaLink className="text-4xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
                 </a>
               </div>
-            <FakeCarousel/>
             </ScrollTransition>
             </div>
           </div>
