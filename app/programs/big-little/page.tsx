@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollTransition from "@/components/scroll-transition";
 import events from "@/data/bigLittleEvents";
-import pickupPhotos from "@/data/pickupPhotos";
+import pickupPhotos from "@/data/photoLists/pickupPhotos";
 
 const BigLittle = () => {
   return (

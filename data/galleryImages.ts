@@ -84,6 +84,42 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/fall_fundraiser.jpeg",
     link: "https://photos.app.goo.gl/7P7S6eRfPcPuVryW7",
   },
+  {
+    id: 14,
+    title: "Winter Retreat!",
+    imageUrl: "/gallery_photos/2023-2024/winter_retreat.jpeg",
+    link: "https://photos.app.goo.gl/i4xEX91w2PWWcz2i6"
+  },
+  {
+    id: 15,
+    title: "Winter Speed Dating!",
+    imageUrl: "/gallery_photos/2023-2024/winter_speed_dating.jpeg",
+    link: "https://photos.app.goo.gl/PfHUNYoUADvN1FYi9"
+  },
+  {
+    id: 16,
+    title: "Winter GM #1!",
+    imageUrl: "/gallery_photos/2023-2024/winter_gm_1.jpeg",
+    link: "https://photos.app.goo.gl/6N8GoeynJefjaM9H6"
+  },
+  {
+    id: 17,
+    title: "Sketchy Coloring Night",
+    imageUrl: "/gallery_photos/2023-2024/sketchy_coloring_night.jpeg",
+    link: "https://photos.app.goo.gl/qCWBAsrpXai6cMmv7",
+  },
+  {
+    id: 18,
+    title: "Field Day",
+    imageUrl: "/gallery_photos/2023-2024/field_day.jpeg",
+    link: "https://photos.app.goo.gl/DCgoAVAXPZtocCGt8",
+  },
+  {
+    id: 19,
+    title: "TFTI",
+    imageUrl: "/gallery_photos/2023-2024/tfti.jpg",
+    link: "https://photos.app.goo.gl/dPNqZx2sY4aTpEMz5"
+  }
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {

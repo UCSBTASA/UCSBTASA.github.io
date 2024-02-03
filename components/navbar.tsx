@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import { useState, useEffect, useRef } from "react";
+import navLinks from "@/data/navbar";
 
 const NavBar = () => {
   const [nav, setNav] = useState(true);
@@ -39,46 +40,14 @@ const NavBar = () => {
       <div className="flex justify-center items-center w-full lg:h-full px-2 2xl:px-16 h-[0px] p-0 m-0">
         <div className="h-6 overflow-y-hidden">
           <ul className="hidden lg:flex">
-            <Link href="/">
-              <li className="text-black ml-10 text-sm uppercase hover:border-pink hover:border-b-4">
-                Home
+            {navLinks.map((link) => (
+              <li
+                key={link.href}
+                className="text-black ml-10 text-sm uppercase hover:border-pink hover:border-b-4"
+              >
+                <Link href={link.href}>{link.name}</Link>
               </li>
-            </Link>
-            <Link href="/programs">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Programs
-              </li>
-            </Link>
-            <Link href="/staff">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Staff
-              </li>
-            </Link>
-            <Link href="/events">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Events
-              </li>
-            </Link>
-            <Link href="/gallery">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Gallery
-              </li>
-            </Link>
-            <Link href="/family-trees">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Family Trees
-              </li>
-            </Link>
-            <Link href="/contact">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Contact
-              </li>
-            </Link>
-            <Link href="/store">
-              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
-                Store
-              </li>
-            </Link>
+            ))}
           </ul>
           <div
             onClick={handleNav}
@@ -121,30 +90,11 @@ const NavBar = () => {
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
-                <Link href="/">
-                  <li className="py-4 text-sm">Home</li>
-                </Link>
-                <Link href="/programs">
-                  <li className="py-4 text-sm">Programs</li>
-                </Link>
-                <Link href="/staff">
-                  <li className="py-4 text-sm">Staff</li>
-                </Link>
-                <Link href="/events">
-                  <li className="py-4 text-sm">Events</li>
-                </Link>
-                <Link href="/gallery">
-                  <li className="py-4 text-sm">Gallery</li>
-                </Link>
-                <Link href="/family-trees">
-                  <li className="py-4 text-sm">Family Trees</li>
-                </Link>
-                <Link href="/contact">
-                  <li className="py-4 text-sm">Contact</li>
-                </Link>
-                <Link href="/store">
-                  <li className="py-4 text-sm">Store</li>
-                </Link>
+                {navLinks.map((link) => (
+                  <li key={link.href} className="py-4 text-md">
+                    <Link href={link.href}>{link.name}</Link>
+                  </li>
+                ))}
               </ul>
               <div className="p-3">
                 <p className="uppercase tracking-widest text-[#5651e5]">
@@ -175,18 +125,5 @@ const NavBar = () => {
     </div>
   );
 };
-
-interface DropdownItemProps {
-  text: string;
-  link: string;
-}
-
-function DropdownItem(props: DropdownItemProps) {
-  return (
-    <Link href={props.link}>
-      <p className="text-sm uppercase m-1 hover:text-blue-500">{props.text}</p>
-    </Link>
-  );
-}
 
 export default NavBar;
