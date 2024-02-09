@@ -1,3 +1,4 @@
+import FakeCarousel from "@/components/fakecarousel"
 import {
   galleryImages2023_2024,
   galleryImages2022_2023,
@@ -14,8 +15,9 @@ const GalleryPage = () => {
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 pt-4 pb-8">
           <h2 className="text-4xl mt-4 font-semibold text-center">
-            Our Favorite Memories
+            Our Favorite Memories!
           </h2>
+          <FakeCarousel/>
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2023-2024"
