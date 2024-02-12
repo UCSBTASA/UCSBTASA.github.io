@@ -1,0 +1,9 @@
+{
+    "crons": [
+      {
+        "command": "/usr/bin/python3 /data/event_automation/automate.py",
+        "schedule": "* * * * *"
+      }
+    ]
+  }
+  
