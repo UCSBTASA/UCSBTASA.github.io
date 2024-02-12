@@ -2,7 +2,7 @@
     "crons": [
       {
         "path": "/data/event_automation/automate.py",
-        "schedule": "* * * * *"
+        "schedule": "* 5 * * *"
       }
     ]
   }
