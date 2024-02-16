@@ -3,6 +3,8 @@ import ScrollTransition from "@/components/scroll-transition";
 import { getGoogleSheetsData } from "@/server/gsheets";
 import Image from "next/image";
 import { FaInstagram, FaLink } from "react-icons/fa";
+import Link from "next/link";
+import graduatePhotos from "@/data/graduates2020Photos";
 
 interface Alumni {
     name: string;
@@ -47,31 +49,23 @@ interface Alumni {
           <div className="items-center justify-center min-h-screen">
             <div className="px-4 py-8 text-center bg-gray-100">
               <h2 className="text-3xl font-bold text-gray-900 uppercase">
-                Meet the Alumni!
+                MEET THE ALUMNI!
               </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
-                    {alumni?.map((post: Alumni) => (
-                      <div key={post.name} className="flex flex-col items-center justify-center">
-                        <ScrollTransition>
-                          <h1 className="text-black text-2xl mt-6 font-semibold">
-                            {post.name}
-                          </h1>
-                          <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
-                            <strong>Year: </strong>
-                            {post.year}
-                          </p>
-                          <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
-                            <strong>Bio: </strong>
-                            {post.bio}
-                          </p>
-                          <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
-                            <strong>LinkedIn: </strong>
-                            {post.linkedin}
-                          </p>
-                        </ScrollTransition>
-                    </div>
-                    ))}                  
-                </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-4">
+              {graduatePhotos.map((photo, index) => (
+            
+                  <div className="group relative cursor-pointer">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={400}
+                      height={400}
+                      className="transition transform group-hover:scale-105"
+                    />
+                  </div>
+                
+              ))}
+            </div>
             </div>
           </div>
         </div>
