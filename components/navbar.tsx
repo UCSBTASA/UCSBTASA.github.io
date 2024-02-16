@@ -84,7 +84,11 @@ const NavBar = () => {
                 Alumni
               </li>
             </Link>
-           
+            <Link href="/graduates2020">
+              <li className="ml-10 text-sm uppercase text-black hover:border-pink hover:border-b-4">
+                2020
+              </li>
+            </Link>
           </ul>
           <div
             onClick={handleNav}
@@ -154,7 +158,9 @@ const NavBar = () => {
                 <Link href="/graduates">
                   <li className="py-4 text-sm">Alumni</li>
                 </Link>
-                
+                <Link href="/graduates2020">
+                  <li className="py-4 text-sm">2020</li>
+                </Link>
               </ul>
               <div className="p-3">
                 <p className="uppercase tracking-widest text-[#5651e5]">
