@@ -1,10 +1,8 @@
-// api/pullEvents.ts
-
-import { VercelRequest, VercelResponse } from "@vercel/node";
+// import { VercelRequest, VercelResponse } from "@vercel/node";
 import { execSync } from "child_process";
 import fs from "fs";
 
-export async function GET(req: VercelRequest, res: VercelResponse) {
+export async function GET(req: Request, res: Response) {
   // Define the path to script.py
   const scriptPath = "app/api/hello/script.py";
 
@@ -19,5 +17,7 @@ export async function GET(req: VercelRequest, res: VercelResponse) {
     tsFilePath,
     `const events = ${pythonOutput.trim()};\n\nexport default events;\n`
   );
+
+  // Sending a response with the Vercel region
   return new Response(`Hello from ${process.env.VERCEL_REGION}`);
 }
