@@ -106,6 +106,15 @@ const events = [
     "location": "Online",
     "customTime": "",
     "ready": "Yes"
+  },
+  {
+    "title": "testing",
+    "day of week": "monday",
+    "date": "2024-03-10",
+    "time": "1-5 AM ",
+    "location": "Online",
+    "customTime": "",
+    "ready": "Yes"
   }
 ];
 

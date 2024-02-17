@@ -19,4 +19,5 @@ export async function GET(req: VercelRequest, res: VercelResponse) {
     tsFilePath,
     `const events = ${pythonOutput.trim()};\n\nexport default events;\n`
   );
+  return new Response(`Hello from ${process.env.VERCEL_REGION}`);
 }
