@@ -98,7 +98,7 @@ const events =
     "location": "Girvetz 1116",
     "customTime": "",
     "ready": "Yes"
-  }
+  },
 ]
 ;
 

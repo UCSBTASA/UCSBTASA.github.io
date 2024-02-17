@@ -13,10 +13,8 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/api/pullEvents', methods=['GET'])
 def pull_events():
-    print('testing')
     # Define the path to script_2.py
-    script_path = "script_2.py"
-    print(script_path)
+    script_path = "script.py"
 
     # Run the Python script and capture its output
     result = subprocess.run(["python", script_path],
