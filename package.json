@@ -13,6 +13,7 @@
     "@ericz1803/react-google-calendar": "^4.3.1",
     "@types/react-dom": "18.2.7",
     "@vercel/analytics": "^1.1.2",
+    "@vercel/node": "^3.0.19",
     "@vercel/speed-insights": "^1.0.2",
     "autoprefixer": "10.4.14",
     "axios": "^1.6.7",

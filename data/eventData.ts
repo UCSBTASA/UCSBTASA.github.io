@@ -1,5 +1,4 @@
-const events = 
-[
+const events = [
   {
     "title": "Speed Dating",
     "day of week": "Friday",
@@ -99,7 +98,15 @@ const events =
     "customTime": "",
     "ready": "Yes"
   },
-]
-;
+  {
+    "title": "winbert",
+    "day of week": "sunday",
+    "date": "2024-03-09",
+    "time": "1-5 AM ",
+    "location": "Online",
+    "customTime": "",
+    "ready": "Yes"
+  }
+];
 
 export default events;
