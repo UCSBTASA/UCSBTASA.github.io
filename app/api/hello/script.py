@@ -1,5 +1,5 @@
-import pandas as pd
-import gspread 
+import _pandas as pd
+import _gspread 
 import json
 import datetime
 
