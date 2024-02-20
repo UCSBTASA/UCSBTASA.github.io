@@ -132,6 +132,18 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/nsu_tasa.jpeg",
     link: "https://photos.app.goo.gl/7MigSwjgPxgro9kx8",
   },
+  {
+    id: 22,
+    title: "Hot pot Night!",
+    imageUrl: "/gallery_photos/2023-2024/hot_pot.jpeg",
+    link: "https://photos.app.goo.gl/6SVKKhPegePED6xJ6",
+  },
+  {
+    id: 23,
+    title: "Winter Gm #2",
+    imageUrl: "/gallery_photos/2023-2024/winter_gm_2.jpeg",
+    link: "https://photos.app.goo.gl/FHenfoTWs6oRUzr76",
+  },
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {
