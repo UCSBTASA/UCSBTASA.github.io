@@ -13,21 +13,51 @@ interface Alumni {
     linkedin: string;
   }
   export default async function IndexPage() {
-    const alumniData = await getGoogleSheetsData("alumni");
-    const alumni = alumniData
-      ?.map(
-        (alum: any[]) =>
-          ({
-            name: alum[0],
-            year: alum[1],
-            bio: alum[2],
-            linkedin: alum[3],
-          } as Alumni)
-      )
-      .slice(1, alumniData.length); // remove the header
+    const graduatesData = [
+      {
+        title: "Senior Profiles",
+        image: "/programs/pickup.JPG",
+        description:
+          "Click on any senior's photo below to see what they have to say about TASA and what others have to say about them!",
+        slug: "big-little",
+      },
+      {
+        title: "Post-Grad Plans",
+        image: "/programs/intern_program_cover.jpg",
+        description:
+          "Check out our graduates' plans for after graduation!",
+        slug: "interns",
+      },
+      
+    ];
+    
   
     return (
         <div>
+            <div className="bg-gray-100">
+        <div className="mx-4 lg:mx-16 py-8">
+          <h1 className="text-2xl font-bold mb-4">Our Programs</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {graduatesData.map((program) => (
+              <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
+                <div className="mb-2">
+                  <Link href={`/programs/${program.slug}`}>
+                    <Image
+                      src={program.image}
+                      alt={program.title}
+                      width={1920}
+                      height={1080}
+                      priority={true}
+                    />
+                  </Link>
+                </div>
+                <h2 className="text-lg font-semibold mb-2">{program.title}</h2>
+                <p className="text-gray-600">{program.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
             <div className="relative h-80 lg:h-[85vh]">
                 <Image
                     src="/graduates2020_photos/background.png"
