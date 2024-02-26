@@ -136,18 +136,12 @@ export const galleryImages2023_2024: GalleryImage[] = [
   },
   {
     id: 22,
-<<<<<<< HEAD
     title: "HOT POT NIGHT",
     imageUrl: "/gallery_photos/2023-2024/hot_pot_night.jpeg",
-=======
-    title: "Hot pot Night!",
-    imageUrl: "/gallery_photos/2023-2024/hot_pot.jpeg",
->>>>>>> 32ff7704084d9fb9a9a03067fa32d0cd0b7435c4
     link: "https://photos.app.goo.gl/6SVKKhPegePED6xJ6",
   },
   {
     id: 23,
-<<<<<<< HEAD
     title: "Winter GM #2",
     imageUrl: "/gallery_photos/2023-2024/winter_gm_2.jpeg",
     link: "https://photos.app.goo.gl/FHenfoTWs6oRUzr76",
@@ -171,12 +165,6 @@ export const galleryImages2023_2024: GalleryImage[] = [
   //   imageUrl: "/gallery_photos/2023-2024/",
   //   link: , 
   // }
-=======
-    title: "Winter Gm #2",
-    imageUrl: "/gallery_photos/2023-2024/winter_gm_2.jpeg",
-    link: "https://photos.app.goo.gl/FHenfoTWs6oRUzr76",
-  },
->>>>>>> 32ff7704084d9fb9a9a03067fa32d0cd0b7435c4
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {
