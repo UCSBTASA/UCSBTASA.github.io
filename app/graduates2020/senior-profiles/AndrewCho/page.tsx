@@ -205,7 +205,7 @@ My boi Andrew. First off, I’m so glad I met you at dumpling night. To be hones
                       alt={photo.title}
                       width={400}
                       height={400}
-                      className="transition transform justify-center group-hover:scale-105"
+                      className="transition transform group-hover:scale-105"
                     />
                   </div>
                
