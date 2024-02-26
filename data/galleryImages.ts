@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export interface GalleryImage {
   id: number;
   title: string;
@@ -132,6 +134,37 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/nsu_tasa.jpeg",
     link: "https://photos.app.goo.gl/7MigSwjgPxgro9kx8",
   },
+  {
+    id: 22,
+    title: "HOT POT NIGHT",
+    imageUrl: "/gallery_photos/2023-2024/hot_pot_night.jpeg",
+    link: "https://photos.app.goo.gl/6SVKKhPegePED6xJ6",
+  },
+  {
+    id: 23,
+    title: "Winter GM #2",
+    imageUrl: "/gallery_photos/2023-2024/winter_gm_2.jpeg",
+    link: "https://photos.app.goo.gl/FHenfoTWs6oRUzr76",
+  },
+
+  {
+    id: 24,
+    title: "Karaoke Night!",
+    imageUrl: "/gallery_photos/2023-2024/karaoke_night.jpeg",
+    link: "https://photos.app.goo.gl/GwiJZY3sFeEPqwjV7",
+  },
+  {
+    id: 25,
+    title: "TK^2M",
+    imageUrl: "/gallery_photos/2023-2024/tk^2m.jpg",
+    link: "https://photos.app.goo.gl/RjqoZoHP7qsb6LkB9",
+  }
+  // {
+  //   id: ,
+  //   title: ,
+  //   imageUrl: "/gallery_photos/2023-2024/",
+  //   link: , 
+  // }
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {
