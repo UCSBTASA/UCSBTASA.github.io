@@ -5,19 +5,22 @@ interface GalleryImage {
   title: string;
   imageUrl: string;
   link: string;
+  quarter: string;
 }
 
 interface GalleryYearSectionProps {
   images: GalleryImage[];
   year: string;
+  quarter: string;
 }
 
-const GalleryYearSection = ({ images, year }: GalleryYearSectionProps) => {
+const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) => {
+  const filteredImages = images.filter(image => image.quarter === quarter);
   return (
     <>
       <h3 className="text-lg font-semibold my-4">{year}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {images.map((image) => (
+        {filteredImages.map((image) => (
           <ScrollTransition key={image.id}>
             <div className="relative hover:shadow-xl transition duration-300">
               <a
