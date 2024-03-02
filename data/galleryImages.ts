@@ -139,7 +139,21 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/tfti.jpg",
     link: "https://photos.app.goo.gl/dPNqZx2sY4aTpEMz5",
     quarter: "winter",
-  }
+  },
+  {
+    id: 20,
+    title: "Mahjong Mocktails",
+    imageUrl: "/gallery_photos/2023-2024/mahjong_mocktails.jpeg",
+    link: "https://photos.app.goo.gl/a41M1Rz5WGxSYEWE9",
+    quarter: "winter"
+  },
+  {
+    id: 21,
+    title: "NSU x TASA",
+    imageUrl: "/gallery_photos/2023-2024/nsu_tasa.jpeg",
+    link: "https://photos.app.goo.gl/7MigSwjgPxgro9kx8",
+    quarter: "winter"
+  },
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {
