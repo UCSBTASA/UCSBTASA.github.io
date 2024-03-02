@@ -155,6 +155,7 @@ export const galleryImages2023_2024: GalleryImage[] = [
     quarter: "winter"
   },
 ];
+
 export const galleryImages2022_2023: GalleryImage[] = [
   {
     id: 1,

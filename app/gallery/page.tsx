@@ -77,24 +77,24 @@ const GalleryPage: React.FC = () => {
             2023-2024
           </h2>
             <div className="bg-white p-8 rounded-lg">
-                <h2 className="text-2xl mt-4 font-semibold text-center">Fall</h2>
+                <h2 className="text-2xl mt-4 font-semibold text-center">Winter</h2>
                 <button onClick={openModal}>Open</button>
                 <PopUp isOpen={isModalOpen} onClose={closeModal}>
                 <GalleryYearSection
                   images={galleryImages2023_2024.slice().reverse()}
                   year="2022-2023"
-                  quarter="fall"
+                  quarter="winter"
                   />
                 </PopUp>
               </div>
               <div className="bg-white p-8 rounded-lg">
-                <h2 className="text-2xl mt-4 font-semibold text-center">Winter</h2>
+                <h2 className="text-2xl mt-4 font-semibold text-center">Fall</h2>
                 <button onClick={openModal1}>Open</button>
                 <PopUp isOpen={isModalOpen1} onClose={closeModal1}>
                 <GalleryYearSection
                   images={galleryImages2023_2024.slice().reverse()}
                   year="2022-2023"
-                  quarter= "winter"
+                  quarter= "fall"
                   />
                 </PopUp>
               </div>
