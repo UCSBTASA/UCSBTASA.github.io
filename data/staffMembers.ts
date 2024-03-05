@@ -259,8 +259,8 @@ const staffMembers = [
     hometown: "San Jose/Beijing",
     favMovie: "Interstellar",
     funFact: "I originally wanted to be a pastry chef",
-    imageUrl: "/intern_photos/yuehan.JPG",
-    imageUrlBack: "/intern_photos/yuehan_flip.JPG",
+    imageUrl: "/intern_photos/yuehan.jpg",
+    imageUrlBack: "/intern_photos/yuehan_flip.jpg",
   },
   {
     id: 24,
@@ -270,8 +270,8 @@ const staffMembers = [
     major: "Psychological and Brain Sciences",
     favMovie:"Anyone But You",
     funFact: "One of my eyes is farsighted and the other is nearsighted",
-    imageUrl: "/intern_photos/agnes.JPG",
-    imageUrlBack: "/intern_photos/agnes_flip.JPG",
+    imageUrl: "/intern_photos/agnes.jpg",
+    imageUrlBack: "/intern_photos/agnes_flip.jpg",
   },
   {
     id: 25,
@@ -281,8 +281,8 @@ const staffMembers = [
     major: "Computer Science",
     favMovie:"Ratatouille",
     funFact: "I love to eat plain… rice and soy sauce on top",
-    imageUrl: "/intern_photos/jasmine.JPG",
-    imageUrlBack: "/intern_photos/jasmine_flip.JPG",
+    imageUrl: "/intern_photos/jasmine.jpg",
+    imageUrlBack: "/intern_photos/jasmine_flip.jpg",
   },
   {
     id: 26,
@@ -292,8 +292,8 @@ const staffMembers = [
     major: "Financial Math and Statistics ",
     favMovie:"Hunger Games: Catching Fire",
     funFact:"I used to do competitive gymnastics!",
-    imageUrl: "/intern_photos/lily.JPG",
-    imageUrlBack: "/intern_photos/lily_flip.JPG",
+    imageUrl: "/intern_photos/lily.jpg",
+    imageUrlBack: "/intern_photos/lily_flip.jpg",
   },
   {
     id: 27,
@@ -303,8 +303,8 @@ const staffMembers = [
     hometown: "San Jose, CA",
     favMovie:"La La Land",
     funFact: "I'm still scared of the dark :(",
-    imageUrl: "/intern_photos/megan.JPG",
-    imageUrlBack: "/intern_photos/megan_flip.JPG",
+    imageUrl: "/intern_photos/megan.jpg",
+    imageUrlBack: "/intern_photos/megan_flip.jpg",
   },
   {
     id: 28,
@@ -314,8 +314,8 @@ const staffMembers = [
     hometown: "Fremont",
     favMovie: "The Shawshank Redemption",
     funFact: "I can solve a Rubik's cube really fast!",
-    imageUrl: "/intern_photos/sean.JPG",
-    imageUrlBack: "/intern_photos/sean_flip.JPG",
+    imageUrl: "/intern_photos/sean.jpg",
+    imageUrlBack: "/intern_photos/sean_flip.jpg",
   },
   {
     id: 29,
@@ -326,8 +326,8 @@ const staffMembers = [
     hometown: "La Habra, CA",
     funFact:
       "my aunt was the mom in mulan",
-    imageUrl: "/intern_photos/nathan.JPG",
-    imageUrlBack: "/intern_photos/nathan_flip.JPG",
+    imageUrl: "/intern_photos/nathan.jpg",
+    imageUrlBack: "/intern_photos/nathan_flip.jpg",
   },
   {
     id: 30,
@@ -337,8 +337,8 @@ const staffMembers = [
     favMovie:"La La Land",
     major: "Statistics and Data Science",
     funFact: "I don't know how to parallel park…",
-    imageUrl: "/intern_photos/maxwell.JPG",
-    imageUrlBack: "/intern_photos/maxwell_flip.JPG",
+    imageUrl: "/intern_photos/maxwell.jpg",
+    imageUrlBack: "/intern_photos/maxwell_flip.jpg",
   },
 ];
 
