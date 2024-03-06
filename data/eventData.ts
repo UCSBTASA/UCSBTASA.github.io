@@ -191,5 +191,21 @@ const events = [
     location: "Girvetz 1116",
     customTime: "",
   },
+  {
+    title: "Capture the Moment Intern Event",
+    date: "2024-3-3",
+    startTime: "14:00",
+    endTime: "17:00",
+    location: "Chem Lawn",
+    customTime: "",
+  },
+  {
+    title: "TASA Talks",
+    date: "2024-3-7",
+    startTime: "18:00",
+    endTime: "19:00",
+    location: "HSSB 1174",
+    customTime: "",
+  },
 ];
 export default events;
