@@ -267,7 +267,7 @@ const staffMembers = [
     name: "Agnes Kou",
     hometown:"Chino Hills, CA",
     position: "Intern",
-    major: "Psychological and Brain Sciences",
+    major: "Biopsychology",
     favMovie:"Anyone But You",
     funFact: "One of my eyes is farsighted and the other is nearsighted",
     imageUrl: "/intern_photos/agnes.jpg",
