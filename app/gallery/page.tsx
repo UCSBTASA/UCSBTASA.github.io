@@ -13,9 +13,7 @@ const GalleryPage = () => {
     <div className="gallery-container ">
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 pt-4 pb-8">
-          <h2 className="text-4xl mt-4 font-semibold text-center">
-            Our Favorite Memories
-          </h2>
+          <h2 className="text-5xl mt-4 font-semibold">OUR FAVORITE MEMORIES</h2>
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2023-2024"
