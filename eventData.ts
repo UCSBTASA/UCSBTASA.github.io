@@ -110,7 +110,7 @@
   {
     "title": "testing",
     "day of week": "monday",
-    "date": "2024-03-10",
+    "date": "2024-03-30",
     "time": "1-5 AM ",
     "location": "Online",
     "customTime": "",
