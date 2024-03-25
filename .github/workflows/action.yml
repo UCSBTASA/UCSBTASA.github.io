@@ -2,13 +2,13 @@ name: Automatic Event Date Updater
 
 on:
   schedule:
-    - cron: "0 0 * * *"  
+    - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Run tests on branch'
+        description: "Run tests on branch"
         required: true
-        default: 'main'
+        default: "main"
 
 jobs:
   build:
@@ -28,9 +28,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install bs4
+          pip install subprocess
+          pip install shutil
+          pip install gspread
+          pip install pandas
+          pip install json
+          pip install datetime
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      
+
       - name: Execute Python script
         run: |
           python @/data/event_automation/automate.py
