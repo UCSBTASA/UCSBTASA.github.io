@@ -34,4 +34,4 @@ jobs:
 
       - name: Execute Python script
         run: |
-          python @/data/event_automation/automate.py
+          python /data/event_automation/automate.py
