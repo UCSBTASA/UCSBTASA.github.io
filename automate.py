@@ -4,10 +4,8 @@ import shutil
 # Run the Python script and capture its output
 python_script = "script_2.py"
 result = subprocess.run(["python", python_script], capture_output=True, text=True)
-print("past subprocess")
 # Check if the Python script ran successfully
 if result.returncode == 0:
-    print('first if')
     # Extract the output from the result
     python_output = result.stdout
 
