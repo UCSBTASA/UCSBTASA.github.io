@@ -20,7 +20,7 @@ if result.returncode == 0:
         ts_file.write("export default events;\n")
 
     # Define the destination directory to move the file to
-    destination_directory = "../eventData.ts"
+    destination_directory = "/data/eventData.ts"
     
     # Move the file to the specified directory
     shutil.move(ts_file_path, destination_directory)
