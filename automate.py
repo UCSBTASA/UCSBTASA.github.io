@@ -26,5 +26,4 @@ if result.returncode == 0:
     shutil.move(ts_file_path, destination_directory)
     print(f"Output file moved to {destination_directory}/eventData.ts")
 else:
-    print("error")
     print("Error running the Python script.")
