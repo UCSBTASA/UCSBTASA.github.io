@@ -57,4 +57,7 @@ for index, row in records_df.iterrows():
         events.append(event)
 
 # # Output the JSON data
+print("const events = \n")
 print(json.dumps(events, indent=2))
+print(";\n\n")
+print("export default events; \n")
