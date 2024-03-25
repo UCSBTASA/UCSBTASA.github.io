@@ -101,20 +101,11 @@ const events =
     "ready": "Yes"
   },
   {
-    "title": "winbert",
-    "day of week": "sunday",
-    "date": "2024-03-09",
-    "time": "1-5 AM ",
-    "location": "Online",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "testing",
-    "day of week": "monday",
-    "date": "2024-03-30",
-    "time": "1-5 AM ",
-    "location": "Online",
+    "title": "GM #1 w/ Hochaya",
+    "day of week": "Monday",
+    "date": "2024-04-08",
+    "time": "8-10PM",
+    "location": "TD-W 1701",
     "customTime": "",
     "ready": "Yes"
   }
