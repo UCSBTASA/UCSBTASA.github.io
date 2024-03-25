@@ -36,6 +36,21 @@ jobs:
         run: |
           python_script="script_2.py"
           python "$python_script" > eventData.ts
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "jlang61@ucsb.edu"
+          git config --global user.name "Justin Lang"
+
+      - name: Add changes
+        run: git add eventData.ts
+
+      - name: Commit changes
+        run: |
+          git commit -m "Update eventData.ts" || echo "No changes to commit"
       
-      - name: Move File to Workspace
-        run: mv eventData.ts $GITHUB_WORKSPACE/eventData.ts
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
