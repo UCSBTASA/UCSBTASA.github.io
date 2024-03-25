@@ -32,6 +32,7 @@ jobs:
           pip install pandas
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Execute Python script
+      - name: Run Python Script
         run: |
-          python automate.py
+          python_script="script_2.py"
+          python "$python_script" > eventData.ts
