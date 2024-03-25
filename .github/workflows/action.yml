@@ -36,3 +36,6 @@ jobs:
         run: |
           python_script="script_2.py"
           python "$python_script" > eventData.ts
+      
+      - name: Move File to Workspace
+        run: mv eventData.ts $GITHUB_WORKSPACE/eventData.ts
