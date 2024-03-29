@@ -11,14 +11,26 @@ import {
 } from "@/data/galleryImages";
 import GalleryYearSection from "@/components/galleryYearSection";
 import { Button } from "@/components/ui/button";
-import { ESLINT_DEFAULT_DIRS } from "next/dist/lib/constants";
+
 const GalleryPage = () => {
   // State to manage active years
   const [activeYears, setActiveYears] = useState(["2023-2024"]);
+  const [buttonColors, setButtonColors] = useState({
+    "2023-2024": "gray-500",
+    "2022-2023": "gray-500",
+    "2021-2022": "gray-500",
+    "2019-2020": "gray-500",
+    "2018-2019": "gray-500",
+    "2017-2018": "gray-500",
+  });
 
   // Handler function to toggle active years
   const handleYearClick = (year: string) => {
-    console.log(year)
+    setButtonColors((prevColors: any) => ({
+      ...prevColors,
+      [year]: prevColors[year] === "gray-500" ? "gray-100" : "gray-500",
+    }));
+    console.log(buttonColors["2023-2024"]);
     if (activeYears.includes(year)) {
       // Year is already active, remove it
       setActiveYears(activeYears.filter((activeYear) => activeYear !== year));
@@ -55,13 +67,13 @@ const GalleryPage = () => {
           <div className="flex justify-center grid-cols-6 mx-auto">
             <Button
               onClick={() => handleYearClick("2023-2024")}
-              className="col-span-1 bg-gray-200 mx-auto"
+              className={`col-span-1 bg-${buttonColors["2023-2024"]} mx-auto`}
             >
               2023-2024
             </Button>
             <Button
               onClick={() => handleYearClick("2022-2023")}
-              className="col-span-1 bg-gray-200 mx-auto"
+              className={`col-span-1 bg-${buttonColors["2022-2023"]} mx-auto`}
             >
               2022-2023
             </Button>
@@ -73,8 +85,9 @@ const GalleryPage = () => {
             </Button>
             <Button
               onClick={() => handleYearClick("2019-2020")}
-              className="col-span-1 bg-gray-200 mx-auto"
+              className="col-span-1 bg-gray-500 mx-auto"
             >
+            
               2019-2020
             </Button>
             <Button
