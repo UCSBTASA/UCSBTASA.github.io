@@ -255,7 +255,7 @@ const staffMembers = [
     id: 23,
     name: "Yuehan Yu",
     position: "Intern",
-    major: "History of Public Policy and Law",
+    major: "Psychological and Brain Sciences",
     hometown: "San Jose/Beijing",
     favMovie: "Interstellar",
     funFact: "I originally wanted to be a pastry chef",
