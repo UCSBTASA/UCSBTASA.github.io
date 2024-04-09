@@ -18,7 +18,7 @@ const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) 
   const filteredImages = images.filter(image => image.quarter === quarter);
   return (
     <>
-      <h3 className="text-lg font-semibold my-4">{year}</h3>
+      {quarter !== "NA" && <h3 className="text-lg font-semibold my-4">{quarter}</h3>}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredImages.map((image) => (
           <ScrollTransition key={image.id}>
