@@ -1,5 +1,3 @@
-const events = 
-
 [
   {
     "title": "Speed Dating",
@@ -101,44 +99,21 @@ const events =
     "ready": "Yes"
   },
   {
-    "title": "GM #1 w/ Hochaya",
-    "day of week": "Monday",
-    "date": "2024-04-08",
-    "time": "8-10PM",
-    "location": "TD-W 1701",
+    "title": "winbert",
+    "day of week": "sunday",
+    "date": "2024-03-09",
+    "time": "1-5 AM ",
+    "location": "Online",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-04-11",
-    "time": "8-10PM",
-    "location": "Girvetz 1115",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "Mahjong Night",
-    "day of week": "Friday",
-    "date": "2024-04-12",
-    "time": "6-8PM",
-    "location": "Arts 1349",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "Edible Campus Collab",
-    "day of week": "Saturday",
-    "date": "2024-04-13",
-    "time": "2-3PM",
-    "location": "St. Michael\u2019s University Church (6586 Picasso Rd)",
+    "title": "testing",
+    "day of week": "monday",
+    "date": "2024-03-30",
+    "time": "1-5 AM ",
+    "location": "Online",
     "customTime": "",
     "ready": "Yes"
   }
 ]
-;
-
-
-export default events; 
-

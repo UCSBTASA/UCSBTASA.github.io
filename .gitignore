@@ -9,3 +9,4 @@ out/
 .next/
 .swc/
 node_modules/
+.vercel

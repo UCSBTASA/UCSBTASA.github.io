@@ -1,0 +1,10 @@
+name: Trigger Vercel Serverless Function
+on:
+  schedule:
+    - cron: '0 */4 * * *' # Runs every 4 hours; adjust as needed
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl Request
+        run: curl -X GET 'https://your-vercel-project-url.vercel.app/api/pullEvents'
