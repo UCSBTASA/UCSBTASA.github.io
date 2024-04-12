@@ -14,159 +14,161 @@ export const galleryImages2023_2024: GalleryImage[] = [
     title: "99 RISING",
     imageUrl: "/gallery_photos/2023-2024/99_rising.JPG",
     link: "https://photos.app.goo.gl/zRTubmnRG6VAyxGf7",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 2,
     title: "SUNSET HIKE",
     imageUrl: "/gallery_photos/2023-2024/sunset_hike_v2.jpg",
     link: "https://photos.app.goo.gl/w1P36VshSBY9hPwg6",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 3,
     title: "FALL GM #1",
     imageUrl: "/gallery_photos/2023-2024/fall_gm_1.jpeg",
     link: "https://photos.app.goo.gl/jGdTJG6jam3W17jUA",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 4,
     title: "SPEED-DATING",
     imageUrl: "/gallery_photos/2023-2024/speed_dating.jpeg",
     link: "https://photos.app.goo.gl/sfYwA4i6pjBurXmr7",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 5,
     title: "BOBA MIXER",
     imageUrl: "/gallery_photos/2023-2024/boba_mixer.jpg",
     link: "https://photos.app.goo.gl/Ntz4qjtexx3ZXMT2A",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 6,
     title: "BEACH DAY",
     imageUrl: "/gallery_photos/2023-2024/beach_day.jpg",
     link: "https://photos.app.goo.gl/DQNLa3J3rRwX3WPAA",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 7,
     title: "ARTS AND CRAFTS NIGHT",
     imageUrl: "/gallery_photos/2023-2024/arts_crafts.jpg",
     link: "https://photos.app.goo.gl/kBKUCuU5q7qnXEsx9",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 8,
     title: "PICKUP REVEAL",
     imageUrl: "/gallery_photos/2023-2024/pickup_reveal.jpg",
     link: "https://photos.app.goo.gl/9iKiirF2Hatk8hibA",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 9,
     title: "TangHulu Night",
     imageUrl: "/gallery_photos/2023-2024/tanghulu_night.jpg",
     link: "https://photos.app.goo.gl/QAoYYhQhD5HgfxnH7",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 10,
     title: "Fall GM #2",
     imageUrl: "/gallery_photos/2023-2024/fall_gm_2.jpeg",
     link: "https://photos.app.goo.gl/eCW7o7uHKypQ6mio9",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 11,
     title: "Fall Banquet",
     imageUrl: "/gallery_photos/2023-2024/fall_banquet.jpg",
     link: "https://photos.app.goo.gl/JVMRY3DKDW45CRM87",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 12,
     title: "Fall GM #3",
     imageUrl: "/gallery_photos/2023-2024/fall_gm_3.jpg",
     link: "https://photos.app.goo.gl/sHpQCUj34VxgGhnx6",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 13,
     title: "Fall Fundraisers!",
     imageUrl: "/gallery_photos/2023-2024/fall_fundraiser.jpeg",
     link: "https://photos.app.goo.gl/7P7S6eRfPcPuVryW7",
-    quarter: "fall",
+    quarter: "Fall",
   },
   {
     id: 14,
     title: "Winter Retreat!",
     imageUrl: "/gallery_photos/2023-2024/winter_retreat.jpeg",
     link: "https://photos.app.goo.gl/i4xEX91w2PWWcz2i6",
-    quarter: "winter",
+    quarter: "Winter",
   },
   {
     id: 15,
     title: "Winter Speed Dating!",
     imageUrl: "/gallery_photos/2023-2024/winter_speed_dating.jpeg",
     link: "https://photos.app.goo.gl/PfHUNYoUADvN1FYi9",
-    quarter: "winter",
+    quarter: "Winter",
   },
   {
     id: 16,
     title: "Winter GM #1!",
     imageUrl: "/gallery_photos/2023-2024/winter_gm_1.jpeg",
     link: "https://photos.app.goo.gl/6N8GoeynJefjaM9H6",
-    quarter: "winter",
+    quarter: "Winter",
   },
   {
     id: 17,
     title: "Sketchy Coloring Night",
     imageUrl: "/gallery_photos/2023-2024/sketchy_coloring_night.jpeg",
     link: "https://photos.app.goo.gl/qCWBAsrpXai6cMmv7",
-    quarter: "winter",
+    quarter: "Winter",
   },
   {
     id: 18,
     title: "Field Day",
     imageUrl: "/gallery_photos/2023-2024/field_day.jpeg",
     link: "https://photos.app.goo.gl/DCgoAVAXPZtocCGt8",
-    quarter: "winter",
+    quarter: "Winter",
   },
   {
     id: 19,
     title: "TFTI",
     imageUrl: "/gallery_photos/2023-2024/tfti.jpg",
     link: "https://photos.app.goo.gl/dPNqZx2sY4aTpEMz5",
-    quarter: "winter",
+    quarter: "Winter",
   },
   {
     id: 20,
     title: "Mahjong Mocktails",
     imageUrl: "/gallery_photos/2023-2024/mahjong_mocktails.jpeg",
     link: "https://photos.app.goo.gl/a41M1Rz5WGxSYEWE9",
-    quarter: "winter"
+    quarter: "Winter"
   },
   {
     id: 21,
     title: "NSU x TASA",
     imageUrl: "/gallery_photos/2023-2024/nsu_tasa.jpeg",
     link: "https://photos.app.goo.gl/7MigSwjgPxgro9kx8",
-    quarter: "winter"
+    quarter: "Winter"
   },
   {
     id: 22,
     title: "HOT POT NIGHT",
     imageUrl: "/gallery_photos/2023-2024/hot_pot_night.jpeg",
     link: "https://photos.app.goo.gl/6SVKKhPegePED6xJ6",
+    quarter: "Winter"
   },
   {
     id: 23,
     title: "Winter GM #2",
     imageUrl: "/gallery_photos/2023-2024/winter_gm_2.jpeg",
     link: "https://photos.app.goo.gl/FHenfoTWs6oRUzr76",
+    quarter: "Winter"
   },
 
   {
@@ -174,37 +176,36 @@ export const galleryImages2023_2024: GalleryImage[] = [
     title: "Karaoke Night!",
     imageUrl: "/gallery_photos/2023-2024/karaoke_night.jpeg",
     link: "https://photos.app.goo.gl/GwiJZY3sFeEPqwjV7",
+    quarter: "Winter"
   },
   {
     id: 25,
     title: "TK^2M",
     imageUrl: "/gallery_photos/2023-2024/tk^2m.jpg",
     link: "https://photos.app.goo.gl/RjqoZoHP7qsb6LkB9",
+    quarter: "Winter"
   },
   {
     id: 26,
     title: "Winter GM #3",
     imageUrl: "/gallery_photos/2023-2024/winter_gm_3.jpeg",
     link: "https://photos.app.goo.gl/E3C2yYGmm5L6Ta9f8", 
+    quarter: "Winter"
   },
   {
     id: 27,
     title: "Meet Fresh",
     imageUrl: "/gallery_photos/2023-2024/meet_fresh.jpeg",
     link: "https://photos.app.goo.gl/FhBeRFUimsMFNRQT9", 
+    quarter: "Winter"
   },
   {
     id: 28,
     title: "Intern Event",
     imageUrl: "/gallery_photos/2023-2024/intern_event.jpeg",
     link: "https://photos.app.goo.gl/uqjVB44HC64ufjVt9", 
+    quarter: "Winter"
   },
-  // {
-  //   id: ,
-  //   title: ,
-  //   imageUrl: "/gallery_photos/2023-2024/",
-  //   link: , 
-  // },
 ];
 
 export const galleryImages2022_2023: GalleryImage[] = [

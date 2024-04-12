@@ -20,21 +20,22 @@ const GalleryPage: React.FC = () => {
             Our Favorite Memories
           </h2>
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          <h2 className="text-2xl mt-4 font-semibold mt-10">
             2023-2024
           </h2>
+          
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
-            quarter="winter"
+            quarter="Winter"
           />
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
-            quarter= "fall"
+            quarter= "Fall"
           />
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          <h2 className="text-2xl mt-4 font-semibold mt-10">
           2022-2023
           </h2>
           <GalleryYearSection
@@ -43,7 +44,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          <h2 className="text-2xl mt-4 font-semibold mt-10">
           2021-2022
           </h2>
           <GalleryYearSection
@@ -52,7 +53,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          <h2 className="text-2xl mt-4 font-semibold mt-10">
           2019-2020
           </h2>
           <GalleryYearSection
@@ -61,7 +62,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          <h2 className="text-2xl mt-4 font-semibold mt-10">
           2018-2019
           </h2>
           <GalleryYearSection
@@ -70,7 +71,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          <h2 className="text-2xl mt-4 font-semibold mt-10">
           2017-2018
           </h2>
           <GalleryYearSection
@@ -78,7 +79,6 @@ const GalleryPage: React.FC = () => {
                   year="2017-2018"
                   quarter = "NA"
                   />
-
         </div>
       </div>
     </div>
