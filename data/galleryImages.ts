@@ -177,11 +177,23 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/intern_event.jpeg",
     link: "https://photos.app.goo.gl/uqjVB44HC64ufjVt9", 
   },
+  {
+    id: 29,
+    title: "Pie a Staff!",
+    imageUrl: "/gallery_photos/2023-2024/pie_a_staff.jpeg",
+    link: "https://photos.app.goo.gl/PNCEQyhGkWE2Nin67", 
+  },
+  {
+    id: 30,
+    title: "Mahjong Night (Spring)",
+    imageUrl: "/gallery_photos/2023-2024/mahjong_night.jpeg",
+    link: "https://photos.app.goo.gl/vYiUZ8Dqo35XedxR7", 
+  },
   // {
   //   id: ,
-  //   title: ,
+  //   title: "",
   //   imageUrl: "/gallery_photos/2023-2024/",
-  //   link: , 
+  //   link: "", 
   // },
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
