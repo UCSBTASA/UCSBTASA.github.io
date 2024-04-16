@@ -158,13 +158,43 @@ export const galleryImages2023_2024: GalleryImage[] = [
     title: "TK^2M",
     imageUrl: "/gallery_photos/2023-2024/tk^2m.jpg",
     link: "https://photos.app.goo.gl/RjqoZoHP7qsb6LkB9",
-  }
+  },
+  {
+    id: 26,
+    title: "Winter GM #3",
+    imageUrl: "/gallery_photos/2023-2024/winter_gm_3.jpeg",
+    link: "https://photos.app.goo.gl/E3C2yYGmm5L6Ta9f8", 
+  },
+  {
+    id: 27,
+    title: "Meet Fresh",
+    imageUrl: "/gallery_photos/2023-2024/meet_fresh.jpeg",
+    link: "https://photos.app.goo.gl/FhBeRFUimsMFNRQT9", 
+  },
+  {
+    id: 28,
+    title: "Intern Event",
+    imageUrl: "/gallery_photos/2023-2024/intern_event.jpeg",
+    link: "https://photos.app.goo.gl/uqjVB44HC64ufjVt9", 
+  },
+  {
+    id: 29,
+    title: "Pie a Staff!",
+    imageUrl: "/gallery_photos/2023-2024/pie_a_staff.jpeg",
+    link: "https://photos.app.goo.gl/PNCEQyhGkWE2Nin67", 
+  },
+  {
+    id: 30,
+    title: "Mahjong Night (Spring)",
+    imageUrl: "/gallery_photos/2023-2024/mahjong_night.jpeg",
+    link: "https://photos.app.goo.gl/vYiUZ8Dqo35XedxR7", 
+  },
   // {
   //   id: ,
-  //   title: ,
+  //   title: "",
   //   imageUrl: "/gallery_photos/2023-2024/",
-  //   link: , 
-  // }
+  //   link: "", 
+  // },
 ];
 export const galleryImages2022_2023: GalleryImage[] = [
   {

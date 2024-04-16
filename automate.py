@@ -2,9 +2,8 @@ import subprocess
 import shutil
 
 # Run the Python script and capture its output
-python_script = "script.py"
+python_script = "script_2.py"
 result = subprocess.run(["python", python_script], capture_output=True, text=True)
-
 # Check if the Python script ran successfully
 if result.returncode == 0:
     # Extract the output from the result
@@ -19,7 +18,7 @@ if result.returncode == 0:
         ts_file.write("export default events;\n")
 
     # Define the destination directory to move the file to
-    destination_directory = "../eventData.ts"
+    destination_directory = "/data/eventData.ts"
     
     # Move the file to the specified directory
     shutil.move(ts_file_path, destination_directory)
