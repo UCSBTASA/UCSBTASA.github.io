@@ -189,7 +189,13 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/mahjong_night.jpeg",
     link: "https://photos.app.goo.gl/vYiUZ8Dqo35XedxR7", 
   },
-  // {
+  {
+    id: 31,
+    title: "Taiwanese Cafe",
+    imageUrl: "/gallery_photos/2023-2024/taiwanese_cafe.jpeg",
+    link: "https://photos.app.goo.gl/DfzKPpkCdi9AHJzw5", 
+  },
+    // {
   //   id: ,
   //   title: "",
   //   imageUrl: "/gallery_photos/2023-2024/",
