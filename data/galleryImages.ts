@@ -195,6 +195,12 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/taiwanese_cafe.jpeg",
     link: "https://photos.app.goo.gl/DfzKPpkCdi9AHJzw5", 
   },
+  {
+    id: 32,
+    title: "TASA x VSA Collab",
+    imageUrl: "/gallery_photos/2023-2024/tasa_vsa_collab.jpg",
+    link: "https://photos.app.goo.gl/RbdbFkbex8jD5DVUA", 
+  },
     // {
   //   id: ,
   //   title: "",
