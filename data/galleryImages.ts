@@ -201,6 +201,12 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/tasa_vsa_collab.jpg",
     link: "https://photos.app.goo.gl/RbdbFkbex8jD5DVUA", 
   },
+  {
+    id: 33,
+    title: "SPRING GM #2",
+    imageUrl: "/gallery_photos/2023-2024/spring_gm_2.jpg",
+    link: "https://photos.app.goo.gl/X5pR1bqM4GHQwUTD9", 
+  },
     // {
   //   id: ,
   //   title: "",
