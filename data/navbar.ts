@@ -8,6 +8,7 @@ export const navLinks = [
   { href: "/contact", name: "Contact" },
   { href: "/faq", name: "FAQ" },
   { href: "/store", name: "Store" },
+  { href: "/night-market", name: "Night Market" },
 ];
 
 export default navLinks;
