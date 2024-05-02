@@ -33,17 +33,28 @@ const StandInfo = [
   {name: "Materials", x: 20, y: 22, height: 6, width: 9, blurb: "lorum ipsum dolor sit amet", color: "rgb(150, 255, 150)"},
 ];
 
+const graphicSources = [
+  "url(nm_visuals/img1.jpeg)",
+  "url(nm_visuals/img2.jpeg)",
+  "url(nm_visuals/img3.jpeg)",
+  "url(nm_visuals/img4.jpeg)",
+  "url(nm_visuals/img5.jpeg)",
+]
+
 
 const NightMarket = () => {
   return (
-    <div className="px-4 py-8 text-center w-screen h-screen bg-gray-100 flex flex-col items-center">
-      <>
-        <div className = "absolute bg-cover rounded-2xl	drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" style={{ backgroundImage: "url(nm_map/nm_map.png)", width: '90vh', height: '90vh', backgroundRepeat: "no-repeat"}}>
+    <div className="px-4 py-8 text-center w-screen h-auto bg-gray-100 flex-col flex items-center ">
+      <h2 className="text-3xl font-bold text-gray-900 uppercase">Night Market</h2>
+        <p className="text-gray-600">
+          Come to our Night Market to see all the amazing clubs and vendors we have to offer!
+        </p>
+        {/* <div className = "flex absolute bg-cover rounded-2xl	drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" style={{ backgroundImage: "url(nm_visuals/nm_map.png)", width: '90vh', height: '90vh', backgroundRepeat: "no-repeat"}}>
             {StandInfo.map((stand) => <Stand color = {stand.color} name={stand.name} x={stand.x} y={stand.y} height={stand.height} width={stand.width} blurb={stand.blurb}/>)}
-        </div>
-      </>
+        </div> */}
+        {graphicSources.map((source) => <div className = "bg-cover m-10 rounded-2xl	drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" style={{ backgroundImage: source, width: '90vh', height: '90vh', backgroundRepeat: "no-repeat"}}></div>)}
+        <div className = "bg-cover m-10 rounded-2xl	drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" style={{ backgroundImage: "url(nm_visuals/img0.jpeg)", width: '70vh', height: '90vh', backgroundRepeat: "no-repeat"}}></div>
     </div>
-    
   );
 };
 
