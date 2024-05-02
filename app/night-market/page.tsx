@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const graphicSources = [
   "/nm_visuals/img1.jpeg",
@@ -20,6 +21,13 @@ const NightMarket = () => {
         Come to our Night Market to see all the amazing clubs and vendors we
         have to offer!
       </p>
+
+      <Link href="/night-market/map">
+        <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Map!
+        </button>
+      </Link>
+
       {graphicSources.map((source, index) => (
         <Image
           src={source}
