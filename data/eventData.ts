@@ -135,6 +135,69 @@ const events =
     "location": "St. Michael\u2019s University Church (6586 Picasso Rd)",
     "customTime": "",
     "ready": "Yes"
+  },
+  {
+    "title": "Maid Cafe",
+    "day of week": "Thursday",
+    "date": "2024-04-18",
+    "time": "6:30- 8:30PM",
+    "location": "ARTS 1356",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "VSA x TASA Collab",
+    "day of week": "Friday",
+    "date": "2024-04-19",
+    "time": "5-7PM",
+    "location": "ARTS 1349",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA Talks",
+    "day of week": "Thursday",
+    "date": "2024-04-25",
+    "time": "8-10 PM",
+    "location": "girvetz 1115",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "Night Market",
+    "day of week": "Saturday",
+    "date": "2024-05-04",
+    "time": "4-8PM",
+    "location": "Storke Plaza",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA Talks",
+    "day of week": "Thursday",
+    "date": "2024-05-09",
+    "time": "8-10 PM",
+    "location": "girvetz 1115",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA Talks",
+    "day of week": "Thursday",
+    "date": "2024-05-23",
+    "time": "8-10 PM",
+    "location": "girvetz 1115",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA Talks",
+    "day of week": "Thursday",
+    "date": "2024-06-06",
+    "time": "8-10",
+    "location": "girvetz 1115",
+    "customTime": "",
+    "ready": "Yes"
   }
 ]
 ;

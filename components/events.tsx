@@ -37,7 +37,7 @@ const Events = () => {
       }
     };
     const formattedDate = new Date(date).toLocaleDateString("en-US", options);
-    const dayOfWeek = numToDay(new Date(date).getDay() + 1);
+    const dayOfWeek = numToDay(new Date(date).getDay());
     return dayOfWeek + ", " + formattedDate;
   };
 

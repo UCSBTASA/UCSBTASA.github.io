@@ -206,6 +206,42 @@ export const galleryImages2023_2024: GalleryImage[] = [
     link: "https://photos.app.goo.gl/uqjVB44HC64ufjVt9", 
     quarter: "Winter"
   },
+  {
+    id: 29,
+    title: "Pie a Staff!",
+    imageUrl: "/gallery_photos/2023-2024/pie_a_staff.jpeg",
+    link: "https://photos.app.goo.gl/PNCEQyhGkWE2Nin67", 
+  },
+  {
+    id: 30,
+    title: "Mahjong Night (Spring)",
+    imageUrl: "/gallery_photos/2023-2024/mahjong_night.jpeg",
+    link: "https://photos.app.goo.gl/vYiUZ8Dqo35XedxR7", 
+  },
+  {
+    id: 31,
+    title: "Taiwanese Cafe",
+    imageUrl: "/gallery_photos/2023-2024/taiwanese_cafe.jpeg",
+    link: "https://photos.app.goo.gl/DfzKPpkCdi9AHJzw5", 
+  },
+  {
+    id: 32,
+    title: "TASA x VSA Collab",
+    imageUrl: "/gallery_photos/2023-2024/tasa_vsa_collab.jpg",
+    link: "https://photos.app.goo.gl/RbdbFkbex8jD5DVUA", 
+  },
+  {
+    id: 33,
+    title: "SPRING GM #2",
+    imageUrl: "/gallery_photos/2023-2024/spring_gm_2.jpg",
+    link: "https://photos.app.goo.gl/X5pR1bqM4GHQwUTD9", 
+  },
+    // {
+  //   id: ,
+  //   title: "",
+  //   imageUrl: "/gallery_photos/2023-2024/",
+  //   link: "", 
+  // },
 ];
 
 export const galleryImages2022_2023: GalleryImage[] = [
