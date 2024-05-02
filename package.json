@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@ericz1803/react-google-calendar": "^4.3.1",
+    "@mui/material": "^5.15.15",
     "@types/react-dom": "18.2.7",
     "@vercel/analytics": "^1.1.2",
     "@vercel/node": "^3.0.19",
