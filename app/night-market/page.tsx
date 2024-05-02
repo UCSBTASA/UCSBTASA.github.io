@@ -58,10 +58,8 @@ const graphicSources = [
   "url(nm_visuals/img5.jpeg)",
 ]
 
-const isPhone = (detectDevice() == 'phone');
-
-
 const NightMarket = () => {
+  const isPhone = (detectDevice() == 'phone');
   const vh100 = use100vh();
   console.log(vh100)
   console.log(isPhone)
