@@ -147,28 +147,28 @@ export const galleryImages2023_2024: GalleryImage[] = [
     title: "Mahjong Mocktails",
     imageUrl: "/gallery_photos/2023-2024/mahjong_mocktails.jpeg",
     link: "https://photos.app.goo.gl/a41M1Rz5WGxSYEWE9",
-    quarter: "Winter"
+    quarter: "Winter",
   },
   {
     id: 21,
     title: "NSU x TASA",
     imageUrl: "/gallery_photos/2023-2024/nsu_tasa.jpeg",
     link: "https://photos.app.goo.gl/7MigSwjgPxgro9kx8",
-    quarter: "Winter"
+    quarter: "Winter",
   },
   {
     id: 22,
     title: "HOT POT NIGHT",
     imageUrl: "/gallery_photos/2023-2024/hot_pot_night.jpeg",
     link: "https://photos.app.goo.gl/6SVKKhPegePED6xJ6",
-    quarter: "Winter"
+    quarter: "Winter",
   },
   {
     id: 23,
     title: "Winter GM #2",
     imageUrl: "/gallery_photos/2023-2024/winter_gm_2.jpeg",
     link: "https://photos.app.goo.gl/FHenfoTWs6oRUzr76",
-    quarter: "Winter"
+    quarter: "Winter",
   },
 
   {
@@ -176,72 +176,71 @@ export const galleryImages2023_2024: GalleryImage[] = [
     title: "Karaoke Night!",
     imageUrl: "/gallery_photos/2023-2024/karaoke_night.jpeg",
     link: "https://photos.app.goo.gl/GwiJZY3sFeEPqwjV7",
-    quarter: "Winter"
+    quarter: "Winter",
   },
   {
     id: 25,
     title: "TK^2M",
     imageUrl: "/gallery_photos/2023-2024/tk^2m.jpg",
     link: "https://photos.app.goo.gl/RjqoZoHP7qsb6LkB9",
-    quarter: "Winter"
+    quarter: "Winter",
   },
   {
     id: 26,
     title: "Winter GM #3",
     imageUrl: "/gallery_photos/2023-2024/winter_gm_3.jpeg",
-    link: "https://photos.app.goo.gl/E3C2yYGmm5L6Ta9f8", 
-    quarter: "Winter"
+    link: "https://photos.app.goo.gl/E3C2yYGmm5L6Ta9f8",
+    quarter: "Winter",
   },
   {
     id: 27,
     title: "Meet Fresh",
     imageUrl: "/gallery_photos/2023-2024/meet_fresh.jpeg",
-    link: "https://photos.app.goo.gl/FhBeRFUimsMFNRQT9", 
-    quarter: "Winter"
+    link: "https://photos.app.goo.gl/FhBeRFUimsMFNRQT9",
+    quarter: "Winter",
   },
   {
     id: 28,
     title: "Intern Event",
     imageUrl: "/gallery_photos/2023-2024/intern_event.jpeg",
-    link: "https://photos.app.goo.gl/uqjVB44HC64ufjVt9", 
-    quarter: "Winter"
+    link: "https://photos.app.goo.gl/uqjVB44HC64ufjVt9",
+    quarter: "Winter",
   },
   {
     id: 29,
     title: "Pie a Staff!",
     imageUrl: "/gallery_photos/2023-2024/pie_a_staff.jpeg",
-    link: "https://photos.app.goo.gl/PNCEQyhGkWE2Nin67", 
+    link: "https://photos.app.goo.gl/PNCEQyhGkWE2Nin67",
+    quarter: "Spring",
   },
   {
     id: 30,
     title: "Mahjong Night (Spring)",
     imageUrl: "/gallery_photos/2023-2024/mahjong_night.jpeg",
-    link: "https://photos.app.goo.gl/vYiUZ8Dqo35XedxR7", 
+    link: "https://photos.app.goo.gl/vYiUZ8Dqo35XedxR7",
+    quarter: "Spring",
   },
   {
     id: 31,
     title: "Taiwanese Cafe",
     imageUrl: "/gallery_photos/2023-2024/taiwanese_cafe.jpeg",
-    link: "https://photos.app.goo.gl/DfzKPpkCdi9AHJzw5", 
+    link: "https://photos.app.goo.gl/DfzKPpkCdi9AHJzw5",
+    quarter: "Spring",
   },
   {
     id: 32,
     title: "TASA x VSA Collab",
     imageUrl: "/gallery_photos/2023-2024/tasa_vsa_collab.jpg",
-    link: "https://photos.app.goo.gl/RbdbFkbex8jD5DVUA", 
+    link: "https://photos.app.goo.gl/RbdbFkbex8jD5DVUA",
+    quarter: "Spring",
   },
   {
     id: 33,
     title: "SPRING GM #2",
     imageUrl: "/gallery_photos/2023-2024/spring_gm_2.jpg",
-    link: "https://photos.app.goo.gl/X5pR1bqM4GHQwUTD9", 
+    link: "https://photos.app.goo.gl/X5pR1bqM4GHQwUTD9",
+    quarter: "Spring",
   },
-    // {
-  //   id: ,
-  //   title: "",
-  //   imageUrl: "/gallery_photos/2023-2024/",
-  //   link: "", 
-  // },
 ];
 
 export const galleryImages2022_2023: GalleryImage[] = [
