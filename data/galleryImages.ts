@@ -207,6 +207,12 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/spring_gm_2.jpg",
     link: "https://photos.app.goo.gl/X5pR1bqM4GHQwUTD9", 
   },
+  {
+    id: 34,
+    title: "TASA NIGHT MARKET",
+    imageUrl: "/gallery_photos/2023-2024/night_market_2024.jpg",
+    link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9", 
+  },
     // {
   //   id: ,
   //   title: "",
