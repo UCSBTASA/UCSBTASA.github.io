@@ -39,6 +39,7 @@ jobs:
       - name: Run Python Script
         run: |
           python_script="scripts/script_2.py"
+          python "$python_script"
 
       - name: Configure Git
         run: |
