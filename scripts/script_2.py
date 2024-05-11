@@ -57,7 +57,7 @@ for index, row in records_df.iterrows():
         events.append(event)
 
 # Define the filename for the output file
-output_file = '../data/eventData.ts'
+output_file = 'data/eventData.ts'
 
 # Open the file for writing
 with open(output_file, 'w') as f:
