@@ -181,15 +181,6 @@ const events =
     "ready": "Yes"
   },
   {
-    "title": "GM #3: Elections",
-    "day of week": "Monday",
-    "date": "2024-05-20",
-    "time": "8-10PM",
-    "location": "TD-W 1701",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
     "title": "TASA Talks",
     "day of week": "Thursday",
     "date": "2024-05-23",
