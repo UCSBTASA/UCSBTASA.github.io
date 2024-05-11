@@ -3,7 +3,6 @@
 .vscode/
 *.sw*
 .DS_Store
-service_account.json
 
 # Ignore the build directory
 out/
