@@ -17,7 +17,7 @@ def changeDate(date):
 today = datetime.date.today()
 year = today.year
 # Communicating with Google Sheets API, open the Google Sheet 
-service_account_path = "../service_account.json"
+service_account_path = "service_account.json"
 
 gc = gspread.service_account(filename = service_account_path)
 sh = gc.open("TASA Scheduling 23-24")
