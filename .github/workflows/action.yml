@@ -38,8 +38,7 @@ jobs:
 
       - name: Run Python Script
         run: |
-          python_script="script_2.py"
-          python "$python_script" > data/eventData.ts
+          python_script="scripts/script_2.py"
 
       - name: Configure Git
         run: |

@@ -1,5 +1,4 @@
 const events = 
-
 [
   {
     "title": "Speed Dating",
@@ -199,9 +198,6 @@ const events =
     "customTime": "",
     "ready": "Yes"
   }
-]
-;
-
+];
 
 export default events; 
-
