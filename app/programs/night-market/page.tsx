@@ -44,10 +44,12 @@ const NightMarket = () => {
                 rice with tea egg, and popcorn chicken.
               </p>
               <br />
-              <p className="text-gray-700">
-                Stay tuned for updates on the date and time for TASA Night
-                Market 2024!
-              </p>
+              <p className="text-gray-700">Check out our 2024 Night Market!</p>
+              <Link href={"/programs/night-market/2024"}>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+                  2024 Night Market
+                </button>
+              </Link>
             </ScrollTransition>
           </div>
           <div className="flex flex-wrap justify-center items-center md:w-[40%] md:pl-4 mt-4">
