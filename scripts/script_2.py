@@ -56,8 +56,16 @@ for index, row in records_df.iterrows():
     if event["ready"] == "Yes":
         events.append(event)
 
-# # Output the JSON data
-print("const events = \n")
-print(json.dumps(events, indent=2))
-print(";\n\n")
-print("export default events; \n")
+# Define the filename for the output file
+output_file = 'data/eventData.ts'
+
+# Open the file for writing
+with open(output_file, 'w') as f:
+    # Write the JavaScript variable declaration
+    f.write("const events = \n")
+    # Write the JSON data with indentation
+    json.dump(events, f, indent=2)
+    # Write JavaScript variable termination
+    f.write(";\n\n")
+    # Write export statement
+    f.write("export default events; \n")
