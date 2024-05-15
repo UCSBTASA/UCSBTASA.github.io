@@ -20,10 +20,14 @@ const GalleryPage: React.FC = () => {
             Our Favorite Memories
           </h2>
 
-          <h2 className="text-2xl mt-4 font-semibold mt-10">
+          <h2 className="text-2xl mt-4 font-semibold">
             2023-2024
           </h2>
-          
+          <GalleryYearSection
+            images={galleryImages2023_2024.slice().reverse()}
+            year="2022-2023"
+            quarter="Spring"
+          />
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
@@ -35,7 +39,7 @@ const GalleryPage: React.FC = () => {
             quarter= "Fall"
           />
 
-          <h2 className="text-2xl mt-4 font-semibold mt-10">
+          <h2 className="text-2xl mt-4 font-semibold">
           2022-2023
           </h2>
           <GalleryYearSection
@@ -44,7 +48,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold mt-10">
+          <h2 className="text-2xl mt-4 font-semibold">
           2021-2022
           </h2>
           <GalleryYearSection
@@ -53,7 +57,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold mt-10">
+          <h2 className="text-2xl mt-4 font-semibold">
           2019-2020
           </h2>
           <GalleryYearSection
@@ -62,7 +66,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold mt-10">
+          <h2 className="text-2xl mt-4 font-semibold">
           2018-2019
           </h2>
           <GalleryYearSection
@@ -71,7 +75,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold mt-10">
+          <h2 className="text-2xl mt-4 font-semibold">
           2017-2018
           </h2>
           <GalleryYearSection
