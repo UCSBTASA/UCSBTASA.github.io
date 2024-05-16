@@ -176,7 +176,16 @@ const events =
     "day of week": "Thursday",
     "date": "2024-05-09",
     "time": "8-10 PM",
-    "location": "girvetz 1115",
+    "location": "Girvetz 1115",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "GM #3: Elections",
+    "day of week": "Monday",
+    "date": "2024-05-20",
+    "time": "8-10 PM",
+    "location": "TD-W 1701",
     "customTime": "",
     "ready": "Yes"
   },
@@ -185,7 +194,25 @@ const events =
     "day of week": "Thursday",
     "date": "2024-05-23",
     "time": "8-10 PM",
-    "location": "girvetz 1115",
+    "location": "Girvetz 1115",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "Banquet",
+    "day of week": "Thursday",
+    "date": "2024-05-30",
+    "time": "7-9 PM",
+    "location": "Mosher Alumni House",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "Senior Appreciation",
+    "day of week": "Friday",
+    "date": "2024-05-31",
+    "time": "4-6 PM",
+    "location": "ARTS 1353",
     "customTime": "",
     "ready": "Yes"
   },
@@ -193,8 +220,8 @@ const events =
     "title": "TASA Talks",
     "day of week": "Thursday",
     "date": "2024-06-06",
-    "time": "8-10",
-    "location": "girvetz 1115",
+    "time": "8-10 PM",
+    "location": "Girvetz 1115",
     "customTime": "",
     "ready": "Yes"
   }
