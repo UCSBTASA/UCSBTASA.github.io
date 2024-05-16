@@ -22,7 +22,7 @@ const NightMarket = () => {
         have to offer!
       </p>
 
-      <Link href="/night-market/map">
+      <Link href="/programs/night-market/2024/map">
         <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Map!
         </button>
