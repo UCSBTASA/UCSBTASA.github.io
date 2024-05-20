@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 const alumniPage = () => {
     return(
         <div>
@@ -20,7 +21,7 @@ const alumniPage = () => {
               </div>
             </div>
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            </div>    
+            </div>
         </div>
     );
 };
