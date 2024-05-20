@@ -1,4 +1,6 @@
 import Image from "next/image";
+import alumni from "@/data/alumni";
+
 
 const MemberCoin = (props: any) => {
     return(
