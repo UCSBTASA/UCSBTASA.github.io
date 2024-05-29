@@ -5,6 +5,7 @@ export const navLinks = [
   { href: "/calendar", name: "Calendar" },
   { href: "/gallery", name: "Gallery" },
   { href: "/family-trees", name: "Family Trees" },
+  { href: "/alumni", name: "Alumni" },
   { href: "/contact", name: "Contact" },
   { href: "/faq", name: "FAQ" },
   { href: "/store", name: "Store" },
