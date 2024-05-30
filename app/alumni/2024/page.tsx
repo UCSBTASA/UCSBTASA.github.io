@@ -23,18 +23,18 @@ const alumniPage = () => {
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <h1 className="text-4xl font-semibold mb-4 uppercase flex items-center justify-center text-center m-8">
+      <h1 className="text-4xl font-semibold mb-4 uppercase flex justify-center text-center m-8">
         SENIOR PROFILES!
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 mt-16 mx-8">
         {alumni.map((alumni) => (
-          <div className="flex flex-col ">
+          <div className="flex flex-col items-center">
             <SeniorProfile
               key={alumni.id}
               imageUrl={alumni.imageUrl}
               name={alumni.name}
               major={alumni.major}
-              position={alumni.position}
+              // position={alumni.position}
               slug={alumni.slug}
             />
           </div>
