@@ -16,7 +16,7 @@ const alumniPage = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
-            <h1 className="text-4xl font-semibold mb-4 uppercase">
+            <h1 className="font-jacques text-4xl font-semibold mb-4 uppercase">
               CONGRATS CLASS OF 2024!!
             </h1>
           </div>
@@ -28,7 +28,7 @@ const alumniPage = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 mt-16 mx-8">
         {alumni.map((alumni) => (
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <SeniorProfile
               key={alumni.id}
               imageUrl={alumni.imageUrl}

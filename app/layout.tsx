@@ -27,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {" "}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
+          rel="stylesheet"
+        />
         <Header title="UCSB TASA"></Header>
         <NavBar />
         {children}
