@@ -35,6 +35,9 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         jacques: ['"Jacques Francois"', "serif"],
         sans: ["Sans", "sans-serif"],
+        dancing: ['"Dancing Script"', "serif"],
+        sedan: ['"Sedan SC"', "serif"],
+        zilla: ['"Zilla Slab"', "serif"]
       },
     },
   },

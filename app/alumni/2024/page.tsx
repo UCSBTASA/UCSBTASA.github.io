@@ -16,7 +16,7 @@ const alumniPage = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
-            <h1 className="font-jacques text-4xl font-semibold mb-4 uppercase">
+            <h1 className="font-dancing text-8xl mb-4 uppercase">
               CONGRATS CLASS OF 2024!!
             </h1>
           </div>

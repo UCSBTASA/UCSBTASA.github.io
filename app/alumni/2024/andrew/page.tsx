@@ -10,21 +10,29 @@ const AndrewChengPage = () => {
       <div className="grid grid-cols-2 items-center gap-4 p-4">
         <div className="flex justify-center items-center p-4">
           <ScrollTransition>
-            <Image
-              src={"/staff_photos/andrew.jpg"}
-              alt={"Andrew Cheng"}
-              width={400}
-              height={250}
-              className="py-4"
-            />
+            <div className=" rounded-xl overflow-hidden">
+              {/* Apply rounded class to a wrapping div */}
+              <Image
+                src={"/staff_photos/andrew.jpg"}
+                alt={"Andrew Cheng"}
+                width={400}
+                height={250}
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                className="py-4"
+              />
+            </div>
           </ScrollTransition>
         </div>
 
         <div className="font-bebas">
-          <h1 className="text-2xl mt-4 font-semibold">Andrew Cheng</h1>
-          <h2 className="text-xl">B.S. in Biopsychology and Pharmacology</h2>
-          <h2 className="mt-4">Last Words to TASA:</h2>
-          <p>
+          <h1 className="font-sedan text-2xl mt-4 font-bold">Andrew Cheng</h1>
+          <h2 className="font-sedan text-xl">
+            B.S. in Biopsychology and Pharmacology
+          </h2>
+          <h2 className="font-zilla mt-4 mb-2  text-xl font-semibold">
+            Last Words to TASA:
+          </h2>
+          <p className="font-zilla text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
             finibus ligula, a dignissim eros. Proin sodales ultrices dapibus. In
             hac habitasse platea dictumst. Donec aliquet ornare scelerisque.
@@ -58,6 +66,12 @@ const AndrewChengPage = () => {
           { url: "/alumni_2024/IMG_2556 - Charliene Lien.jpeg" },
           { url: "/alumni_2024/IMG_0500 - Ethan Lin.JPG" },
           { url: "/alumni_2024/IMG_5378_Original - Charliene Lien.jpeg" },
+          {
+            url: "/alumni_2024/IMG_2557 - Charliene Lien.jpeg",
+          },
+          {
+            url: "/alumni_2024/IMG_2557 - Charliene Lien.jpeg",
+          },
         ]}
       />
     </div>
