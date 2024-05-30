@@ -18,7 +18,7 @@ const Events = () => {
       timeZone: "UTC",
     };
     const numToDay = (num: number) => {
-      num = num % 7;
+      num = (num % 7) + 1;
       switch (num) {
         case 0:
           return "Sunday";
@@ -80,7 +80,7 @@ const Events = () => {
                     <p className="text-gray-600 mb-2">
                       <strong>Time: </strong>
                       {event.customTime === "" ? (
-                        <span>{(event.time)} PST</span>
+                        <span>{event.time} PST</span>
                       ) : (
                         event.customTime
                       )}
