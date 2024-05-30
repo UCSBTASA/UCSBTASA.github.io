@@ -6,19 +6,22 @@ interface GalleryImage {
   title: string;
   imageUrl: string;
   link: string;
+  quarter: string;
 }
 
 interface GalleryYearSectionProps {
   images: GalleryImage[];
   year: string;
+  quarter: string;
 }
 
-const GalleryYearSection = ({ images, year }: GalleryYearSectionProps) => {
+const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) => {
+  const filteredImages = images.filter(image => image.quarter === quarter);
   return (
     <>
-      <h2 className=" text-4xl mt-4 font-semibold ">{year}</h2>
-      <div className="min-w-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  ">
-        {images.map((image) => (
+      {quarter !== "NA" && <h3 className="text-lg font-semibold my-4">{quarter}</h3>}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {filteredImages.map((image) => (
           <ScrollTransition key={image.id}>
             <div className="relative group overflow-hidden rounded-lg">
               <Link href={image.link}>
