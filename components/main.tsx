@@ -1,28 +1,76 @@
+"use client";
 import Image from "next/image";
 import ScrollTransition from "./scroll-transition";
+import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 import { FaInstagram, FaLink } from "react-icons/fa";
+import { Link } from "@mui/material";
+import { galleryImages2023_2024 } from "@/data/galleryImages";
+import GallerySmall from "./gallerySmall";
+import Events from "./events";
+import { useEffect, useRef, useState } from "react";
 
 const Main = () => {
+  const leftContainerRef = useRef<HTMLDivElement>(null); // Specify the type explicitly
+  const [leftContainerHeight, setLeftContainerHeight] = useState(0);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (leftContainerRef.current) {
+        setLeftContainerHeight(leftContainerRef.current.offsetHeight);
+      }
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    console.log(leftContainerHeight);
+
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="relative h-80 lg:h-[85vh]">
-        <Image
-          src="/homepage/all_staff.jpg"
-          alt="Staff Cover Photo"
-          fill
-          quality={100}
-          priority={true}
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="relative z-10">
-            <h1 className="text-4xl font-semibold mb-4 uppercase">
-              TAIWANESE AMERICAN STUDENT ASSOCIATION
-            </h1>
+    <div className="mt-8 grid lg:grid-cols-1 xl:grid-cols-2 grid-rows-2">
+      <Link href="/staff">
+        <div
+          ref={leftContainerRef}
+          className="col-span-1 w-full max-w-full h-auto relative"
+        >
+          <Image
+            src="/homepage/all_staff.jpg"
+            alt="Staff Cover Photo"
+            width={2000}
+            height={2000}
+            quality={100}
+            priority={true}
+            className="w-full h-full object-cover object-center rounded-2xl"
+          />
+          <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+            <div className="relative z-10">
+              <h1 className="text-4xl font-semibold mb-4 uppercase">
+                Meet our staff!
+              </h1>
+            </div>
           </div>
+          <div className="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
         </div>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </Link>
+      <div
+        className="col-span-1 flex flex-col"
+        style={{ height: leftContainerHeight }}
+      >
+        <div className="mx-8 flex-grow">
+          <GallerySmall
+            images={galleryImages2023_2024.slice().reverse()}
+            year="2022-2023"
+            quarter="Spring"
+          />
+        </div>
+        <div className="mx-8 flex-grow mt-8">
+          <Events />
+        </div>
       </div>
+
       <div className="w-full text-center bg-gray-100 py-8">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="my-8">
