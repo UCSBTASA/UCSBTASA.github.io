@@ -84,6 +84,7 @@ module.exports = {
         amulya: ["Amulya", "sans-serif"],
         satoshi: ["Satoshi", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
+        jacques: ['"Jacques Francois"', 'serif'], 
       },
       keyframes: {
         "accordion-down": {
