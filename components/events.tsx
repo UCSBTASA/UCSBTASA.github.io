@@ -69,7 +69,7 @@ const Events = () => {
             {upcomingEvents.map((event) => (
               <div
                 key={event.title}
-                className="flex-shrink-0 w-[300px] bg-white rounded-lg shadow-lg"
+                className="flex-shrink-0 w-[300px] bg-white rounded-lg"
               >
                 <div className="p-4">
                   <h3 className="text-xl font-bold mb-2">{event.title}</h3>

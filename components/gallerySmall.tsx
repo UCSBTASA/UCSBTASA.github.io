@@ -33,7 +33,7 @@ const GallerySmall = ({ images, year, quarter }: GallerySmallProps) => {
             {lastFourImages.map((image) => (
               <div
                 key={image.id}
-                className="flex-shrink-0 w-[300px] bg-white rounded-lg shadow-lg"
+                className="flex-shrink-0 w-[300px] bg-white rounded-lg"
               >
                 <Link href={image.link}>
                   <div className="max-w-full overflow-hidden rounded-t-md">
@@ -55,7 +55,7 @@ const GallerySmall = ({ images, year, quarter }: GallerySmallProps) => {
               </div>
             ))}
           </div>
-          <ScrollBar orientation="horizontal" />
+          <ScrollBar orientation="horizontal" className="" />
         </ScrollArea>
       </div>
     </div>
