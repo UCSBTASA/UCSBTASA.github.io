@@ -243,9 +243,37 @@ export const galleryImages2023_2024: GalleryImage[] = [
   },
   {
     id: 34,
-    title: "TASA NIGHT MARKET",
+    title: "Tasa Night Market",
     imageUrl: "/gallery_photos/2023-2024/night_market_2024.jpg",
+    link: "https://photos.app.goo.gl/VydKi4ceTJ6GyBae7", 
+    quarter: "Spring",
+  },
+  {
+    id: 34,
+    title: "Spring Banquet",
+    imageUrl: "/gallery_photos/2023-2024/spring_banquet.JPG",
     link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9", 
+    quarter: "Spring",
+  },
+  {
+    id: 34,
+    title: "Senior Appreciation",
+    imageUrl: "/gallery_photos/2023-2024/senior_appreciation.JPG",
+    link: "https://photos.app.goo.gl/986jebW3HAhwb61C6", 
+    quarter: "Spring",
+  },
+  {
+    id: 34,
+    title: "IM Vball",
+    imageUrl: "/gallery_photos/2023-2024/im_vball.JPG",
+    link: "https://photos.app.goo.gl/NAV8iqXhyru3kogo6", 
+    quarter: "Spring",
+  },
+  {
+    id: 34,
+    title: "Spring GM #4",
+    imageUrl: "/gallery_photos/2023-2024/spring_gm_4.JPG",
+    link: "https://photos.app.goo.gl/zoPPnzNH7XMnrxPM6", 
     quarter: "Spring",
   },
 ];
