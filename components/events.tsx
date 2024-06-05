@@ -65,13 +65,13 @@ const Events = () => {
             </div>
           </div>
         ) : (
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex gap-4 overflow-x-auto pb-2">
             {upcomingEvents.map((event) => (
-              <div className="w-full">
-                <div
-                  key={event.title}
-                  className="bg-white rounded-lg shadow p-4"
-                >
+              <div
+                key={event.title}
+                className="flex-shrink-0 w-[300px] bg-white rounded-lg shadow-lg"
+              >
+                <div className="p-4">
                   <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                   <p className="text-gray-600 mb-2">
                     <strong>Date: </strong> {formatDate(event.date)}

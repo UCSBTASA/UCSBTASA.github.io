@@ -8,7 +8,7 @@ import { galleryImages2023_2024 } from "@/data/galleryImages";
 import GallerySmall from "./gallerySmall";
 import Events from "./events";
 import { useEffect, useRef, useState } from "react";
-
+import { Button } from "./ui/button";
 const Main = () => {
   const leftContainerRef = useRef<HTMLDivElement>(null); // Specify the type explicitly
   const [leftContainerHeight, setLeftContainerHeight] = useState(0);
@@ -30,49 +30,31 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="mt-8 grid lg:grid-cols-1 xl:grid-cols-2 grid-rows-2">
-      <Link href="/staff">
-        <div
-          ref={leftContainerRef}
-          className="col-span-1 w-full max-w-full h-auto relative"
-        >
-          <Image
+    <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6">
+        <div className="relative overflow-hidden rounded-2xl shadow-lg">
+          <img
             src="/homepage/all_staff.jpg"
-            alt="Staff Cover Photo"
-            width={2000}
-            height={2000}
-            quality={100}
-            priority={true}
-            className="w-full h-full object-cover object-center rounded-2xl"
+            alt="Featured Image"
+            width={800}
+            height={600}
+            className="object-cover w-full h-[400px] md:h-full"
           />
-          <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-            <div className="relative z-10">
-              <h1 className="text-4xl font-semibold mb-4 uppercase">
-                Meet our staff!
-              </h1>
-            </div>
-          </div>
-          <div className="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
         </div>
-      </Link>
-      <div
-        className="col-span-1 flex flex-col"
-        style={{ height: leftContainerHeight }}
-      >
-        <div className="mx-8 flex-grow">
+        <div className="flex flex-col gap-6">
           <GallerySmall
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
             quarter="Spring"
           />
-        </div>
-        <div className="mx-8 flex-grow mt-8">
-          <Events />
+          <div className="flex flex-col gap-4">
+            <Events />
+          </div>
         </div>
       </div>
 
       <div className="w-full text-center bg-gray-100 py-8">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="my-8">
             <ScrollTransition>
               <h2 className="text-3xl font-bold font-raleway text-gray-900 uppercase">
