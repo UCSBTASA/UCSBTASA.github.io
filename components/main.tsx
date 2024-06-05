@@ -40,7 +40,7 @@ const Main = () => {
             height={600}
             className="object-cover w-full h-[400px] md:h-full"
           />
-          <Link href="/staff">
+          <Link href="/staff" style={{ textDecoration: 'none' }}>
             <a
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20"
               style={{ paddingBottom: "45%" }}
