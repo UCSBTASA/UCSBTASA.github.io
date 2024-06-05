@@ -50,7 +50,7 @@ const Events = () => {
   );
 
   return (
-    <div className="bg-gray-100 py-8 rounded-2xl">
+    <div className="bg-gray-100 py-12 rounded-2xl">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Upcoming Events

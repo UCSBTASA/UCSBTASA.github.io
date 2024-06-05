@@ -23,9 +23,11 @@ const GallerySmall = ({ images, year, quarter }: GallerySmallProps) => {
   return (
     <div className="bg-gray-100 py-8 rounded-2xl">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
-          Our Recent Events
-        </h2>
+        <Link href="/gallery">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Our Recent Events
+          </h2>
+        </Link>
         <ScrollArea className="w-full max-w-full h-auto rounded-2xl">
           <div className="flex gap-4 overflow-x-auto pb-2">
             {lastFourImages.map((image) => (
@@ -44,10 +46,11 @@ const GallerySmall = ({ images, year, quarter }: GallerySmallProps) => {
                     />
                   </div>
                 </Link>
-                <div className="p-4 rounded-lg">
-                  <h3 className="rounded-lg text-lg font-semibold text-center text-white bg-black bg-opacity-75 py-2 rounded-b-md">
+                <div className="bg-white p-2 ">
+                  <h3 className="font-semibold text-center text-lg md:text-xl">
                     {image.title.toUpperCase()}
                   </h3>
+                  {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
                 </div>
               </div>
             ))}

@@ -40,14 +40,25 @@ const Main = () => {
             height={600}
             className="object-cover w-full h-[400px] md:h-full"
           />
+          <Link href="/staff">
+            <a
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20"
+              style={{ paddingBottom: "45%" }}
+            >
+              <h2 className="text-4xl font-bold text-white">
+                Meet your Staff!
+              </h2>
+            </a>
+          </Link>
         </div>
+
         <div className="flex flex-col gap-6">
           <GallerySmall
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
             quarter="Spring"
           />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col">
             <Events />
           </div>
         </div>
