@@ -65,7 +65,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center py-8 gap-6">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center py-8 gap-6 p-4 md:p-6">
 
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl ml:4">
           <div className="my-8">
@@ -114,7 +114,7 @@ const Main = () => {
             </ScrollTransition>
           </div>
         </div>
-        <div className="relative flex justify-center bg-gray-100 rounded-lg mr:4">
+        <div className="relative flex justify-center bg-gray-100 rounded-xl mr:4">
           <div className="my-auto">
             <Youtube></Youtube>
           </div>
