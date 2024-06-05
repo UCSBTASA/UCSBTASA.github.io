@@ -34,6 +34,7 @@
     "react-icons": "^4.10.1",
     "react-iframe": "^1.8.5",
     "react-modal": "^3.16.1",
+    "react-youtube": "^10.1.0",
     "rsuite": "^5.37.3",
     "sharp": "^0.33.2",
     "tailwind-merge": "^2.3.0",

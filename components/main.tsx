@@ -9,6 +9,7 @@ import GallerySmall from "./gallerySmall";
 import Events from "./events";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
+import Youtube from "./youtube";
 const Main = () => {
   const leftContainerRef = useRef<HTMLDivElement>(null); // Specify the type explicitly
   const [leftContainerHeight, setLeftContainerHeight] = useState(0);
@@ -40,7 +41,7 @@ const Main = () => {
             height={600}
             className="object-cover w-full h-[400px] md:h-full"
           />
-          <Link href="/staff" style={{ textDecoration: 'none' }}>
+          <Link href="/staff" style={{ textDecoration: "none" }}>
             <a
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20"
               style={{ paddingBottom: "45%" }}
@@ -64,8 +65,13 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="w-full text-center bg-gray-100 py-8">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center py-8 gap-6">
+        <div className="relative flex justify-center bg-gray-100 rounded-lg mr:4">
+          <div className="my-auto">
+            <Youtube></Youtube>
+          </div>
+        </div>
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl ml:4">
           <div className="my-8">
             <ScrollTransition>
               <h2 className="text-3xl font-bold font-raleway text-gray-900 uppercase">
