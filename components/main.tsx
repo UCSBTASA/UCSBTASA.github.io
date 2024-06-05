@@ -44,7 +44,7 @@ const Main = () => {
           <Link href="/staff" style={{ textDecoration: "none" }}>
             <a
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20"
-              style={{ paddingBottom: "45%" }}
+              style={{ paddingBottom: "55%" }}
             >
               <h2 className="text-4xl font-bold text-white">
                 Meet your Staff!
@@ -66,11 +66,7 @@ const Main = () => {
       </div>
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center py-8 gap-6">
-        <div className="relative flex justify-center bg-gray-100 rounded-lg mr:4">
-          <div className="my-auto">
-            <Youtube></Youtube>
-          </div>
-        </div>
+
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl ml:4">
           <div className="my-8">
             <ScrollTransition>
@@ -116,6 +112,11 @@ const Main = () => {
                 </a>
               </div>
             </ScrollTransition>
+          </div>
+        </div>
+        <div className="relative flex justify-center bg-gray-100 rounded-lg mr:4">
+          <div className="my-auto">
+            <Youtube></Youtube>
           </div>
         </div>
       </div>
