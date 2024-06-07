@@ -5,8 +5,8 @@ import YouTube from "react-youtube";
 class Youtube extends React.Component {
   render() {
     const options = {
-      height: "225",
-      width: "400",
+      height: "360",
+      width: "640",
       playerVars: {
         autoplay: 1,
         controls: 1,
