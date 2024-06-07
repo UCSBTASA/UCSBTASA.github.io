@@ -1,30 +1,55 @@
-import Image from "next/image";
+"use client";
 import ScrollTransition from "./scroll-transition";
 import { FaInstagram, FaLink } from "react-icons/fa";
-
+import { Link } from "@mui/material";
+import { galleryImages2023_2024 } from "@/data/galleryImages";
+import GallerySmall from "./gallerySmall";
+import Events from "./events";
+import Youtube from "./youtube";
+import Instagram from "./instagram";
 const Main = () => {
   return (
     <div>
-      <div className="relative h-80 lg:h-[85vh]">
-        <Image
-          src="/homepage/all_staff.jpg"
-          alt="Staff Cover Photo"
-          fill
-          quality={100}
-          priority={true}
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-        <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="relative z-10">
-            <h1 className="text-4xl font-semibold mb-4 uppercase">
-              TAIWANESE AMERICAN STUDENT ASSOCIATION
-            </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6">
+        <div className="relative overflow-hidden rounded-2xl shadow-lg">
+          <img
+            src="/homepage/all_staff.jpg"
+            alt="Featured Image"
+            width={800}
+            height={600}
+            className="object-cover w-full h-[400px] md:h-full"
+          />
+          <Link href="/staff" style={{ textDecoration: "none" }}>
+            <a
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20"
+              style={{ paddingBottom: "55%" }}
+            >
+              <h2 className="text-4xl font-bold text-white">
+                Meet your Staff!
+              </h2>
+            </a>
+          </Link>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          <GallerySmall
+            images={galleryImages2023_2024.slice().reverse()}
+            year="2022-2023"
+            quarter="Spring"
+          />
+          <div className="flex flex-col">
+            <Events />
           </div>
         </div>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="w-full text-center bg-gray-100 py-8">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+
+      <div className="w-full grid grid-cols-1 xl:grid-cols-3 text-center py-8 gap-6">
+        <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
+          <div className="my-8 xl:my-auto ">
+            <Youtube></Youtube>
+          </div>
+        </div>
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
           <div className="my-8">
             <ScrollTransition>
               <h2 className="text-3xl font-bold font-raleway text-gray-900 uppercase">
@@ -70,6 +95,9 @@ const Main = () => {
               </div>
             </ScrollTransition>
           </div>
+        </div>
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
+          <Instagram></Instagram>
         </div>
       </div>
     </div>
