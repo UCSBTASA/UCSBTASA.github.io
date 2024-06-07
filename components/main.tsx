@@ -1,35 +1,13 @@
 "use client";
-import Image from "next/image";
 import ScrollTransition from "./scroll-transition";
-import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 import { FaInstagram, FaLink } from "react-icons/fa";
 import { Link } from "@mui/material";
 import { galleryImages2023_2024 } from "@/data/galleryImages";
 import GallerySmall from "./gallerySmall";
 import Events from "./events";
-import { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
 import Youtube from "./youtube";
+import Instagram from "./instagram";
 const Main = () => {
-  const leftContainerRef = useRef<HTMLDivElement>(null); // Specify the type explicitly
-  const [leftContainerHeight, setLeftContainerHeight] = useState(0);
-
-  useEffect(() => {
-    const updateHeight = () => {
-      if (leftContainerRef.current) {
-        setLeftContainerHeight(leftContainerRef.current.offsetHeight);
-      }
-    };
-
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    console.log(leftContainerHeight);
-
-    return () => {
-      window.removeEventListener("resize", updateHeight);
-    };
-  }, []);
-
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6">
@@ -65,9 +43,13 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 xl:grid-cols-2 text-center py-8 gap-6 p-4 md:p-6">
-
-        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl ml:4">
+      <div className="w-full grid grid-cols-1 xl:grid-cols-3 text-center py-8 gap-6">
+        <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
+          <div className="my-8 xl:my-auto ">
+            <Youtube></Youtube>
+          </div>
+        </div>
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
           <div className="my-8">
             <ScrollTransition>
               <h2 className="text-3xl font-bold font-raleway text-gray-900 uppercase">
@@ -114,10 +96,8 @@ const Main = () => {
             </ScrollTransition>
           </div>
         </div>
-        <div className=" flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl ml:4">
-          <div className="my-8 xl:my-auto">
-            <Youtube></Youtube>
-          </div>
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
+          <Instagram></Instagram>
         </div>
       </div>
     </div>
