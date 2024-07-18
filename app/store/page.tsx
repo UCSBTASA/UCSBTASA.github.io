@@ -12,7 +12,7 @@ const Store = () => {
       name: "TASA T-Shirt 2024",
       price: 15.0,
       imageFront: "/store/tshirtfront2024.JPG",
-      imageBack: "/store/tshirtback2024.jpeg",
+      imageBack: "/store/tshirtback2024.JPG",
     },
     {
       name: "TASA Hoodie 2023",
@@ -46,36 +46,34 @@ const Store = () => {
           Pickup will be at our General Meetings or coordinate with us on
           Instagram @tasa.ucsb.
         </p>
-        <div className="gap-4 mt-4 flex  flex-wrap justify-center w-{80%}">
-          {products.map((product, index) =>
-            product.imageBack ? (
-              <div key={index} className="bg-white p-4 border rounded shadow">
-                <div className="h-80 w-80 relative group">
+        <div className="flex flex-wrap">
+          {products.map((product, index) => (
+            <div
+              key={index}
+              className={`w-1/2 ${index >= 2 ? "w-1/3" : ""} p-4`}
+            >
+              <div className="bg-white border rounded shadow">
+                <div className="h-80 w-full relative group">
                   <div
-                    className="h-80 w-80 bg-center bg-no-repeat bg-contain group-hover:opacity-0 transition-opacity duration-200 ease-in-out"
+                    className={`h-80 w-full bg-center bg-no-repeat bg-contain ${
+                      product.imageBack
+                        ? "group-hover:opacity-0 transition-opacity duration-200 ease-in-out"
+                        : ""
+                    }`}
                     style={{ backgroundImage: `url(${product.imageFront})` }}
                   ></div>
-                  <div
-                    className="h-80 w-80 opacity-0 group-hover:opacity-100 bg-center bg-no-repeat bg-contain absolute top-0 left-0 transition-opacity duration-200 ease-in-out"
-                    style={{ backgroundImage: `url(${product.imageBack})` }}
-                  ></div>
+                  {product.imageBack && (
+                    <div
+                      className="h-80 w-full opacity-0 group-hover:opacity-100 bg-center bg-no-repeat bg-contain absolute top-0 left-0 transition-opacity duration-200 ease-in-out"
+                      style={{ backgroundImage: `url(${product.imageBack})` }}
+                    ></div>
+                  )}
                 </div>
                 <h3 className="text-lg font-semibold">{product.name}</h3>
                 <p className="text-gray-600">${product.price.toFixed(2)}</p>
               </div>
-            ) : (
-              <div key={index} className="bg-white p-4 border rounded shadow">
-                <div className="h-80 w-80 relative group">
-                  <div
-                    className="h-80 w-80 bg-center bg-no-repeat bg-contain"
-                    style={{ backgroundImage: `url(${product.imageFront})` }}
-                  ></div>
-                </div>
-                <h3 className="text-lg font-semibold">{product.name}</h3>
-                <p className="text-gray-600">${product.price.toFixed(2)}</p>
-              </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
         <a
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 w-36"
