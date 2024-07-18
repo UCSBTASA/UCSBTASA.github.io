@@ -46,11 +46,19 @@ const Store = () => {
           Pickup will be at our General Meetings or coordinate with us on
           Instagram @tasa.ucsb.
         </p>
+        <a
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 w-36"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScOrI62k881MTWlfMApAVFMcj6134Xkr0X_V2sKSPuOfJiPJA/viewform"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Order Now
+        </a>
         <div className="flex flex-wrap">
           {products.map((product, index) => (
             <div
               key={index}
-              className={`w-1/2 ${index >= 2 ? "w-1/3" : ""} p-4`}
+              className={`w-full md:w-1/2 ${index >= 2 ? "md:w-1/3" : ""} p-4`}
             >
               <div className="bg-white border rounded shadow">
                 <div className="h-80 w-full relative group">
@@ -75,14 +83,6 @@ const Store = () => {
             </div>
           ))}
         </div>
-        <a
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 w-36"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScOrI62k881MTWlfMApAVFMcj6134Xkr0X_V2sKSPuOfJiPJA/viewform"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Order Now
-        </a>
       </div>
       {/* <Construction></Construction> */}
     </div>
