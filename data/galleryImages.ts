@@ -6,6 +6,7 @@ export interface GalleryImage {
   imageUrl: string;
   link: string;
   quarter: string;
+  date?: string;
 }
 
 export const galleryImages2023_2024: GalleryImage[] = [
@@ -247,6 +248,7 @@ export const galleryImages2023_2024: GalleryImage[] = [
     imageUrl: "/gallery_photos/2023-2024/night_market_2024.jpg",
     link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9", 
     quarter: "Spring",
+    date: "May 4th, 2024",
   },
 ];
 

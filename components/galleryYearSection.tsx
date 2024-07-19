@@ -7,6 +7,7 @@ interface GalleryImage {
   imageUrl: string;
   link: string;
   quarter: string;
+  date: string; 
 }
 
 interface GalleryYearSectionProps {
@@ -44,7 +45,7 @@ const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) 
                 <h3 className="font-semibold text-xl md:text-2xl">
                   {image.title}
                 </h3>
-                <p className="text-base text-gray-500 ">{image.title}</p>
+                <p className="text-base text-gray-500 ">{image.date}</p>
               </div>
             </div>
           </ScrollTransition>
