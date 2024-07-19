@@ -7,10 +7,11 @@ import GallerySmall from "./gallerySmall";
 import Events from "./events";
 import Youtube from "./youtube";
 import Instagram from "./instagram";
+import EventGallery from "./eventGallery";
 const Main = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-100 ">
         <div className="relative overflow-hidden rounded-2xl shadow-lg">
           <img
             src="/homepage/all_staff.jpg"
@@ -31,24 +32,26 @@ const Main = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-6">
-          <GallerySmall
-            images={galleryImages2023_2024.slice().reverse()}
-            year="2022-2023"
-            quarter="Spring"
-          />
-          <div className="flex flex-col">
-            <Events />
+        <div className="flex flex-col">
+          <div className="bg-gray-100 rounded-2xl">
+            <div className="mx-auto sm:px-2 lg:px-4">
+              <Link href="/gallery">
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Our Recent Events
+                </h2>
+              </Link>
+            </div>
           </div>
+          <EventGallery></EventGallery>
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 xl:grid-cols-3 text-center py-8 gap-6">
-        <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
+      <div className="w-full grid grid-cols-1 xl:grid-cols-2 text-center py-8 gap-6 bg-gray-100 ">
+        {/* <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8  rounded-xl">
           <div className="my-8 xl:my-auto ">
             <Youtube></Youtube>
           </div>
-        </div>
+        </div> */}
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 bg-gray-100 rounded-xl">
           <div className="my-8">
             <ScrollTransition>

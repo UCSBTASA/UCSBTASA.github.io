@@ -14,23 +14,21 @@ interface GallerySmallProps {
   images: GalleryImage[];
   year: string;
   quarter: string;
+  start: number;
+  end: number;
 }
 
-const GallerySmall = ({ images, year, quarter }: GallerySmallProps) => {
+const GallerySmall = ({ images, year, quarter, start, end }: GallerySmallProps) => {
   const filteredImages = images.filter((image) => image.quarter === quarter);
-  const lastFourImages = filteredImages.slice(-8);
+  const lastImages = filteredImages.slice(start, end);
 
   return (
     <div className="bg-gray-100 py-8 rounded-2xl">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <Link href="/gallery">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Our Recent Events
-          </h2>
-        </Link>
+
         <ScrollArea className="w-full max-w-full h-auto rounded-2xl">
           <div className="flex gap-4 overflow-x-auto pb-2">
-            {lastFourImages.map((image) => (
+            {lastImages.map((image) => (
               <div
                 key={image.id}
                 className="flex-shrink-0 w-[300px] bg-white rounded-lg"
