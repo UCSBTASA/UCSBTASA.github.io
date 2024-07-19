@@ -15,19 +15,11 @@ interface GalleryYearSectionProps {
   quarter: string;
 }
 
-const GalleryYearSection = ({
-  images,
-  year,
-  quarter,
-}: GalleryYearSectionProps) => {
-  const filteredImages = images.filter((image) => image.quarter === quarter);
+const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) => {
+  const filteredImages = images.filter(image => image.quarter === quarter);
   return (
     <>
-      {quarter !== "NA" && (
-        <h3 className="flex justify-center font-jacques text-4xl font-semibold my-4">
-          {quarter} Quarter
-        </h3>
-      )}
+      {quarter !== "NA" && <h3 className="text-lg font-semibold my-4">{quarter}</h3>}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredImages.map((image) => (
           <ScrollTransition key={image.id}>
@@ -49,10 +41,10 @@ const GalleryYearSection = ({
                 width={600}
               />
               <div className="bg-white p-4 ">
-                <h3 className="font-jacques text-xl md:text-2xl">
-                  {image.title.toUpperCase()}
+                <h3 className="font-semibold text-xl md:text-2xl">
+                  {image.title}
                 </h3>
-                {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
+                <p className="text-base text-gray-500 ">{image.title}</p>
               </div>
             </div>
           </ScrollTransition>
