@@ -1,58 +1,76 @@
 "use client";
 import { useState } from "react";
-import familyTrees from "@/data/familytrees";
-import ScrollTransition from "@/components/scroll-transition";
+import { OrganizationChart } from 'primereact/organizationchart';
+import test from "node:test";
+
+
+
+const generateTree = (depth) => {
+  if (depth === 0) {
+    return { label: "foo" };
+  }
+  return {
+    label: "foo",
+    expanded: true,
+    children: [
+      generateTree(depth - 1),
+      generateTree(depth - 1),
+      generateTree(depth - 1),
+    ],
+  };
+}
+
+
 
 const FamilyTrees = () => {
-  const [isImageClicked, setImageClicked] = useState(false);
-  const [clickedImage, setClickedImage] = useState<string | null>(null);
+  let testTree = [generateTree(3)];
+  console.log(testTree);
 
-  const handleImageClick = (imageSrc: string) => {
-    setImageClicked(!isImageClicked);
-    setClickedImage(imageSrc);
+  const [data] = useState([
+    {
+      label: 'Argentina',
+      expanded: true,
+      children: [
+        {
+          label: 'Argentina',
+          expanded: true,
+          children: [
+            {
+              label: 'Argentina'
+            },
+            {
+              label: 'Croatia'
+            }
+          ]
+        },
+        {
+          label: 'France',
+          expanded: true,
+          children: [
+            {
+              label: 'France'
+            },
+            {
+              label: 'Morocco'
+            }
+          ]
+        }
+      ]
+    }
+  ]);
+
+  const nodeTemplate = (node) => {
+    return (
+        <div className="flex flex-column align-items-center">
+            <img alt={node.label} src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png" className={`w-2rem shadow-2 flag flag-${node.data}`} />
+            <div className="mt-3 font-medium text-lg bg-red-100 h-full w-full">{node.label}</div>
+        </div>
+    );
   };
 
   return (
-    <div>
-      <div className="bg-gray-100">
-        <div className="mx-4 lg:mx-16 py-8">
-          <h1 className="text-4xl text-center font-bold mb-8">TASA's FAMS!</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {familyTrees.map((famTrees) => (
-              <ScrollTransition>
-                <div
-                  className={`bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 cursor-pointer ${
-                    isImageClicked ? "h-full" : ""
-                  }`}
-                  onClick={() => handleImageClick(famTrees.image)}
-                >
-                  <div className="mb-2">
-                    <img
-                      src={famTrees.image}
-                      alt={famTrees.title}
-                      className={`w-full ${isImageClicked ? "h-full" : ""}`}
-                    />
-                  </div>
-                  <h2 className="text-xl text-center font-semibold mb-2">
-                    {famTrees.title}
-                  </h2>
-                </div>
-              </ScrollTransition>
-            ))}
-          </div>
-
-          {isImageClicked && clickedImage && (
-            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
-              <img
-                src={clickedImage}
-                alt="Clicked Image"
-                className="max-h-screen max-w-screen"
-                onClick={() => setImageClicked(false)}
-              />
-            </div>
-          )}
-        </div>
-      </div>
+    <div className = "w-full bg-green-100 flex flex-wrap">
+      <OrganizationChart value={testTree} nodeTemplate={nodeTemplate}/>
     </div>
   );
 };
