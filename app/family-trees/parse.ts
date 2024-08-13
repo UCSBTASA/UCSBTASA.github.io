@@ -8,7 +8,7 @@ export function getFamNames() {
     return fam_names;
 }
 
-export function assembleTree(fam_name) {
+export function assembleTree(fam_name: string) {
     let fam_obj;
     for (const fam of data) {
         if (fam["Fam"] == fam_name) {
@@ -32,7 +32,7 @@ export function assembleTree(fam_name) {
 }
 
 //helper function
-function constructTree(name, fam_members) {
+function constructTree(name: string, fam_members: any): any {
     const children = [];
     
     let member;

@@ -6,43 +6,6 @@ import dynamic from 'next/dynamic'
 import { OrganizationChart } from 'primereact/organizationchart';
 import {assembleTree, getFamNames} from './parse';
 
-const generateTree = (depth) => { // deprecate this function after testing
-  if (depth === 0) {
-    return {
-      label: "foobarbaz",
-      expanded: true,
-      className: 'bg-indigo-500 text-white',
-      style: { borderRadius: '12px' },
-      data: {
-          image: 'https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png',
-          name: 'andrew cheng',
-          title: 'CEO'
-      },
-    };
-  }
-
-  const children = [];
-  
-  if ((Math.floor(Math.random() * 4) + 1) !== 1) {
-    for (let i = 0; i < Math.floor(Math.random() * 4) + 1  ; i++) {
-      children.push(generateTree(depth - 1));
-    }
-  }
-
-  return {
-    label: "foobarbaz",
-    expanded: true,
-    className: 'bg-indigo-500 text-white',
-    style: { borderRadius: '12px' },
-    data: {
-        image: 'https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png',
-        name: 'andrew cheng',
-        title: 'CEO'
-    },
-    children: children
-  };
-}
-
 const NoSSRFamilyTrees = () => {
   const famNames = getFamNames();
   const testTrees = [];
@@ -57,7 +20,7 @@ const NoSSRFamilyTrees = () => {
     testTrees.push(treeRow);
   }
 
-  const nodeTemplate = (node) => {
+  const nodeTemplate = (node: any) => {
     return (
       <div className="flex flex-col items-center p-2">
           {/* <img alt={node.data.name} src={node.data.image} className="mb-3 w-12 h-12" /> */}
@@ -68,21 +31,21 @@ const NoSSRFamilyTrees = () => {
   };
 
   const styleObj = {
-    "table": (context) => ({
+    "table": () => ({
       className: `mx-0`,
     }),
-    "node": ({context}) => ({
+    "node": () => ({
       className: `px-0 w-12`,
     }),
     "nodecell": {
       className: 'px-0',
     },
-    "line-right": ({context}) => ({
+    "line-right": (context: any) => ({
       className: `text-center align-top py-0 px-0 rounded-none
                   ${context.lineTop ? 'border-t' : ''}
                   dark:border-blue-900/40`,
     }),
-    "line-left": ({context}) => ({
+    "line-left": (context: any) => ({
       className: `text-center align-top py-0 px-0 rounded-none border-r
                   ${context.lineTop ? 'border-t' : ''}
                   dark:border-blue-900/40`,
