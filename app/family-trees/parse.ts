@@ -1,5 +1,40 @@
 import data from './data.json';
 
+export function yearToRGB(year: string) {
+    switch (year) {
+        case "2020":
+            return "bg-[#6cb9f9]";
+        case "2021":
+            return "bg-[#f2a861]";
+        case "2022":
+            return "bg-[#61d48f]";
+        case "2023":
+            return "bg-[#ee81d4]";
+        case "2024":
+            return "bg-[#f98c6c]";
+        default:
+            return "bg-gray-500";
+    }
+}
+
+export function recapitalizeAndParseName(name: string){
+    //avert your eyes (I'm hardcoding these because there's no way around it)
+    if (name == "hufuwu") return "HuFuWu";
+    if (name == "tt") return "TT";
+
+    //remove all text inside a parentheses
+    name = name.replace(/\(.*\)/, "");
+
+    //recapitalize the name, taking care of dashes
+    for (let i = 0; i < name.length; i++){
+        if (i === 0 || name[i-1] === "-" || name[i-1] === " "){
+            name = name.slice(0, i) + name[i].toUpperCase() + name.slice(i+1);
+        }
+    }
+
+    return name;
+}
+
 export function getFamNames() {
     const fam_names = [];
     for (const fam of data) {
@@ -23,7 +58,6 @@ export function assembleTree(fam_name: string) {
 
     const heads = fam_obj["Heads"];
 
-    //TODO: make the output multiple trees, per head
     const trees = [];
     for (const head of heads) {
         trees.push(constructTree(head, fam_obj["Members"]));
@@ -59,6 +93,7 @@ function constructTree(name: string, fam_members: any): any {
             style: { borderRadius: '12px' },
             data: {
                 name: name,
+                year: member["Recruitment Year"],
             }
         });
     }
@@ -70,6 +105,7 @@ function constructTree(name: string, fam_members: any): any {
         style: { borderRadius: '12px' },
         data: {
             name: name,
+            year: member["Recruitment Year"],
         },
         children: children
     });

@@ -1,14 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
-import test from "node:test";
-import css from "styled-jsx/css";
 import dynamic from 'next/dynamic'
 import { OrganizationChart } from 'primereact/organizationchart';
-import {assembleTree, getFamNames} from './parse';
+import {assembleTree, getFamNames, recapitalizeAndParseName, yearToRGB} from './parse';
+import styleObj from "./style_obj";
 
 const NoSSRFamilyTrees = () => {
   const famNames = getFamNames();
   const testTrees = [];
+
+  // Assemble the tree for each family, and store them in a 2D array
   for (const famName of famNames) {
     const miniTrees = assembleTree(famName);
     const treeRow = [];
@@ -20,59 +20,37 @@ const NoSSRFamilyTrees = () => {
     testTrees.push(treeRow);
   }
 
+  // Node template for the organization chart
   const nodeTemplate = (node: any) => {
+    const [firstName, lastName] = recapitalizeAndParseName(node.data.name).split(" ");
+    const color = yearToRGB(node.data.year);
     return (
-      <div className="flex flex-col items-center p-2">
-          {/* <img alt={node.data.name} src={node.data.image} className="mb-3 w-12 h-12" /> */}
-          <p className="text-[0.7rem] font-bold">{node.data.name}</p>
-          <p className="text-[0.7rem]">{node.data.title}</p>
+      <div className= {`flex flex-col items-center p-2 ${color} rounded-xl`}>
+          <p className="text-[0.7rem] font-bold">{firstName}</p>
+          <p className="text-[0.7rem] font-bold">{lastName}</p>
+          <p className="text-[0.7rem]">{node.data.year != "None" ? node.data.year : null}</p>
       </div>
     );
   };
 
-  const styleObj = {
-    "table": () => ({
-      className: `mx-0`,
-    }),
-    "node": () => ({
-      className: `px-0 w-12`,
-    }),
-    "nodecell": () => ({
-      className: 'px-0',
-    }),
-    "line-right": ({context}: any) => ({
-      className: `text-center align-top py-0 px-0 rounded-none
-                  ${context.lineTop ? 'border-t' : ''}
-                  dark:border-blue-900/40`,
-    }),
-    "line-left": ({context}: any) => ({
-      className: `text-center align-top py-0 px-0 rounded-none border-r
-                  ${context.lineTop ? 'border-t' : ''}
-                  dark:border-blue-900/40`,
-    }),
-    "line-down": {
-      className: 'border-r dark:border-blue-900/40',
-    },
-  }
-
   return (
     <>
-    <div className = "w-full h-full bg-green-100 flex flex-col flex-wrap">
+    <div className = "flex flex-col flex-wrap items-center align-self bg-gray-100">
+      
       {testTrees.map((treeRow, index) => {
         return (
-          <>
-            <div className = "flex flex-row items-start">
+          <div className = "bg-gray-200 flex-auto m-6 p-6 rounded-3xl drop-shadow-lg">
+            <h2 className="text-4xl mb-6 font-semibold text-center"> {recapitalizeAndParseName(famNames[index])} </h2>
+            <div className = "flex flex-row justify-center flex-wrap my-4 ">
               {treeRow.map((tree, index) => {
                 return (
                   <OrganizationChart value={tree} nodeTemplate={nodeTemplate} pt = {styleObj}/>
                 )
               })}
             </div>
-            <div key={index} className = "w-full h-10 bg-red-100"/>
-          </>
+          </div>
         )
       })}
-      {/* <OrganizationChart value={testTree} nodeTemplate={nodeTemplate} /> */}
     </div>
     </>
   );
