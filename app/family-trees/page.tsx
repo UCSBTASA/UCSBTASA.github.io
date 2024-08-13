@@ -1,78 +1,122 @@
 "use client";
-import { useState } from "react";
-import { OrganizationChart } from 'primereact/organizationchart';
+import { useEffect, useState } from "react";
 import test from "node:test";
+import css from "styled-jsx/css";
+import dynamic from 'next/dynamic'
+import { OrganizationChart } from 'primereact/organizationchart';
+import {assembleTree, getFamNames} from './parse';
 
-
-
-const generateTree = (depth) => {
+const generateTree = (depth) => { // deprecate this function after testing
   if (depth === 0) {
-    return { label: "foo" };
+    return {
+      label: "foobarbaz",
+      expanded: true,
+      className: 'bg-indigo-500 text-white',
+      style: { borderRadius: '12px' },
+      data: {
+          image: 'https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png',
+          name: 'andrew cheng',
+          title: 'CEO'
+      },
+    };
   }
+
+  const children = [];
+  
+  if ((Math.floor(Math.random() * 4) + 1) !== 1) {
+    for (let i = 0; i < Math.floor(Math.random() * 4) + 1  ; i++) {
+      children.push(generateTree(depth - 1));
+    }
+  }
+
   return {
-    label: "foo",
+    label: "foobarbaz",
     expanded: true,
-    children: [
-      generateTree(depth - 1),
-      generateTree(depth - 1),
-      generateTree(depth - 1),
-    ],
+    className: 'bg-indigo-500 text-white',
+    style: { borderRadius: '12px' },
+    data: {
+        image: 'https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png',
+        name: 'andrew cheng',
+        title: 'CEO'
+    },
+    children: children
   };
 }
 
-
-
-const FamilyTrees = () => {
-  let testTree = [generateTree(3)];
-  console.log(testTree);
-
-  const [data] = useState([
-    {
-      label: 'Argentina',
-      expanded: true,
-      children: [
-        {
-          label: 'Argentina',
-          expanded: true,
-          children: [
-            {
-              label: 'Argentina'
-            },
-            {
-              label: 'Croatia'
-            }
-          ]
-        },
-        {
-          label: 'France',
-          expanded: true,
-          children: [
-            {
-              label: 'France'
-            },
-            {
-              label: 'Morocco'
-            }
-          ]
-        }
-      ]
+const NoSSRFamilyTrees = () => {
+  const famNames = getFamNames();
+  const testTrees = [];
+  for (const famName of famNames) {
+    const miniTrees = assembleTree(famName);
+    const treeRow = [];
+    
+    for (const miniTree of miniTrees) {
+      treeRow.push([miniTree]);
     }
-  ]);
+    
+    testTrees.push(treeRow);
+  }
 
   const nodeTemplate = (node) => {
     return (
-        <div className="flex flex-column align-items-center">
-            <img alt={node.label} src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png" className={`w-2rem shadow-2 flag flag-${node.data}`} />
-            <div className="mt-3 font-medium text-lg bg-red-100 h-full w-full">{node.label}</div>
-        </div>
+      <div className="flex flex-col items-center p-2">
+          {/* <img alt={node.data.name} src={node.data.image} className="mb-3 w-12 h-12" /> */}
+          <p className="text-[0.7rem] font-bold">{node.data.name}</p>
+          <p className="text-[0.7rem]">{node.data.title}</p>
+      </div>
     );
   };
 
+  const styleObj = {
+    "table": (context) => ({
+      className: `mx-0`,
+    }),
+    "node": ({context}) => ({
+      className: `px-0 w-12`,
+    }),
+    "nodecell": {
+      className: 'px-0',
+    },
+    "line-right": ({context}) => ({
+      className: `text-center align-top py-0 px-0 rounded-none
+                  ${context.lineTop ? 'border-t' : ''}
+                  dark:border-blue-900/40`,
+    }),
+    "line-left": ({context}) => ({
+      className: `text-center align-top py-0 px-0 rounded-none border-r
+                  ${context.lineTop ? 'border-t' : ''}
+                  dark:border-blue-900/40`,
+    }),
+    "line-down": {
+      className: 'border-r dark:border-blue-900/40',
+    },
+  }
+
   return (
-    <div className = "w-full bg-green-100 flex flex-wrap">
-      <OrganizationChart value={testTree} nodeTemplate={nodeTemplate}/>
+    <>
+    <div className = "w-full h-full bg-green-100 flex flex-col flex-wrap">
+      {testTrees.map((treeRow, index) => {
+        return (
+          <>
+            <div className = "flex flex-row items-start">
+              {treeRow.map((tree, index) => {
+                return (
+                  <OrganizationChart value={tree} nodeTemplate={nodeTemplate} pt = {styleObj}/>
+                )
+              })}
+            </div>
+            <div key={index} className = "w-full h-10 bg-red-100"/>
+          </>
+        )
+      })}
+      {/* <OrganizationChart value={testTree} nodeTemplate={nodeTemplate} /> */}
     </div>
+    </>
   );
 };
+
+const FamilyTrees = dynamic(() => Promise.resolve(NoSSRFamilyTrees), {
+  ssr: false,
+});
 
 export default FamilyTrees;
