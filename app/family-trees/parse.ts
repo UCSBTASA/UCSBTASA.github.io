@@ -45,8 +45,6 @@ export function getFamNames() {
 
 export function assembleTree(fam_name: string) {
     let fam_obj;
-    
-    data.sort((a, b) => b["Members"].length - a["Members"].length );
 
     for (const fam of data) {
         if (fam["Fam"] == fam_name) {
