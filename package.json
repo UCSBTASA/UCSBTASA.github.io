@@ -23,6 +23,7 @@
     "eslint-config-next": "^14.2.3",
     "next": "^14.2.3",
     "postcss": "^8.4.33",
+    "primereact": "^10.7.0",
     "react": "^18.3.1",
     "react-div-100vh": "^0.7.0",
     "react-dom": "^18.3.1",
