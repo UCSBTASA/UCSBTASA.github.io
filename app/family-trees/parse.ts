@@ -10,7 +10,7 @@ export function yearToRGB(year: string) {
             return "bg-[#61d48f]";
         case "2023":
             return "bg-[#ee81d4]";
-        case "2024":
+        case "W24":
             return "bg-[#f98c6c]";
         default:
             return "bg-gray-500";
@@ -22,8 +22,8 @@ export function recapitalizeAndParseName(name: string){
     if (name == "hufuwu") return "HuFuWu";
     if (name == "tt") return "TT";
 
-    //remove all text inside a parentheses
-    name = name.replace(/\(.*\)/, "");
+    //remove all text inside a parentheses, thats it
+    name = name.replace(/[\ ]*\([^\)]*\)[\ ]*/, " ");
 
     //recapitalize the name, taking care of dashes
     for (let i = 0; i < name.length; i++){
@@ -45,6 +45,9 @@ export function getFamNames() {
 
 export function assembleTree(fam_name: string) {
     let fam_obj;
+    
+    data.sort((a, b) => b["Members"].length - a["Members"].length );
+
     for (const fam of data) {
         if (fam["Fam"] == fam_name) {
             fam_obj = fam;
