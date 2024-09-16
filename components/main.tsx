@@ -3,7 +3,6 @@ import ScrollTransition from "./scroll-transition";
 import { FaInstagram, FaLink } from "react-icons/fa";
 import { Link } from "@mui/material";
 import { galleryImages2023_2024 } from "@/data/galleryImages";
-import GallerySmall from "./gallerySmall";
 import Events from "./events";
 import Youtube from "./youtube";
 import Instagram from "./instagram";

@@ -58,13 +58,13 @@ const Carousel = () => {
   return (
     <div className="flex flex-col items-center m-4">
       <div className="relative flex items-center flex-col max-w-4xl">
-        <Image
-          src={images[activeIndex]}
-          alt={`Carousel Image ${activeIndex + 1}`}
-          width={1920}
-          height={1080}
-          className="mb-4 rounded-lg shadow-md bg-cover bg-center h-96 object-cover"
-        />
+          <Image
+            src={images[activeIndex]}
+            alt={`Carousel Image ${activeIndex + 1}`}
+            width={1920}
+            height={1080}
+            className="mb-4 rounded-lg shadow-md bg-cover bg-center h-96 object-cover"
+          />
         <button
           onClick={handlePrev}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 py-2 text-white bg-black bg-opacity-50 rounded-full"

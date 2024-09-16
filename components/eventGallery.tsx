@@ -1,6 +1,7 @@
 import events from "../data/eventData";
 import { galleryImages2023_2024 } from "@/data/galleryImages";
 import Image from "next/image";
+import Link from "next/link";
 const EventGallery = () => {
   const formatTime = (time: string) => {
     const [hours, minutes] = time.split(":");
@@ -55,15 +56,16 @@ const EventGallery = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {galleryImages.slice(0, 2).map((image) => (
             <div key={image.id} className="relative">
-              <Image
-                src={image.imageUrl}
-                alt={image.title}
-                width={500} // Adjust width as needed
-                height={300} // Adjust height as needed
-                style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
-                className="object-cover rounded-lg"
-              />
-
+              <Link href={image.link} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={image.imageUrl}
+                  alt={image.title}
+                  width={500} // Adjust width as needed
+                  height={300} // Adjust height as needed
+                  style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
+                  className="object-cover rounded-lg"
+                />
+              </Link>
               <div className="bg-white p-2 ">
                 <h3 className="font-semibold text-center text-lg md:text-xl">
                   {image.title.toUpperCase()}
@@ -78,20 +80,26 @@ const EventGallery = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {galleryImages.slice(2, 4).map((image) => (
                 <div key={image.id} className="relative">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.title}
-                    width={500} // Adjust width as needed
-                    height={300} // Adjust height as needed
-                    style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
-                    className="object-cover rounded-lg"
-                  />
-              <div className="bg-white p-2 ">
-                  <h3 className="font-semibold text-center text-lg md:text-xl">
-                    {image.title.toUpperCase()}
-                  </h3>
-                  {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
-                </div>
+                  <Link
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.title}
+                      width={500} // Adjust width as needed
+                      height={300} // Adjust height as needed
+                      style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
+                      className="object-cover rounded-lg"
+                    />
+                  </Link>
+                  <div className="bg-white p-2 ">
+                    <h3 className="font-semibold text-center text-lg md:text-xl">
+                      {image.title.toUpperCase()}
+                    </h3>
+                    {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
+                  </div>
                 </div>
               ))}
             </div>
