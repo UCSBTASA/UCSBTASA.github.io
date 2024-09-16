@@ -8,8 +8,8 @@ import YouTube from "react-youtube";
 class Youtube extends React.Component {
   render() {
     const options = {
-      height: 255,
-      width: 400,
+      height: 720,
+      width: 1080,
       playerVars: {
         autoplay: 1 as 0 | 1, // Explicitly define as 0 | 1
         controls: 1 as 0 | 1, // Explicitly define as 0 | 1

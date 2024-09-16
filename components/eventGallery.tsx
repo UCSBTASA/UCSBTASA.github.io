@@ -1,7 +1,6 @@
 import events from "../data/eventData";
-import GallerySmall from "./gallerySmall";
 import { galleryImages2023_2024 } from "@/data/galleryImages";
-
+import Image from "next/image";
 const EventGallery = () => {
   const formatTime = (time: string) => {
     const [hours, minutes] = time.split(":");
@@ -45,30 +44,57 @@ const EventGallery = () => {
   const currentDate = new Date();
   const futureDate = new Date();
   futureDate.setDate(currentDate.getDate() - 1);
-
+  const galleryImages = galleryImages2023_2024.reverse();
   const upcomingEvents = events.filter(
     (event) => new Date(event.date) >= futureDate
   );
 
   return (
-    <div className="mx-auto px-2">
+    <div className="mx-auto">
       <div className="bg-gray-100 rounded-2xl">
-        <GallerySmall
-          images={galleryImages2023_2024.slice().reverse()}
-          year="2022-2023"
-          quarter="Spring"
-          start={0}
-          end={3}
-        />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          {galleryImages.slice(0, 2).map((image) => (
+            <div key={image.id} className="relative">
+              <Image
+                src={image.imageUrl}
+                alt={image.title}
+                width={500} // Adjust width as needed
+                height={300} // Adjust height as needed
+                style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
+                className="object-cover rounded-lg"
+              />
+
+              <div className="bg-white p-2 ">
+                <h3 className="font-semibold text-center text-lg md:text-xl">
+                  {image.title.toUpperCase()}
+                </h3>
+                {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
+              </div>
+            </div>
+          ))}
+        </div>
         <div className="bg-gray-100 rounded-2xl">
           {upcomingEvents.length === 0 ? (
-            <GallerySmall
-              images={galleryImages2023_2024.slice().reverse()}
-              year="2022-2023"
-              quarter="Spring"
-              start={4}
-              end={7}
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              {galleryImages.slice(2, 4).map((image) => (
+                <div key={image.id} className="relative">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.title}
+                    width={500} // Adjust width as needed
+                    height={300} // Adjust height as needed
+                    style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
+                    className="object-cover rounded-lg"
+                  />
+              <div className="bg-white p-2 ">
+                  <h3 className="font-semibold text-center text-lg md:text-xl">
+                    {image.title.toUpperCase()}
+                  </h3>
+                  {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
+                </div>
+                </div>
+              ))}
+            </div>
           ) : (
             <div className="flex gap-4 overflow-x-auto pb-2">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -81,20 +107,20 @@ const EventGallery = () => {
                 >
                   <div className="p-4">
                     <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                    <p className="text-gray-600 mb-2">
+                    <div className="text-gray-600 mb-2">
                       <strong>Date: </strong> {formatDate(event.date)}
-                    </p>
-                    <p className="text-gray-600 mb-2">
+                    </div>
+                    <div className="text-gray-600 mb-2">
                       <strong>Time: </strong>
                       {event.customTime === "" ? (
                         <span>{event.time} PST</span>
                       ) : (
                         event.customTime
                       )}
-                    </p>
-                    <p className="text-gray-600">
+                    </div>
+                    <div className="text-gray-600">
                       <strong>Location:</strong> {event.location}
-                    </p>
+                    </div>
                   </div>
                 </div>
               ))}

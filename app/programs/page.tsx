@@ -49,7 +49,7 @@ const Programs = () => {
                 <h2 className="text-xl font-semibold mt-2 mb-2">
                   {program.title}
                 </h2>
-                <p className="text-gray-600">{program.description}</p>
+                <div className="text-gray-600">{program.description}</div>
               </div>
             ))}
           </div>

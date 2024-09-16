@@ -4,7 +4,7 @@ const Instagram = () => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <InstagramEmbed
-        url="https://www.instagram.com/p/C73EgaBu7r_/?hl=en"
+        url="https://www.instagram.com/p/C8drbvItbX9/?hl=en&img_index=1"
         width={480}
       />
     </div>
