@@ -245,14 +245,14 @@ export const galleryImages2023_2024: GalleryImage[] = [
     id: 34,
     title: "Tasa Night Market",
     imageUrl: "/gallery_photos/2023-2024/night_market_2024.jpg",
-    link: "https://photos.app.goo.gl/VydKi4ceTJ6GyBae7", 
+    link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9", 
     quarter: "Spring",
   },
   {
     id: 34,
     title: "Spring Banquet",
     imageUrl: "/gallery_photos/2023-2024/spring_banquet.JPG",
-    link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9", 
+    link: "https://photos.app.goo.gl/VydKi4ceTJ6GyBae7",
     quarter: "Spring",
   },
   {
