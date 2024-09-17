@@ -2,6 +2,7 @@ import events from "../data/eventData";
 import { galleryImages2023_2024 } from "@/data/galleryImages";
 import Image from "next/image";
 import Link from "next/link";
+
 const EventGallery = () => {
   const formatTime = (time: string) => {
     const [hours, minutes] = time.split(":");
@@ -55,22 +56,24 @@ const EventGallery = () => {
       <div className="bg-gray-100 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {galleryImages.slice(0, 2).map((image) => (
-            <div key={image.id} className="relative">
+            <div key={image.id} className="justify-center">
               <Link href={image.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={image.imageUrl}
                   alt={image.title}
-                  width={500} // Adjust width as needed
-                  height={300} // Adjust height as needed
-                  style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
-                  className="object-cover rounded-lg"
+                  width={400} // Adjust width as needed
+                  height={200} // Adjust height as needed
+                  className="w-full h-auto rounded-lg object-cover px-4"
+                  style={{
+                    objectFit: "cover",
+                    aspectRatio: "16/9" , // Dynamic aspect ratio
+                  }}
                 />
               </Link>
-              <div className="bg-white p-2 ">
+              <div className="bg-white p-2 mx-4">
                 <h3 className="font-semibold text-center text-lg md:text-xl">
                   {image.title.toUpperCase()}
                 </h3>
-                {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
               </div>
             </div>
           ))}
@@ -90,15 +93,18 @@ const EventGallery = () => {
                       alt={image.title}
                       width={500} // Adjust width as needed
                       height={300} // Adjust height as needed
-                      style={{ width: "600px", height: "200px" }} // Ensure fixed dimensions
-                      className="object-cover rounded-lg"
+                      className="w-full h-auto rounded-lg object-cover px-4"
+                      style={{
+                        objectFit: "cover",
+                        aspectRatio: 16/9
+                          // Dynamic aspect ratio
+                      }}
                     />
                   </Link>
-                  <div className="bg-white p-2 ">
+                  <div className="bg-white p-2 mx-4">
                     <h3 className="font-semibold text-center text-lg md:text-xl">
                       {image.title.toUpperCase()}
                     </h3>
-                    {/* <p className="text-base text-gray-500 ">{image.title}</p> */}
                   </div>
                 </div>
               ))}

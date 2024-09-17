@@ -3,8 +3,6 @@
 import ScrollTransition from "./scroll-transition";
 import { FaInstagram, FaLink } from "react-icons/fa";
 import { Link } from "@mui/material";
-import { galleryImages2023_2024 } from "@/data/galleryImages";
-import Events from "./events";
 import Youtube from "@/components/youtube";
 import Instagram from "@/components/instagram";
 import EventGallery from "@/components/eventGallery";
@@ -100,7 +98,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-4xl my-8 bg-gray-100 rounded-xl">
+        <div className="relative mx-auto max-w-4xl my-8 bg-gray-100 rounded-xl pt-4">
           {isClient && <Instagram />}
         </div>
       </div>
