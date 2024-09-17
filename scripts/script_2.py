@@ -23,7 +23,7 @@ gc = gspread.service_account(filename = service_account_path)
 sh = gc.open("TASA Scheduling 24-25")
 
 # Get the current sheet of interest and its records
-sheet_instance = sh.get_worksheet(2)
+sheet_instance = sh.worksheet("Website Events")
 records_data = sheet_instance.get_all_records()
 
 # Convert to pandas DataFrame
