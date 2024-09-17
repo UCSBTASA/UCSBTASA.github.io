@@ -1,13 +1,15 @@
 "use client";
+
 import ScrollTransition from "./scroll-transition";
 import { FaInstagram, FaLink } from "react-icons/fa";
 import { Link } from "@mui/material";
 import { galleryImages2023_2024 } from "@/data/galleryImages";
 import Events from "./events";
-import Youtube from "./youtube";
-import Instagram from "./instagram";
-import EventGallery from "./eventGallery";
-import Carousel from "./carousel";
+import Youtube from "@/components/youtube";
+import Instagram from "@/components/instagram";
+import EventGallery from "@/components/eventGallery"
+import Carousel from "@/components/carousel";
+
 const Main = () => {
   return (
     <div>
@@ -79,7 +81,7 @@ const Main = () => {
 
       <div className="w-full grid grid-cols-1 xl:grid-cols-2 text-center bg-gray-100">
         <div className="my-8 mx-auto w-full xl:w-11/12">
-          <div className="bg-gray-100 rounded-2xl pl-4">
+          <div className="bg-gray-100 rounded-2xl pl-4 grid justify-center">
             <Link href="/gallery">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Our Recent Events

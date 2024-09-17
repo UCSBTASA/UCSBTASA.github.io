@@ -2,27 +2,24 @@
 import React from "react";
 import YouTube from "react-youtube";
 
-// Define the Props interface
-
-
 class Youtube extends React.Component {
   render() {
     const options = {
-      height: 720,
-      width: 1080,
       playerVars: {
-        autoplay: 1 as 0 | 1, // Explicitly define as 0 | 1
-        controls: 1 as 0 | 1, // Explicitly define as 0 | 1
+        autoplay: 1 as 0 | 1,
+        controls: 1 as 0 | 1,
       },
     };
 
     return (
-      <YouTube
-        videoId="g5Ex5BHIApc?si=SaWB7DozkLMBU0Jr"
-        opts={options}
-        onReady={this._onReady}
-        id="video"
-      />
+      <div className="w-full aspect-w-16 aspect-h-9">
+        <YouTube
+          videoId="g5Ex5BHIApc"
+          opts={options}
+          onReady={this._onReady}
+          className="w-full h-full"
+        />
+      </div>
     );
   }
 
