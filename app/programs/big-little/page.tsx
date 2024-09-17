@@ -5,6 +5,7 @@ import Image from "next/image";
 import ScrollTransition from "@/components/scroll-transition";
 import events from "@/data/bigLittleEvents";
 import pickupPhotos from "@/data/photoLists/pickupPhotos";
+import pickup2023 from "@/data/photoLists/pickup2023" 
 
 const BigLittle = () => {
   return (
@@ -73,7 +74,7 @@ const BigLittle = () => {
         </div>
         <div className="bg-white shadow-md rounded-md p-8 m-8">
           <ScrollTransition>
-            <h1 className="text-4xl uppercase">2023-2024 PICKUP TIMELINE</h1>
+            <h1 className="text-4xl uppercase">2024-2025 PICKUP TIMELINE</h1>
             <p className="text-gray-500">
               *Dates subject to change & all event times are in <b>PST</b>{" "}
               <br />
@@ -114,6 +115,32 @@ const BigLittle = () => {
       </div>
       <div className="mx-4 lg:mx-16">
         <div className="p-8 mb-8">
+        <ScrollTransition>
+            <h1 className="text-4xl">Big Little Pickup 2023 Highlights</h1>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 mb-8">
+              {pickup2023.map((photo, index) => (
+                <Link
+                  key={index}
+                  href={"https://photos.app.goo.gl/jg1EmfXvCc2yVdWL6"}
+                  target="_"
+                >
+                  <div className="group relative cursor-pointer">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={400}
+                      height={400}
+                      className="transition transform object-cover group-hover:scale-105"
+                      style={{
+                          objectFit: "cover",
+                          aspectRatio: 16/9
+                      }}
+                    />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </ScrollTransition>
           <ScrollTransition>
             <h1 className="text-4xl">Big Little Pickup 2022 Highlights</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
