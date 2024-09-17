@@ -21,23 +21,6 @@ const Main = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 ">
         <div className="relative rounded-2xl mt-8">
           <Carousel></Carousel>
-          {/* <img
-            src="/homepage/all_staff.jpg"
-            alt="Featured Image"
-            width={800}
-            height={600}
-            className="object-cover w-full h-[400px] md:h-full"
-          /> */}
-          {/* <Link href="/staff" style={{ textDecoration: "none" }}>
-            <a
-              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20"
-              style={{ paddingBottom: "55%" }}
-            >
-              <h2 className="text-4xl font-bold text-white">
-                Meet your Staff!
-              </h2>
-            </a>
-          </Link> */}
         </div>
 
         <div className="flex flex-col mt-8">
@@ -56,7 +39,7 @@ const Main = () => {
             study groups, mentorship, and social gatherings. Join us to immerse
             yourself in Taiwanese culture, whether you have roots or a
             curiosity. Let&apos;s celebrate and promote Taiwanese culture,
-            making lasting memories and connections!
+            making <strong>lasting memories and connections!</strong>
           </div>
           <div className="text-raleway text-center text-md lg:text-lg max-w-3xl mx-auto text-gray-600 mt-4 px-4">
             To learn more about us, you can check out our upcoming events, meet
@@ -85,15 +68,17 @@ const Main = () => {
       </div>
 
       <div className="w-full grid grid-cols-1 xl:grid-cols-2 text-center bg-gray-100">
+        
         <div className="my-8 mx-auto w-full xl:w-11/12">
           <div className="bg-gray-100 rounded-2xl pl-4 grid justify-center">
+            
             <Link href="/gallery">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Our Recent Events
               </h2>
             </Link>
             <div className="mx-auto max-w-4xl">
-            {isClient && <EventGallery />}
+              {isClient && <EventGallery />}
             </div>
           </div>
         </div>
