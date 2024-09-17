@@ -8,7 +8,9 @@ class Youtube extends React.Component {
       playerVars: {
         autoplay: 1 as 0 | 1,
         controls: 1 as 0 | 1,
+        origin: "https://www.youtube-nocookie.com",
       },
+      host: "https://www.youtube-nocookie.com",
     };
 
     return (
