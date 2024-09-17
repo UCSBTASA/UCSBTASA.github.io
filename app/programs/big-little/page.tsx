@@ -5,7 +5,7 @@ import Image from "next/image";
 import ScrollTransition from "@/components/scroll-transition";
 import events from "@/data/bigLittleEvents";
 import pickupPhotos from "@/data/photoLists/pickupPhotos";
-import pickup2023 from "@/data/photoLists/pickup2023" 
+import pickup2023 from "@/data/photoLists/pickup2023";
 
 const BigLittle = () => {
   return (
@@ -115,29 +115,23 @@ const BigLittle = () => {
       </div>
       <div className="mx-4 lg:mx-16">
         <div className="p-8 mb-8">
-        <ScrollTransition>
+          <ScrollTransition>
             <h1 className="text-4xl">Big Little Pickup 2023 Highlights</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 mb-8">
               {pickup2023.map((photo, index) => (
-                <Link
-                  key={index}
-                  href={"https://photos.app.goo.gl/jg1EmfXvCc2yVdWL6"}
-                  target="_"
-                >
-                  <div className="group relative cursor-pointer">
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      width={400}
-                      height={400}
-                      className="transition transform object-cover group-hover:scale-105"
-                      style={{
-                          objectFit: "cover",
-                          aspectRatio: 16/9
-                      }}
-                    />
-                  </div>
-                </Link>
+                <div className="group relative cursor-pointer">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={400}
+                    height={400}
+                    className="transition transform object-cover group-hover:scale-105"
+                    style={{
+                      objectFit: "cover",
+                      aspectRatio: 16 / 9,
+                    }}
+                  />
+                </div>
               ))}
             </div>
           </ScrollTransition>
