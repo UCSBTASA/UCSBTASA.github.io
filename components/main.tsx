@@ -7,10 +7,17 @@ import { galleryImages2023_2024 } from "@/data/galleryImages";
 import Events from "./events";
 import Youtube from "@/components/youtube";
 import Instagram from "@/components/instagram";
-import EventGallery from "@/components/eventGallery"
+import EventGallery from "@/components/eventGallery";
 import Carousel from "@/components/carousel";
+import { useEffect, useState } from "react";
 
 const Main = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 ">
@@ -88,22 +95,20 @@ const Main = () => {
               </h2>
             </Link>
             <div className="mx-auto max-w-4xl">
-              <EventGallery />
+            {isClient && <EventGallery />}
             </div>
           </div>
         </div>
 
         <div className="relative mx-auto max-w-4xl my-8 bg-gray-100 rounded-xl">
-          <Instagram></Instagram>
+          {isClient && <Instagram />}
         </div>
       </div>
       <h2 className="text-3xl text-center font-bold font-montserrat text-gray-900 my-8">
         A Year in Review: What You Missed
       </h2>
       <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-8 rounded-xl">
-        <div className="my-8 xl:my-auto ">
-          <Youtube></Youtube>
-        </div>
+        <div className="my-8 xl:my-auto ">{isClient && <Youtube />}</div>
       </div>
     </div>
   );
