@@ -8,6 +8,11 @@ import pickupPhotos from "@/data/photoLists/pickupPhotos";
 import pickup2023 from "@/data/photoLists/pickup2023";
 
 const BigLittle = () => {
+  // Get the current date
+  const currentDate = new Date();
+  // Set the cutoff date (October 4th, 2024 in this case)
+  const cutoffDate = new Date('2024-10-04');
+
   return (
     <div>
       <div className="relative h-80 lg:h-[85vh]">
@@ -53,7 +58,7 @@ const BigLittle = () => {
               </p>
             </ScrollTransition>
           </div>
-          <div className="flex flex-wrap justify-center items-center md:w-[40%] md:pl-4 mt-4">
+          <div className="flex flex-wrap justify-center text-center items-center md:w-[40%] md:pl-4 mt-4">
             <ScrollTransition>
               <span className="table">
                 <Link
@@ -66,7 +71,7 @@ const BigLittle = () => {
                     width={400}
                     height={400}
                   />
-                  <p>Big-Little Reveal 2022 (click for full album)</p>
+                  <p className="text-gray-700 mt-2">Big-Little Reveal 2022 (click for full album)</p>
                 </Link>
               </span>
             </ScrollTransition>
@@ -84,7 +89,8 @@ const BigLittle = () => {
               ​In addition, please make an effort to reach out to potentials in
               your own time!{" "}
             </p>
-            <div className=" p-8">
+            <strong> {currentDate > cutoffDate ? "" : "Events coming out soon, come back later to check them out!"} </strong>
+            <div className="p-8">
               <div className="max-w-3xl mx-auto">
                 <h1 className="text-2xl font-semibold mb-4">Event Timeline</h1>
                 <div className="flex flex-col space-y-8">
@@ -98,12 +104,14 @@ const BigLittle = () => {
                       </div>
                       <div>
                         <h2 className="text-lg font-semibold text-black">
-                          {event.name}
+                          {currentDate > cutoffDate ? event.name : '...'}
                         </h2>
                         <p className="text-gray-500">
-                          {event.date} - {event.location}
+                          {currentDate > cutoffDate ? event.date : '...'} - {event.location}
                         </p>
-                        <p className="text-gray-700">{event.description}</p>
+                        <p className="text-gray-700">
+                          {currentDate > cutoffDate ? event.description : '...'}
+                        </p>
                       </div>
                     </div>
                   ))}
