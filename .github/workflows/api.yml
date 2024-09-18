@@ -3,9 +3,9 @@ name: Store Secrets and Run Script
 on:
   push:
     branches:
-      - '**' # Trigger on push to any branch
+      - justin-api 
   schedule:
-    - cron: "0 */4 * * *" # Trigger on schedule (every 4 hours)
+    - cron: "0 */24 * * *" 
   workflow_dispatch:
     inputs:
       branch:
