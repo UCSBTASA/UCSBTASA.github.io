@@ -1,8 +1,11 @@
 name: Store Secrets and Run Script
 
 on:
+  push:
+    branches:
+      - '**' # This allows the workflow to run on any branch
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */4 * * *" # Schedule trigger
   workflow_dispatch:
     inputs:
       branch:
