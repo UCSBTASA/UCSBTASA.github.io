@@ -4,9 +4,9 @@ import {
   galleryImages2023_2024,
   galleryImages2022_2023,
   galleryImages2021_2022,
-  galleryImages2019_2020,
-  galleryImages2018_2019,
-  galleryImages2017_2018,
+  // galleryImages2019_2020,
+  // galleryImages2018_2019,
+  // galleryImages2017_2018,
 } from "@/data/galleryImages";
 import React, { useState } from 'react';
 import GalleryYearSection from "@/components/galleryYearSection";
@@ -57,7 +57,7 @@ const GalleryPage: React.FC = () => {
                   quarter = "NA"
                   />
 
-          <h2 className="text-2xl mt-4 font-semibold">
+          {/* <h2 className="text-2xl mt-4 font-semibold">
           2019-2020
           </h2>
           <GalleryYearSection
@@ -82,8 +82,8 @@ const GalleryPage: React.FC = () => {
                   images={galleryImages2017_2018}
                   year="2017-2018"
                   quarter = "NA"
-                  />
-        </div>
+  /> */}
+        </div> 
       </div>
     </div>
   );
