@@ -3,15 +3,16 @@ name: Store Secrets and Run Script
 on:
   push:
     branches:
-      - '**' # This allows the workflow to run on any branch
+      - '**' # Trigger on push to any branch
   schedule:
-    - cron: "0 */4 * * *" # Schedule trigger
+    - cron: "0 */4 * * *" # Trigger on schedule (every 4 hours)
   workflow_dispatch:
     inputs:
       branch:
-        description: "Run on branch"
+        description: "Branch to run the workflow on"
         required: true
         default: "main"
+        type: string
 
 jobs:
   build:
@@ -23,6 +24,8 @@ jobs:
 
       - name: Checkout repo content
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref }}
 
       - name: Setup Python
         uses: actions/setup-python@v2
@@ -69,4 +72,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.event.inputs.branch || github.ref }}
