@@ -52,7 +52,12 @@ const Programs = () => {
                 <h2 className="text-xl font-semibold mt-2 mb-1">
                   {program.title}
                 </h2>
-                <p className="text-gray-400 text-sm mb-1">{program.creds}</p>
+                <Link
+                  href={"https://www.instagram.com/clairevosslerphotography"}
+                  className="text-gray-400 text-sm mb-1 underline"
+                >
+                  {program.creds}
+                </Link>
                 <p className="text-gray-600">{program.description}</p>
               </div>
             ))}
