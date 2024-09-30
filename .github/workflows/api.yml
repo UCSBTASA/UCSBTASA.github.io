@@ -1,0 +1,75 @@
+name: Store Secrets and Run Script
+
+on:
+  push:
+    branches:
+      - justin-api 
+  schedule:
+    - cron: "0 */24 * * *" 
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to run the workflow on"
+        required: true
+        default: "main"
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Debug Message
+        run: echo "Workflow triggered at $(date)"
+
+      - name: Checkout repo content
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Retrieve and write client_secret_json
+        env:
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+        run: |
+          mkdir -p _secrets_
+          echo "${CLIENT_SECRET_JSON}" > _secrets_/client_secret.json
+
+      - name: Retrieve and write token_json
+        env:
+          TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
+        run: |
+          echo "${TOKEN_JSON}" > _secrets_/token.json
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Python Script
+        run: |
+          python scripts/api.py
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "jlang61@ucsb.edu"
+          git config --global user.name "Justin Lang"
+
+      - name: Add changes excluding secrets
+        run: |
+          git add --all
+          git reset _secrets_
+
+      - name: Commit changes
+        run: |
+          git commit -m "Update files except secrets" || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event.inputs.branch || github.ref }}
