@@ -11,25 +11,25 @@ from google.auth.transport.requests import AuthorizedSession
 
 
 creds = None
-scopes = ['https://www.googleapis.com/auth/photoslibrary.readonly']
+scopes = [
+    'https://www.googleapis.com/auth/photoslibrary.readonly',
+    'https://www.googleapis.com/auth/photoslibrary.sharing'
+]
 
 if os.path.exists('_secrets_/token.json'):
-    creds = Credentials.from_authorized_user_file(
-        '_secrets_/token.json', scopes)
+    creds = Credentials.from_authorized_user_file('_secrets_/token.json', scopes)
 
 if not creds or not creds.valid:
     if creds and creds.expired and creds.refresh_token:
         creds.refresh(Request())
     else:
-        flow = InstalledAppFlow.from_client_secrets_file(
-            '_secrets_/client_secret.json', scopes)
+        flow = InstalledAppFlow.from_client_secrets_file('_secrets_/client_secret.json', scopes)
         creds = flow.run_local_server()
     with open('_secrets_/token.json', 'w') as token:
         token.write(creds.to_json())
 
 authed_session = AuthorizedSession(creds)
 auth_headers = {'content-type': 'application/json'}
-
 # Define function to fetch shared albums
 
 
@@ -50,7 +50,15 @@ def fetch_albums(page_token=None):
     else:
         print(f'Error fetching shared albums: {response.status_code}')
         return [], None
-
+def get_album(album_id):
+    url = f'https://photoslibrary.googleapis.com/v1/albums/{album_id}'
+    response = authed_session.get(url, headers=auth_headers)
+    
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print(f'Error fetching album details: {response.status_code}')
+        return {}
 
 albums = []
 next_page_token = None
@@ -58,9 +66,14 @@ next_page_token = None
 # Define function to extract metadata from media items
 while True:
     albums_batch, next_page_token = fetch_albums(next_page_token)
-    albums.extend(albums_batch)
+    for album in albums_batch:
+        album_id = album['id']
+        album_details = get_album(album_id)
+        print(album_details)
+        # albums.append(album_details)
     if not next_page_token:
         break
+
 pd_albums = pd.DataFrame(albums)
 # print(pd_albums.columns)
 
@@ -145,13 +158,47 @@ merged_df = sorted_merged_df
 # Define the start and end dates
 # start_date = datetime(2023, 9, 24)
 # end_date = datetime(2024, 6, 14)
+def get_quarter(creation_time, start_date, end_date):
+    """
+    Returns the quarter of the academic year for a given date.
+
+    Parameters:
+    - creation_time: datetime object of the image creation date.
+    - start_date: datetime object of the start date of the academic year.
+    - end_date: datetime object of the end date of the academic year.
+
+    Returns:
+    - String indicating the quarter: "Fall", "Winter", "Spring", or "NA".
+    """
+    # Define the end of Fall and the beginning of Winter
+    end_of_fall = datetime(start_date.year, 12, 31)
+    start_of_winter = datetime(start_date.year + 1, 1, 1)
+    end_of_winter = datetime(start_date.year + 1, 3, 14)  # Inclusive end of Winter
+    start_of_spring = datetime(start_date.year + 1, 3, 15)
+
+    # Determine the quarter based on the creation time
+    if start_date <= creation_time <= end_of_fall:
+        return "Fall"
+    elif start_of_winter <= creation_time <= end_of_winter:
+        return "Winter"
+    elif start_of_spring <= creation_time <= end_date:
+        return "Spring"
+    
+    return "NA"  # If it doesn't fit any known quarter
 
 image_directories = ['/gallery_photos/2023-2024',
-                     '/gallery_photos/2022-2023', '/gallery_photos/2021-2022']
-start_dates = [datetime(2023, 9, 24), datetime(
-    2022, 9, 18), datetime(2021, 9, 19)]
-end_dates = [datetime(2024, 6, 14), datetime(
-    2023, 6, 16), datetime(2022, 6, 10)]
+                     '/gallery_photos/2022-2023',
+                     '/gallery_photos/2021-2022',
+                     '/gallery_photos/2020-2021',
+                     '/gallery_photos/2019-2020',
+                     '/gallery_photos/2018-2019',
+                     '/gallery_photos/2017-2018']
+
+start_dates = [datetime(2023, 9, 1), datetime(2022, 9, 1), datetime(2021, 9, 1),
+               datetime(2020, 9, 1), datetime(2019, 9, 1), datetime(2018, 9, 1), datetime(2017, 9, 1)]
+
+end_dates = [datetime(2024, 6, 30), datetime(2023, 6, 30), datetime(2022, 6, 30),
+             datetime(2021, 6, 30), datetime(2020, 6, 30), datetime(2019, 6, 30), datetime(2018, 6, 30)]
 
 
 def parse_creation_time(creation_time):
@@ -199,6 +246,7 @@ with open(output_file_path, 'w') as f:
 
         # Loop through the dataset and filter images based on the date range
         for j, row in merged_df.iterrows():
+            # print(row)
             # Parse the creation time using the updated function
             creation_time = parse_creation_time(row['creation_time'])
 
@@ -207,6 +255,7 @@ with open(output_file_path, 'w') as f:
 
             # Check if the creation time falls between the current start and end dates
             if start_date <= creation_time < end_date:
+                quarter = get_quarter(creation_time, start_date, end_date)
                 f.write("{\n")
                 f.write(f"id: {j + 1},\n")
                 f.write(f"title: \"{row['title']}\",\n")
@@ -214,7 +263,7 @@ with open(output_file_path, 'w') as f:
                     '/', '_').replace('-', '_').replace('#', '_').replace('\'', '_').lower()
                 f.write(f"imageUrl: \"{image_directory}/{url_title}.jpg\",\n")
                 f.write(f"link: \"{row['productUrl']}\",\n")
-                f.write(f"quarter: \"NA\",\n")
+                f.write(f"quarter: \"{quarter}\",\n")
                 f.write("},\n")
 
         f.write("]\n\n")
