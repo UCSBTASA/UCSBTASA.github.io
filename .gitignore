@@ -10,3 +10,7 @@ out/
 .swc/
 node_modules/
 .vercel
+
+
+_secrets_/
+service_account.json

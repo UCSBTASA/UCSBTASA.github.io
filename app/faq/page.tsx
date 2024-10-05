@@ -12,7 +12,7 @@ const faqPage = () => {
             <h2 className="text-black text-xl mt-6 mb-2 font-medium">
               {faqs.question}
             </h2>
-            <p className="text-gray-700">{faqs.answer}</p>
+            <div className="text-gray-700">{faqs.answer}</div>
           </div>
         ))}
       </div>
