@@ -4,30 +4,30 @@ const Credits = () => {
   const teamMembers = [
     {
       name: "Winbert Zhang",
-      role: "Lead Developer",
+      role: "Website Development Lead 2022-2023",
       contributions: "Created website ",
     },
     {
       name: "Megan Fu",
-      role: "UI/UX Designer",
+      role: "Website Development Team 2023-2024",
       contributions:
         "Designed the carousel which is utilized in the homepage",
     },
-    {
-      name: "Andrew Chang",
-      role: "Backend Developer",
-      contributions: "Built and maintained the server-side components.",
-    },
-    {
-      name: "Diana Prince",
-      role: "Content Writer",
-      contributions: "Created and edited website content.",
-    },
-    {
-      name: "Ethan Hunt",
-      role: "Project Manager",
-      contributions: "Managed timelines and coordinated the team.",
-    },
+    // {
+    //   name: "Andrew Chang",
+    //   role: "Backend Developer",
+    //   contributions: "Built and maintained the server-side components.",
+    // },
+    // {
+    //   name: "Diana Prince",
+    //   role: "Content Writer",
+    //   contributions: "Created and edited website content.",
+    // },
+    // {
+    //   name: "Ethan Hunt",
+    //   role: "Project Manager",
+    //   contributions: "Managed timelines and coordinated the team.",
+    // },
   ];
 
   return (
