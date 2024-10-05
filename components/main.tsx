@@ -67,10 +67,10 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 xl:grid-cols-2 text-center bg-gray-100">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-100">
         
         <div className="my-8 mx-auto w-full xl:w-11/12">
-          <div className="bg-gray-100 rounded-2xl pl-4 grid justify-center">
+          <div className=" rounded-2xl pl-4 grid justify-center">
             
             <Link href="/gallery">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">

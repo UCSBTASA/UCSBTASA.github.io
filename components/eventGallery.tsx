@@ -66,7 +66,7 @@ const EventGallery = () => {
                   className="w-full h-auto rounded-lg object-cover px-4"
                   style={{
                     objectFit: "cover",
-                    aspectRatio: "16/9" , // Dynamic aspect ratio
+                    aspectRatio: "16/9", // Dynamic aspect ratio
                   }}
                 />
               </Link>
@@ -96,8 +96,8 @@ const EventGallery = () => {
                       className="w-full h-auto rounded-lg object-cover px-4"
                       style={{
                         objectFit: "cover",
-                        aspectRatio: 16/9
-                          // Dynamic aspect ratio
+                        aspectRatio: 16 / 9,
+                        // Dynamic aspect ratio
                       }}
                     />
                   </Link>
@@ -110,34 +110,36 @@ const EventGallery = () => {
               ))}
             </div>
           ) : (
-            <div className="flex gap-4 overflow-x-auto pb-2">
+            <div className="mx-auto pb-2">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Upcoming Events
               </h2>
-              {upcomingEvents.map((event) => (
-                <div
-                  key={event.title}
-                  className="flex-shrink-0 w-[300px] bg-white rounded-lg"
-                >
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                    <div className="text-gray-600 mb-2">
-                      <strong>Date: </strong> {formatDate(event.date)}
-                    </div>
-                    <div className="text-gray-600 mb-2">
-                      <strong>Time: </strong>
-                      {event.customTime === "" ? (
-                        <span>{event.time} PST</span>
-                      ) : (
-                        event.customTime
-                      )}
-                    </div>
-                    <div className="text-gray-600">
-                      <strong>Location:</strong> {event.location}
+              <div className="flex gap-4">
+                {upcomingEvents.slice(0, 2).map((event) => (
+                  <div
+                    key={event.title}
+                    className="flex-shrink-0 w-[300px] bg-white rounded-lg"
+                  >
+                    <div className="p-4">
+                      <h3 className="text-xl font-bold mb-2">{event.title}</h3>
+                      <div className="text-gray-600 mb-2">
+                        <strong>Date: </strong> {formatDate(event.date)}
+                      </div>
+                      <div className="text-gray-600 mb-2">
+                        <strong>Time: </strong>
+                        {event.customTime === "" ? (
+                          <span>{event.time} PST</span>
+                        ) : (
+                          event.customTime
+                        )}
+                      </div>
+                      <div className="text-gray-600">
+                        <strong>Location:</strong> {event.location}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           )}
         </div>

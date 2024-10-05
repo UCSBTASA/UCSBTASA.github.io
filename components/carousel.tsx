@@ -8,10 +8,13 @@ const Carousel = () => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const images = [
-    "/homepage/all_staff.jpg",
-    "/gallery_photos/2023-2024/arts_crafts.jpg",
+    "/homepage/staff_2024.png",
     "/gallery_photos/2023-2024/hot_pot_night.jpeg",
     "/gallery_photos/2023-2024/tfti.jpg",
+    "/gallery_photos/2023-2024/arts_crafts.jpg",
+    "/gallery_photos/2023-2024/pickup_reveal.jpg",
+    "/gallery_photos/2023-2024/winter_retreat.jpeg",
+
     // "image5.jpeg",
     // "image6.jpeg",
     // "image7.jpeg",
