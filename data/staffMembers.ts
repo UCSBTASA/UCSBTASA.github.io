@@ -29,7 +29,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/austin.jpg",
+    imageUrl: "/staff_photos/austin.JPG",
     imageUrlBack: "/staff_photos/austin_back.jpg",
   },
   {
@@ -51,7 +51,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/kelly.jpg",
+    imageUrl: "/staff_photos/kelly.JPG",
     imageUrlBack: "/staff_photos/kelly_back.jpg",
   },
   {
@@ -73,7 +73,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/jasmine.jpg",
+    imageUrl: "/staff_photos/jasmine.JPG",
     imageUrlBack: "/staff_photos/jasmine_back.jpg",
   },
   {
@@ -106,7 +106,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/yuehan.jpg",
+    imageUrl: "/staff_photos/yuehan.JPG",
     imageUrlBack: "/staff_photos/yuehan_back.jpg",
   },
   {
@@ -117,7 +117,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/grace_feng.jpg",
+    imageUrl: "/staff_photos/grace_feng.JPG",
     imageUrlBack: "/staff_photos/grace_feng_back.jpg",
   },
   {
@@ -128,7 +128,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/agnes.jpg",
+    imageUrl: "/staff_photos/agnes.JPG",
     imageUrlBack: "/staff_photos/agnes_back.jpg",
   },
   {
@@ -139,7 +139,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/justin.jpg",
+    imageUrl: "/staff_photos/justin.JPG",
     imageUrlBack: "/staff_photos/justin_back.jpg",
   },
   {
@@ -150,7 +150,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/emma.jpg",
+    imageUrl: "/staff_photos/emma.JPG",
     imageUrlBack: "/staff_photos/emma_back.jpg",
   },
   {
@@ -161,7 +161,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/samuel.jpg",
+    imageUrl: "/staff_photos/samuel.JPG",
     imageUrlBack: "/staff_photos/samuel_back.jpg",
   },
   {
@@ -172,7 +172,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/grace_chen.jpg",
+    imageUrl: "/staff_photos/grace_c.jpg",
     imageUrlBack: "/staff_photos/grace_chen_back.jpg",
   },
   {
@@ -183,7 +183,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/maxwell.jpg",
+    imageUrl: "/staff_photos/max.JPG",
     imageUrlBack: "/staff_photos/maxwell_back.jpg",
   },
   {
@@ -194,7 +194,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/sophia_yu.jpg",
+    imageUrl: "/staff_photos/sophia_y.jpg",
     imageUrlBack: "/staff_photos/sophia_yu_back.jpg",
   },
   {
@@ -216,7 +216,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/sophia_fung.jpg",
+    imageUrl: "/staff_photos/sophia_f.jpg",
     imageUrlBack: "/staff_photos/sophia_fung_back.jpg",
   },
   {
@@ -227,7 +227,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/sean.jpg",
+    imageUrl: "/staff_photos/sean.JPG",
     imageUrlBack: "/staff_photos/sean_back.jpg",
   },
   {
@@ -238,7 +238,7 @@ const staffMembers = [
     major: "",
     year: "",
     favMovie: "",
-    imageUrl: "/staff_photos/traci.jpg",
+    imageUrl: "/staff_photos/traci.JPG",
     imageUrlBack: "/staff_photos/traci_back.jpg",
   },
 ];
