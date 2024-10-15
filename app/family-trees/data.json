@@ -2,7 +2,6 @@
     {
         "Fam": "hufuwu",
         "Heads": [
-            "meg chang",
             "anna chuang",
             "wynee chen",
             "katie kao",
@@ -10,15 +9,6 @@
             "jason xie"
         ],
         "Members": [
-            {
-                "Name": "meg chang",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "hufuwu",
-                "Little": [
-                    "collin tran"
-                ]
-            },
             {
                 "Name": "anna chuang",
                 "Recruitment Year": "None",
@@ -177,7 +167,7 @@
                 "Big": "katie kao",
                 "Fam": "hufuwu",
                 "Little": [
-                    "megan chang",
+                    "meg chang",
                     "amy wang"
                 ]
             },
@@ -266,11 +256,13 @@
                 ]
             },
             {
-                "Name": "megan chang",
+                "Name": "meg chang",
                 "Recruitment Year": "2022",
                 "Big": "lily li",
                 "Fam": "hufuwu",
-                "Little": []
+                "Little": [
+                    "collin tran"
+                ]
             },
             {
                 "Name": "amy wang",
@@ -3452,19 +3444,9 @@
     {
         "Fam": "cat",
         "Heads": [
-            "brain shubat",
             "brian shubat"
         ],
         "Members": [
-            {
-                "Name": "brain shubat",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "cat",
-                "Little": [
-                    "anthony jin"
-                ]
-            },
             {
                 "Name": "brian shubat",
                 "Recruitment Year": "None",
@@ -3474,6 +3456,7 @@
                     "brian huynh",
                     "celine park",
                     "gianna wong",
+                    "anthony jin",
                     "jessica arnold"
                 ]
             },
@@ -3501,7 +3484,7 @@
             {
                 "Name": "anthony jin",
                 "Recruitment Year": "2021",
-                "Big": "brain shubat",
+                "Big": "brian shubat",
                 "Fam": "cat",
                 "Little": [
                     "candis wu",
