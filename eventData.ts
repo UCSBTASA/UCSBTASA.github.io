@@ -1,4 +1,4 @@
-[
+[ 
   {
     "title": "Speed Dating",
     "day of week": "Friday",
@@ -19,7 +19,7 @@
   },
   {
     "title": "Field Day",
-    "day of week": "Friday",
+    "day of wee k": "Friday",
     "date": "2024-01-26",
     "time": "3-5PM",
     "location": "Student Health Lawn",
