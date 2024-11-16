@@ -2,8 +2,9 @@
     {
         "Fam": "hufuwu",
         "Heads": [
+            "liam loberg",
+            "wesley hung",
             "andrew yeh",
-            "kyle volpp",
             "anna chuang",
             "wynee chen",
             "katie kao",
@@ -12,21 +13,30 @@
         ],
         "Members": [
             {
+                "Name": "liam loberg",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "hufuwu",
+                "Little": [
+                    "shawn li"
+                ]
+            },
+            {
+                "Name": "wesley hung",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "hufuwu",
+                "Little": [
+                    "ryan shi"
+                ]
+            },
+            {
                 "Name": "andrew yeh",
                 "Recruitment Year": "None",
                 "Big": "None",
                 "Fam": "hufuwu",
                 "Little": [
                     "ryan nguyen (me 2nd)"
-                ]
-            },
-            {
-                "Name": "kyle volpp",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "hufuwu",
-                "Little": [
-                    "joshua huang"
                 ]
             },
             {
@@ -730,13 +740,6 @@
                 "Little": []
             },
             {
-                "Name": "joshua huang",
-                "Recruitment Year": "2024",
-                "Big": "kyle volpp",
-                "Fam": "hufuwu",
-                "Little": []
-            },
-            {
                 "Name": "jordan liu",
                 "Recruitment Year": "2024",
                 "Big": "emily lombardi",
@@ -896,16 +899,40 @@
                 "Big": "amy wang",
                 "Fam": "hufuwu",
                 "Little": []
+            },
+            {
+                "Name": "ryan shi",
+                "Recruitment Year": "2023",
+                "Big": "wesley hung",
+                "Fam": "hufuwu",
+                "Little": []
+            },
+            {
+                "Name": "shawn li",
+                "Recruitment Year": "2023",
+                "Big": "liam loberg",
+                "Fam": "hufuwu",
+                "Little": []
             }
         ]
     },
     {
         "Fam": "elite",
         "Heads": [
+            "kyle volpp",
             "vicky li",
             "brianna lee"
         ],
         "Members": [
+            {
+                "Name": "kyle volpp",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "elite",
+                "Little": [
+                    "joshua huang"
+                ]
+            },
             {
                 "Name": "vicky li",
                 "Recruitment Year": "None",
@@ -1260,6 +1287,13 @@
                 "Name": "brian w",
                 "Recruitment Year": "2024",
                 "Big": "hank sha",
+                "Fam": "elite",
+                "Little": []
+            },
+            {
+                "Name": "joshua huang",
+                "Recruitment Year": "2024",
+                "Big": "kyle volpp",
                 "Fam": "elite",
                 "Little": []
             }
@@ -4679,6 +4713,38 @@
                 "Recruitment Year": "2024",
                 "Big": "agnes kou",
                 "Fam": "🍇🤏",
+                "Little": []
+            }
+        ]
+    },
+    {
+        "Fam": "best",
+        "Heads": [
+            "shawn li"
+        ],
+        "Members": [
+            {
+                "Name": "shawn li",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "best",
+                "Little": [
+                    "kathleen leung",
+                    "jenny qin"
+                ]
+            },
+            {
+                "Name": "kathleen leung",
+                "Recruitment Year": "2023",
+                "Big": "shawn li",
+                "Fam": "best",
+                "Little": []
+            },
+            {
+                "Name": "jenny qin",
+                "Recruitment Year": "2023",
+                "Big": "shawn li",
+                "Fam": "best",
                 "Little": []
             }
         ]
