@@ -1664,6 +1664,7 @@
         "Fam": "best fam",
         "Heads": [
             "andrew xiong",
+            "shawn li",
             "andrea wang",
             "ashley gong",
             "lauren leung"
@@ -1677,6 +1678,16 @@
                 "Little": [
                     "kenneth chen",
                     "elena lin"
+                ]
+            },
+            {
+                "Name": "shawn li",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "best fam",
+                "Little": [
+                    "kathleen leung",
+                    "jenny qin"
                 ]
             },
             {
@@ -1929,6 +1940,20 @@
                 "Name": "allison (ally) park",
                 "Recruitment Year": "2023",
                 "Big": "claudia wong",
+                "Fam": "best fam",
+                "Little": []
+            },
+            {
+                "Name": "kathleen leung",
+                "Recruitment Year": "2023",
+                "Big": "shawn li",
+                "Fam": "best fam",
+                "Little": []
+            },
+            {
+                "Name": "jenny qin",
+                "Recruitment Year": "2023",
+                "Big": "shawn li",
                 "Fam": "best fam",
                 "Little": []
             },
@@ -4713,38 +4738,6 @@
                 "Recruitment Year": "2024",
                 "Big": "agnes kou",
                 "Fam": "🍇🤏",
-                "Little": []
-            }
-        ]
-    },
-    {
-        "Fam": "best",
-        "Heads": [
-            "shawn li"
-        ],
-        "Members": [
-            {
-                "Name": "shawn li",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "best",
-                "Little": [
-                    "kathleen leung",
-                    "jenny qin"
-                ]
-            },
-            {
-                "Name": "kathleen leung",
-                "Recruitment Year": "2023",
-                "Big": "shawn li",
-                "Fam": "best",
-                "Little": []
-            },
-            {
-                "Name": "jenny qin",
-                "Recruitment Year": "2023",
-                "Big": "shawn li",
-                "Fam": "best",
                 "Little": []
             }
         ]
