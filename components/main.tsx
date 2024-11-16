@@ -7,7 +7,7 @@ const Main = () => {
     <div>
       <div className="relative h-80 lg:h-[85vh]">
         <Image
-          src="/homepage/staff_24-25.jpg"
+          src="/homepage/staff-24-25.jpg"
           alt="Staff Cover Photo"
           fill
           quality={100}
