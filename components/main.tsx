@@ -7,7 +7,7 @@ const Main = () => {
     <div>
       <div className="relative h-80 lg:h-[85vh]">
         <Image
-          src="/homepage/all_staff.jpg"
+          src="/homepage/staff_24-25.jpg"
           alt="Staff Cover Photo"
           fill
           quality={100}
@@ -21,7 +21,7 @@ const Main = () => {
             </h1>
           </div>
         </div>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
       <div className="w-full text-center bg-gray-100 py-8">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
