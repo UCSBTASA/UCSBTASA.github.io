@@ -9,15 +9,15 @@ const events =
     "customTime": "",
     "ready": "Yes"
   },
-  {
-    "title": "Karoke Night",
-    "day of week": "Thursday",
-    "date": "2024-11-21",
-    "time": "8-10 PM",
-    "location": "Arts 1353",
-    "customTime": "",
-    "ready": "Yes"
-  },
+  // {
+  //   "title": "Karoke Night",
+  //   "day of week": "Thursday",
+  //   "date": "2024-11-21",
+  //   "time": "8-10 PM",
+  //   "location": "Arts 1353",
+  //   "customTime": "",
+  //   "ready": "Yes"
+  // },
   {
     "title": "Fall Banquet",
     "day of week": "Saturday",
