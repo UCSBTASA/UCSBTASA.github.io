@@ -52,25 +52,25 @@ const EventGallery = () => {
   );
 
   return (
-    <div className="mx-auto">
-      <div className="bg-gray-100 rounded-2xl">
+    <div className="mx-auto ml-4">
+      <div className="bg-gray-50 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {galleryImages.slice(0, 2).map((image) => (
-            <div key={image.id} className="justify-center">
+            <div key={image.id} className="justify-center border">
               <Link href={image.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={image.imageUrl}
                   alt={image.title}
                   width={400} // Adjust width as needed
                   height={200} // Adjust height as needed
-                  className="w-full h-auto rounded-lg object-cover px-4"
+                  className="w-full h-auto rounded-lg object-cover"
                   style={{
                     objectFit: "cover",
                     aspectRatio: "16/9", // Dynamic aspect ratio
                   }}
                 />
               </Link>
-              <div className="bg-white p-2 mx-4">
+              <div className="bg-white py-2">
                 <h3 className="font-semibold text-center text-lg md:text-xl">
                   {image.title.toUpperCase()}
                 </h3>
@@ -78,11 +78,11 @@ const EventGallery = () => {
             </div>
           ))}
         </div>
-        <div className="bg-gray-100 rounded-2xl">
+        <div className="bg-gray-50 rounded-2xl">
           {upcomingEvents.length === 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {galleryImages.slice(2, 4).map((image) => (
-                <div key={image.id} className="relative">
+                <div key={image.id} className="relative border">
                   <Link
                     href={image.link}
                     target="_blank"
@@ -93,7 +93,7 @@ const EventGallery = () => {
                       alt={image.title}
                       width={500} // Adjust width as needed
                       height={300} // Adjust height as needed
-                      className="w-full h-auto rounded-lg object-cover px-4"
+                      className="w-full h-auto rounded-lg object-cover"
                       style={{
                         objectFit: "cover",
                         aspectRatio: 16 / 9,
@@ -101,7 +101,7 @@ const EventGallery = () => {
                       }}
                     />
                   </Link>
-                  <div className="bg-white p-2 mx-4">
+                  <div className="bg-white py-2">
                     <h3 className="font-semibold text-center text-lg md:text-xl">
                       {image.title.toUpperCase()}
                     </h3>

@@ -67,9 +67,9 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-100">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-50">
         
-        <div className="my-8 mx-auto w-full xl:w-11/12">
+        <div className="my-2 mx-auto w-full xl:w-11/12">
           <div className=" rounded-2xl pl-4 grid justify-center">
             
             <Link href="/gallery">
@@ -83,15 +83,15 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-4xl my-8 bg-gray-100 rounded-xl pt-4">
+        <div className="flex mx-auto max-w-4xl my-8 bg-gray-50 rounded-xl pt-4 w-[70%] h-[90%] items-center">
           {isClient && <Instagram />}
         </div>
       </div>
-      <h2 className="text-3xl text-center font-bold font-montserrat text-gray-900 my-8">
+      <h2 className="text-3xl text-center font-bold font-montserrat text-gray-900 mt-8 mb-4">
         A Year in Review: What You Missed
       </h2>
       <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-8 rounded-xl">
-        <div className="my-8 xl:my-auto ">{isClient && <Youtube />}</div>
+        <div className="mb-4 xl:my-auto ">{isClient && <Youtube />}</div>
       </div>
     </div>
   );
