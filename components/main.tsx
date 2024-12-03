@@ -48,14 +48,6 @@ const Main = () => {
           </div>
           <div className="flex justify-center space-x-6 mt-6">
             <a
-              href="https://www.instagram.com/tasa.ucsb/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <FaInstagram className="text-4xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
-            </a>
-            <a
               href="https://linktr.ee/tasaucsb"
               target="_blank"
               rel="noopener noreferrer"
