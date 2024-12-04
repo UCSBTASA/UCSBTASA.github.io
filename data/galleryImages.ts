@@ -8,6 +8,80 @@ export interface GalleryImage {
   quarter: string;
 }
 
+export const galleryImages2024_2025: GalleryImage[] = [
+  {
+    id: 1,
+    title: "GM1",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/EzoMeHVt4yMZsXns5",
+    quarter: "Fall",
+  },
+  {
+    id: 2,
+    title: "Fall 2024 GM #2",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/Sov4x8E8h3YXdbLk8",
+    quarter: "Fall",
+  },
+  {
+    id: 3,
+    title: "speed dating",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/ASg7c5f4roW7h1aG7",
+    quarter: "Fall",
+  },
+  {
+    id: 4,
+    title: "boba night",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/eE2xwQqCaHg6CqAbA",
+    quarter: "Fall",
+  },
+  {
+    id: 5,
+    title: "X Bookmarks the Spot",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/sqAbHPp1MYa4qHNq8",
+    quarter: "Fall",
+  },
+  {
+    id: 6,
+    title: "Sports Day",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/3U5j6S2cWrWJcDK3A",
+    quarter: "Fall",
+  },
+  {
+    id: 7,
+    title: "Beach Day",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/fPCMT9rMCheVHigU6",
+    quarter: "Fall",
+  },
+  {
+    id: 8,
+    title: "Mahjong Night",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/nV6qBaabvB9AcM4a8",
+    quarter: "Fall",
+  },
+  {
+    id: 9,
+    title: "GM3",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/KJF1WgZa5jUfPYyU7",
+    quarter: "Fall",
+  },
+  {
+    id: 10,
+    title: "Fall Pick Up Reveal",
+    imageUrl: "",
+    link: "https://photos.app.goo.gl/JsNMZx4pDpSQymX39",
+    quarter: "Fall",
+  },
+
+];
+
 export const galleryImages2023_2024: GalleryImage[] = [
   {
     id: 1,
