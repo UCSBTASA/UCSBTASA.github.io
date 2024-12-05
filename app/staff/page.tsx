@@ -35,12 +35,8 @@ const StaffPage = () => {
                       {staff.major}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
-                      <strong>Hometown: </strong>
-                      {staff.hometown}
-                    </p>
-                    <p className="text-md text-[#00000080] leading-16">
-                      <strong>Favorite Movie: </strong>
-                      {staff.favMovie}
+                      <strong>Pet Peeve: </strong>
+                      {staff.petPeeve}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
                       <strong>Fun Fact: </strong>
