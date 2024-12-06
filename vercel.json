@@ -6,7 +6,7 @@
     },
     "crons": [
       {
-        "path": "api/eventsRefresher",
+        "path": "/api/eventsRefresher",
         "schedule": "0 0 * * *" 
       }
     ]
