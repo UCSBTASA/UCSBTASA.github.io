@@ -1,4 +1,4 @@
-import gspread 
+import gspread
 import pandas as pd
 import json
 import datetime
@@ -12,36 +12,51 @@ def changeDate(date):
     if (date.rfind('-') + 2 == len(date)):
         date = date[0:-1] + "0" + date[-1]
     return str(year) + "-" + date   
+# date (mm-dd-yy) => day of the week
+def dayOfTheWeek(date):
+    try:
+        # Check if the date string fits the format %Y-%m-%d
+        date_object = datetime.datetime.strptime(date, "%Y-%m-%d")
+        return date_object.strftime("%A")
+    except ValueError:
+        return "Invalid date format. Please use YYYY-MM-DD."
 
 # Getting current year 
 today = datetime.date.today()
 year = today.year
-# Communicating with Google Sheets API, open the Google Sheet 
-service_account_path = "service_account.json"
 
-gc = gspread.service_account(filename = service_account_path)
-sh = gc.open("TASA Scheduling 23-24")
+# Communicating with Google Sheets API, open the Google Sheet 
+service_account_path = "/Users/gabewkung/Downloads/ucsb-tasa-events-spreadsheet-69ab3e8df759.json"
+spreadsheet_name = "TASA Event Data 24-25"
+
+gc = gspread.service_account(service_account_path)
+sh = gc.open(spreadsheet_name)
+
+
 
 # Get the current sheet of interest and its records
-sheet_instance = sh.get_worksheet(4)
+sheet_instance = sh.get_worksheet(0)
 records_data = sheet_instance.get_all_records()
 
 # Convert to pandas DataFrame
 records_df = pd.DataFrame.from_dict(records_data)
 # Convert DataFrame to JSON format
+# debugger: records_df => columns => T: Index => values: ndarray => [0:L]: list
 events = []
+print(records_df.iterrows())
 for index, row in records_df.iterrows():
     event = {
-        "title": row["Event name"],
-        "day of week": row["Day of week"],
-        "date": row["Date"],
-        "time": row["Time"],
+        "title": row["Name of Event"],
+        "day of week": dayOfTheWeek(row["Date (YYYY-MM-DD)"]),
+        "date": row["Date (YYYY-MM-DD)"],
+        "time": (row["Start Time"] + "-" + row["End Time"]) if row["End Time"] != "" else row["Start Time"],
         "location": row["Location"],
         "customTime" : "",
-        "ready" : row["Ready to add to website?"]
+        "ready" : "Yes"
     }
     # Changing the date to YYYY-MM-DD
-    event["date"] = changeDate(event["date"])
+    #event["date"] = changeDate(event["date"])
+
     # Check cases in which customTime is necessary
     if (len(event["time"]) > 0):
         if not event["time"][0].isnumeric():

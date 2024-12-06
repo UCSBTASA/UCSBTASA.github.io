@@ -3,6 +3,13 @@
       "app/api/hello/route.tsx": {
         "runtime": "vercel-node@2.3.0"
       }
-    }
-  }
+    },
+    "crons": [
+      {
+        "path": "api/eventsRefresher",
+        "schedule": "0 0 * * *" 
+      }
+    ]
+}
+ 
   
