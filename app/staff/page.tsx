@@ -33,13 +33,14 @@ const StaffPage = () => {
                     <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
                       <strong>Major: </strong>
                       {staff.major}
-                    </p> 
-                    <p className="text-md text-[#00000080] leading-16">
-                        {staff.minor != "" && <><strong> Minor: </strong> {staff.minor}</>}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
-                      <strong>Pet Peeve: </strong>
-                      {staff.petPeeve}
+                      <strong>Hometown: </strong>
+                      {staff.hometown}
+                    </p>
+                    <p className="text-md text-[#00000080] leading-16">
+                      <strong>Favorite Movie: </strong>
+                      {staff.favMovie}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
                       <strong>Fun Fact: </strong>
