@@ -1,227 +1,164 @@
 const events = 
 [
   {
-    "title": "Speed Dating",
-    "day of week": "Friday",
-    "date": "2024-01-19",
-    "time": "8-9:30PM",
-    "location": "Lot 22/ Phelps 1160",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "GM #1",
+    "title": "99 Rising Tabling",
     "day of week": "Monday",
-    "date": "2024-01-22",
-    "time": "8-10PM",
-    "location": "TD-W 1701",
+    "date": "2025-9-29",
+    "time": "9:00-14:00",
+    "location": "HSSB Courtyard",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "Field Day",
-    "day of week": "Friday",
-    "date": "2024-01-26",
-    "time": "3-5PM",
-    "location": "Student Health Lawn",
+    "title": "Fall Kickoff General Meeting",
+    "day of week": "Thursday",
+    "date": "2025-10-09",
+    "time": "20:00-22:00",
+    "location": "Broida 1610",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "TFTI",
+    "title": "Big Little Pickup: Virtual Speed Dating",
     "day of week": "Saturday",
-    "date": "2024-01-27",
-    "time": "Overnight",
-    "location": "UCLA (Mesa Lawn)",
-    "customTime": "Overnight",
+    "date": "2025-10-11",
+    "time": "20:00-22:00",
+    "location": "Zoom",
+    "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "Winter Big/Little Reveal",
-    "day of week": "Sunday",
-    "date": "2024-02-04",
-    "time": "2-4PM",
+    "title": "Big Little Pickup: In Person Speed Dating",
+    "day of week": "Monday",
+    "date": "2025-10-13",
+    "time": "18:45-21:00",
+    "location": "Lot 22 Top Flor",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "Big Little Pickup: Beach Day",
+    "day of week": "Tuesday",
+    "date": "2025-10-21",
+    "time": "14:00-16:00",
+    "location": "Goleta Beach",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "Big Little Pickup: Arts and Crafts Night",
+    "day of week": "Friday",
+    "date": "2025-10-24",
+    "time": "21:00-23:00",
+    "location": "SRB Multipurpose Room",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA x Vons Fundraiser",
+    "day of week": "Tuesday",
+    "date": "2025-11-04",
+    "time": "15:00-20:00",
+    "location": "Von's Chicken",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA Big Little Pickup Reveal",
+    "day of week": "Tuesday",
+    "date": "2025-11-04",
+    "time": "16:00-18:00",
     "location": "Top of Lot 22",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "GM #2",
-    "day of week": "Monday",
-    "date": "2024-02-05",
-    "time": "8-10PM",
-    "location": "TD-W 1701",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "TASA Online Game Night\n",
+    "title": "Tanghulu and Trivia Night",
     "day of week": "Wednesday",
-    "date": "2024-02-07",
-    "time": "8:00 PM",
-    "location": "Online (Discord)",
+    "date": "2025-11-05",
+    "time": "19:00-21:00",
+    "location": "SRB Multipurpose Room",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "Mahjong Mocktails",
+    "title": "TASA Movie Night",
+    "day of week": "Sunday",
+    "date": "2025-11-09",
+    "time": "19:00-21:00",
+    "location": "TBD",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA GM 3",
     "day of week": "Thursday",
-    "date": "2024-02-08",
-    "time": "8-10PM ",
-    "location": "Girvetz 1115",
+    "date": "2025-11-13",
+    "time": "20:00-22:30",
+    "location": "Broida 1610",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "NSU x TASA",
-    "day of week": "Friday",
-    "date": "2024-02-09",
-    "time": "5-7; 9-12AM",
-    "location": "Girvetz 1004",
+    "title": "Fam Dumpling Kit Distribution",
+    "day of week": "Tuesday",
+    "date": "2025-11-18",
+    "time": "18:00-19:30",
+    "location": "Check TASA Messenger for details and location!",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "Lunar New Year Hotpot Night!",
-    "day of week": "Saturday",
-    "date": "2024-02-10",
-    "time": "6-9PM",
-    "location": "Multi Cultural Center",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-02-15",
-    "time": "8-10PM",
-    "location": "Girvetz 1116",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "GM #1 w/ Hochaya",
+    "title": "TASA Winter Retreat",
     "day of week": "Monday",
-    "date": "2024-04-08",
-    "time": "8-10PM",
+    "date": "2025-1-13",
+    "time": "Overnight",
+    "location": "Frazier Park",
+    "customTime": "Overnight",
+    "ready": "Yes"
+  },
+  {
+    "title": "Winter GM 1 W/ Hochaya",
+    "day of week": "Wednesday",
+    "date": "2025-1-22",
+    "time": "20:00-22:00",
     "location": "TD-W 1701",
     "customTime": "",
     "ready": "Yes"
   },
   {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-04-11",
-    "time": "8-10PM",
-    "location": "Girvetz 1115",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "Mahjong Night",
+    "title": "Pickup Coloring Night!",
     "day of week": "Friday",
-    "date": "2024-04-12",
-    "time": "6-8PM",
-    "location": "Arts 1349",
-    "customTime": "",
+    "date": "2025-1-24",
+    "time": "TBD",
+    "location": "Arts 1353, 1356, 1349",
+    "customTime": "TBD",
     "ready": "Yes"
   },
   {
-    "title": "Edible Campus Collab",
-    "day of week": "Saturday",
-    "date": "2024-04-13",
-    "time": "2-3PM",
-    "location": "St. Michael\u2019s University Church (6586 Picasso Rd)",
-    "customTime": "",
+    "title": "Field Day!",
+    "day of week": "Sunday",
+    "date": "2025-1-26",
+    "time": "TBD",
+    "location": "Student Health Lawn",
+    "customTime": "TBD",
     "ready": "Yes"
   },
   {
-    "title": "Maid Cafe",
-    "day of week": "Thursday",
-    "date": "2024-04-18",
-    "time": "6:30- 8:30PM",
-    "location": "ARTS 1356",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "VSA x TASA Collab",
-    "day of week": "Friday",
-    "date": "2024-04-19",
-    "time": "5-7PM",
-    "location": "ARTS 1349",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-04-25",
-    "time": "8-10 PM",
-    "location": "girvetz 1115",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "Night Market",
-    "day of week": "Saturday",
-    "date": "2024-05-04",
-    "time": "4-8PM",
-    "location": "Storke Plaza",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-05-09",
-    "time": "8-10 PM",
-    "location": "Girvetz 1115",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "GM #3: Elections",
+    "title": "TASA x UCLA TFTI",
     "day of week": "Monday",
-    "date": "2024-05-20",
-    "time": "8-10 PM",
+    "date": "2025-1-27",
+    "time": "Overnight",
+    "location": "UCLA",
+    "customTime": "Overnight",
+    "ready": "Yes"
+  },
+  {
+    "title": "Winter GM #2",
+    "day of week": "Wednesday",
+    "date": "2025-2-5",
+    "time": "20:00-22:00",
     "location": "TD-W 1701",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-05-23",
-    "time": "8-10 PM",
-    "location": "Girvetz 1115",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "Banquet",
-    "day of week": "Thursday",
-    "date": "2024-05-30",
-    "time": "7-9 PM",
-    "location": "Mosher Alumni House",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "Senior Appreciation",
-    "day of week": "Friday",
-    "date": "2024-05-31",
-    "time": "4-6 PM",
-    "location": "ARTS 1353",
-    "customTime": "",
-    "ready": "Yes"
-  },
-  {
-    "title": "TASA Talks",
-    "day of week": "Thursday",
-    "date": "2024-06-06",
-    "time": "8-10 PM",
-    "location": "Girvetz 1115",
     "customTime": "",
     "ready": "Yes"
   }

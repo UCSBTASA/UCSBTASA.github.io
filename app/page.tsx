@@ -5,8 +5,8 @@ import Carousel from "../components/carousel";
 const Home = () => {
   return (
     <div className="">
-      <Main></Main>
-      <Events></Events>
+      <Main/>
+      <Events/>
     </div>
   );
 };
