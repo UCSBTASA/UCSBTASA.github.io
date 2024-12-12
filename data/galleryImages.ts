@@ -13,7 +13,7 @@ export const galleryImages2024_2025: GalleryImage[] = [
     id: 1,
     title: "99_rising",
     imageUrl: "/gallery_photos/2024-2025/99_rising.JPG",
-    link: "https://photos.app.goo.gl/EzoMeHVt4yMZsXns5",
+    link: "https://photos.google.com/share/AF1QipNwaFmPFHgj4bCauBzBPxlm34PwKPq-X5iHrAfkgUTkMj8ct6GlfH0M9KbXujgANQ?key=UGRIQnhPYUZUazRySmVzaVdWWWwwb2dfOURvQWJn",
     quarter: "Fall",
   },
   {
@@ -40,7 +40,7 @@ export const galleryImages2024_2025: GalleryImage[] = [
   {
     id: 5,
     title: "boba night",
-    imageUrl: "boba_night.JPG",
+    imageUrl: "/gallery_photos/2024-2025/boba_night.JPG",
     link: "https://photos.app.goo.gl/eE2xwQqCaHg6CqAbA",
     quarter: "Fall",
   },
