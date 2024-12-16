@@ -72,13 +72,13 @@ export const galleryImages2024_2025: GalleryImage[] = [
     link: "https://photos.app.goo.gl/nV6qBaabvB9AcM4a8",
     quarter: "Fall",
   },
-  {
-    id: 10,
-    title: "GM3",
-    imageUrl: "",
-    link: "https://photos.app.goo.gl/KJF1WgZa5jUfPYyU7",
-    quarter: "Fall",
-  },
+  // {
+  //   id: 10,
+  //   title: "GM3",
+  //   imageUrl: "",
+  //   link: "https://photos.app.goo.gl/KJF1WgZa5jUfPYyU7",
+  //   quarter: "Fall",
+  // },
   {
     id: 11,
     title: "Fall Pick Up Reveal",
