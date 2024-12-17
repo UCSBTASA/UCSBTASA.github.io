@@ -2,13 +2,18 @@ import FadeInTransition from "./scroll-transition";
 import events from "../data/eventData";
 
 const Events = () => {
-  const formatTime = (time: string) => {
-    const [hours, minutes] = time.split(":");
-    const hour = parseInt(hours, 10);
-    const amPm = hour >= 12 ? "PM" : "AM";
-    const formattedHour = hour % 12 || 12;
-    return `${formattedHour}:${minutes} ${amPm}`;
-  };
+  const formatTime = (timeRange: string) => {
+    const times = timeRange.split('-');
+    const formattedTimes = times.map(time => {
+      const [hours, minutes] = time.split(":");
+      const hour = parseInt(hours, 10);
+      const amPm = hour >= 12 ? "PM" : "AM";
+      const formattedHour = hour % 12 || 12;
+      return `${formattedHour}:${minutes} ${amPm}`;
+    });
+    return formattedTimes.join(' - ');
+
+  }; 
 
   const formatDate = (date: string) => {
     const options: Intl.DateTimeFormatOptions = {
@@ -44,7 +49,7 @@ const Events = () => {
   const currentDate = new Date();
   const futureDate = new Date();
   futureDate.setDate(currentDate.getDate() - 1);
-
+  
   const upcomingEvents = events.filter(
     (event) => new Date(event.date) >= futureDate
   );
@@ -80,7 +85,7 @@ const Events = () => {
                     <p className="text-gray-600 mb-2">
                       <strong>Time: </strong>
                       {event.customTime === "" ? (
-                        <span>{event.time} PST</span>
+                        <span>{formatTime(event.time)} PST</span>
                       ) : (
                         event.customTime
                       )}
