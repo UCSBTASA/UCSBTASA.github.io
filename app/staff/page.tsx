@@ -1,8 +1,6 @@
 import ScrollTransition from "@/components/scroll-transition";
 import MemberCoin from "../../components/member_coin";
 import staffMembers from "@/data/staffMembers";
-//temp
-import "./staff.css";
 
 const StaffPage = () => {
   return (
