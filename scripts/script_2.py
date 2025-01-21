@@ -11,7 +11,7 @@ def changeDate(date):
         date = "0" + date 
     if (date.rfind('-') + 2 == len(date)):
         date = date[0:-1] + "0" + date[-1]
-    return str(year) + "-" + date   
+    return date[-4:] + '-' + date[:-5]
 
 # Getting current year 
 today = datetime.date.today()
