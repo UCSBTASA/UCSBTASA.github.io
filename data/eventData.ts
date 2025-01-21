@@ -43,7 +43,7 @@ const events =
     "time": "7-9PM ",
     "location": "Girvetz 1004 ",
     "customTime": "",
-    "ready": "YEs"
+    "ready": "YES"
   },
   {
     "title": "Winter GM #2",
@@ -71,6 +71,24 @@ const events =
     "location": "TBD ",
     "customTime": "",
     "ready": "YES "
+  },
+  {
+    "title": "Winter GM #3",
+    "day of week": "Monday ",
+    "date": "2205-2-10",
+    "time": "8-10 PM ",
+    "location": "Buchanan 1910 ",
+    "customTime": "",
+    "ready": "YES"
+  },
+  {
+    "title": "Green Onion Pancake Workshop ",
+    "day of week": "Tuesday ",
+    "date": "2025-2-11",
+    "time": "3-4 PM ",
+    "location": "Methodist Community Garden ",
+    "customTime": "",
+    "ready": "YES"
   }
 ];
 
