@@ -9,8 +9,26 @@ import EventGallery from "@/components/eventGallery";
 import Carousel from "@/components/carousel";
 import { useEffect, useState } from "react";
 
+function Loader() {
+  useEffect(() => {
+    async function getLoader() {
+      const { spiral } = await import("ldrs");
+      spiral.register();
+    }
+    getLoader();
+  }, []);
+  return <l-spiral color="coral"></l-spiral>;
+}
 const Main = () => {
   const [isClient, setIsClient] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate data loading
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
 
   useEffect(() => {
     setIsClient(true);
@@ -60,10 +78,8 @@ const Main = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-50">
-        
         <div className="my-2 mx-auto w-full xl:w-11/12">
           <div className=" rounded-2xl pl-4 grid justify-center">
-            
             <Link href="/gallery">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Our Recent Events
@@ -74,10 +90,17 @@ const Main = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex mx-auto max-w-4xl my-8 bg-gray-50 rounded-xl pt-4 w-[70%] h-[90%] items-center">
-          {isClient && <Instagram />}
+        <div>
+          <div className="flex justify-center">
+            {isLoading && <Loader />}
+            <div className="flex mx-auto max-w-4xl bg-gray-50 rounded-xl w-[70%] h-[50%] items-center" style={{ display: isLoading ? 'none' : 'block' }}>
+              <Instagram />
+            </div>
+          </div>
         </div>
+        {/* <div className="flex mx-auto max-w-4xl my-8 bg-gray-50 rounded-xl pt-4 w-[70%] h-[90%] items-center">
+          {isClient && <Instagram />}
+        </div> */}
       </div>
       <h2 className="text-3xl text-center font-bold font-montserrat text-gray-900 mt-8 mb-4">
         A Year in Review: What You Missed

@@ -25,6 +25,7 @@
     "clsx": "^2.1.1",
     "eslint": "^8.45.0",
     "eslint-config-next": "^14.2.11",
+    "ldrs": "^1.0.2",
     "lucide-react": "^0.383.0",
     "next": "^14.2.11",
     "postcss": "^8.4.33",
