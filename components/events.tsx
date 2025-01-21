@@ -11,34 +11,15 @@ const Events = () => {
   };
 
   const formatDate = (date: string) => {
+    const eventDate = new Date(date);
     const options: Intl.DateTimeFormatOptions = {
+      weekday: "long",
       year: "numeric",
       month: "long",
       day: "numeric",
       timeZone: "UTC",
     };
-    const numToDay = (num: number) => {
-      num = (num % 7) + 1;
-      switch (num) {
-        case 0:
-          return "Sunday";
-        case 1:
-          return "Monday";
-        case 2:
-          return "Tuesday";
-        case 3:
-          return "Wednesday";
-        case 4:
-          return "Thursday";
-        case 5:
-          return "Friday";
-        default:
-          return "Saturday";
-      }
-    };
-    const formattedDate = new Date(date).toLocaleDateString("en-US", options);
-    const dayOfWeek = numToDay(new Date(date).getDay());
-    return dayOfWeek + ", " + formattedDate;
+    return eventDate.toLocaleDateString("en-US", options);
   };
 
   const currentDate = new Date();
