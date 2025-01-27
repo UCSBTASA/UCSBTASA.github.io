@@ -48,7 +48,7 @@ const events =
   {
     "title": "Winter GM #2",
     "day of week": "Monday ",
-    "date": "2025-1-27",
+    "date": "2025-2-3",
     "time": "8-10 PM ",
     "location": "Buchanan 1910 ",
     "customTime": "",
