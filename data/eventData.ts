@@ -59,7 +59,7 @@ const events =
     "day of week": "Saturday ",
     "date": "2025-2-1",
     "time": "2:30-5PM ",
-    "location": "Lot 2 ",
+    "location": "Lot 22 ",
     "customTime": "",
     "ready": "YES"
   },
@@ -68,14 +68,14 @@ const events =
     "day of week": "Friday ",
     "date": "2025-2-7",
     "time": "8-10 PM ",
-    "location": "TBD ",
+    "location": "SRB Multipurpose Room ",
     "customTime": "",
     "ready": "YES "
   },
   {
     "title": "Winter GM #3",
     "day of week": "Monday ",
-    "date": "2205-2-10",
+    "date": "2025-2-10",
     "time": "8-10 PM ",
     "location": "Buchanan 1910 ",
     "customTime": "",
