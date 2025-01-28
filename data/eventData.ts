@@ -59,7 +59,7 @@ const events =
     "day of week": "Saturday ",
     "date": "2025-2-1",
     "time": "2:30-5PM ",
-    "location": "Lot 22 ",
+    "location": "Lot 22",
     "customTime": "",
     "ready": "YES"
   },
@@ -68,7 +68,7 @@ const events =
     "day of week": "Friday ",
     "date": "2025-2-7",
     "time": "8-10 PM ",
-    "location": "SRB Multipurpose Room ",
+    "location": "SRB Multipurpose Room",
     "customTime": "",
     "ready": "YES "
   },
