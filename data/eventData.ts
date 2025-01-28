@@ -31,6 +31,16 @@ const events =
     "customTime": ""
   },
   {
+    "title": "egg tart + milk tea fundraiser",
+    "day of week": "Thursday",
+    "date": "2025-02-06",
+    "time": "12:00 PM - 03:00 PM",
+    "end": "03:00 PM",
+    "start": "12:00 PM",
+    "location": "lot 22 lawn",
+    "customTime": ""
+  },
+  {
     "title": "mahjong night",
     "day of week": "Friday",
     "date": "2025-02-07",
@@ -41,29 +51,29 @@ const events =
     "customTime": ""
   },
   {
-    "title": "fam olympics (more details tbd)",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "end": "TBD",
-    "start": "TBD",
-    "location": "tbd",
-    "customTime": "TBD"
+    "title": "fam olympics",
+    "day of week": "Saturday",
+    "date": "2025-02-08",
+    "time": "01:00 PM - 03:00 PM",
+    "end": "03:00 PM",
+    "start": "01:00 PM",
+    "location": "student health lawn",
+    "customTime": ""
   },
   {
     "title": "gm 3 !!",
     "day of week": "Monday",
-    "date": "2025-02-10",
+    "date": "2025-02-24",
     "time": "08:00 PM - 10:00 PM",
     "end": "10:00 PM",
     "start": "08:00 PM",
-    "location": "buchanan 1910",
+    "location": "location tbd",
     "customTime": ""
   },
   {
     "title": "green onion pancake workshop",
     "day of week": "Tuesday",
-    "date": "2025-02-11",
+    "date": "2025-02-25",
     "time": "03:00 PM - 04:00 PM",
     "end": "04:00 PM",
     "start": "03:00 PM",
