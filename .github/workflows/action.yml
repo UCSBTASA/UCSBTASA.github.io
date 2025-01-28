@@ -2,7 +2,7 @@ name: Automatic Event Date Updater
 
 on:
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 0 1 1 *"
   workflow_dispatch:
     inputs:
       branch:
