@@ -44,11 +44,10 @@ def main():
 
         # Call the Calendar API
         now = datetime.datetime.utcnow().isoformat() + "Z"  # 'Z' indicates UTC time
-        print("Getting the upcoming 10 events")
         events_result = (
             service.events()
             .list(
-                calendarId="primary",
+                calendarId="7hptoesel85ltt2ndeg0dtptec@group.calendar.google.com",
                 timeMin=now,
                 maxResults=10,
                 singleEvents=True,
@@ -64,7 +63,6 @@ def main():
 
         # Prints the start and name of the next 10 events
         for event in events:
-            start = event["start"].get("dateTime", event["start"].get("date"))
 
             # catch keyerror on location and print TBD if location is not available
             if "location" not in event:
@@ -107,7 +105,6 @@ def main():
                 "customTime" : "",
             }
             # Changing the date to YYYY-MM-DD
-            print(event)
             if not pd.isna(event["date"]):
                 event["date"] = event["date"].strftime("%Y-%m-%d")
             else:
@@ -126,16 +123,13 @@ def main():
                 event["end"] = "TBD"
             
             # Check cases in which customTime is necessary
-            print(event)
             if event["start"] != "TBD" and event["end"] != "TBD":
-                print("start: ", event["start"])
-                print("end: ", event["end"])
                 event["time"] = event["start"].upper() + " - " + event["end"].upper()               
             else: 
                 event["customTime"] = "TBD"
             event_list.append(event)
 
-        # print(event_list)
+        print(event_list)
         # Define the filename for the output file
         output_file = 'data/eventData.ts'
 
