@@ -92,6 +92,20 @@ export const galleryImages2024_2025: GalleryImage[] = [
     imageUrl: "/gallery_photos/2024-2025/winter_retreat.jpg",
     link: "https://photos.app.goo.gl/A1DLDSZY4M2dwVkQ9",
     quarter: "Winter"
+  },
+  {
+    id: 13,
+    title: "Touching Grass",
+    imageUrl: "/gallery_photos/2024-2025/touching_grass.JPG",
+    link: "https://photos.app.goo.gl/iHr4tyFrjTXFbHPN6",
+    quarter: "Winter"
+  },
+  {
+    id: 14, 
+    title: "Fam Trivia Night",
+    imageUrl: "/gallery_photos/2024-2025/fam_trivia_night.JPG",
+    link: "https://photos.app.goo.gl/kphZ1q8qsyBG5aFDA",
+    quarter: "Winter"
   }
 
 ];
