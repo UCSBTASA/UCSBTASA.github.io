@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "Lunar New Year collab",
-    "day of week": "Wednesday",
-    "date": "2025-01-29",
-    "time": "07:00 PM - 10:00 PM",
-    "end": "10:00 PM",
-    "start": "07:00 PM",
-    "location": "SRB MPR",
-    "customTime": ""
-  },
-  {
     "title": "winter reveal!",
     "day of week": "Saturday",
     "date": "2025-02-01",
