@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "winter reveal!",
-    "day of week": "Saturday",
-    "date": "2025-02-01",
-    "time": "03:00 PM - 05:00 PM",
-    "end": "05:00 PM",
-    "start": "03:00 PM",
-    "location": "lot 2",
-    "customTime": ""
-  },
-  {
     "title": "gm 2 !!",
     "day of week": "Monday",
     "date": "2025-02-03",
