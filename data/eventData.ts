@@ -21,6 +21,16 @@ const events =
     "customTime": ""
   },
   {
+    "title": "egg tart + milk tea fundraiser",
+    "day of week": "Friday",
+    "date": "2025-02-14",
+    "time": "12:00 PM - 03:00 PM",
+    "end": "03:00 PM",
+    "start": "12:00 PM",
+    "location": "lot 22 lawn",
+    "customTime": ""
+  },
+  {
     "title": "gm 3 !!",
     "day of week": "Monday",
     "date": "2025-02-24",
