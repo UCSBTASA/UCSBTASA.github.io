@@ -1,26 +1,6 @@
 const events = 
 [
   {
-    "title": "gm 2 !!",
-    "day of week": "Monday",
-    "date": "2025-02-03",
-    "time": "08:00 PM - 10:00 PM",
-    "end": "10:00 PM",
-    "start": "08:00 PM",
-    "location": "buchanan 1910",
-    "customTime": ""
-  },
-  {
-    "title": "egg tart + milk tea fundraiser",
-    "day of week": "Thursday",
-    "date": "2025-02-06",
-    "time": "12:00 PM - 03:00 PM",
-    "end": "03:00 PM",
-    "start": "12:00 PM",
-    "location": "lot 22 lawn",
-    "customTime": ""
-  },
-  {
     "title": "mahjong night",
     "day of week": "Friday",
     "date": "2025-02-07",
