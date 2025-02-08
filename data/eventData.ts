@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "mahjong night",
-    "day of week": "Friday",
-    "date": "2025-02-07",
-    "time": "08:00 PM - 10:00 PM",
-    "end": "10:00 PM",
-    "start": "08:00 PM",
-    "location": "location tbd",
-    "customTime": ""
-  },
-  {
     "title": "fam olympics",
     "day of week": "Saturday",
     "date": "2025-02-08",
