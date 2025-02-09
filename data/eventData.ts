@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "fam olympics",
-    "day of week": "Saturday",
-    "date": "2025-02-08",
-    "time": "01:00 PM - 03:00 PM",
-    "end": "03:00 PM",
-    "start": "01:00 PM",
-    "location": "student health lawn",
-    "customTime": ""
-  },
-  {
     "title": "egg tart + milk tea fundraiser",
     "day of week": "Friday",
     "date": "2025-02-14",
