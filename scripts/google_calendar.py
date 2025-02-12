@@ -85,15 +85,24 @@ def main():
             df = pd.concat([df, temp_df])
 
         # Convert the time to day of week, date, and time
-        df["day of week"] = pd.to_datetime(df["beginning time"]).dt.day_name()
-        df["date"] = pd.to_datetime(df["beginning time"]).dt.date
+        # Convert to UTC timezone-aware datetime
+        df["beginning time"] = pd.to_datetime(df["beginning time"], utc=True, errors='coerce')
+        df["end time"] = pd.to_datetime(df["end time"], utc=True, errors='coerce')
+
+
+        # Extract local date (optional)
+        df["end time"] = pd.to_datetime(df["end time"], errors='coerce')
+
+      
 
         # Create time which is from start to end
-        df["start"] = pd.to_datetime(df["beginning time"]).dt.time  
-        df["end"] = pd.to_datetime(df["end time"]).dt.time
-
+        timezone = 'America/Los_Angeles'
+        df["start"] = df["beginning time"].dt.tz_convert(timezone).dt.time  # Convert to local time
+        df["end"] = df["end time"].dt.tz_convert(timezone).dt.time          # Convert to local time
+        df["day of week"] = df["beginning time"].dt.tz_convert(timezone).dt.day_name()
+        df["date"] = df["beginning time"].dt.tz_convert(timezone).dt.date
         event_list = []
-        for index, row in df.iterrows():
+        for _, row in df.iterrows():
             event = {
                 "title": row["title"],
                 "day of week": row["day of week"],
