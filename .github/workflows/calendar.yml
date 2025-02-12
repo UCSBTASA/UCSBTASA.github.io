@@ -1,8 +1,8 @@
-name: Automatic Event Date Updater
+name: Automatic Event Date Updater w/ Google Calendar
 
 on:
   schedule:
-    - cron: "0 0 1 1 *"
+    - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
       branch:
@@ -24,28 +24,32 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8 #install the python needed
-      - name: Retrieve and write service account JSON
+      - name: Retrieve and write credentials JSON
         env:
-          SERVICE_ACCOUNT_JSON: ${{ secrets.SERVICE_ACCOUNT_JSON }}
+          CREDENTIALS_JSON: ${{ secrets.CREDENTIALS_JSON }}
         run: |
-          echo "${SERVICE_ACCOUNT_JSON}" > service_account.json
+          echo "${CREDENTIALS_JSON}" > credentials.json
+      - name: Retrieve and write token JSON
+        env:
+          TOKEN_CALENDAR_JSON: ${{ secrets.TOKEN_CALENDAR_JSON }}
+        run: |
+          echo "${TOKEN_CALENDAR_JSON}" > token.json
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install gspread
           pip install pandas
+          pip install datetime
+          pip install pytz
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
       - name: Run Python Script
         run: |
-          python_script="scripts/script_2.py"
+          python_script="scripts/google_calendar.py"
           python "$python_script"
-
       - name: Configure Git
         run: |
           git config --global user.email "jlang61@ucsb.edu"
           git config --global user.name "Justin Lang"
-
       - name: Add changes
         run: git add data/eventData.ts
 

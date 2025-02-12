@@ -11,7 +11,7 @@ export interface GalleryImage {
 export const galleryImages2024_2025: GalleryImage[] = [
   {
     id: 1,
-    title: "99_rising",
+    title: "99 rising",
     imageUrl: "/gallery_photos/2024-2025/99_rising.JPG",
     link: "https://photos.google.com/share/AF1QipNwaFmPFHgj4bCauBzBPxlm34PwKPq-X5iHrAfkgUTkMj8ct6GlfH0M9KbXujgANQ?key=UGRIQnhPYUZUazRySmVzaVdWWWwwb2dfOURvQWJn",
     quarter: "Fall",
@@ -86,6 +86,27 @@ export const galleryImages2024_2025: GalleryImage[] = [
     link: "https://photos.app.goo.gl/JsNMZx4pDpSQymX39",
     quarter: "Fall",
   },
+  {
+    id: 12,
+    title: "Winter Retreat",
+    imageUrl: "/gallery_photos/2024-2025/winter_retreat.jpg",
+    link: "https://photos.app.goo.gl/A1DLDSZY4M2dwVkQ9",
+    quarter: "Winter"
+  },
+  {
+    id: 13,
+    title: "Touching Grass",
+    imageUrl: "/gallery_photos/2024-2025/touching_grass.JPG",
+    link: "https://photos.app.goo.gl/iHr4tyFrjTXFbHPN6",
+    quarter: "Winter"
+  },
+  {
+    id: 14, 
+    title: "Fam Trivia Night",
+    imageUrl: "/gallery_photos/2024-2025/fam_trivia_night.JPG",
+    link: "https://photos.app.goo.gl/kphZ1q8qsyBG5aFDA",
+    quarter: "Winter"
+  }
 
 ];
 
