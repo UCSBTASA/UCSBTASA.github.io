@@ -46,13 +46,15 @@ const EventGallery = () => {
   const currentDate = new Date();
   const futureDate = new Date();
   futureDate.setDate(currentDate.getDate() - 1);
-  const galleryImages = galleryImages2024_2025.reverse();
+  const galleryImages = [...galleryImages2024_2025].reverse();
+  
+  console.log(galleryImages);
   const upcomingEvents = events.filter(
     (event) => new Date(event.date) >= futureDate
   );
 
   return (
-    <div className="mx-auto ml-4">
+    <div className="mx-auto">
       <div className="bg-gray-50 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {galleryImages.slice(0, 2).map((image) => (
@@ -102,7 +104,7 @@ const EventGallery = () => {
                 </Link>
                 <div className="bg-white py-2">
                   <h3 className="font-semibold text-center text-lg md:text-xl">
-                    {image.title.toUpperCase()}
+                    {image.title}
                   </h3>
                 </div>
               </div>

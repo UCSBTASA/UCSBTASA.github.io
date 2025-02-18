@@ -1,7 +1,7 @@
 "use client";
 
 import ScrollTransition from "./scroll-transition";
-import { FaInstagram, FaLink } from "react-icons/fa";
+import { FaInstagram, FaLink, FaDiscord } from "react-icons/fa";
 import { Link } from "@mui/material";
 import Youtube from "@/components/youtube";
 import Instagram from "@/components/instagram";
@@ -46,14 +46,30 @@ const Main = () => {
             our officers and TASA fams. Stay updated by following our Instagram
             and Facebook, or by subscribing to our Mailing List!
           </div>
-          <div className="flex justify-center space-x-6 mt-6">
+          <div className="flex justify-center space-x-4 mt-4">
+            <a
+              href="https://www.instagram.com/tasa.ucsb/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-gray-300 transition duration-300"
+            >
+              <FaInstagram className="w-8 h-8" />
+            </a>
             <a
               href="https://linktr.ee/tasaucsb"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Linktree"
+              className="text-gray-700 hover:text-gray-300 transition duration-300"
             >
-              <FaLink className="text-4xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
+              <FaLink className="w-8 h-8" />
+            </a>
+            <a
+              href="https://discord.com/invite/UgEcTEs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-gray-300 transition duration-300"
+            >
+              <FaDiscord className="w-8 h-8" />
             </a>
           </div>
         </div>
@@ -81,7 +97,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    <Events></Events>
+      <Events></Events>
       {/* <div className="mx-auto my-auto max-w-4xl bg-gray-50 rounded-xl w-[30%] h-[50%] max-h-[200px] items-center">
         {isClient && <Instagram />}
       </div> */}
