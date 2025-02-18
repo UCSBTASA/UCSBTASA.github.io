@@ -920,6 +920,7 @@
         "Fam": "elite",
         "Heads": [
             "kyle volpp",
+            "vicky li",
             "brianna lee"
         ],
         "Members": [
@@ -930,6 +931,17 @@
                 "Fam": "elite",
                 "Little": [
                     "joshua huang"
+                ]
+            },
+            {
+                "Name": "vicky li",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "elite",
+                "Little": [
+                    "justin lang",
+                    "tim chang",
+                    "cole mak"
                 ]
             },
             {
@@ -1175,7 +1187,7 @@
                 "Little": [
                     "irene cho",
                     "iris yuh",
-                    "vicky li"
+                    "vicki li"
                 ]
             },
             {
@@ -1188,15 +1200,11 @@
                 ]
             },
             {
-                "Name": "vicky li",
+                "Name": "vicki li",
                 "Recruitment Year": "None",
                 "Big": "erika wu",
                 "Fam": "elite",
-                "Little": [
-                    "justin lang",
-                    "tim chang",
-                    "cole mak"
-                ]
+                "Little": []
             },
             {
                 "Name": "dilara oner",
@@ -2304,20 +2312,10 @@
     {
         "Fam": "kangaroo",
         "Heads": [
-            "andrew chang",
             "hanna von",
             "charles bao"
         ],
         "Members": [
-            {
-                "Name": "andrew chang",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "kangaroo",
-                "Little": [
-                    "alison gu"
-                ]
-            },
             {
                 "Name": "hanna von",
                 "Recruitment Year": "None",
@@ -2601,13 +2599,6 @@
                 "Name": "qian yi tan",
                 "Recruitment Year": "2024",
                 "Big": "jeslyn wu",
-                "Fam": "kangaroo",
-                "Little": []
-            },
-            {
-                "Name": "alison gu",
-                "Recruitment Year": "2024",
-                "Big": "andrew chang",
                 "Fam": "kangaroo",
                 "Little": []
             }

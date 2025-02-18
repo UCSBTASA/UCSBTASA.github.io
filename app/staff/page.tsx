@@ -42,7 +42,14 @@ const StaffPage = () => {
                           </>
                           )}
                     </p>
-
+                    <p className="text-md text-[#00000080] leading-16">
+                      <strong>Pet Peeve: </strong>
+                      {staff.petPeeve}
+                    </p>
+                    <p className="text-md text-[#00000080] leading-16">
+                      <strong>Fun Fact: </strong>
+                      {staff.funFact}
+                    </p>
                   </ScrollTransition>
                 </div>
             ))}

@@ -5,24 +5,21 @@ const Programs = () => {
   const programsData = [
     {
       title: "Big Little",
-      image: "/programs/pickup2023/_DSC2148.jpg",
-      creds: "",
+      image: "/programs/pickup.JPG",
       description:
         "Engage in our highly anticipated big-little mentorship program held each fall, fostering meaningful connections between experienced members and newcomers.",
       slug: "big-little",
     },
     {
       title: "Intern Program!",
-      image: "/programs/intern2024.jpg",
-      creds: "",
+      image: "/programs/intern_program_cover.jpg",
       description:
         "Join our immersive organization intern program and gain hands-on experience, mentorship, and insights into the inner workings of our staff.",
       slug: "interns",
     },
     {
       title: "Night Market",
-      image: "/programs/nightmarket2024.jpeg",
-      creds: "Photo Taken by Claire Vossler",
+      image: "/programs/nm_cover.jpeg",
       description:
         "Experience the vibrant cultural exchange at our yearly night market event, where we bring together diverse Asian organizations for an unforgettable Taiwanese-themed night market extravaganza.",
       slug: "night-market",
@@ -49,15 +46,9 @@ const Programs = () => {
                     />
                   </Link>
                 </div>
-                <h2 className="text-xl font-semibold mt-2 mb-1">
+                <h2 className="text-xl font-semibold mt-2 mb-2">
                   {program.title}
                 </h2>
-                <Link
-                  href={"https://www.instagram.com/clairevosslerphotography"}
-                  className="text-gray-400 text-sm mb-1 underline"
-                >
-                  {program.creds}
-                </Link>
                 <p className="text-gray-600">{program.description}</p>
               </div>
             ))}
