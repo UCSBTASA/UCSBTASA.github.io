@@ -93,7 +93,7 @@ const staffMembers = [
     petPeeve: "slow people",
     funFact: "i recently learned how to bike",
     imageUrl: "/staff_photos_24-25/jasmine.JPG",
-    imageUrlBack: "/staff_photos_24-25/jasmine_flip.jpg",
+    imageUrlBack: "/staff_photos_24-25/jasmine_flip.JPG",
   },
   {
     id: 9,
@@ -201,7 +201,7 @@ const staffMembers = [
     petPeeve: "when I tell u how I feel and u say it’s not that deep😃",
     funFact: "I’m studying abroad in Spain next year!",
     imageUrl: "/staff_photos_24-25/grace_c.png",
-    imageUrlBack: "/staff_photos_24-25/grace_c_flip.jpg",
+    imageUrlBack: "/staff_photos_24-25/grace_c_flip.jpeg",
   },
   {
     id: 18,
