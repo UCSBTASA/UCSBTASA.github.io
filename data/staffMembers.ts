@@ -8,7 +8,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "slow bikers in the middle of the bike lane",
     funFact: "i'm a dj (IG: on.brandiv)",
-    imageUrl: "/staff_photos_24-25/brandon.JPG",
+    imageUrl: "/staff_photos_24-25/brandon.jpg",
     imageUrlBack: "/staff_photos_24-25/brandon_flip.jpg",
   },
   {
@@ -32,7 +32,7 @@ const staffMembers = [
     year: "Class of 2026",
     petPeeve: "people flaking on plans",
     funFact: "i watch shows in 2x speed (sometimes)",
-    imageUrl: "/staff_photos_24-25/austin.JPG",
+    imageUrl: "/staff_photos_24-25/austin.jpg",
     imageUrlBack: "/staff_photos_24-25/austin_flip.jpg",
   },
   {
@@ -92,8 +92,8 @@ const staffMembers = [
     year: "Class of 2028",
     petPeeve: "slow people",
     funFact: "i recently learned how to bike",
-    imageUrl: "/staff_photos_24-25/jasmine.JPG",
-    imageUrlBack: "/staff_photos_24-25/jasmine_flip.JPG",
+    imageUrl: "/staff_photos_24-25/jasmine.jpg",
+    imageUrlBack: "/staff_photos_24-25/jasmine_flip.jpg",
   },
   {
     id: 9,
@@ -116,7 +116,7 @@ const staffMembers = [
     year: "Class of 2027",
     petPeeve: "People interrupting me when I'm talking",
     funFact: "I learned how to ride a bike on my own one random afternoon in elementary school",
-    imageUrl: "/staff_photos_24-25/emma.JPG",
+    imageUrl: "/staff_photos_24-25/emma.jpg",
     imageUrlBack: "/staff_photos_24-25/emma_flip.jpg",
   },
   {
@@ -128,7 +128,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "not checking corners",
     funFact: "i have 45 boyfriends",
-    imageUrl: "/staff_photos_24-25/justin.JPG",
+    imageUrl: "/staff_photos_24-25/justin.jpg",
     imageUrlBack: "/staff_photos_24-25/justin_flip.jpg",
   },
   {
@@ -140,7 +140,7 @@ const staffMembers = [
     year: "Class of 2027",
     petPeeve: "Awkward silences",
     funFact: "Skipped the second grade",
-    imageUrl: "/staff_photos_24-25/grace_f.JPG",
+    imageUrl: "/staff_photos_24-25/grace_f.jpg",
     imageUrlBack: "/staff_photos_24-25/grace_f_flip.jpeg",
   },
   {
@@ -152,7 +152,7 @@ const staffMembers = [
     year: "Class of 2028",
     petPeeve: "slow walkers",
     funFact: "i love pickles",
-    imageUrl: "/staff_photos_24-25/agnes.JPG",
+    imageUrl: "/staff_photos_24-25/agnes.jpg",
     imageUrlBack: "/staff_photos_24-25/agnes_flip.jpeg",
   },
   {
@@ -188,7 +188,7 @@ const staffMembers = [
     year: "Class of 2027",
     petPeeve: "Screenagers",
     funFact: "I have 10 toes!!😱",
-    imageUrl: "/staff_photos_24-25/max.JPG",
+    imageUrl: "/staff_photos_24-25/max.jpg",
     imageUrlBack: "/staff_photos_24-25/max_flip.jpg",
   },
   {
@@ -201,7 +201,7 @@ const staffMembers = [
     petPeeve: "when I tell u how I feel and u say it’s not that deep😃",
     funFact: "I’m studying abroad in Spain next year!",
     imageUrl: "/staff_photos_24-25/grace_c.png",
-    imageUrlBack: "/staff_photos_24-25/grace_c_flip.jpeg",
+    imageUrlBack: "/staff_photos_24-25/grace_c_flip.jpg",
   },
   {
     id: 18,
@@ -223,7 +223,7 @@ const staffMembers = [
     year: "Class of 2028",
     petPeeve: "Slow walkers",
     funFact: "You will definitely notice when I’ve queued music versus everyone else",
-    imageUrl: "/staff_photos_24-25/ethan.JPG",
+    imageUrl: "/staff_photos_24-25/ethan.jpg",
     imageUrlBack: "/staff_photos_24-25/ethan_flip.jpg",
   },
   {
@@ -235,7 +235,7 @@ const staffMembers = [
     year: "Class of 2028",
     petPeeve: "When people don't live what they preach",
     funFact: "I walked over the Mexican border to get a Costco chicken bake",
-    imageUrl: "/staff_photos_24-25/sean.JPG",
+    imageUrl: "/staff_photos_24-25/sean.jpg",
     imageUrlBack: "/staff_photos_24-25/sean_flip.jpg",
   },
   {
@@ -247,7 +247,7 @@ const staffMembers = [
     year: "Class of 2028",
     petPeeve: "Slow bikers",
     funFact: "I have dislocated my knee :)",
-    imageUrl: "/staff_photos_24-25/traci.JPG",
+    imageUrl: "/staff_photos_24-25/traci.jpg",
     imageUrlBack: "/staff_photos_24-25/traci_flip.jpg",
   },
   {
@@ -259,7 +259,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "know-it-all people",
     funFact: "I own a baseball signed by Mike Trout",
-    imageUrl: "/staff_photos_24-25/emma_c.JPG",
+    imageUrl: "/staff_photos_24-25/emma_c.jpg",
     imageUrlBack: "/staff_photos_24-25/emma_c_flip.jpg"
   },
   {
@@ -271,7 +271,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "getting cut off and then the person slows down",
     funFact: "I can wheelie",
-    imageUrl: "/staff_photos_24-25/nicholas.JPG",
+    imageUrl: "/staff_photos_24-25/nicholas.jpg",
     imageUrlBack: "/staff_photos_24-25/nicholas_flip.jpg"
   },
   {
@@ -283,7 +283,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "slow walkers",
     funFact: "Caffeine makes me go crazy",
-    imageUrl: "/staff_photos_24-25/jordan.JPG",
+    imageUrl: "/staff_photos_24-25/jordan.jpg",
     imageUrlBack: "/staff_photos_24-25/jordan_flip.jpg"
   },
   {
@@ -295,7 +295,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "Chewing sounds :(",
     funFact: "I love 90s movies!",
-    imageUrl: "/staff_photos_24-25/anastasia.JPG",
+    imageUrl: "/staff_photos_24-25/anastasia.jpg",
     imageUrlBack: "/staff_photos_24-25/anastasia_flip.jpg"
   },
   {
@@ -307,7 +307,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "When people talk loudly on buses",
     funFact: "Went to Japan to go to 3 cat cafes",
-    imageUrl: "/staff_photos_24-25/megan.JPG",
+    imageUrl: "/staff_photos_24-25/megan.jpg",
     imageUrlBack: "/staff_photos_24-25/megan_flip.jpg"
   },
   {
@@ -319,7 +319,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "Tape that isn’t sticky enough",
     funFact: "I can put my foot behind my head!",
-    imageUrl: "/staff_photos_24-25/evan.JPG",
+    imageUrl: "/staff_photos_24-25/evan.jpg",
     imageUrlBack: "/staff_photos_24-25/evan_flip.jpg"
   },
   {
@@ -331,7 +331,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "Being stuck behind slow walkers",
     funFact: "I'm learning my 4th instrument (guitar) right now!",
-    imageUrl: "/staff_photos_24-25/alison.JPG",
+    imageUrl: "/staff_photos_24-25/alison.jpg",
     imageUrlBack: "/staff_photos_24-25/alison_flip.jpg"
   },
   {
@@ -343,7 +343,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "Slow walkers",
     funFact: "I have really crunchy joints :D",
-    imageUrl: "/staff_photos_24-25/sarah.JPG",
+    imageUrl: "/staff_photos_24-25/sarah.jpg",
     imageUrlBack: "/staff_photos_24-25/sarah_flip.jpg"
   },
   {
@@ -355,7 +355,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "People who bike side-by-side and take up both lanes",
     funFact: "I’m scared of the sound of styrofoam",
-    imageUrl: "/staff_photos_24-25/zuhui.JPG",
+    imageUrl: "/staff_photos_24-25/zuhui.jpg",
     imageUrlBack: "/staff_photos_24-25/zuhui_flip.jpg"
   },
   {
@@ -367,7 +367,7 @@ const staffMembers = [
     year: "Class of 2025",
     petPeeve: "When you don’t put the toilet paper back on the roll",
     funFact: "I’ve skydived and scubadived. So I’m basically half an Avatar (just gotta conquer the earth and fire)",
-    imageUrl: "/staff_photos_24-25/dilara.JPG",
+    imageUrl: "/staff_photos_24-25/dilara.jpg",
     imageUrlBack: "/staff_photos_24-25/dilara_flip.jpg"
   }
 ];
