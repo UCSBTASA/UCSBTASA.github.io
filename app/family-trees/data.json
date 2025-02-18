@@ -2,6 +2,7 @@
     {
         "Fam": "hufuwu",
         "Heads": [
+            "nixon tse",
             "liam loberg",
             "wesley hung",
             "andrew yeh",
@@ -12,6 +13,16 @@
             "jason xie"
         ],
         "Members": [
+            {
+                "Name": "nixon tse",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "hufuwu",
+                "Little": [
+                    "brendan chung",
+                    "dan le"
+                ]
+            },
             {
                 "Name": "liam loberg",
                 "Recruitment Year": "None",
@@ -533,7 +544,8 @@
                 "Fam": "hufuwu",
                 "Little": [
                     "anastasia wang",
-                    "tien minh nguyen"
+                    "tien minh nguyen",
+                    "leo zhang"
                 ]
             },
             {
@@ -913,6 +925,27 @@
                 "Big": "liam loberg",
                 "Fam": "hufuwu",
                 "Little": []
+            },
+            {
+                "Name": "leo zhang",
+                "Recruitment Year": "W25",
+                "Big": "max chang",
+                "Fam": "hufuwu",
+                "Little": []
+            },
+            {
+                "Name": "brendan chung",
+                "Recruitment Year": "W25",
+                "Big": "nixon tse",
+                "Fam": "hufuwu",
+                "Little": []
+            },
+            {
+                "Name": "dan le",
+                "Recruitment Year": "W25",
+                "Big": "nixon tse",
+                "Fam": "hufuwu",
+                "Little": []
             }
         ]
     },
@@ -920,7 +953,6 @@
         "Fam": "elite",
         "Heads": [
             "kyle volpp",
-            "vicky li",
             "brianna lee"
         ],
         "Members": [
@@ -931,17 +963,6 @@
                 "Fam": "elite",
                 "Little": [
                     "joshua huang"
-                ]
-            },
-            {
-                "Name": "vicky li",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "elite",
-                "Little": [
-                    "justin lang",
-                    "tim chang",
-                    "cole mak"
                 ]
             },
             {
@@ -1177,7 +1198,10 @@
                 "Recruitment Year": "2023",
                 "Big": "justin lang",
                 "Fam": "elite",
-                "Little": []
+                "Little": [
+                    "kasey wang",
+                    "jacey li"
+                ]
             },
             {
                 "Name": "erika wu",
@@ -1187,7 +1211,7 @@
                 "Little": [
                     "irene cho",
                     "iris yuh",
-                    "vicki li"
+                    "vicky li"
                 ]
             },
             {
@@ -1200,11 +1224,15 @@
                 ]
             },
             {
-                "Name": "vicki li",
+                "Name": "vicky li",
                 "Recruitment Year": "None",
                 "Big": "erika wu",
                 "Fam": "elite",
-                "Little": []
+                "Little": [
+                    "justin lang",
+                    "tim chang",
+                    "cole mak"
+                ]
             },
             {
                 "Name": "dilara oner",
@@ -1296,18 +1324,42 @@
                 "Big": "kyle volpp",
                 "Fam": "elite",
                 "Little": []
+            },
+            {
+                "Name": "kasey wang",
+                "Recruitment Year": "W25",
+                "Big": "ethan reeves",
+                "Fam": "elite",
+                "Little": []
+            },
+            {
+                "Name": "jacey li",
+                "Recruitment Year": "W25",
+                "Big": "ethan reeves",
+                "Fam": "elite",
+                "Little": []
             }
         ]
     },
     {
         "Fam": "top 5",
         "Heads": [
+            "andrew xiong",
             "hannah lee",
             "aaron drumm",
             "william yip",
             "ryan tea"
         ],
         "Members": [
+            {
+                "Name": "andrew xiong",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "top 5",
+                "Little": [
+                    "austin liu"
+                ]
+            },
             {
                 "Name": "hannah lee",
                 "Recruitment Year": "None",
@@ -1657,6 +1709,13 @@
                 "Big": "hannah lee",
                 "Fam": "top 5",
                 "Little": []
+            },
+            {
+                "Name": "austin liu",
+                "Recruitment Year": "W25",
+                "Big": "andrew xiong",
+                "Fam": "top 5",
+                "Little": []
             }
         ]
     },
@@ -2000,6 +2059,326 @@
         ]
     },
     {
+        "Fam": "kangaroo",
+        "Heads": [
+            "andrew chang",
+            "hanna von",
+            "charles bao"
+        ],
+        "Members": [
+            {
+                "Name": "andrew chang",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "kangaroo",
+                "Little": [
+                    "alison gu"
+                ]
+            },
+            {
+                "Name": "hanna von",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "kangaroo",
+                "Little": [
+                    "emily chen"
+                ]
+            },
+            {
+                "Name": "charles bao",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "kangaroo",
+                "Little": [
+                    "gretchen lam",
+                    "david wang",
+                    "jenna ho",
+                    "kira wallquist"
+                ]
+            },
+            {
+                "Name": "gretchen lam",
+                "Recruitment Year": "2021",
+                "Big": "charles bao",
+                "Fam": "kangaroo",
+                "Little": [
+                    "daisy zhong",
+                    "ryan choi",
+                    "kelvin zhang"
+                ]
+            },
+            {
+                "Name": "david wang",
+                "Recruitment Year": "2022",
+                "Big": "charles bao",
+                "Fam": "kangaroo",
+                "Little": [
+                    "samuel zhu"
+                ]
+            },
+            {
+                "Name": "jenna ho",
+                "Recruitment Year": "2022",
+                "Big": "charles bao",
+                "Fam": "kangaroo",
+                "Little": [
+                    "sophia wu"
+                ]
+            },
+            {
+                "Name": "kira wallquist",
+                "Recruitment Year": "2021",
+                "Big": "charles bao",
+                "Fam": "kangaroo",
+                "Little": [
+                    "kaitlyn pham",
+                    "megan sun"
+                ]
+            },
+            {
+                "Name": "emily chen",
+                "Recruitment Year": "2020",
+                "Big": "hanna von",
+                "Fam": "kangaroo",
+                "Little": [
+                    "elaine ho",
+                    "brandon liang"
+                ]
+            },
+            {
+                "Name": "elaine ho",
+                "Recruitment Year": "2021",
+                "Big": "emily chen",
+                "Fam": "kangaroo",
+                "Little": [
+                    "chanel zhang",
+                    "ellie huang"
+                ]
+            },
+            {
+                "Name": "brandon liang",
+                "Recruitment Year": "2021",
+                "Big": "emily chen",
+                "Fam": "kangaroo",
+                "Little": [
+                    "maxwell wu",
+                    "faith ju",
+                    "jonathan zhang",
+                    "abby ngo"
+                ]
+            },
+            {
+                "Name": "maxwell wu",
+                "Recruitment Year": "2022",
+                "Big": "brandon liang",
+                "Fam": "kangaroo",
+                "Little": [
+                    "andrew chen",
+                    "leonardo young"
+                ]
+            },
+            {
+                "Name": "faith ju",
+                "Recruitment Year": "2022",
+                "Big": "brandon liang",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "sophia wu",
+                "Recruitment Year": "2022",
+                "Big": "jenna ho",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "daisy zhong",
+                "Recruitment Year": "2022",
+                "Big": "gretchen lam",
+                "Fam": "kangaroo",
+                "Little": [
+                    "jessica lu"
+                ]
+            },
+            {
+                "Name": "ryan choi",
+                "Recruitment Year": "2022",
+                "Big": "gretchen lam",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "kaitlyn pham",
+                "Recruitment Year": "2022",
+                "Big": "kira wallquist",
+                "Fam": "kangaroo",
+                "Little": [
+                    "chloe tse",
+                    "jeslyn wu",
+                    "lauren ko",
+                    "celine kusuma"
+                ]
+            },
+            {
+                "Name": "megan sun",
+                "Recruitment Year": "2022",
+                "Big": "kira wallquist",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "jonathan zhang",
+                "Recruitment Year": "2023",
+                "Big": "brandon liang",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "jessica lu",
+                "Recruitment Year": "2023",
+                "Big": "daisy zhong",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "samuel zhu",
+                "Recruitment Year": "2023",
+                "Big": "david wang",
+                "Fam": "kangaroo",
+                "Little": [
+                    "eugene wong"
+                ]
+            },
+            {
+                "Name": "chanel zhang",
+                "Recruitment Year": "2023",
+                "Big": "elaine ho",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "ellie huang",
+                "Recruitment Year": "2023",
+                "Big": "elaine ho",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "chloe tse",
+                "Recruitment Year": "2023",
+                "Big": "kaitlyn pham",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "jeslyn wu",
+                "Recruitment Year": "2023",
+                "Big": "kaitlyn pham",
+                "Fam": "kangaroo",
+                "Little": [
+                    "selene lei",
+                    "qian yi tan"
+                ]
+            },
+            {
+                "Name": "lauren ko",
+                "Recruitment Year": "2023",
+                "Big": "kaitlyn pham",
+                "Fam": "kangaroo",
+                "Little": [
+                    "sarah lew"
+                ]
+            },
+            {
+                "Name": "andrew chen",
+                "Recruitment Year": "2023",
+                "Big": "maxwell wu",
+                "Fam": "kangaroo",
+                "Little": [
+                    "karin kawakami",
+                    "john espino"
+                ]
+            },
+            {
+                "Name": "leonardo young",
+                "Recruitment Year": "2023",
+                "Big": "maxwell wu",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "sarah lew",
+                "Recruitment Year": "2023",
+                "Big": "lauren ko",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "kelvin zhang",
+                "Recruitment Year": "2023",
+                "Big": "gretchen lam",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "eugene wong",
+                "Recruitment Year": "2024",
+                "Big": "samuel zhu",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "abby ngo",
+                "Recruitment Year": "2024",
+                "Big": "brandon liang",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "karin kawakami",
+                "Recruitment Year": "2024",
+                "Big": "andrew chen",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "john espino",
+                "Recruitment Year": "2024",
+                "Big": "andrew chen",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "selene lei",
+                "Recruitment Year": "2024",
+                "Big": "jeslyn wu",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "qian yi tan",
+                "Recruitment Year": "2024",
+                "Big": "jeslyn wu",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "alison gu",
+                "Recruitment Year": "2024",
+                "Big": "andrew chang",
+                "Fam": "kangaroo",
+                "Little": []
+            },
+            {
+                "Name": "celine kusuma",
+                "Recruitment Year": "W25",
+                "Big": "kaitlyn pham",
+                "Fam": "kangaroo",
+                "Little": []
+            }
+        ]
+    },
+    {
         "Fam": "snake",
         "Heads": [
             "fong ruangrujira",
@@ -2310,296 +2689,285 @@
         ]
     },
     {
-        "Fam": "kangaroo",
+        "Fam": "flower fam",
         "Heads": [
-            "hanna von",
-            "charles bao"
+            "emeline tu"
         ],
         "Members": [
             {
-                "Name": "hanna von",
+                "Name": "emeline tu",
                 "Recruitment Year": "None",
                 "Big": "None",
-                "Fam": "kangaroo",
+                "Fam": "flower fam",
                 "Little": [
-                    "emily chen"
+                    "jacqueline vuong"
                 ]
             },
             {
-                "Name": "charles bao",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "kangaroo",
-                "Little": [
-                    "gretchen lam",
-                    "david wang",
-                    "jenna ho",
-                    "kira wallquist"
-                ]
-            },
-            {
-                "Name": "gretchen lam",
-                "Recruitment Year": "2021",
-                "Big": "charles bao",
-                "Fam": "kangaroo",
-                "Little": [
-                    "daisy zhong",
-                    "ryan choi",
-                    "kelvin zhang"
-                ]
-            },
-            {
-                "Name": "david wang",
-                "Recruitment Year": "2022",
-                "Big": "charles bao",
-                "Fam": "kangaroo",
-                "Little": [
-                    "samuel zhu"
-                ]
-            },
-            {
-                "Name": "jenna ho",
-                "Recruitment Year": "2022",
-                "Big": "charles bao",
-                "Fam": "kangaroo",
-                "Little": [
-                    "sophia wu"
-                ]
-            },
-            {
-                "Name": "kira wallquist",
-                "Recruitment Year": "2021",
-                "Big": "charles bao",
-                "Fam": "kangaroo",
-                "Little": [
-                    "kaitlyn pham",
-                    "megan sun"
-                ]
-            },
-            {
-                "Name": "emily chen",
+                "Name": "jacqueline vuong",
                 "Recruitment Year": "2020",
-                "Big": "hanna von",
-                "Fam": "kangaroo",
+                "Big": "emeline tu",
+                "Fam": "flower fam",
                 "Little": [
-                    "elaine ho",
-                    "brandon liang"
+                    "charliene lien",
+                    "oliver deng",
+                    "yelena tao"
                 ]
             },
             {
-                "Name": "elaine ho",
+                "Name": "charliene lien",
                 "Recruitment Year": "2021",
-                "Big": "emily chen",
-                "Fam": "kangaroo",
+                "Big": "jacqueline vuong",
+                "Fam": "flower fam",
                 "Little": [
-                    "chanel zhang",
-                    "ellie huang"
+                    "alison tjoe",
+                    "carolyn li",
+                    "may wang",
+                    "akemi takeda",
+                    "kyra xue",
+                    "katy tseng"
                 ]
             },
             {
-                "Name": "brandon liang",
+                "Name": "oliver deng",
                 "Recruitment Year": "2021",
-                "Big": "emily chen",
-                "Fam": "kangaroo",
+                "Big": "jacqueline vuong",
+                "Fam": "flower fam",
                 "Little": [
-                    "maxwell wu",
-                    "faith ju",
-                    "jonathan zhang",
-                    "abby ngo"
+                    "anna hsu",
+                    "michael ma",
+                    "sophia fung"
                 ]
             },
             {
-                "Name": "maxwell wu",
+                "Name": "yelena tao",
+                "Recruitment Year": "2021",
+                "Big": "jacqueline vuong",
+                "Fam": "flower fam",
+                "Little": [
+                    "audrey yoh",
+                    "sharon lee",
+                    "sophia li",
+                    "avalon lee"
+                ]
+            },
+            {
+                "Name": "alison tjoe",
                 "Recruitment Year": "2022",
-                "Big": "brandon liang",
-                "Fam": "kangaroo",
-                "Little": [
-                    "andrew chen",
-                    "leonardo young"
-                ]
+                "Big": "charliene lien",
+                "Fam": "flower fam",
+                "Little": []
             },
             {
-                "Name": "faith ju",
+                "Name": "carolyn li",
                 "Recruitment Year": "2022",
-                "Big": "brandon liang",
-                "Fam": "kangaroo",
+                "Big": "charliene lien",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "sophia wu",
+                "Name": "may wang",
                 "Recruitment Year": "2022",
-                "Big": "jenna ho",
-                "Fam": "kangaroo",
-                "Little": []
+                "Big": "charliene lien",
+                "Fam": "flower fam",
+                "Little": [
+                    "jessica liu"
+                ]
             },
             {
-                "Name": "daisy zhong",
+                "Name": "anna hsu",
                 "Recruitment Year": "2022",
-                "Big": "gretchen lam",
-                "Fam": "kangaroo",
-                "Little": [
-                    "jessica lu"
-                ]
+                "Big": "oliver deng",
+                "Fam": "flower fam",
+                "Little": []
             },
             {
-                "Name": "ryan choi",
+                "Name": "michael ma",
                 "Recruitment Year": "2022",
-                "Big": "gretchen lam",
-                "Fam": "kangaroo",
+                "Big": "oliver deng",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "kaitlyn pham",
+                "Name": "sophia fung",
                 "Recruitment Year": "2022",
-                "Big": "kira wallquist",
-                "Fam": "kangaroo",
+                "Big": "oliver deng",
+                "Fam": "flower fam",
                 "Little": [
-                    "chloe tse",
-                    "jeslyn wu",
-                    "lauren ko"
+                    "aryel zhang",
+                    "cheska braganza",
+                    "gabby dee",
+                    "kayli chiu",
+                    "hana williams",
+                    "jared weinstein"
                 ]
             },
             {
-                "Name": "megan sun",
+                "Name": "audrey yoh",
                 "Recruitment Year": "2022",
-                "Big": "kira wallquist",
-                "Fam": "kangaroo",
+                "Big": "yelena tao",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "jonathan zhang",
-                "Recruitment Year": "2023",
-                "Big": "brandon liang",
-                "Fam": "kangaroo",
-                "Little": []
-            },
-            {
-                "Name": "jessica lu",
-                "Recruitment Year": "2023",
-                "Big": "daisy zhong",
-                "Fam": "kangaroo",
-                "Little": []
-            },
-            {
-                "Name": "samuel zhu",
-                "Recruitment Year": "2023",
-                "Big": "david wang",
-                "Fam": "kangaroo",
+                "Name": "sharon lee",
+                "Recruitment Year": "2022",
+                "Big": "yelena tao",
+                "Fam": "flower fam",
                 "Little": [
-                    "eugene wong"
+                    "fion huang"
                 ]
             },
             {
-                "Name": "chanel zhang",
-                "Recruitment Year": "2023",
-                "Big": "elaine ho",
-                "Fam": "kangaroo",
+                "Name": "sophia li",
+                "Recruitment Year": "2022",
+                "Big": "yelena tao",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "ellie huang",
+                "Name": "jessica liu",
                 "Recruitment Year": "2023",
-                "Big": "elaine ho",
-                "Fam": "kangaroo",
-                "Little": []
-            },
-            {
-                "Name": "chloe tse",
-                "Recruitment Year": "2023",
-                "Big": "kaitlyn pham",
-                "Fam": "kangaroo",
-                "Little": []
-            },
-            {
-                "Name": "jeslyn wu",
-                "Recruitment Year": "2023",
-                "Big": "kaitlyn pham",
-                "Fam": "kangaroo",
+                "Big": "may wang",
+                "Fam": "flower fam",
                 "Little": [
-                    "selene lei",
-                    "qian yi tan"
+                    "anna chiang"
                 ]
             },
             {
-                "Name": "lauren ko",
+                "Name": "fion huang",
                 "Recruitment Year": "2023",
-                "Big": "kaitlyn pham",
-                "Fam": "kangaroo",
+                "Big": "sharon lee",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "aryel zhang",
+                "Recruitment Year": "2023",
+                "Big": "sophia fung",
+                "Fam": "flower fam",
                 "Little": [
-                    "sarah lew"
+                    "lucinda zheng",
+                    "breanna tang",
+                    "luke green"
                 ]
             },
             {
-                "Name": "andrew chen",
+                "Name": "cheska braganza",
                 "Recruitment Year": "2023",
-                "Big": "maxwell wu",
-                "Fam": "kangaroo",
+                "Big": "sophia fung",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "gabby dee",
+                "Recruitment Year": "2023",
+                "Big": "sophia fung",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "kayli chiu",
+                "Recruitment Year": "2023",
+                "Big": "sophia fung",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "avalon lee",
+                "Recruitment Year": "2023",
+                "Big": "yelena tao",
+                "Fam": "flower fam",
                 "Little": [
-                    "karin kawakami",
-                    "john espino"
+                    "anjalia sassone"
                 ]
             },
             {
-                "Name": "leonardo young",
-                "Recruitment Year": "2023",
-                "Big": "maxwell wu",
-                "Fam": "kangaroo",
+                "Name": "akemi takeda",
+                "Recruitment Year": "W24",
+                "Big": "charliene lien",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "sarah lew",
-                "Recruitment Year": "2023",
-                "Big": "lauren ko",
-                "Fam": "kangaroo",
-                "Little": []
+                "Name": "kyra xue",
+                "Recruitment Year": "W24",
+                "Big": "charliene lien",
+                "Fam": "flower fam",
+                "Little": [
+                    "jamie shih"
+                ]
             },
             {
-                "Name": "kelvin zhang",
-                "Recruitment Year": "2023",
-                "Big": "gretchen lam",
-                "Fam": "kangaroo",
-                "Little": []
+                "Name": "katy tseng",
+                "Recruitment Year": "W24",
+                "Big": "charliene lien",
+                "Fam": "flower fam",
+                "Little": [
+                    "kayleigh cui"
+                ]
             },
             {
-                "Name": "eugene wong",
+                "Name": "lucinda zheng",
                 "Recruitment Year": "2024",
-                "Big": "samuel zhu",
-                "Fam": "kangaroo",
+                "Big": "aryel zhang",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "abby ngo",
+                "Name": "breanna tang",
                 "Recruitment Year": "2024",
-                "Big": "brandon liang",
-                "Fam": "kangaroo",
+                "Big": "aryel zhang",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "karin kawakami",
+                "Name": "luke green",
                 "Recruitment Year": "2024",
-                "Big": "andrew chen",
-                "Fam": "kangaroo",
+                "Big": "aryel zhang",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "john espino",
+                "Name": "anjalia sassone",
                 "Recruitment Year": "2024",
-                "Big": "andrew chen",
-                "Fam": "kangaroo",
+                "Big": "avalon lee",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "selene lei",
+                "Name": "anna chiang",
                 "Recruitment Year": "2024",
-                "Big": "jeslyn wu",
-                "Fam": "kangaroo",
+                "Big": "jessica liu",
+                "Fam": "flower fam",
                 "Little": []
             },
             {
-                "Name": "qian yi tan",
-                "Recruitment Year": "2024",
-                "Big": "jeslyn wu",
-                "Fam": "kangaroo",
+                "Name": "kayleigh cui",
+                "Recruitment Year": "W25",
+                "Big": "katy tseng",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "jamie shih",
+                "Recruitment Year": "W25",
+                "Big": "kyra xue",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "hana williams",
+                "Recruitment Year": "W25",
+                "Big": "sophia fung",
+                "Fam": "flower fam",
+                "Little": []
+            },
+            {
+                "Name": "jared weinstein",
+                "Recruitment Year": "W25",
+                "Big": "sophia fung",
+                "Fam": "flower fam",
                 "Little": []
             }
         ]
@@ -2856,256 +3224,6 @@
         ]
     },
     {
-        "Fam": "flower fam",
-        "Heads": [
-            "emeline tu"
-        ],
-        "Members": [
-            {
-                "Name": "emeline tu",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "flower fam",
-                "Little": [
-                    "jacqueline vuong"
-                ]
-            },
-            {
-                "Name": "jacqueline vuong",
-                "Recruitment Year": "2020",
-                "Big": "emeline tu",
-                "Fam": "flower fam",
-                "Little": [
-                    "charliene lien",
-                    "oliver deng",
-                    "yelena tao"
-                ]
-            },
-            {
-                "Name": "charliene lien",
-                "Recruitment Year": "2021",
-                "Big": "jacqueline vuong",
-                "Fam": "flower fam",
-                "Little": [
-                    "alison tjoe",
-                    "carolyn li",
-                    "may wang",
-                    "akemi takeda",
-                    "kyra xue",
-                    "katy tseng"
-                ]
-            },
-            {
-                "Name": "oliver deng",
-                "Recruitment Year": "2021",
-                "Big": "jacqueline vuong",
-                "Fam": "flower fam",
-                "Little": [
-                    "anna hsu",
-                    "michael ma",
-                    "sophia fung"
-                ]
-            },
-            {
-                "Name": "yelena tao",
-                "Recruitment Year": "2021",
-                "Big": "jacqueline vuong",
-                "Fam": "flower fam",
-                "Little": [
-                    "audrey yoh",
-                    "sharon lee",
-                    "sophia li",
-                    "avalon lee"
-                ]
-            },
-            {
-                "Name": "alison tjoe",
-                "Recruitment Year": "2022",
-                "Big": "charliene lien",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "carolyn li",
-                "Recruitment Year": "2022",
-                "Big": "charliene lien",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "may wang",
-                "Recruitment Year": "2022",
-                "Big": "charliene lien",
-                "Fam": "flower fam",
-                "Little": [
-                    "jessica liu"
-                ]
-            },
-            {
-                "Name": "anna hsu",
-                "Recruitment Year": "2022",
-                "Big": "oliver deng",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "michael ma",
-                "Recruitment Year": "2022",
-                "Big": "oliver deng",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "sophia fung",
-                "Recruitment Year": "2022",
-                "Big": "oliver deng",
-                "Fam": "flower fam",
-                "Little": [
-                    "aryel zhang",
-                    "cheska braganza",
-                    "gabby dee",
-                    "kayli chiu"
-                ]
-            },
-            {
-                "Name": "audrey yoh",
-                "Recruitment Year": "2022",
-                "Big": "yelena tao",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "sharon lee",
-                "Recruitment Year": "2022",
-                "Big": "yelena tao",
-                "Fam": "flower fam",
-                "Little": [
-                    "fion huang"
-                ]
-            },
-            {
-                "Name": "sophia li",
-                "Recruitment Year": "2022",
-                "Big": "yelena tao",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "jessica liu",
-                "Recruitment Year": "2023",
-                "Big": "may wang",
-                "Fam": "flower fam",
-                "Little": [
-                    "anna chiang"
-                ]
-            },
-            {
-                "Name": "fion huang",
-                "Recruitment Year": "2023",
-                "Big": "sharon lee",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "aryel zhang",
-                "Recruitment Year": "2023",
-                "Big": "sophia fung",
-                "Fam": "flower fam",
-                "Little": [
-                    "lucinda zheng",
-                    "breanna tang",
-                    "luke green"
-                ]
-            },
-            {
-                "Name": "cheska braganza",
-                "Recruitment Year": "2023",
-                "Big": "sophia fung",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "gabby dee",
-                "Recruitment Year": "2023",
-                "Big": "sophia fung",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "kayli chiu",
-                "Recruitment Year": "2023",
-                "Big": "sophia fung",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "avalon lee",
-                "Recruitment Year": "2023",
-                "Big": "yelena tao",
-                "Fam": "flower fam",
-                "Little": [
-                    "anjalia sassone"
-                ]
-            },
-            {
-                "Name": "akemi takeda",
-                "Recruitment Year": "W24",
-                "Big": "charliene lien",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "kyra xue",
-                "Recruitment Year": "W24",
-                "Big": "charliene lien",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "katy tseng",
-                "Recruitment Year": "W24",
-                "Big": "charliene lien",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "lucinda zheng",
-                "Recruitment Year": "2024",
-                "Big": "aryel zhang",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "breanna tang",
-                "Recruitment Year": "2024",
-                "Big": "aryel zhang",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "luke green",
-                "Recruitment Year": "2024",
-                "Big": "aryel zhang",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "anjalia sassone",
-                "Recruitment Year": "2024",
-                "Big": "avalon lee",
-                "Fam": "flower fam",
-                "Little": []
-            },
-            {
-                "Name": "anna chiang",
-                "Recruitment Year": "2024",
-                "Big": "jessica liu",
-                "Fam": "flower fam",
-                "Little": []
-            }
-        ]
-    },
-    {
         "Fam": "dino",
         "Heads": [
             "rebecca fang",
@@ -3329,12 +3447,21 @@
                 "Recruitment Year": "2024",
                 "Big": "lily hirsh",
                 "Fam": "dino",
-                "Little": []
+                "Little": [
+                    "nicholas le"
+                ]
             },
             {
                 "Name": "cindy yang",
                 "Recruitment Year": "2024",
                 "Big": "lily hirsh",
+                "Fam": "dino",
+                "Little": []
+            },
+            {
+                "Name": "nicholas le",
+                "Recruitment Year": "W25",
+                "Big": "jessica yu",
                 "Fam": "dino",
                 "Little": []
             }
@@ -3499,7 +3626,9 @@
                 "Recruitment Year": "2023",
                 "Big": "ryan gee",
                 "Fam": "mogu mogu",
-                "Little": []
+                "Little": [
+                    "heidi lau"
+                ]
             },
             {
                 "Name": "melody shane",
@@ -3539,7 +3668,9 @@
                 "Recruitment Year": "2024",
                 "Big": "ryan gee",
                 "Fam": "mogu mogu",
-                "Little": []
+                "Little": [
+                    "nini yen"
+                ]
             },
             {
                 "Name": "kiara lee",
@@ -3552,6 +3683,20 @@
                 "Name": "christian chan",
                 "Recruitment Year": "2024",
                 "Big": "christopher lai",
+                "Fam": "mogu mogu",
+                "Little": []
+            },
+            {
+                "Name": "heidi lau",
+                "Recruitment Year": "W25",
+                "Big": "sylvia li",
+                "Fam": "mogu mogu",
+                "Little": []
+            },
+            {
+                "Name": "nini yen",
+                "Recruitment Year": "W25",
+                "Big": "sabrina nguyen",
                 "Fam": "mogu mogu",
                 "Little": []
             }
@@ -3823,7 +3968,8 @@
                 "Fam": "texas",
                 "Little": [
                     "william chieu",
-                    "audrey na"
+                    "audrey na",
+                    "valentina kim"
                 ]
             },
             {
@@ -3831,7 +3977,9 @@
                 "Recruitment Year": "2023",
                 "Big": "livia zhang",
                 "Fam": "texas",
-                "Little": []
+                "Little": [
+                    "lance sanchez"
+                ]
             },
             {
                 "Name": "yoana hui",
@@ -3911,6 +4059,20 @@
             {
                 "Name": "audrey na",
                 "Recruitment Year": "2024",
+                "Big": "yuehan yu",
+                "Fam": "texas",
+                "Little": []
+            },
+            {
+                "Name": "lance sanchez",
+                "Recruitment Year": "W25",
+                "Big": "mai dang",
+                "Fam": "texas",
+                "Little": []
+            },
+            {
+                "Name": "valentina kim",
+                "Recruitment Year": "W25",
                 "Big": "yuehan yu",
                 "Fam": "texas",
                 "Little": []
@@ -4212,6 +4374,139 @@
         ]
     },
     {
+        "Fam": "lu rou",
+        "Heads": [
+            "nicholas jan",
+            "ee-ning ooi",
+            "andrea nei"
+        ],
+        "Members": [
+            {
+                "Name": "nicholas jan",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "lu rou",
+                "Little": [
+                    "kandy mao",
+                    "tony lei"
+                ]
+            },
+            {
+                "Name": "ee-ning ooi",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "lu rou",
+                "Little": [
+                    "alan sheu",
+                    "samuel zhou",
+                    "kevin wang"
+                ]
+            },
+            {
+                "Name": "andrea nei",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "lu rou",
+                "Little": [
+                    "annita wu",
+                    "mindy lin"
+                ]
+            },
+            {
+                "Name": "annita wu",
+                "Recruitment Year": "2023",
+                "Big": "andrea nei",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "mindy lin",
+                "Recruitment Year": "2023",
+                "Big": "andrea nei",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "alan sheu",
+                "Recruitment Year": "2023",
+                "Big": "ee-ning ooi",
+                "Fam": "lu rou",
+                "Little": [
+                    "amanda lim",
+                    "ian chung"
+                ]
+            },
+            {
+                "Name": "samuel zhou",
+                "Recruitment Year": "2023",
+                "Big": "ee-ning ooi",
+                "Fam": "lu rou",
+                "Little": [
+                    "daiji uchino"
+                ]
+            },
+            {
+                "Name": "kevin wang",
+                "Recruitment Year": "2023",
+                "Big": "ee-ning ooi",
+                "Fam": "lu rou",
+                "Little": [
+                    "vivian bui",
+                    "nyel azam"
+                ]
+            },
+            {
+                "Name": "kandy mao",
+                "Recruitment Year": "2023",
+                "Big": "nicholas jan",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "tony lei",
+                "Recruitment Year": "2023",
+                "Big": "nicholas jan",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "daiji uchino",
+                "Recruitment Year": "2024",
+                "Big": "samuel zhou",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "vivian bui",
+                "Recruitment Year": "W25",
+                "Big": "kevin wang",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "nyel azam",
+                "Recruitment Year": "W25",
+                "Big": "kevin wang",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "amanda lim",
+                "Recruitment Year": "W25",
+                "Big": "alan sheu",
+                "Fam": "lu rou",
+                "Little": []
+            },
+            {
+                "Name": "ian chung",
+                "Recruitment Year": "W25",
+                "Big": "alan sheu",
+                "Fam": "lu rou",
+                "Little": []
+            }
+        ]
+    },
+    {
         "Fam": "seal",
         "Heads": [
             "chris cheng"
@@ -4437,105 +4732,6 @@
                 "Recruitment Year": "2024",
                 "Big": "candis wu",
                 "Fam": "cat",
-                "Little": []
-            }
-        ]
-    },
-    {
-        "Fam": "lu rou",
-        "Heads": [
-            "nicholas jan",
-            "ee-ning ooi",
-            "andrea nei"
-        ],
-        "Members": [
-            {
-                "Name": "nicholas jan",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "lu rou",
-                "Little": [
-                    "kandy mao",
-                    "tony lei"
-                ]
-            },
-            {
-                "Name": "ee-ning ooi",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "lu rou",
-                "Little": [
-                    "alan sheu",
-                    "samuel zhou",
-                    "kevin wang"
-                ]
-            },
-            {
-                "Name": "andrea nei",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "lu rou",
-                "Little": [
-                    "annita wu",
-                    "mindy lin"
-                ]
-            },
-            {
-                "Name": "annita wu",
-                "Recruitment Year": "2023",
-                "Big": "andrea nei",
-                "Fam": "lu rou",
-                "Little": []
-            },
-            {
-                "Name": "mindy lin",
-                "Recruitment Year": "2023",
-                "Big": "andrea nei",
-                "Fam": "lu rou",
-                "Little": []
-            },
-            {
-                "Name": "alan sheu",
-                "Recruitment Year": "2023",
-                "Big": "ee-ning ooi",
-                "Fam": "lu rou",
-                "Little": []
-            },
-            {
-                "Name": "samuel zhou",
-                "Recruitment Year": "2023",
-                "Big": "ee-ning ooi",
-                "Fam": "lu rou",
-                "Little": [
-                    "daiji uchino"
-                ]
-            },
-            {
-                "Name": "kevin wang",
-                "Recruitment Year": "2023",
-                "Big": "ee-ning ooi",
-                "Fam": "lu rou",
-                "Little": []
-            },
-            {
-                "Name": "kandy mao",
-                "Recruitment Year": "2023",
-                "Big": "nicholas jan",
-                "Fam": "lu rou",
-                "Little": []
-            },
-            {
-                "Name": "tony lei",
-                "Recruitment Year": "2023",
-                "Big": "nicholas jan",
-                "Fam": "lu rou",
-                "Little": []
-            },
-            {
-                "Name": "daiji uchino",
-                "Recruitment Year": "2024",
-                "Big": "samuel zhou",
-                "Fam": "lu rou",
                 "Little": []
             }
         ]
