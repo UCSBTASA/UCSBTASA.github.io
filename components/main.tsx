@@ -60,10 +60,8 @@ const Main = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-50">
-        
         <div className="my-2 mx-auto w-full xl:w-11/12">
           <div className=" rounded-2xl pl-4 grid justify-center">
-            
             <Link href="/gallery">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Our Recent Events
@@ -74,17 +72,18 @@ const Main = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex mx-auto max-w-4xl my-8 bg-gray-50 rounded-xl pt-4 w-[70%] h-[90%] items-center">
-          {isClient && <Instagram />}
+        <div>
+          <div className="text-3xl text-center font-bold font-montserrat text-gray-900 mt-8 mb-4">
+            A Year in Review: What You Missed
+          </div>
+          <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-8 rounded-xl">
+            <div className="mb-4 xl:my-auto ">{isClient && <Youtube />}</div>
+          </div>
         </div>
       </div>
-      <h2 className="text-3xl text-center font-bold font-montserrat text-gray-900 mt-8 mb-4">
-        A Year in Review: What You Missed
-      </h2>
-      <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-8 rounded-xl">
-        <div className="mb-4 xl:my-auto ">{isClient && <Youtube />}</div>
-      </div>
+      {/* <div className="mx-auto my-auto max-w-4xl bg-gray-50 rounded-xl w-[30%] h-[50%] max-h-[200px] items-center">
+        {isClient && <Instagram />}
+      </div> */}
     </div>
   );
 };

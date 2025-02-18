@@ -1,5 +1,5 @@
 import events from "../data/eventData";
-import { galleryImages2023_2024 } from "@/data/galleryImages";
+import { galleryImages2024_2025 } from "@/data/galleryImages";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,7 +46,7 @@ const EventGallery = () => {
   const currentDate = new Date();
   const futureDate = new Date();
   futureDate.setDate(currentDate.getDate() - 1);
-  const galleryImages = galleryImages2023_2024.reverse();
+  const galleryImages = galleryImages2024_2025.reverse();
   const upcomingEvents = events.filter(
     (event) => new Date(event.date) >= futureDate
   );
