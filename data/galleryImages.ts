@@ -8,6 +8,108 @@ export interface GalleryImage {
   quarter: string;
 }
 
+export const galleryImages2024_2025: GalleryImage[] = [
+  {
+    id: 1,
+    title: "99 rising",
+    imageUrl: "/gallery_photos/2024-2025/99_rising.JPG",
+    link: "https://photos.google.com/share/AF1QipNwaFmPFHgj4bCauBzBPxlm34PwKPq-X5iHrAfkgUTkMj8ct6GlfH0M9KbXujgANQ?key=UGRIQnhPYUZUazRySmVzaVdWWWwwb2dfOURvQWJn",
+    quarter: "Fall",
+  },
+  {
+    id: 2,
+    title: "GM1",
+    imageUrl: "/gallery_photos/2024-2025/fall_gm_1.JPG",
+    link: "https://photos.app.goo.gl/EzoMeHVt4yMZsXns5",
+    quarter: "Fall",
+  },
+  {
+    id: 3,
+    title: "Fall 2024 GM #2",
+    imageUrl: "/gallery_photos/2024-2025/fall_gm_2.JPG",
+    link: "https://photos.app.goo.gl/Sov4x8E8h3YXdbLk8",
+    quarter: "Fall",
+  },
+  {
+    id: 4,
+    title: "speed dating",
+    imageUrl: "/gallery_photos/2024-2025/speed_dating.JPG",
+    link: "https://photos.app.goo.gl/ASg7c5f4roW7h1aG7",
+    quarter: "Fall",
+  },
+  {
+    id: 5,
+    title: "boba night",
+    imageUrl: "/gallery_photos/2024-2025/boba_night.JPG",
+    link: "https://photos.app.goo.gl/eE2xwQqCaHg6CqAbA",
+    quarter: "Fall",
+  },
+  {
+    id: 6,
+    title: "X Bookmarks the Spot",
+    imageUrl: "/gallery_photos/2024-2025/x_bookmarks_the_spot.JPG",
+    link: "https://photos.app.goo.gl/sqAbHPp1MYa4qHNq8",
+    quarter: "Fall",
+  },
+  {
+    id: 7,
+    title: "Sports Day",
+    imageUrl: "/gallery_photos/2024-2025/sports_day.jpeg",
+    link: "https://photos.app.goo.gl/3U5j6S2cWrWJcDK3A",
+    quarter: "Fall",
+  },
+  {
+    id: 8,
+    title: "Beach Day",
+    imageUrl: "/gallery_photos/2024-2025/beach_day.JPG",
+    link: "https://photos.app.goo.gl/fPCMT9rMCheVHigU6",
+    quarter: "Fall",
+  },
+  {
+    id: 9,
+    title: "Mahjong Night",
+    imageUrl: "/gallery_photos/2024-2025/mahjong_night.jpg",
+    link: "https://photos.app.goo.gl/nV6qBaabvB9AcM4a8",
+    quarter: "Fall",
+  },
+  // {
+  //   id: 10,
+  //   title: "GM3",
+  //   imageUrl: "",
+  //   link: "https://photos.app.goo.gl/KJF1WgZa5jUfPYyU7",
+  //   quarter: "Fall",
+  // },
+  {
+    id: 11,
+    title: "Fall Pick Up Reveal",
+    imageUrl: "/gallery_photos/2024-2025/fall_pickup_reveal.JPG",
+    link: "https://photos.app.goo.gl/JsNMZx4pDpSQymX39",
+    quarter: "Fall",
+  },
+  {
+    id: 12,
+    title: "Winter Retreat",
+    imageUrl: "/gallery_photos/2024-2025/winter_retreat.jpg",
+    link: "https://photos.app.goo.gl/A1DLDSZY4M2dwVkQ9",
+    quarter: "Winter"
+  },
+  {
+    id: 13,
+    title: "Touching Grass",
+    imageUrl: "/gallery_photos/2024-2025/touching_grass.JPG",
+    link: "https://photos.app.goo.gl/iHr4tyFrjTXFbHPN6",
+    quarter: "Winter"
+  },
+  {
+    id: 14, 
+    title: "Fam Trivia Night",
+    imageUrl: "/gallery_photos/2024-2025/fam_trivia_night.JPG",
+    link: "https://photos.app.goo.gl/kphZ1q8qsyBG5aFDA",
+    quarter: "Winter"
+  }
+
+];
+
 export const galleryImages2023_2024: GalleryImage[] = [
   {
     id: 1,
