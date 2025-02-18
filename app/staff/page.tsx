@@ -22,6 +22,7 @@ const StaffPage = () => {
                         imageUrl={staff.imageUrl}
                         imageUrlBack={staff.imageUrlBack}
                         name={staff.name}
+                        position={staff.position}
                       />
                     </div>
                     <h2 className="text-black text-2xl mt-6 font-semibold">
@@ -35,7 +36,11 @@ const StaffPage = () => {
                       {staff.major}
                     </p> 
                     <p className="text-md text-[#00000080] leading-16">
-                        {staff.minor != "" && <><strong> Minor: </strong> {staff.minor}</>}
+                          {staff.minor && (
+                          <>
+                            <strong>Minor: </strong> {staff.minor}
+                          </>
+                          )}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
                       <strong>Pet Peeve: </strong>
