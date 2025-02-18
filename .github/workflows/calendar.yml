@@ -31,7 +31,6 @@ jobs:
           pip install pandas
           pip install datetime
           pip install pytz
-          pip install os
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Python Script
         env: 
