@@ -5,8 +5,8 @@ const events =
     "day of week": "Tuesday",
     "date": "2025-02-18",
     "time": "06:00 PM - 07:30 PM",
-    "end": "07:30 PM",
     "start": "06:00 PM",
+    "end": "07:30 PM",
     "location": "mcc lounge",
     "customTime": ""
   },
@@ -15,8 +15,8 @@ const events =
     "day of week": "Friday",
     "date": "2025-02-21",
     "time": "04:00 PM - 06:00 PM",
-    "end": "06:00 PM",
     "start": "04:00 PM",
+    "end": "06:00 PM",
     "location": "srb mpr",
     "customTime": ""
   },
@@ -25,8 +25,8 @@ const events =
     "day of week": "Monday",
     "date": "2025-02-24",
     "time": "08:00 PM - 10:00 PM",
-    "end": "10:00 PM",
     "start": "08:00 PM",
+    "end": "10:00 PM",
     "location": "location tbd",
     "customTime": ""
   },
@@ -35,8 +35,8 @@ const events =
     "day of week": "Tuesday",
     "date": "2025-02-25",
     "time": "03:00 PM - 04:00 PM",
-    "end": "04:00 PM",
     "start": "03:00 PM",
+    "end": "04:00 PM",
     "location": "methodist community garden",
     "customTime": ""
   },
@@ -45,8 +45,8 @@ const events =
     "day of week": "Thursday",
     "date": "2025-02-27",
     "time": "08:00 PM - 10:30 PM",
-    "end": "10:30 PM",
     "start": "08:00 PM",
+    "end": "10:30 PM",
     "location": "arts 1353",
     "customTime": ""
   },
@@ -55,11 +55,11 @@ const events =
     "day of week": "Wednesday",
     "date": "2025-03-12",
     "time": "08:00 PM - 10:00 PM",
-    "end": "10:00 PM",
     "start": "08:00 PM",
+    "end": "10:00 PM",
     "location": "arts 1349",
     "customTime": ""
   }
 ];
 
-export default events; 
+export default events;
