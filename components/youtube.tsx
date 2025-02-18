@@ -9,6 +9,7 @@ class Youtube extends React.Component {
         autoplay: 1 as 0 | 1,
         controls: 1 as 0 | 1,
         origin: "https://www.youtube-nocookie.com",
+        mute: 1 as 0 | 1,
       },
       host: "https://www.youtube-nocookie.com",
     };
@@ -26,7 +27,7 @@ class Youtube extends React.Component {
   }
 
   _onReady(event: any) {
-    event.target.pauseVideo();
+    event.target.playVideo();
   }
 }
 

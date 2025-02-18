@@ -7,6 +7,7 @@ import {
   galleryImages2019_2020,
   galleryImages2018_2019,
   galleryImages2017_2018,
+  galleryImages2024_2025,
 } from "@/data/galleryImages";
 import React, { useState } from "react";
 import GalleryYearSection from "@/components/galleryYearSection";
@@ -16,9 +17,22 @@ const GalleryPage: React.FC = () => {
     <div className="gallery-container ">
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 pt-4 pb-8">
-          {/* <h2 className="text-4xl mt-4 font-semibold text-center">
+           {/* <h2 className="text-4xl mt-4 font-semibold text-center">
             Our Favorite Memories
           </h2> */}
+          <h2 className="text-5xl flex justify-center mt-4 font-jacques font-bold">
+            2024-2025
+          </h2>
+          <GalleryYearSection
+            images={galleryImages2024_2025.slice().reverse()}
+            year="2024-2025"
+            quarter="Winter"
+          />
+          <GalleryYearSection
+            images={galleryImages2024_2025.slice().reverse()}
+            year="2024-2025"
+            quarter="Fall"
+          />
 
           <h2 className="text-5xl flex justify-center mt-4 font-jacques font-bold">
             2023-2024

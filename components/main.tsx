@@ -8,7 +8,7 @@ import Instagram from "@/components/instagram";
 import EventGallery from "@/components/eventGallery";
 import Carousel from "@/components/carousel";
 import { useEffect, useState } from "react";
-
+import Events from "./events";
 const Main = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -81,6 +81,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+    <Events></Events>
       {/* <div className="mx-auto my-auto max-w-4xl bg-gray-50 rounded-xl w-[30%] h-[50%] max-h-[200px] items-center">
         {isClient && <Instagram />}
       </div> */}

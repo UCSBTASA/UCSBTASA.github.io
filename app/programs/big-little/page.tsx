@@ -5,8 +5,14 @@ import Image from "next/image";
 import ScrollTransition from "@/components/scroll-transition";
 import events from "@/data/bigLittleEvents";
 import pickupPhotos from "@/data/photoLists/pickupPhotos";
+import pickup2023 from "@/data/photoLists/pickup2023";
 
 const BigLittle = () => {
+  // Get the current date
+  const currentDate = new Date();
+  // Set the cutoff date (October 4th, 2024 in this case)
+  const cutoffDate = new Date('2024-10-04');
+
   return (
     <div>
       <div className="relative h-80 lg:h-[85vh]">
@@ -52,7 +58,7 @@ const BigLittle = () => {
               </p>
             </ScrollTransition>
           </div>
-          <div className="flex flex-wrap justify-center items-center md:w-[40%] md:pl-4 mt-4">
+          <div className="flex flex-wrap justify-center text-center items-center md:w-[40%] md:pl-4 mt-4">
             <ScrollTransition>
               <span className="table">
                 <Link
@@ -65,7 +71,7 @@ const BigLittle = () => {
                     width={400}
                     height={400}
                   />
-                  <p>Big-Little Reveal 2022 (click for full album)</p>
+                  <p className="text-gray-700 mt-2">Big-Little Reveal 2022 (click for full album)</p>
                 </Link>
               </span>
             </ScrollTransition>
@@ -73,7 +79,7 @@ const BigLittle = () => {
         </div>
         <div className="bg-white shadow-md rounded-md p-8 m-8">
           <ScrollTransition>
-            <h1 className="text-4xl uppercase">2023-2024 PICKUP TIMELINE</h1>
+            <h1 className="text-4xl uppercase">2024-2025 PICKUP TIMELINE</h1>
             <p className="text-gray-500">
               *Dates subject to change & all event times are in <b>PST</b>{" "}
               <br />
@@ -83,7 +89,8 @@ const BigLittle = () => {
               ​In addition, please make an effort to reach out to potentials in
               your own time!{" "}
             </p>
-            <div className=" p-8">
+            <strong> {currentDate > cutoffDate ? "" : "Events coming out soon, come back later to check them out!"} </strong>
+            <div className="p-8">
               <div className="max-w-3xl mx-auto">
                 <h1 className="text-2xl font-semibold mb-4">Event Timeline</h1>
                 <div className="flex flex-col space-y-8">
@@ -97,12 +104,14 @@ const BigLittle = () => {
                       </div>
                       <div>
                         <h2 className="text-lg font-semibold text-black">
-                          {event.name}
+                          {currentDate > cutoffDate ? event.name : '...'}
                         </h2>
                         <p className="text-gray-500">
-                          {event.date} - {event.location}
+                          {currentDate > cutoffDate ? event.date : '...'} - {event.location}
                         </p>
-                        <p className="text-gray-700">{event.description}</p>
+                        <p className="text-gray-700">
+                          {currentDate > cutoffDate ? event.description : '...'}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -114,6 +123,26 @@ const BigLittle = () => {
       </div>
       <div className="mx-4 lg:mx-16">
         <div className="p-8 mb-8">
+          <ScrollTransition>
+            <h1 className="text-4xl">Big Little Pickup 2023 Highlights</h1>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 mb-8">
+              {pickup2023.map((photo, index) => (
+                <div className="group relative cursor-pointer">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={400}
+                    height={400}
+                    className="transition transform object-cover group-hover:scale-105"
+                    style={{
+                      objectFit: "cover",
+                      aspectRatio: 16 / 9,
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </ScrollTransition>
           <ScrollTransition>
             <h1 className="text-4xl">Big Little Pickup 2022 Highlights</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">

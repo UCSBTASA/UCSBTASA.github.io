@@ -79,69 +79,35 @@ const EventGallery = () => {
           ))}
         </div>
         <div className="bg-gray-50 rounded-2xl">
-          {upcomingEvents.length === 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {galleryImages.slice(2, 4).map((image) => (
-                <div key={image.id} className="relative border">
-                  <Link
-                    href={image.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.title}
-                      width={500} // Adjust width as needed
-                      height={300} // Adjust height as needed
-                      className="w-full h-auto rounded-lg object-cover"
-                      style={{
-                        objectFit: "cover",
-                        aspectRatio: 16 / 9,
-                        // Dynamic aspect ratio
-                      }}
-                    />
-                  </Link>
-                  <div className="bg-white py-2">
-                    <h3 className="font-semibold text-center text-lg md:text-xl">
-                      {image.title.toUpperCase()}
-                    </h3>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {galleryImages.slice(2, 4).map((image) => (
+              <div key={image.id} className="relative border">
+                <Link
+                  href={image.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.title}
+                    width={500} // Adjust width as needed
+                    height={300} // Adjust height as needed
+                    className="w-full h-auto rounded-lg object-cover"
+                    style={{
+                      objectFit: "cover",
+                      aspectRatio: 16 / 9,
+                      // Dynamic aspect ratio
+                    }}
+                  />
+                </Link>
+                <div className="bg-white py-2">
+                  <h3 className="font-semibold text-center text-lg md:text-xl">
+                    {image.title.toUpperCase()}
+                  </h3>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div className="mx-auto pb-2">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Upcoming Events
-              </h2>
-              <div className="flex gap-4">
-                {upcomingEvents.slice(0, 2).map((event) => (
-                  <div
-                    key={event.title}
-                    className="flex-shrink-0 w-[300px] bg-white rounded-lg"
-                  >
-                    <div className="p-4">
-                      <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                      <div className="text-gray-600 mb-2">
-                        <strong>Date: </strong> {formatDate(event.date)}
-                      </div>
-                      <div className="text-gray-600 mb-2">
-                        <strong>Time: </strong>
-                        {event.customTime === "" ? (
-                          <span>{event.time} PST</span>
-                        ) : (
-                          event.customTime
-                        )}
-                      </div>
-                      <div className="text-gray-600">
-                        <strong>Location:</strong> {event.location}
-                      </div>
-                    </div>
-                  </div>
-                ))}
               </div>
-            </div>
-          )}
+            ))}
+          </div>
         </div>
       </div>
     </div>

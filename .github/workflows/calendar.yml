@@ -1,0 +1,64 @@
+name: Automatic Event Date Updater w/ Google Calendar
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Run tests on branch"
+        required: true
+        default: "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Debug Message
+        run: echo "Workflow triggered at $(date)"
+
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      - name: Retrieve and write credentials JSON
+        env:
+          CREDENTIALS_JSON: ${{ secrets.CREDENTIALS_JSON }}
+        run: |
+          echo "${CREDENTIALS_JSON}" > credentials.json
+      - name: Retrieve and write token JSON
+        env:
+          TOKEN_CALENDAR_JSON: ${{ secrets.TOKEN_CALENDAR_JSON }}
+        run: |
+          echo "${TOKEN_CALENDAR_JSON}" > token.json
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install gspread
+          pip install pandas
+          pip install datetime
+          pip install pytz
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Run Python Script
+        run: |
+          python_script="scripts/google_calendar.py"
+          python "$python_script"
+      - name: Configure Git
+        run: |
+          git config --global user.email "jlang61@ucsb.edu"
+          git config --global user.name "Justin Lang"
+      - name: Add changes
+        run: git add data/eventData.ts
+
+      - name: Commit changes
+        run: |
+          git commit -m "Update eventData.ts" || echo "No changes to commit"
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
