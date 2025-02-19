@@ -24,7 +24,7 @@ const StaffPage = () => {
                       name={staff.name}
                       position={staff.position}
                       // Prioritize the first 3 images for loading
-                      priority={staff.id < 6}
+                      priority={staff.id <= 6}
                     />
                   </div>
                   <h2 className="text-black text-2xl mt-6 font-semibold">
@@ -33,7 +33,7 @@ const StaffPage = () => {
                   <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
                     {staff.position.toUpperCase()}
                   </p>
-                  <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
+                  <p className="text-md text-[#00000080] mt-2 leading-16">
                     <strong>Major: </strong>
                     {staff.major}
                   </p>
