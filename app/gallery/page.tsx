@@ -39,19 +39,19 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
             quarter="Spring"
-            priority={false}
+            p="low"
           />
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
             quarter="Winter"
-            priority={false}
+            p="low"
           />
           <GalleryYearSection
             images={galleryImages2023_2024.slice().reverse()}
             year="2022-2023"
             quarter="Fall"
-            priority={false}
+            p="low"
           />
 
           <h2 className="text-2xl mt-4 font-semibold">2022-2023</h2>
@@ -59,7 +59,7 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2022_2023}
             year="2022-2023"
             quarter="NA"
-            priority={false}
+            p="low"
           />
 
           <h2 className="text-2xl mt-4 font-semibold">2021-2022</h2>
@@ -67,7 +67,7 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2021_2022}
             year="2021-2022"
             quarter="NA"
-            priority={false}
+            p="low"
           />
 
           <h2 className="text-2xl mt-4 font-semibold">2019-2020</h2>
@@ -75,7 +75,7 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2019_2020}
             year="2019-2020"
             quarter="NA"
-            priority={false}
+            p="low"
           />
 
           <h2 className="text-2xl mt-4 font-semibold">2018-2019</h2>
@@ -83,7 +83,7 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2018_2019}
             year="2018-2019"
             quarter="NA"
-            priority={false}
+            p="low"
           />
 
           <h2 className="text-2xl mt-4 font-semibold">2017-2018</h2>
@@ -91,7 +91,7 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2017_2018}
             year="2017-2018"
             quarter="NA"
-            priority={false}
+            p="low"
           />
         </div>
       </div>
