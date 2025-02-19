@@ -10,7 +10,7 @@ const StaffPage = () => {
           <h2 className="text-3xl font-bold text-gray-900 uppercase">
             Meet the Staff!
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
             {staffMembers.map((staff) => (
                 <div
                   key={staff.id}
@@ -22,7 +22,6 @@ const StaffPage = () => {
                         imageUrl={staff.imageUrl}
                         imageUrlBack={staff.imageUrlBack}
                         name={staff.name}
-                        position={staff.position}
                       />
                     </div>
                     <h2 className="text-black text-2xl mt-6 font-semibold">
@@ -34,17 +33,14 @@ const StaffPage = () => {
                     <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
                       <strong>Major: </strong>
                       {staff.major}
-                    </p> 
-                    <p className="text-md text-[#00000080] leading-16">
-                          {staff.minor && (
-                          <>
-                            <strong>Minor: </strong> {staff.minor}
-                          </>
-                          )}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
-                      <strong>Pet Peeve: </strong>
-                      {staff.petPeeve}
+                      <strong>Hometown: </strong>
+                      {staff.hometown}
+                    </p>
+                    <p className="text-md text-[#00000080] leading-16">
+                      <strong>Favorite Movie: </strong>
+                      {staff.favMovie}
                     </p>
                     <p className="text-md text-[#00000080] leading-16">
                       <strong>Fun Fact: </strong>
