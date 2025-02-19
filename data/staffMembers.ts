@@ -113,7 +113,7 @@ const staffMembers = [
     position: "Co-Recruitment Chair",
     major: "Biopsychology",
     minor: "",
-    year: "Class of 2027",
+    year: "Class of 2026",
     petPeeve: "when the first line of a song is the title",
     funFact: "I know the first 314 digits of pi",
     imageUrl: "/staff_photos_24-25/yuehan.JPG",
