@@ -75,25 +75,25 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-50">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 p-4 md:p-6 bg-gray-50">
         <div className="my-2 mx-auto w-full xl:w-11/12">
           <div className=" rounded-2xl pl-4 grid justify-center">
             <Link href="/gallery">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-center text-3xl font-bold text-gray-900 mb-4">
                 Our Recent Events
               </h2>
             </Link>
-            <div className="mx-auto max-w-4xl">
+            <div className="flex mx-auto max-w-4xl">
               {isClient && <EventGallery />}
             </div>
           </div>
         </div>
         <div>
-          <div className="text-3xl text-center font-bold font-montserrat text-gray-900 mt-8 mb-4">
+          <div className="text-3xl text-center font-bold font-montserrat text-gray-900 my-2 mb-10">
             A Year in Review: What You Missed
           </div>
           <div className="relative flex justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-8 rounded-xl">
-            <div className="mb-4 xl:my-auto ">{isClient && <Youtube />}</div>
+            <div className="mb-4 my-auto ">{isClient && <Youtube />}</div>
           </div>
         </div>
       </div>

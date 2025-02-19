@@ -54,7 +54,7 @@ const EventGallery = () => {
   );
 
   return (
-    <div className="mx-auto">
+    <div className="justify-center mx-auto">
       <div className="bg-gray-50 rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {galleryImages.slice(0, 2).map((image) => (
