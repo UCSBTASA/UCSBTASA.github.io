@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "taste of taiwan",
-    "day of week": "Tuesday",
-    "date": "2025-02-18",
-    "time": "06:00 PM - 07:30 PM",
-    "start": "06:00 PM",
-    "end": "07:30 PM",
-    "location": "mcc lounge",
-    "customTime": ""
-  },
-  {
     "title": "tasa x nsu collab",
     "day of week": "Friday",
     "date": "2025-02-21",
