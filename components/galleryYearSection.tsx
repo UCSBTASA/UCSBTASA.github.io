@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollTransition from "./scroll-transition";
 
 interface GalleryImage {
@@ -37,7 +38,7 @@ const GalleryYearSection = ({
               className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
             >
               <div className="relative h-48">
-                <img
+                <Image
                   src={image.imageUrl}
                   alt={image.title}
                   className="absolute inset-0 w-full h-full object-cover"
