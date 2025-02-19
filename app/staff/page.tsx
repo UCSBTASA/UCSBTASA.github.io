@@ -24,7 +24,7 @@ const StaffPage = () => {
                       name={staff.name}
                       position={staff.position}
                       // Prioritize the first 3 images for loading
-                      priority={staff.id < 6}
+                      priority={staff.id <= 6}
                     />
                   </div>
                   <h2 className="text-black text-2xl mt-6 font-semibold">

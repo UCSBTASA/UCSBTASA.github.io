@@ -14,7 +14,7 @@ interface GalleryYearSectionProps {
   quarter: string;
 }
 
-const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) => {
+const GalleryYearSection = ({ images, year , quarter, priority}: GalleryYearSectionProps) => {
   const filteredImages = images.filter(image => image.quarter === quarter);
   return (
     <>
@@ -28,6 +28,7 @@ const GalleryYearSection = ({ images, year , quarter}: GalleryYearSectionProps) 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                priority={priority}
               >
                 <div
                   className="h-48 bg-cover bg-center"
