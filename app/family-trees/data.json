@@ -953,6 +953,7 @@
         "Fam": "elite",
         "Heads": [
             "kyle volpp",
+            "vicky li",
             "brianna lee"
         ],
         "Members": [
@@ -963,6 +964,17 @@
                 "Fam": "elite",
                 "Little": [
                     "joshua huang"
+                ]
+            },
+            {
+                "Name": "vicky li",
+                "Recruitment Year": "None",
+                "Big": "None",
+                "Fam": "elite",
+                "Little": [
+                    "justin lang",
+                    "tim chang",
+                    "cole mak"
                 ]
             },
             {
@@ -1211,7 +1223,7 @@
                 "Little": [
                     "irene cho",
                     "iris yuh",
-                    "vicky li"
+                    "vicki li"
                 ]
             },
             {
@@ -1224,15 +1236,11 @@
                 ]
             },
             {
-                "Name": "vicky li",
+                "Name": "vicki li",
                 "Recruitment Year": "None",
                 "Big": "erika wu",
                 "Fam": "elite",
-                "Little": [
-                    "justin lang",
-                    "tim chang",
-                    "cole mak"
-                ]
+                "Little": []
             },
             {
                 "Name": "dilara oner",
@@ -2695,12 +2703,12 @@
         ],
         "Members": [
             {
-                "Name": "emeline tu",
+                "Name": "andrew chang",
                 "Recruitment Year": "None",
                 "Big": "None",
-                "Fam": "flower fam",
+                "Fam": "kangaroo",
                 "Little": [
-                    "jacqueline vuong"
+                    "alison gu"
                 ]
             },
             {
@@ -2964,10 +2972,10 @@
                 "Little": []
             },
             {
-                "Name": "jared weinstein",
-                "Recruitment Year": "W25",
-                "Big": "sophia fung",
-                "Fam": "flower fam",
+                "Name": "alison gu",
+                "Recruitment Year": "2024",
+                "Big": "andrew chang",
+                "Fam": "kangaroo",
                 "Little": []
             }
         ]

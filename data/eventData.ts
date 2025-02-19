@@ -11,7 +11,7 @@ const events =
     "customTime": ""
   },
   {
-    "title": "gm 3 !!",
+    "title": "GM #1",
     "day of week": "Monday",
     "date": "2025-02-24",
     "time": "08:00 PM - 10:00 PM",
@@ -41,7 +41,25 @@ const events =
     "customTime": ""
   },
   {
-    "title": "study night!",
+    "title": "Winter Big/Little Reveal",
+    "day of week": "Sunday",
+    "date": "2024-02-04",
+    "time": "2-4PM",
+    "location": "Top of Lot 22",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "GM #2",
+    "day of week": "Monday",
+    "date": "2024-02-05",
+    "time": "8-10PM",
+    "location": "TD-W 1701",
+    "customTime": "",
+    "ready": "Yes"
+  },
+  {
+    "title": "TASA Online Game Night\n",
     "day of week": "Wednesday",
     "date": "2025-03-12",
     "time": "08:00 PM - 10:00 PM",
