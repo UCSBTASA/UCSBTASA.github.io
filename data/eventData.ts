@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "tasa x nsu collab",
-    "day of week": "Friday",
-    "date": "2025-02-21",
-    "time": "04:00 PM - 06:00 PM",
-    "start": "04:00 PM",
-    "end": "06:00 PM",
-    "location": "srb mpr",
-    "customTime": ""
-  },
-  {
     "title": "gm 3 !!",
     "day of week": "Monday",
     "date": "2025-02-24",
