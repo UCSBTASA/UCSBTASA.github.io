@@ -35,7 +35,7 @@ export default function NavBar() {
   }, [navOpen]);
 
   return (
-    <nav className="w-full h-14 bg-black text-white flex items-center justify-between px-6 md:px-8 sticky top-0 z-50">
+    <nav className="w-full h-14 bg-[#1F1F1F] text-white flex items-center justify-between px-6 md:px-8 sticky top-0 z-50">
       {/* Left: Logo */}
       <div className="flex items-center">
         <Link href="/">
@@ -59,16 +59,18 @@ export default function NavBar() {
           </li>
         ))}
         <li className="relative group">
-          <span className="hover:opacity-80 px-4 rounded-lg cursor-pointer">more</span>
+          <span className="hover:opacity-80 px-4 rounded-lg cursor-pointer">
+            more
+          </span>
           <ul className="absolute left-0 mt-2 w-32 bg-white text-black shadow-lg rounded-lg group-hover:rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
             {moreNavLinks.map((link) => (
               <li key={link.href}>
-          <Link
-            href={link.href}
-            className="block px-2 py-2 hover:bg-gray-200"
-          >
-            {link.name}
-          </Link>
+                <Link
+                  href={link.href}
+                  className="block px-2 py-2 hover:bg-gray-200"
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -100,7 +102,7 @@ export default function NavBar() {
       >
         <div
           ref={navRef}
-          className={`fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-white p-6 transition-transform duration-300 ${
+          className={`fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-gray-900 p-6 transition-transform duration-300 ${
             navOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -119,7 +121,7 @@ export default function NavBar() {
           </div>
 
           {/* Mobile Nav Links */}
-          <ul className="mt-6 space-y-4 text-lg text-black">
+          <ul className="mt-6 space-y-4 text-lg text-white">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
