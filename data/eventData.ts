@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "gm 3 !!",
-    "day of week": "Monday",
-    "date": "2025-02-24",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "location tbd",
-    "customTime": ""
-  },
-  {
     "title": "green onion pancake workshop",
     "day of week": "Tuesday",
     "date": "2025-02-25",
