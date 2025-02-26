@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "green onion pancake workshop",
-    "day of week": "Tuesday",
-    "date": "2025-02-25",
-    "time": "03:00 PM - 04:00 PM",
-    "start": "03:00 PM",
-    "end": "04:00 PM",
-    "location": "methodist community garden",
-    "customTime": ""
-  },
-  {
     "title": "karaoke night",
     "day of week": "Thursday",
     "date": "2025-02-27",
