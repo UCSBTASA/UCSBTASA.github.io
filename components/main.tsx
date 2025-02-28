@@ -23,7 +23,7 @@ const Main = () => {
   return (
     <div className="">
       <Welcome />
-      <div className="mt-4"></div>
+      {/* <div className="mt-4"></div> */}
       <UpcomingEvents />
       {/* <div className="flex min-h-screen flex-col">
 

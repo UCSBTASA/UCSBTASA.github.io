@@ -89,6 +89,7 @@ module.exports = {
       // Adding a custom gradient from white to red
       backgroundImage: {
         'white-to-light-pink': 'linear-gradient(to bottom, white,rgb(253, 232, 241))',
+        'light-pink-to-white': 'linear-gradient(to bottom, rgb(253, 232, 241), white)',
       },
     },
   },
