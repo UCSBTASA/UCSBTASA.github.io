@@ -52,7 +52,9 @@ const EventGallery = () => {
   const upcomingEvents = events.filter(
     (event) => new Date(event.date) >= futureDate
   );
-
+  upcomingEvents.forEach((event) => {
+    event.title = event.title.toLowerCase();
+  });
   return (
     <div className="justify-center mx-auto">
       <div className="bg-gray-50 rounded-2xl">
@@ -62,7 +64,7 @@ const EventGallery = () => {
               <Link href={image.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={image.imageUrl}
-                  alt={image.title}
+                  alt={image.title.toLowerCase()}
                   width={400} // Adjust width as needed
                   height={200} // Adjust height as needed
                   className="w-full h-auto rounded-lg object-cover"
@@ -74,7 +76,7 @@ const EventGallery = () => {
               </Link>
               <div className="bg-white py-2">
                 <h3 className="font-semibold text-center text-lg md:text-xl">
-                  {image.title.toUpperCase()}
+                  {image.title.toLowerCase()}
                 </h3>
               </div>
             </div>
@@ -104,7 +106,7 @@ const EventGallery = () => {
                 </Link>
                 <div className="bg-white py-2">
                   <h3 className="font-semibold text-center text-lg md:text-xl">
-                    {image.title}
+                    {image.title.toLowerCase()}
                   </h3>
                 </div>
               </div>
