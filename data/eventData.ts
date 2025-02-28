@@ -20,7 +20,7 @@ const events =
     "end": "10:00 PM",
     "location": "arts 1349",
     "customTime": "",
-    "rsvpLink": "https://workspace.google.com/products/slides/"
+    "rsvpLink": ""
   }
 ];
 
