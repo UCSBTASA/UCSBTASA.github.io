@@ -83,8 +83,8 @@ export default function Welcome() {
                 variant="outline"
                 className="font-bold border-primary text-primary hover:bg-primary hover:text-white rounded-full w-full sm:w-auto"
               >
-                <a href="/staff" className="w-full sm:w-auto">
-                  Our Events
+                <a href="/programs" className="w-full sm:w-auto">
+                  Our Programs
                 </a>
               </Button>
             </div>
