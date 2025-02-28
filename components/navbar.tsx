@@ -48,17 +48,17 @@ export default function NavBar() {
       <div className="flex items-center">
         <Link href="/">
           <Image
-            src="/logo.jpeg"
+            src="/logo25.png"
             alt="TASA Logo"
-            width={40}
-            height={40}
-            className="cursor-pointer"
+            width={100}
+            height={100}
+            className="cursor-pointer lg:w-24 lg:h-24 w-16 h-16 md:w-20 md:h-20 rounded-lg"
           />
         </Link>
       </div>
 
       {/* Center: Desktop Navigation Links */}
-      <ul className="hidden lg:flex space-x-6 text-lg xl:gap-12 ml-auto mr-12 items-center lg:gap-4 sm:gap-4">
+      <ul className="hidden lg:flex space-x-6 lg:text-md xl:text-lg xl:gap-12 ml-auto mr-12 items-center lg:gap-4 sm:gap-4">
         {navLinks.map((link) => (
           <li key={link.href}>
             <Link href={link.href} className="hover:opacity-80 px-4">
