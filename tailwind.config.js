@@ -86,6 +86,10 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         jacques: ['"Jacques Francois"', 'serif'], 
       },
+      // Adding a custom gradient from white to red
+      backgroundImage: {
+        'white-to-light-pink': 'linear-gradient(to bottom, white,rgb(253, 232, 241))',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

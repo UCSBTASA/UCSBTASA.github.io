@@ -38,7 +38,7 @@ export default function Welcome() {
 
   return (
     <section
-      className={`${nanumMyeongjo.className} relative overflow-hidden`}
+      className={`${nanumMyeongjo.className} relative overflow-hidden pt-8 xl:pt-0 bg-white-to-light-pink`}
       style={{ minHeight: sectionHeight }}
     >
       <div className="mx-auto sm:px-16 lg:px-8 xl:px-32 xl:pt-12 md:pb-16 lg:pb-0">
@@ -61,7 +61,7 @@ export default function Welcome() {
             </h2>
             <p
               style={{ fontSize: "clamp(0.875rem, 1vw, 1.25rem)" }}
-              className="text-gray-600 leading-relaxed lg:max-w-xl"
+              className="px-12 md:px-0 text-gray-600 leading-relaxed lg:max-w-xl"
             >
               Join our vibrant community at UC Santa Barbara and experience the
               warmth of Taiwanese culture.
@@ -89,7 +89,7 @@ export default function Welcome() {
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-8 lg:pr-32 xl:pr-48">
+            <div className="grid grid-cols-3 gap-4 pt-8 px-8 lg:pr-32 xl:pr-48">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">200+</div>
                 <p className="text-base text-gray-600 leading-snug">

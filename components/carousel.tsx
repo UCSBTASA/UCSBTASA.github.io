@@ -55,7 +55,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center px-4 md:px-0">
       <div className="relative flex items-center flex-col">
         <Image
           src={images[activeIndex]}

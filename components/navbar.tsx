@@ -42,7 +42,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`${nanumMyeongjo.className} w-full h-20 bg-white text-black flex items-center justify-between px-6 md:px-8 sticky top-0 z-50 shadow-lg`}
+      className={`${nanumMyeongjo.className} w-full h-12 md:h-20 bg-white text-black flex items-center justify-between px-6 md:px-8 sticky top-0 z-50 shadow-lg`}
     >
       {/* Left: Logo */}
       <div className="flex items-center">
