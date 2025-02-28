@@ -13,33 +13,9 @@ const nanumMyeongjo = Nanum_Myeongjo({
 export default function UpcomingEvents() {
   const [sectionHeight, setSectionHeight] = useState("auto");
 
-  useEffect(() => {
-    const handleResize = () => {
-      const isLargeScreen = window.innerWidth >= 1450;
-      const maxHeight = 975; // Maximum height in pixels
-
-      if (isLargeScreen) {
-        const minHeight = window.innerHeight - 100;
-        setSectionHeight(
-          minHeight > maxHeight ? `${maxHeight}px` : `calc(100vh - 100px)`
-        );
-      } else {
-        setSectionHeight("auto");
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <section
       className={`${nanumMyeongjo.className} bg-light-pink-to-white relative overflow-hidden`}
-      style={{ minHeight: sectionHeight }}
     >
       <div className="container mx-auto px-4 mt-4">
         <div className="max-w-3xl mx-auto text-center mb-4">
