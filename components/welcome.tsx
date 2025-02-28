@@ -61,7 +61,7 @@ export default function Welcome() {
             </h2>
             <p
               style={{ fontSize: "clamp(0.875rem, 1vw, 1.25rem)" }}
-              className="px-12 md:px-8 lg:px-0 lg:pr-48 text-gray-600 leading-relaxed max-w-md md:max-w-lg lg:max-w-xl mx-auto text-center lg:text-left"
+              className="px-12 md:px-8 lg:px-0 xl:px-0 lg:pr-48 text-gray-600 leading-relaxed max-w-md md:max-w-lg lg:max-w-xl mx-auto lg:mx-0 xl:mx-0 text-center lg:text-left"
             >
               Join our vibrant community at UC Santa Barbara and experience the
               warmth of Taiwanese culture.
@@ -69,21 +69,21 @@ export default function Welcome() {
               Build friendships and create lasting memories together.
             </p>
 
-            <div className="flex flex-col sm:flex-row mt-12 gap-6 lg:gap-8 justify-center lg:justify-start px-4 sm:px-0">
+            <div className="flex flex-col sm:flex-row mt-12 gap-6 lg:gap-8 justify-center items-center lg:justify-start px-4 sm:px-0">
               <Button
                 size="lg"
-                className="font-bold bg-[#CC4A4A] hover:bg-[#FF6B35] text-white px-8 rounded-full w-full sm:w-auto"
+                className="font-bold bg-[#CC4A4A] hover:bg-[#FF6B35] text-white px-8 rounded-full w-2/3 sm:w-auto text-center"
               >
-                <a href="/staff" className="w-full sm:w-auto">
+                <a href="/staff" className="w-full text-center block">
                   Meet the Staff!
                 </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="font-bold border-primary text-primary hover:bg-primary hover:text-white rounded-full w-full sm:w-auto"
+                className="font-bold border-primary text-primary hover:bg-primary hover:text-white rounded-full w-2/3 sm:w-auto text-center"
               >
-                <a href="/programs" className="w-full sm:w-auto">
+                <a href="/programs" className="w-full text-center block">
                   Our Programs
                 </a>
               </Button>
