@@ -101,12 +101,69 @@ export const galleryImages2024_2025: GalleryImage[] = [
     quarter: "Winter"
   },
   {
-    id: 14, 
+    id: 14,
     title: "Fam Trivia Night",
     imageUrl: "/gallery_photos/2024-2025/fam_trivia_night.JPG",
     link: "https://photos.app.goo.gl/kphZ1q8qsyBG5aFDA",
     quarter: "Winter"
+  },
+  {
+    "id": 15,
+    "title": "Winter Reveal",
+    "imageUrl": "/gallery_photos/2024-2025/winter_reveal.JPG",
+    "link": "https://photos.app.goo.gl/Vh9wf1CUFFGhycFQ7",
+    "quarter": "Winter"
+  },
+  {
+    "id": 16,
+    "title": "Winter GM 2",
+    "imageUrl": "/gallery_photos/2024-2025/winter_gm_2.JPG",
+    "link": "https://photos.app.goo.gl/AowGSB3AYh2mhS6L7",
+    "quarter": "Winter"
+  },
+  {
+    "id": 17,
+    "title": "Winter Mahjong Night",
+    "imageUrl": "/gallery_photos/2024-2025/winter_mahjong_night.JPG",
+    "link": "https://photos.app.goo.gl/Bro4BpiHmFdjDPef8",
+    "quarter": "Winter"
+  },
+  {
+    "id": 18,
+    "title": "Fam Olympics",
+    "imageUrl": "/gallery_photos/2024-2025/fam_olympics.JPG",
+    "link": "https://photos.app.goo.gl/yQGWofL5NJuzZXYK9",
+    "quarter": "Winter"
+  },
+  {
+    "id": 19,
+    "title": "LNY Collab",
+    "imageUrl": "/gallery_photos/2024-2025/lny_collab.JPG",
+    "link": "https://photos.app.goo.gl/pGDZdJ3SUbbkPSM88",
+    "quarter": "Winter"
+  },
+  {
+    "id": 20,
+    "title": "Taste of Taiwan",
+    "imageUrl": "/gallery_photos/2024-2025/taste_of_taiwan.JPG",
+    "link": "https://photos.app.goo.gl/CVkNYfbT21da8SKw9",
+    "quarter": "Winter"
+  },
+  {
+    "id": 21,
+    "title": "NSU x TASA",
+    "imageUrl": "/gallery_photos/2024-2025/nsu_tasa.JPG",
+    "link": "https://photos.app.goo.gl/xDhLoKtyxQdP83i26",
+    "quarter": "Winter"
+  },
+  {
+    "id": 22,
+    "title": "Winter GM 3",
+    "imageUrl": "/gallery_photos/2024-2025/winter_gm_3.JPG",
+    "link": "https://photos.app.goo.gl/KHinZYDad2h2zMPC7",
+    "quarter": "Winter"
   }
+
 
 ];
 
@@ -347,7 +404,7 @@ export const galleryImages2023_2024: GalleryImage[] = [
     id: 34,
     title: "Tasa Night Market",
     imageUrl: "/gallery_photos/2023-2024/night_market_2024.jpg",
-    link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9", 
+    link: "https://photos.app.goo.gl/t5xBdYVRnj6Zyg3G9",
     quarter: "Spring",
   },
   {
@@ -361,21 +418,21 @@ export const galleryImages2023_2024: GalleryImage[] = [
     id: 34,
     title: "Senior Appreciation",
     imageUrl: "/gallery_photos/2023-2024/senior_appreciation.JPG",
-    link: "https://photos.app.goo.gl/986jebW3HAhwb61C6", 
+    link: "https://photos.app.goo.gl/986jebW3HAhwb61C6",
     quarter: "Spring",
   },
   {
     id: 34,
     title: "IM Vball",
     imageUrl: "/gallery_photos/2023-2024/im_vball.JPG",
-    link: "https://photos.app.goo.gl/NAV8iqXhyru3kogo6", 
+    link: "https://photos.app.goo.gl/NAV8iqXhyru3kogo6",
     quarter: "Spring",
   },
   {
     id: 34,
     title: "Spring GM #4",
     imageUrl: "/gallery_photos/2023-2024/spring_gm_4.JPG",
-    link: "https://photos.app.goo.gl/zoPPnzNH7XMnrxPM6", 
+    link: "https://photos.app.goo.gl/zoPPnzNH7XMnrxPM6",
     quarter: "Spring",
   },
 ];
