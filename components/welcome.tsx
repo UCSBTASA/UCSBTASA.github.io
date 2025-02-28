@@ -50,7 +50,7 @@ export default function Welcome() {
             >
               <span className="block">Welcome to</span>
               <span className="block text-[#CC4A4A]">UCSB TASA</span>
-                <span className="block font-light">台美學生會</span>
+              <span className="block font-light">台美學生會</span>
             </h1>
 
             <h2
@@ -61,7 +61,7 @@ export default function Welcome() {
             </h2>
             <p
               style={{ fontSize: "clamp(0.875rem, 1vw, 1.25rem)" }}
-              className="px-12 md:px-0 text-gray-600 leading-relaxed lg:max-w-xl"
+              className="px-12 md:px-8 lg:px-0 lg:pr-48 text-gray-600 leading-relaxed max-w-md md:max-w-lg lg:max-w-xl mx-auto text-center lg:text-left"
             >
               Join our vibrant community at UC Santa Barbara and experience the
               warmth of Taiwanese culture.
@@ -89,9 +89,9 @@ export default function Welcome() {
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-8 px-8 lg:pr-32 xl:pr-48">
+            <div className="grid grid-cols-3 gap-4 pt-8 px-8 lg:px-0 lg:pr-32 xl:pr-48">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">200+</div>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
                 <p className="text-base text-gray-600 leading-snug">
                   Active Members
                 </p>

@@ -156,6 +156,7 @@ const Main = () => {
           </div>
         </div>
       </footer> */}
+      <EventGallery></EventGallery>
       <FAQ />
     </div>
   );
