@@ -14,10 +14,6 @@ const Carousel = () => {
     "/gallery_photos/2023-2024/arts_crafts.jpg",
     "/gallery_photos/2023-2024/pickup_reveal.jpg",
     "/gallery_photos/2023-2024/winter_retreat.jpeg",
-
-    // "image5.jpeg",
-    // "image6.jpeg",
-    // "image7.jpeg",
   ];
 
   const handleThumbnailClick = (index: number) => {
@@ -59,15 +55,15 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center m-4">
-      <div className="relative flex items-center flex-col max-w-4xl">
-          <Image
-            src={images[activeIndex]}
-            alt={`Carousel Image ${activeIndex + 1}`}
-            width={1920}
-            height={1080}
-            className="mb-4 rounded-lg shadow-md bg-cover bg-center h-96 object-cover"
-          />
+    <div className="flex flex-col items-center">
+      <div className="relative flex items-center flex-col">
+        <Image
+          src={images[activeIndex]}
+          alt={`Carousel Image ${activeIndex + 1}`}
+          width={1920}
+          height={1080}
+          className="mb-4 rounded-2xl shadow-lg bg-cover bg-center object-cover max-w-full h-auto"
+        />
         <button
           onClick={handlePrev}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 py-2 text-white bg-black bg-opacity-50 rounded-full"

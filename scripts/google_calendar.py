@@ -1,6 +1,6 @@
 import datetime
 import os.path
-
+import os 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -12,155 +12,101 @@ from pytz import timezone
 import pytz
 
 import json
-# If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
+# Replace with your API key and Calendar ID
+API_KEY = os.getenv("API_KEY")
+CALENDAR_ID = "7hptoesel85ltt2ndeg0dtptec@group.calendar.google.com"
 
 def main():
-    """Shows basic usage of the Google Calendar API.
-    Prints the start and name of the next 10 events on the user's calendar.
-    """
-    creds = None
-    # The file token.json stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
-    if os.path.exists("token.json"):
-        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
-    # If there are no (valid) credentials available, let the user log in.
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                "credentials.json", SCOPES
-            )
-            creds = flow.run_local_server(port=8080)
-        # Save the credentials for the next run
-        with open("token.json", "w") as token:
-            token.write(creds.to_json())
+    # Build the service with the API key instead of credentials
+    service = build("calendar", "v3", developerKey=API_KEY)
 
-    try:
-        service = build("calendar", "v3", credentials=creds)
-
-        # Call the Calendar API
-        now = datetime.datetime.utcnow().isoformat() + "Z"  # 'Z' indicates UTC time
-        events_result = (
-            service.events()
-            .list(
-                calendarId="7hptoesel85ltt2ndeg0dtptec@group.calendar.google.com",
-                timeMin=now,
-                maxResults=10,
-                singleEvents=True,
-                orderBy="startTime",
-            )
-            .execute()
+    # Get current time in UTC for the query
+    now = datetime.datetime.utcnow().isoformat() + "Z"
+    events_result = (
+        service.events()
+        .list(
+            calendarId=CALENDAR_ID,
+            timeMin=now,
+            maxResults=10,
+            singleEvents=True,
+            orderBy="startTime",
         )
-        events = events_result.get("items", [])
-
-        if not events:
+        .execute()
+    )
+    # print(events_result)
+    events = events_result.get("items", [])
+    if not events:
             print("No upcoming events found.")
             return
 
-        # Prints the start and name of the next 10 events
-        for event in events:
+    # Ensure every event has a location, defaulting to "tbd" if missing
+    for event in events:
+        if "location" not in event:
+            event["location"] = "tbd"
 
-            # catch keyerror on location and print TBD if location is not available
-            if "location" not in event:
-                event["location"] = "tbd"
+    # Create a DataFrame with beginning time, end time, title, location
+    df = pd.DataFrame(columns=["beginning time", "end time", "title", "location"])
+    for event in events:
+        print(event)
+        rsvpLink = event.get("description", "")
+        link = ""
+        if rsvpLink.startswith('<a href="') and rsvpLink.endswith('</a>'):
+            link = rsvpLink.split('"')[1]
+            rsvpLink = link
 
-        # Create a panda dataframe with beginning time, end time, title, location
-        df = pd.DataFrame(
-            columns=["beginning time", "end time", "title", "location"]
-        )
-        for event in events:
-            data = {
-                "beginning time": event["start"].get("dateTime"),
-                "end time": event["end"].get("dateTime"),
-                "title": event["summary"],
-                "location": event["location"],
-            }
+        data = {
+            "beginning time": event["start"].get("dateTime"),
+            "end time": event["end"].get("dateTime"),
+            "title": event.get("summary", "No Title"),
+            "location": event["location"],
+            "rsvpLink": rsvpLink,
+        }
+        temp_df = pd.DataFrame(data, index=[0])
+        df = pd.concat([df, temp_df], ignore_index=True)
 
-            temp_df = pd.DataFrame(data, index=[0])
+    # Convert times to UTC timezone-aware datetime
+    df["beginning time"] = pd.to_datetime(df["beginning time"], utc=True, errors="coerce")
+    df["end time"] = pd.to_datetime(df["end time"], utc=True, errors="coerce")
 
-            df = pd.concat([df, temp_df])
+    # Define your desired timezone
+    local_tz = "America/Los_Angeles"
+    df["start"] = df["beginning time"].dt.tz_convert(local_tz).dt.time
+    df["end"] = df["end time"].dt.tz_convert(local_tz).dt.time
+    df["day of week"] = df["beginning time"].dt.tz_convert(local_tz).dt.day_name()
+    df["date"] = df["beginning time"].dt.tz_convert(local_tz).dt.date
 
-        # Convert the time to day of week, date, and time
-        # Convert to UTC timezone-aware datetime
-        df["beginning time"] = pd.to_datetime(df["beginning time"], utc=True, errors='coerce')
-        df["end time"] = pd.to_datetime(df["end time"], utc=True, errors='coerce')
+    # Prepare the event list
+    event_list = []
+    for _, row in df.iterrows():
+        event_dict = {
+            "title": row["title"],
+            "day of week": row["day of week"],
+            "date": row["date"].strftime("%Y-%m-%d") if pd.notna(row["date"]) else "TBD",
+            "time": "",
+            "start": row["start"].strftime("%I:%M %p") if pd.notna(row["start"]) else "TBD",
+            "end": row["end"].strftime("%I:%M %p") if pd.notna(row["end"]) else "TBD",
+            "location": row["location"],
+            "customTime": "",
+            "rsvpLink": row["rsvpLink"],
+        }
 
+        if event_dict["start"] != "TBD" and event_dict["end"] != "TBD":
+            event_dict["time"] = event_dict["start"].upper() + " - " + event_dict["end"].upper()
+        else:
+            event_dict["customTime"] = "TBD"
 
-        # Extract local date (optional)
-        df["end time"] = pd.to_datetime(df["end time"], errors='coerce')
+        event_list.append(event_dict)
 
-      
+    print(event_list)
 
-        # Create time which is from start to end
-        timezone = 'America/Los_Angeles'
-        df["start"] = df["beginning time"].dt.tz_convert(timezone).dt.time  # Convert to local time
-        df["end"] = df["end time"].dt.tz_convert(timezone).dt.time          # Convert to local time
-        df["day of week"] = df["beginning time"].dt.tz_convert(timezone).dt.day_name()
-        df["date"] = df["beginning time"].dt.tz_convert(timezone).dt.date
-        event_list = []
-        for _, row in df.iterrows():
-            event = {
-                "title": row["title"],
-                "day of week": row["day of week"],
-                "date": row["date"],
-                "time": "",
-                "end": row["end"],
-                "start": row["start"],
-                "location": row["location"],
-                "customTime" : "",
-            }
-            # Changing the date to YYYY-MM-DD
-            if not pd.isna(event["date"]):
-                event["date"] = event["date"].strftime("%Y-%m-%d")
-            else:
-                event["date"] = "TBD"
-
-            # change time to 12 hour format
-            if not pd.isna(event["start"]):
-                event["start"] = event["start"].strftime("%I:%M %p")
-            else:
-                event["start"] = "TBD"
-
-            # change end time to 12 hour format
-            if not pd.isna(event["end"]):
-                event["end"] = event["end"].strftime("%I:%M %p")
-            else:
-                event["end"] = "TBD"
-            
-            # Check cases in which customTime is necessary
-            if event["start"] != "TBD" and event["end"] != "TBD":
-                event["time"] = event["start"].upper() + " - " + event["end"].upper()               
-            else: 
-                event["customTime"] = "TBD"
-            event_list.append(event)
-
-        print(event_list)
-        # Define the filename for the output file
-        output_file = 'data/eventData.ts'
-
-        # Open the file for writing
-        with open(output_file, 'w') as f:
-            # Write the JavaScript variable declaration
-            f.write("const events = \n")
-            # Write the JSON data with indentation
-            json.dump(event_list, f, indent=2)
-            # Write JavaScript variable termination
-            f.write(";\n\n")
-            # Write export statement
-            f.write("export default events; \n")        
-
-
-    except HttpError as error:
-            print(f"An error occurred: {error}")
-
-
+    # Write output to a TypeScript file
+    output_file = "data/eventData.ts"
+    with open(output_file, "w") as f:
+        f.write("const events = \n")
+        json.dump(event_list, f, indent=2)
+        f.write(";\n\n")
+        f.write("export default events;\n")
         
-
-
-
 if __name__ == "__main__":
     main()
