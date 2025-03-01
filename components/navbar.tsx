@@ -72,7 +72,7 @@ export default function NavBar() {
           <span className="hover:opacity-80 block leading-tight text-gray-900">
             More
           </span>
-          <ul className="absolute left-0 mt-2 w-32 bg-white text-black shadow-lg rounded-lg group-hover:rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <ul className="absolute left-0 mt-2 w-32 bg-white text-gray-900 shadow-lg rounded-lg group-hover:rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
             {moreNavLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -91,8 +91,9 @@ export default function NavBar() {
       <div className="hidden lg:flex items-center space-x-4">
         <Link href="/store">
           <AiOutlineShoppingCart
-            className="cursor-pointer hover:opacity-80"
-            size={20}
+            className="cursor-pointer hover:opacity-80 text-gray-900"
+            size={24}
+            style={{ verticalAlign: 'middle', color: 'gray-900' }}
           />
         </Link>
       </div>
