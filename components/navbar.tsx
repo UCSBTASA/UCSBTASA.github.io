@@ -107,63 +107,63 @@ export default function NavBar() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed inset-0 bg-black/70 z-50 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-gray-800/70 z-50 transition-opacity duration-300 ${
           navOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         <div
           ref={navRef}
-          className={`fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-gray-900 p-6 transition-transform duration-300 ${
-            navOpen ? "translate-x-0" : "-translate-x-full"
+          className={`fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-gray-800/70 p-6 transition-transform duration-300 ${
+        navOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           {/* Close Button */}
           <div className="flex justify-between items-center">
-            <Image
-              src="/logo.jpeg"
-              alt="Logo"
-              width={50}
-              height={50}
-              className="rounded-lg"
-            />
-            <button onClick={() => setNavOpen(false)} className="p-2">
-              <AiOutlineClose size={25} />
-            </button>
+        <Image
+          src="/logo25.png"
+          alt="Logo"
+          width={50}
+          height={50}
+          className="rounded-lg"
+        />
+        <button onClick={() => setNavOpen(false)} className="p-2">
+          <AiOutlineClose size={25} className="text-white" />
+        </button>
           </div>
 
           {/* Mobile Nav Links */}
           <ul className="mt-6 space-y-4 text-lg text-white">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="block p-2"
-                  onClick={() => setNavOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-            {moreNavLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="block p-2"
-                  onClick={() => setNavOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-            <li key="/store">
-              <Link
-                href="/store"
-                className="block p-2"
-                onClick={() => setNavOpen(false)}
-              >
-                store
-              </Link>
-            </li>
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <Link
+          href={link.href}
+          className="block p-2"
+          onClick={() => setNavOpen(false)}
+            >
+          {link.name}
+            </Link>
+          </li>
+        ))}
+        {moreNavLinks.map((link) => (
+          <li key={link.href}>
+            <Link
+          href={link.href}
+          className="block p-2"
+          onClick={() => setNavOpen(false)}
+            >
+          {link.name}
+            </Link>
+          </li>
+        ))}
+        <li key="/store">
+          <Link
+            href="/store"
+            className="block p-2"
+            onClick={() => setNavOpen(false)}
+          >
+            Store
+          </Link>
+        </li>
           </ul>
         </div>
       </div>
