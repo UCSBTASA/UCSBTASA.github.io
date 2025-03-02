@@ -16,23 +16,31 @@ const Carousel = () => {
     "/gallery_photos/2023-2024/winter_retreat.jpeg",
   ];
 
+  // Function to preload images
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;git 
+    });
+  }, []);
+
   const handleThumbnailClick = (index: number) => {
     setActiveIndex(index);
-    resetAutoScroll(); // Reset timer on thumbnail click
+    resetAutoScroll();
   };
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
-    resetAutoScroll(); // Reset timer on previous button click
+    resetAutoScroll();
   };
 
   const handleNext = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
-    resetAutoScroll(); // Reset timer on next button click
+    resetAutoScroll();
   };
 
   const resetAutoScroll = () => {
@@ -41,15 +49,14 @@ const Carousel = () => {
     }
     intervalRef.current = setInterval(() => {
       handleNext();
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
   };
 
   useEffect(() => {
-    resetAutoScroll(); // Initialize the auto-scroll timer
-
+    resetAutoScroll();
     return () => {
       if (intervalRef.current) {
-        clearInterval(intervalRef.current); // Cleanup interval on component unmount
+        clearInterval(intervalRef.current);
       }
     };
   }, []);
@@ -63,6 +70,8 @@ const Carousel = () => {
           width={1920}
           height={1080}
           className="mb-4 rounded-2xl shadow-lg bg-cover bg-center object-cover max-w-full h-auto"
+          priority
+          loading="eager" // Ensure images load immediately
         />
         <button
           onClick={handlePrev}
@@ -92,6 +101,8 @@ const Carousel = () => {
               width={1920}
               height={1080}
               className="w-full h-full object-cover rounded-full"
+              priority
+              loading="eager" // Force all images to load upfront
             />
           </button>
         ))}
