@@ -16,24 +16,13 @@ const Carousel = () => {
     "/gallery_photos/2023-2024/winter_retreat.jpeg",
   ];
 
-  const handleThumbnailClick = (index: number) => {
-    setActiveIndex(index);
-    resetAutoScroll(); // Reset timer on thumbnail click
-  };
-
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-    resetAutoScroll(); // Reset timer on previous button click
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-    resetAutoScroll(); // Reset timer on next button click
-  };
+  // Preload all images once the component mounts
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   const resetAutoScroll = () => {
     if (intervalRef.current) {
@@ -44,12 +33,31 @@ const Carousel = () => {
     }, 5000); // Change image every 5 seconds
   };
 
-  useEffect(() => {
-    resetAutoScroll(); // Initialize the auto-scroll timer
+  const handleThumbnailClick = (index: number) => {
+    setActiveIndex(index);
+    resetAutoScroll();
+  };
 
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+    resetAutoScroll();
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+    resetAutoScroll();
+  };
+
+  // Set up auto-scroll when the component mounts and clean up on unmount
+  useEffect(() => {
+    resetAutoScroll();
     return () => {
       if (intervalRef.current) {
-        clearInterval(intervalRef.current); // Cleanup interval on component unmount
+        clearInterval(intervalRef.current);
       }
     };
   }, []);
@@ -62,19 +70,20 @@ const Carousel = () => {
           alt={`Carousel Image ${activeIndex + 1}`}
           width={1920}
           height={1080}
+          loading="eager" // Force the image to load immediately (uses cache if possible)
           className="mb-4 rounded-2xl shadow-lg bg-cover bg-center object-cover max-w-full h-auto"
         />
         <button
           onClick={handlePrev}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 py-2 text-white bg-black bg-opacity-50 rounded-full"
         >
-          &#9664;
+          ◀
         </button>
         <button
           onClick={handleNext}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 text-white bg-black bg-opacity-50 rounded-full"
         >
-          &#9654;
+          ▶
         </button>
       </div>
       <div className="flex space-x-2 mt-4">
@@ -91,6 +100,7 @@ const Carousel = () => {
               alt={`Carousel Thumbnail ${index + 1}`}
               width={1920}
               height={1080}
+              loading="eager" // Preload thumbnail images as well
               className="w-full h-full object-cover rounded-full"
             />
           </button>
