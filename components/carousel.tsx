@@ -20,7 +20,7 @@ const Carousel = () => {
   useEffect(() => {
     images.forEach((src) => {
       const img = new window.Image();
-      img.src = src;git 
+      img.src = src;
     });
   }, []);
 
