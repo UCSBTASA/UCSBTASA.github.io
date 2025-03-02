@@ -52,7 +52,7 @@ export default function NavBar() {
             alt="TASA Logo"
             width={100}
             height={100}
-            className="cursor-pointer lg:w-24 lg:h-24 w-16 h-16 md:w-20 md:h-20 rounded-lg"
+            className="cursor-pointer lg:w-16 lg:h-16 w-10 h-10 md:w-12 md:h-12 rounded-lg"
           />
         </Link>
       </div>

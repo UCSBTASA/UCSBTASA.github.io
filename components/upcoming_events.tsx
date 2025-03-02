@@ -15,7 +15,7 @@ export default function UpcomingEvents() {
 
   return (
     <section
-      className={`${nanumMyeongjo.className} bg-[#FDE8F1] relative overflow-hidden`}
+      className={`${nanumMyeongjo.className} bg-[#FDE8F1] relative overflow-hidden pb-4`}
     >
       <div className="container mx-auto px-4 lg:mt-4 mt-16">
         <div className="max-w-3xl mx-auto text-center mb-4">
@@ -25,7 +25,7 @@ export default function UpcomingEvents() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-8">
-          {events.map((event, index) => (
+          {events.slice(0, 3).map((event, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow-lg overflow-hidden text-center w-full sm:w-4/5 md:w-2/3 lg:w-1/3"
