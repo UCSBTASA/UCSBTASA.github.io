@@ -13,7 +13,7 @@ const Programs = () => {
     },
     {
       title: "Intern Program!",
-      image: "/programs/intern2024.jpg",
+      image: "/programs/intern_elevator_2.jpg",
       creds: "",
       description:
         "Join our immersive organization intern program and gain hands-on experience, mentorship, and insights into the inner workings of our staff.",
