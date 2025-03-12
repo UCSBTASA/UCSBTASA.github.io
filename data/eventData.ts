@@ -7,7 +7,7 @@ const events =
     "time": "08:00 PM - 10:00 PM",
     "start": "08:00 PM",
     "end": "10:00 PM",
-    "location": "arts 1349",
+    "location": "arts 2324",
     "customTime": ""
   }
 ];
