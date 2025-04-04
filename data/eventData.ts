@@ -91,13 +91,13 @@ const events =
     "customTime": ""
   },
   {
-    "title": "maid cafe (location may change)",
+    "title": "maid cafe",
     "day of week": "Thursday",
     "date": "2025-05-15",
     "time": "04:00 PM - 06:00 PM",
     "start": "04:00 PM",
     "end": "06:00 PM",
-    "location": "hssb 1228",
+    "location": "hssb 1236",
     "customTime": ""
   }
 ];
