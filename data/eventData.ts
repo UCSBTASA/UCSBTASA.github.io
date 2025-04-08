@@ -1,22 +1,12 @@
 const events = 
 [
   {
-    "title": "gm 1!",
-    "day of week": "Monday",
-    "date": "2025-04-07",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "buchanan 1910",
-    "customTime": ""
-  },
-  {
     "title": "intern water balloon fundraiser",
-    "day of week": "Wednesday",
-    "date": "2025-04-09",
-    "time": "12:00 PM - 12:30 PM",
+    "day of week": "Tuesday",
+    "date": "2025-04-08",
+    "time": "12:00 PM - 03:00 PM",
     "start": "12:00 PM",
-    "end": "12:30 PM",
+    "end": "03:00 PM",
     "location": "pardall lawn",
     "customTime": ""
   },
@@ -99,6 +89,16 @@ const events =
     "end": "06:00 PM",
     "location": "hssb 1236",
     "customTime": ""
+  },
+  {
+    "title": "sunset walk",
+    "day of week": NaN,
+    "date": "TBD",
+    "time": "",
+    "start": "TBD",
+    "end": "TBD",
+    "location": "tbd",
+    "customTime": "TBD"
   }
 ];
 
