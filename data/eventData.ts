@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "intern water balloon fundraiser",
-    "day of week": "Tuesday",
-    "date": "2025-04-08",
-    "time": "12:00 PM - 03:00 PM",
-    "start": "12:00 PM",
-    "end": "03:00 PM",
-    "location": "pardall lawn",
-    "customTime": ""
-  },
-  {
     "title": "mahjong night",
     "day of week": "Thursday",
     "date": "2025-04-17",
@@ -92,6 +82,16 @@ const events =
   },
   {
     "title": "sunset walk",
+    "day of week": NaN,
+    "date": "TBD",
+    "time": "",
+    "start": "TBD",
+    "end": "TBD",
+    "location": "tbd",
+    "customTime": "TBD"
+  },
+  {
+    "title": "spring banquet (details tbd)",
     "day of week": NaN,
     "date": "TBD",
     "time": "",
