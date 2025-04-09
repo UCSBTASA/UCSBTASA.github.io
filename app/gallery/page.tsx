@@ -11,16 +11,22 @@ import {
 } from "@/data/galleryImages";
 import React, { useState } from "react";
 import GalleryYearSection from "@/components/galleryYearSection";
+import { Nanum_Myeongjo } from "next/font/google";
+
+const nanumMyeongjo = Nanum_Myeongjo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const GalleryPage: React.FC = () => {
   return (
-    <div className="gallery-container ">
+    <section className={`${nanumMyeongjo.className} gallery-container `}>
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 pt-4 pb-8">
-           {/* <h2 className="text-4xl mt-4 font-semibold text-center">
+          {/* <h2 className="text-4xl mt-4 font-semibold text-center">
             Our Favorite Memories
           </h2> */}
-          <h2 className="text-5xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-5xl flex justify-center mt-4 font-bold">
             2024-2025
           </h2>
           <GalleryYearSection
@@ -34,7 +40,7 @@ const GalleryPage: React.FC = () => {
             quarter="Fall"
           />
 
-          <h2 className="text-5xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-5xl flex justify-center mt-4 font-bold">
             2023-2024
           </h2>
           <GalleryYearSection
@@ -53,7 +59,7 @@ const GalleryPage: React.FC = () => {
             quarter="Fall"
           />
 
-          <h2 className="text-4xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-4xl flex justify-center mt-4 font-bold">
             2022-2023
           </h2>
           <GalleryYearSection
@@ -62,7 +68,7 @@ const GalleryPage: React.FC = () => {
             quarter="NA"
           />
 
-          <h2 className="text-4xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-4xl flex justify-center mt-4 font-bold">
             2021-2022
           </h2>
           <GalleryYearSection
@@ -71,7 +77,7 @@ const GalleryPage: React.FC = () => {
             quarter="NA"
           />
 
-          <h2 className="text-4xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-4xl flex justify-center mt-4 font-bold">
             2019-2020
           </h2>
           <GalleryYearSection
@@ -80,7 +86,7 @@ const GalleryPage: React.FC = () => {
             quarter="NA"
           />
 
-          <h2 className="text-4xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-4xl flex justify-center mt-4 font-bold">
             2018-2019
           </h2>
           <GalleryYearSection
@@ -89,7 +95,7 @@ const GalleryPage: React.FC = () => {
             quarter="NA"
           />
 
-          <h2 className="text-4xl flex justify-center mt-4 font-jacques font-bold">
+          <h2 className="text-4xl flex justify-center mt-4 font-bold">
             2017-2018
           </h2>
           <GalleryYearSection
@@ -99,7 +105,7 @@ const GalleryPage: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

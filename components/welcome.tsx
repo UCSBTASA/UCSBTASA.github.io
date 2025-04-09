@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import Carousel from "./carousel";
 import { Nanum_Myeongjo } from "next/font/google";
 
