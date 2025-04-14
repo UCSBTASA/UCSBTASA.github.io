@@ -162,8 +162,14 @@ export const galleryImages2024_2025: GalleryImage[] = [
     "imageUrl": "/gallery_photos/2024-2025/winter_gm_3.JPG",
     "link": "https://photos.app.goo.gl/KHinZYDad2h2zMPC7",
     "quarter": "Winter"
+  }, 
+  {
+    "id": 23,
+    "title": "Pie a Staff",
+    "imageUrl": "/gallery_photos/2024-2025/pie_a_staff.JPG",
+    "link": "https://photos.app.goo.gl/e5TfecEHqdLPGYtt9",
+    "quarter": "Spring"
   }
-
 
 ];
 
