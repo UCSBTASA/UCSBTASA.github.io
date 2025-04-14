@@ -11,7 +11,7 @@ def changeDate(date):
         date = "0" + date 
     if (date.rfind('-') + 2 == len(date)):
         date = date[0:-1] + "0" + date[-1]
-    return str(year) + "-" + date   
+    return date[-4:] + '-' + date[:-5]
 
 # Getting current year 
 today = datetime.date.today()
@@ -20,10 +20,11 @@ year = today.year
 service_account_path = "service_account.json"
 
 gc = gspread.service_account(filename = service_account_path)
-sh = gc.open("TASA Scheduling 23-24")
+# set to current year
+sh = gc.open("4. TASA Scheduling 24-25")
 
 # Get the current sheet of interest and its records
-sheet_instance = sh.get_worksheet(4)
+sheet_instance = sh.get_worksheet(2)
 records_data = sheet_instance.get_all_records()
 
 # Convert to pandas DataFrame
@@ -42,18 +43,18 @@ for index, row in records_df.iterrows():
     }
     # Changing the date to YYYY-MM-DD
     event["date"] = changeDate(event["date"])
+    # print(event["date"])
     # Check cases in which customTime is necessary
     if (len(event["time"]) > 0):
         if not event["time"][0].isnumeric():
             event["customTime"] = event["time"]
-            if event["customTime"].lower() == "tbd":
+            if event["customTime"].lower().strip() == "tbd":
                 event["customTime"] = event["customTime"].upper()
         else:
-            # print(event["time"])
             event["time"] = event["time"].upper()
             
     # Check if can/should be added to event list
-    if event["ready"] == "Yes":
+    if event["ready"].lower().strip() == "yes":
         events.append(event)
 
 # Define the filename for the output file
