@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "mahjong night",
-    "day of week": "Thursday",
-    "date": "2025-04-17",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "arts 1349",
-    "customTime": ""
-  },
-  {
     "title": "slip n' slide (intern event!)",
     "day of week": "Saturday",
     "date": "2025-04-19",
@@ -92,6 +82,16 @@ const events =
   },
   {
     "title": "sunset walk",
+    "day of week": NaN,
+    "date": "TBD",
+    "time": "",
+    "start": "TBD",
+    "end": "TBD",
+    "location": "tbd",
+    "customTime": "TBD"
+  },
+  {
+    "title": "spring banquet (details tbd)",
     "day of week": NaN,
     "date": "TBD",
     "time": "",
