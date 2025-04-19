@@ -7,7 +7,7 @@ const events =
     "time": "01:30 PM - 03:30 PM",
     "start": "01:30 PM",
     "end": "03:30 PM",
-    "location": "san miguel lawn (near stage)",
+    "location": "santa cruz/anacapa lawn",
     "customTime": ""
   },
   {
