@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "slip n' slide (intern event!)",
-    "day of week": "Saturday",
-    "date": "2025-04-19",
-    "time": "01:30 PM - 03:30 PM",
-    "start": "01:30 PM",
-    "end": "03:30 PM",
-    "location": "santa cruz/anacapa lawn",
-    "customTime": ""
-  },
-  {
     "title": "gm 2!",
     "day of week": "Monday",
     "date": "2025-04-21",
@@ -99,6 +89,16 @@ const events =
     "end": "TBD",
     "location": "tbd",
     "customTime": "TBD"
+  },
+  {
+    "title": "study night",
+    "day of week": "Wednesday",
+    "date": "2025-06-04",
+    "time": "08:00 PM - 10:00 PM",
+    "start": "08:00 PM",
+    "end": "10:00 PM",
+    "location": "arts 1353",
+    "customTime": ""
   }
 ];
 
