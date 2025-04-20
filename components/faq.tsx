@@ -9,7 +9,7 @@ const nanumMyeongjo = Nanum_Myeongjo({
 export default function FAQ() {
   return (
     <section
-      className={`${nanumMyeongjo.className} bg-[#FDE8F1] relative overflow-hidden flex justify-center`}
+      className={`${nanumMyeongjo.className} bg-[#f4e6e3] relative overflow-hidden flex justify-center`}
     >
       <div className="container mx-auto px-16 my-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">

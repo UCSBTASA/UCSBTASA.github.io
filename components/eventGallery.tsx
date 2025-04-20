@@ -33,7 +33,7 @@ const EventGallery = () => {
 
   return (
     <section
-      className={`${nanumMyeongjo.className} bg-[#FDE8F1] relative overflow-hidden `}
+      className={`${nanumMyeongjo.className} bg-[#f4e6e3] relative overflow-hidden `}
     >
       <div className="container mx-auto px-4 my-16">
         <div className="max-w-3xl mx-auto text-center mb-4">
