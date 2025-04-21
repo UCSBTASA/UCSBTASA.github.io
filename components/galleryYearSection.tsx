@@ -41,6 +41,7 @@ const GalleryYearSection = ({
                 <Image
                   src={image.imageUrl}
                   alt={image.title}
+                  fill = {true}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading={p === "high" ? "eager" : "lazy"} // High priority images load eagerly
                 />

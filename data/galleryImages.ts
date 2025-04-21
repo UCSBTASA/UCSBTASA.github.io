@@ -72,13 +72,6 @@ export const galleryImages2024_2025: GalleryImage[] = [
     link: "https://photos.app.goo.gl/nV6qBaabvB9AcM4a8",
     quarter: "Fall",
   },
-  // {
-  //   id: 10,
-  //   title: "GM3",
-  //   imageUrl: "",
-  //   link: "https://photos.app.goo.gl/KJF1WgZa5jUfPYyU7",
-  //   quarter: "Fall",
-  // },
   {
     id: 11,
     title: "Fall Pick Up Reveal",
@@ -108,69 +101,75 @@ export const galleryImages2024_2025: GalleryImage[] = [
     quarter: "Winter"
   },
   {
-    "id": 15,
-    "title": "Winter Reveal",
-    "imageUrl": "/gallery_photos/2024-2025/winter_reveal.JPG",
-    "link": "https://photos.app.goo.gl/Vh9wf1CUFFGhycFQ7",
-    "quarter": "Winter"
+    id: 15,
+    title: "Winter Reveal",
+    imageUrl: "/gallery_photos/2024-2025/winter_reveal.JPG",
+    link: "https://photos.app.goo.gl/Vh9wf1CUFFGhycFQ7",
+    quarter: "Winter"
   },
   {
-    "id": 16,
-    "title": "Winter GM 2",
-    "imageUrl": "/gallery_photos/2024-2025/winter_gm_2.JPG",
-    "link": "https://photos.app.goo.gl/AowGSB3AYh2mhS6L7",
-    "quarter": "Winter"
+    id: 16,
+    title: "Winter GM 2",
+    imageUrl: "/gallery_photos/2024-2025/winter_gm_2.JPG",
+    link: "https://photos.app.goo.gl/AowGSB3AYh2mhS6L7",
+    quarter: "Winter"
   },
   {
-    "id": 17,
-    "title": "Winter Mahjong Night",
-    "imageUrl": "/gallery_photos/2024-2025/winter_mahjong_night.JPG",
-    "link": "https://photos.app.goo.gl/Bro4BpiHmFdjDPef8",
-    "quarter": "Winter"
+    id: 17,
+    title: "Winter Mahjong Night",
+    imageUrl: "/gallery_photos/2024-2025/winter_mahjong_night.JPG",
+    link: "https://photos.app.goo.gl/Bro4BpiHmFdjDPef8",
+    quarter: "Winter"
   },
   {
-    "id": 18,
-    "title": "Fam Olympics",
-    "imageUrl": "/gallery_photos/2024-2025/fam_olympics.JPG",
-    "link": "https://photos.app.goo.gl/yQGWofL5NJuzZXYK9",
-    "quarter": "Winter"
+    id: 18,
+    title: "Fam Olympics",
+    imageUrl: "/gallery_photos/2024-2025/fam_olympics.JPG",
+    link: "https://photos.app.goo.gl/yQGWofL5NJuzZXYK9",
+    quarter: "Winter"
   },
   {
-    "id": 19,
-    "title": "LNY Collab",
-    "imageUrl": "/gallery_photos/2024-2025/lny_collab.JPG",
-    "link": "https://photos.app.goo.gl/pGDZdJ3SUbbkPSM88",
-    "quarter": "Winter"
+    id: 19,
+    title: "LNY Collab",
+    imageUrl: "/gallery_photos/2024-2025/lny_collab.JPG",
+    link: "https://photos.app.goo.gl/pGDZdJ3SUbbkPSM88",
+    quarter: "Winter"
   },
   {
-    "id": 20,
-    "title": "Taste of Taiwan",
-    "imageUrl": "/gallery_photos/2024-2025/taste_of_taiwan.JPG",
-    "link": "https://photos.app.goo.gl/CVkNYfbT21da8SKw9",
-    "quarter": "Winter"
+    id: 20,
+    title: "Taste of Taiwan",
+    imageUrl: "/gallery_photos/2024-2025/taste_of_taiwan.JPG",
+    link: "https://photos.app.goo.gl/CVkNYfbT21da8SKw9",
+    quarter: "Winter"
   },
   {
-    "id": 21,
-    "title": "NSU x TASA",
-    "imageUrl": "/gallery_photos/2024-2025/nsu_tasa.JPG",
-    "link": "https://photos.app.goo.gl/xDhLoKtyxQdP83i26",
-    "quarter": "Winter"
+    id: 21,
+    title: "NSU x TASA",
+    imageUrl: "/gallery_photos/2024-2025/nsu_tasa.JPG",
+    link: "https://photos.app.goo.gl/xDhLoKtyxQdP83i26",
+    quarter: "Winter"
   },
   {
-    "id": 22,
-    "title": "Winter GM 3",
-    "imageUrl": "/gallery_photos/2024-2025/winter_gm_3.JPG",
-    "link": "https://photos.app.goo.gl/KHinZYDad2h2zMPC7",
-    "quarter": "Winter"
+    id: 22,
+    title: "Winter GM 3",
+    imageUrl: "/gallery_photos/2024-2025/winter_gm_3.JPG",
+    link: "https://photos.app.goo.gl/KHinZYDad2h2zMPC7",
+    quarter: "Winter"
   }, 
   {
-    "id": 23,
-    "title": "Pie a Staff",
-    "imageUrl": "/gallery_photos/2024-2025/pie_a_staff.JPG",
-    "link": "https://photos.app.goo.gl/e5TfecEHqdLPGYtt9",
-    "quarter": "Spring"
+    id: 23,
+    title: "Pie a Staff",
+    imageUrl: "/gallery_photos/2024-2025/pie_a_staff.JPG",
+    link: "https://photos.app.goo.gl/e5TfecEHqdLPGYtt9",
+    quarter: "Spring"
+  },
+  {
+    id: 24,
+    title: "Mahjong Night",
+    imageUrl: "/gallery_photos/2024-2025/mahjong_night_spring.JPG",
+    link: "https://photos.app.goo.gl/goSndogW3by7pDd6A",
+    quarter: "Spring"
   }
-
 ];
 
 export const galleryImages2023_2024: GalleryImage[] = [
