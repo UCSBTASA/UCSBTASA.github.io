@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "gm 2!",
-    "day of week": "Monday",
-    "date": "2025-04-21",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "buchanan 1910",
-    "customTime": ""
-  },
-  {
     "title": "pre-assassins social",
     "day of week": "Thursday",
     "date": "2025-04-24",
