@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "pre-assassins social",
-    "day of week": "Thursday",
-    "date": "2025-04-24",
-    "time": "07:30 PM - 09:30 PM",
-    "start": "07:30 PM",
-    "end": "09:30 PM",
-    "location": "girvetz 1116",
-    "customTime": ""
-  },
-  {
     "title": "tcc (12-4pm each day)",
     "day of week": NaN,
     "date": "TBD",
