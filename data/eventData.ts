@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "tcc (12-4pm each day)",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
-    "location": "lot 22 lawn",
-    "customTime": "TBD"
-  },
-  {
     "title": "\u2727\u02d6\u00b0 night market \u2727\u02d6\u00b0",
     "day of week": "Saturday",
     "date": "2025-05-03",
