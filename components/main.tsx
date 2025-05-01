@@ -16,8 +16,8 @@ const Main = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
           <div className="relative z-10">
-            <h1 className="text-4xl font-semibold mb-4 uppercase">
-              TAIWANESE AMERICAN STUDENT ASSOCIATION
+            <h1 className="text-4xl font-semibold mb-4 lowercase">
+              taiwanese american student association
             </h1>
           </div>
         </div>
