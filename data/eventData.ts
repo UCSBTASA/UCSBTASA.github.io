@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "\u2727\u02d6\u00b0 night market \u2727\u02d6\u00b0",
-    "day of week": "Saturday",
-    "date": "2025-05-03",
-    "time": "04:00 PM - 08:00 PM",
-    "start": "04:00 PM",
-    "end": "08:00 PM",
-    "location": "storke plaza",
-    "customTime": ""
-  },
-  {
     "title": "karaoke night",
     "day of week": "Thursday",
     "date": "2025-05-08",
