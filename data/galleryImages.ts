@@ -169,6 +169,21 @@ export const galleryImages2024_2025: GalleryImage[] = [
     imageUrl: "/gallery_photos/2024-2025/mahjong_night_spring.JPG",
     link: "https://photos.app.goo.gl/goSndogW3by7pDd6A",
     quarter: "Spring"
+  }, 
+  { 
+    id: 25,
+    title: "Wet N Wild",
+    imageUrl: "/gallery_photos/2024-2025/wet_n_wild.jpg",
+    link: "https://photos.app.goo.gl/H7S7exnUu1wNV7vk6",
+    quarter: "Spring",
+  }, 
+  {
+    id: 26,
+    title: "Night Market",
+    imageUrl: "/gallery_photos/2024-2025/night_market.JPG",
+    link: "https://photos.app.goo.gl/T6CssKLviG4GWJWd9",
+    quarter: "Spring",
+
   }
 ];
 
