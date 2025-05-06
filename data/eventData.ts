@@ -1,13 +1,13 @@
 const events = 
 [
   {
-    "title": "karaoke night",
-    "day of week": "Thursday",
-    "date": "2025-05-08",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "arts 1353",
+    "title": "tkm ",
+    "day of week": "Saturday",
+    "date": "2025-05-10",
+    "time": "02:00 PM - 04:00 PM",
+    "start": "02:00 PM",
+    "end": "04:00 PM",
+    "location": "student health lawn",
     "customTime": ""
   },
   {
@@ -18,16 +18,6 @@ const events =
     "start": "08:00 PM",
     "end": "10:00 PM",
     "location": "buchanan 1910",
-    "customTime": ""
-  },
-  {
-    "title": "maid cafe",
-    "day of week": "Thursday",
-    "date": "2025-05-15",
-    "time": "04:00 PM - 06:00 PM",
-    "start": "04:00 PM",
-    "end": "06:00 PM",
-    "location": "hssb 1236",
     "customTime": ""
   },
   {
