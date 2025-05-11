@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "tkm ",
-    "day of week": "Saturday",
-    "date": "2025-05-10",
-    "time": "02:00 PM - 04:00 PM",
-    "start": "02:00 PM",
-    "end": "04:00 PM",
-    "location": "student health lawn",
-    "customTime": ""
-  },
-  {
     "title": "gm 3 (staff elections)",
     "day of week": "Monday",
     "date": "2025-05-12",
