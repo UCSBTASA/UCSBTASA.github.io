@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "gm 3 (staff elections)",
-    "day of week": "Monday",
-    "date": "2025-05-12",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "buchanan 1910",
-    "customTime": ""
-  },
-  {
     "title": "sunset walk",
     "day of week": "Friday",
     "date": "2025-05-16",
