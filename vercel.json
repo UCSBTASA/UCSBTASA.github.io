@@ -3,6 +3,17 @@
       "app/api/hello/route.tsx": {
         "runtime": "vercel-node@2.3.0"
       }
+    },
+     "headers": [
+    {
+      "source": "/gallery_photos/(.*)",  
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
-  }
+  ]
+}
   
