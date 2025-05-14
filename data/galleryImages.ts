@@ -184,7 +184,14 @@ export const galleryImages2024_2025: GalleryImage[] = [
     link: "https://photos.app.goo.gl/T6CssKLviG4GWJWd9",
     quarter: "Spring",
 
-  }
+  }, 
+  {
+    id: 27,
+    title: "TASA KASA Mashup",
+    imageUrl: "/gallery_photos/2024-2025/tasa_kasa_mashup.jpg",
+    link: "https://photos.app.goo.gl/Hxpa1SvY7KhPNvK39",
+    quarter: "Spring",
+  },
 ];
 
 export const galleryImages2023_2024: GalleryImage[] = [
