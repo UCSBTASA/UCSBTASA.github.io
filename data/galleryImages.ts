@@ -188,7 +188,7 @@ export const galleryImages2024_2025: GalleryImage[] = [
   {
     id: 27,
     title: "TASA KASA Mashup",
-    imageUrl: "/gallery_photos/2024-2025/tasa_kasa_mashup.JPG",
+    imageUrl: "/gallery_photos/2024-2025/tasa_kasa_mashup.jpg",
     link: "https://photos.app.goo.gl/Hxpa1SvY7KhPNvK39",
     quarter: "Spring",
   },
