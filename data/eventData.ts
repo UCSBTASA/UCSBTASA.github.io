@@ -21,14 +21,14 @@ const events =
     "customTime": ""
   },
   {
-    "title": "spring banquet (details tbd)",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
-    "location": "tbd",
-    "customTime": "TBD"
+    "title": "spring banquet",
+    "day of week": "Sunday",
+    "date": "2025-06-01",
+    "time": "07:00 PM - 10:00 PM",
+    "start": "07:00 PM",
+    "end": "10:00 PM",
+    "location": "iv community center",
+    "customTime": ""
   },
   {
     "title": "study night",
