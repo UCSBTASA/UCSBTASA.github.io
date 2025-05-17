@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "sunset walk",
-    "day of week": "Friday",
-    "date": "2025-05-16",
-    "time": "06:00 PM - 08:00 PM",
-    "start": "06:00 PM",
-    "end": "08:00 PM",
-    "location": "tbd",
-    "customTime": ""
-  },
-  {
     "title": "senior appreciation",
     "day of week": "Tuesday",
     "date": "2025-05-20",
