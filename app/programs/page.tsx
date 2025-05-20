@@ -28,7 +28,6 @@ const Programs = () => {
       slug: "night-market",
     },
   ];
-
   return (
     <div>
       <div className="bg-gray-100">
