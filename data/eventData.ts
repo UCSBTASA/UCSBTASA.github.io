@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "senior appreciation",
-    "day of week": "Tuesday",
-    "date": "2025-05-20",
-    "time": "06:00 PM - 08:00 PM",
-    "start": "06:00 PM",
-    "end": "08:00 PM",
-    "location": "arts 1356",
-    "customTime": ""
-  },
-  {
     "title": "spring banquet",
     "day of week": "Sunday",
     "date": "2025-06-01",
