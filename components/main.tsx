@@ -157,7 +157,7 @@ const Main = () => {
         </div>
       </footer> */}
       <EventGallery></EventGallery>
-      <FAQ />
+      {/* <FAQ /> */}
     </div>
   );
 };
