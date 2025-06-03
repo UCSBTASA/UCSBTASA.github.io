@@ -196,7 +196,7 @@ const staffMembers = [
     name: "Sophia Yu",
     position: "Co-Logistics and Operations",
     major: "Economics & History of Public Policy and Law",
-    minor: "Applied Psychology",
+    minor: "",
     year: "Class of 2027",
     petPeeve: "Fast Walkers ;/",
     funFact: "I have a rock collection from places I've traveled to in the US!",
