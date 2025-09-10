@@ -8,7 +8,8 @@ const events =
     "start": "07:00 PM",
     "end": "11:00 PM",
     "location": "arts 1353",
-    "customTime": ""
+    "customTime": "",
+    "rsvpLink": ""
   }
 ];
 
