@@ -1,13 +1,18 @@
 import ScrollTransition from "@/components/scroll-transition";
 import MemberCoin from "../../components/member_coin";
 import staffMembers from "@/data/staffMembers";
+import { Nanum_Myeongjo } from "next/font/google";
 
+const nanumMyeongjo = Nanum_Myeongjo({
+  subsets: ["latin"],
+  weight: "400",
+});
 const StaffPage = () => {
   return (
     <div>
       <div className="items-center justify-center min-h-screen">
         <div className="px-4 py-8 text-center bg-gray-100">
-          <h2 className="text-3xl font-bold text-gray-900 uppercase">
+          <h2 className={`${nanumMyeongjo.className} text-3xl font-bold text-gray-900`}>
             Meet the Staff!
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16 items-start">

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="">
       <Main></Main>
-      <Events></Events>
+      {/* <Events></Events> */}
     </div>
   );
 };

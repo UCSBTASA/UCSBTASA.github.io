@@ -30,10 +30,10 @@ const Events = () => {
   );
 
   return (
-    <div className="bg-gray-100 py-8">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex bg-gray-100 py-8">
+      <div className="container justify-center mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInTransition>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-center text-3xl font-bold text-gray-900 mb-4">
             Upcoming Events
           </h2>
 
@@ -46,32 +46,26 @@ const Events = () => {
               </div>
             </div>
           ) : (
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {upcomingEvents.map((event) => (
-                <div className="w-full">
-                  <div
-                    key={event.title}
-                    className="bg-white rounded-lg shadow p-4"
-                  >
-                    <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                    <p className="text-gray-600 mb-2">
-                      <strong>Date: </strong> {formatDate(event.date)}
-                    </p>
-                    <p className="text-gray-600 mb-2">
-                      <strong>Time: </strong>
-                      {event.customTime === "" ? (
-                        <span>{event.time} PST</span>
-                      ) : (
-                        event.customTime
-                      )}
-                    </p>
-                    <p className="text-gray-600">
-                      <strong>Location:</strong> {event.location}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 justify-center">
+  {upcomingEvents.map((event) => (
+    <div key={event.title} className="w-full">
+      <div className="bg-white rounded-lg shadow p-4">
+        <h3 className="text-xl font-bold mb-2">{event.title}</h3>
+        <p className="text-gray-600 mb-2">
+          <strong>Date: </strong> {formatDate(event.date)}
+        </p>
+        <p className="text-gray-600 mb-2">
+          <strong>Time: </strong>
+          {event.customTime === "" ? <span>{event.time} PST</span> : event.customTime}
+        </p>
+        <p className="text-gray-600">
+          <strong>Location:</strong> {event.location}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
           )}
         </FadeInTransition>
       </div>

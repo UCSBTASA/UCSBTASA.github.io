@@ -11,10 +11,16 @@ import {
 } from "@/data/galleryImages";
 import React, { useState } from "react";
 import GalleryYearSection from "@/components/galleryYearSection";
+import { Nanum_Myeongjo } from "next/font/google";
+
+const nanumMyeongjo = Nanum_Myeongjo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const GalleryPage: React.FC = () => {
   return (
-    <div className="gallery-container ">
+    <section className={`${nanumMyeongjo.className} gallery-container `}>
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 pt-4 pb-8">
           <h2 className="text-4xl mt-4 font-semibold text-center">
@@ -101,7 +107,7 @@ const GalleryPage: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

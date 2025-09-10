@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Nanum_Myeongjo } from "next/font/google";
 
+const nanumMyeongjo = Nanum_Myeongjo({
+  subsets: ["latin"],
+  weight: "400",
+});
 const Programs = () => {
   const programsData = [
     {
@@ -33,7 +38,7 @@ const Programs = () => {
     <div>
       <div className="bg-gray-100">
         <div className="mx-4 lg:mx-16 py-8">
-          <h1 className="text-2xl sm:text-4xl font-bold mb-4">Our Programs</h1>
+          <h1 className={`${nanumMyeongjo.className} text-2xl sm:text-4xl font-bold mb-4`}>Our Programs</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programsData.map((program) => (
               <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">

@@ -1,5 +1,11 @@
 import Image from "next/image";
 import ScrollTransition from "./scroll-transition";
+import { Nanum_Myeongjo } from "next/font/google";
+
+const nanumMyeongjo = Nanum_Myeongjo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 interface GalleryImage {
   id: number;
