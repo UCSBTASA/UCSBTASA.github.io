@@ -44,10 +44,10 @@ const NightMarket = () => {
                 rice with tea egg, and popcorn chicken.
               </p>
               <br />
-              <p className="text-gray-700">Check out our 2024 Night Market!</p>
-              <Link href={"/programs/night-market/2024"}>
+              <p className="text-gray-700">Check out our 2025 Night Market!</p>
+              <Link href={"/programs/night-market/2025"}>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-                  2024 Night Market
+                  2025 Night Market
                 </button>
               </Link>
             </ScrollTransition>

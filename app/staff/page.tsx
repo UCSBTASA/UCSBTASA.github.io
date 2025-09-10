@@ -15,44 +15,50 @@ const StaffPage = () => {
           <h2 className={`${nanumMyeongjo.className} text-3xl font-bold text-gray-900`}>
             Meet the Staff!
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16">
-            {staffMembers.map((staff) => (
-                <div
-                  key={staff.id}
-                  className="flex flex-col items-center justify-center"
-                >
-                  <ScrollTransition>
-                    <div className="">
-                      <MemberCoin
-                        imageUrl={staff.imageUrl}
-                        imageUrlBack={staff.imageUrlBack}
-                        name={staff.name}
-                      />
-                    </div>
-                    <h2 className="text-black text-2xl mt-6 font-semibold">
-                      {staff.name}
-                    </h2>
-                    <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
-                      {staff.position.toUpperCase()}
-                    </p>
-                    <p className="text-md text-[#00000080] mt-2 leading-16 max-w-lg">
-                      <strong>Major: </strong>
-                      {staff.major}
-                    </p>
-                    <p className="text-md text-[#00000080] leading-16">
-                      <strong>Hometown: </strong>
-                      {staff.hometown}
-                    </p>
-                    <p className="text-md text-[#00000080] leading-16">
-                      <strong>Favorite Movie: </strong>
-                      {staff.favMovie}
-                    </p>
-                    <p className="text-md text-[#00000080] leading-16">
-                      <strong>Fun Fact: </strong>
-                      {staff.funFact}
-                    </p>
-                  </ScrollTransition>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mt-16 mx-16 items-start">
+            {staffMembers.map((staff, index) => (
+              <div
+                key={staff.id}
+                className="flex flex-col items-center justify-center"
+              >
+                <ScrollTransition>
+                  <div>
+                    <MemberCoin
+                      imageUrl={staff.imageUrl}
+                      imageUrlBack={staff.imageUrlBack}
+                      name={staff.name}
+                      position={staff.position}
+                      // Prioritize the first 3 images for loading
+                      priority={staff.id <= 6}
+                    />
+                  </div>
+                  <h2 className="text-black text-2xl mt-6 font-semibold">
+                    {staff.name}
+                  </h2>
+                  <p className="text-md text-[#8888888] mt-3 font-bold leading-20">
+                    {staff.position.toUpperCase()}
+                  </p>
+                  <p className="text-md text-[#00000080] mt-2 leading-16">
+                    <strong>Major: </strong>
+                    {staff.major}
+                  </p>
+                  <p className="text-md text-[#00000080] leading-16">
+                    {staff.minor && (
+                      <>
+                        <strong>Minor: </strong> {staff.minor}
+                      </>
+                    )}
+                  </p>
+                  <p className="text-md text-[#00000080] leading-16">
+                    <strong>Pet Peeve: </strong>
+                    {staff.petPeeve}
+                  </p>
+                  <p className="text-md text-[#00000080] leading-16">
+                    <strong>Fun Fact: </strong>
+                    {staff.funFact}
+                  </p>
+                </ScrollTransition>
+              </div>
             ))}
           </div>
         </div>

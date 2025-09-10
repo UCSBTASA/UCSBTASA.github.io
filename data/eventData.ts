@@ -1,26 +1,14 @@
 const events = 
 [
   {
-    "title": "karaoke night",
-    "day of week": "Thursday",
-    "date": "2025-02-27",
-    "time": "08:00 PM - 10:30 PM",
-    "start": "08:00 PM",
-    "end": "10:30 PM",
-    "location": "arts 1353",
-    "customTime": "",
-    "rsvpLink": ""
-  },
-  {
-    "title": "study night!",
+    "title": "study jam",
     "day of week": "Wednesday",
-    "date": "2025-03-12",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "arts 1349",
-    "customTime": "",
-    "rsvpLink": ""
+    "date": "2025-06-04",
+    "time": "07:00 PM - 11:00 PM",
+    "start": "07:00 PM",
+    "end": "11:00 PM",
+    "location": "arts 1353",
+    "customTime": ""
   }
 ];
 

@@ -9,7 +9,6 @@ const Events = () => {
     const formattedHour = hour % 12 || 12;
     return `${formattedHour}:${minutes} ${amPm}`;
   };
-
   const formatDate = (date: string) => {
     const eventDate = new Date(date);
     const options: Intl.DateTimeFormatOptions = {

@@ -12,6 +12,7 @@ from pytz import timezone
 import pytz
 
 import json
+from googleapiclient.discovery import build
 
 # Replace with your API key and Calendar ID
 API_KEY = os.getenv("API_KEY")
@@ -34,7 +35,6 @@ def main():
         )
         .execute()
     )
-    # print(events_result)
     events = events_result.get("items", [])
     if not events:
             print("No upcoming events found.")
@@ -48,19 +48,11 @@ def main():
     # Create a DataFrame with beginning time, end time, title, location
     df = pd.DataFrame(columns=["beginning time", "end time", "title", "location"])
     for event in events:
-        print(event)
-        rsvpLink = event.get("description", "")
-        link = ""
-        if rsvpLink.startswith('<a href="') and rsvpLink.endswith('</a>'):
-            link = rsvpLink.split('"')[1]
-            rsvpLink = link
-
         data = {
             "beginning time": event["start"].get("dateTime"),
             "end time": event["end"].get("dateTime"),
             "title": event.get("summary", "No Title"),
             "location": event["location"],
-            "rsvpLink": rsvpLink,
         }
         temp_df = pd.DataFrame(data, index=[0])
         df = pd.concat([df, temp_df], ignore_index=True)
@@ -88,7 +80,6 @@ def main():
             "end": row["end"].strftime("%I:%M %p") if pd.notna(row["end"]) else "TBD",
             "location": row["location"],
             "customTime": "",
-            "rsvpLink": row["rsvpLink"],
         }
 
         if event_dict["start"] != "TBD" and event_dict["end"] != "TBD":
