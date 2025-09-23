@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "campus involvement fair",
-    "day of week": "Tuesday",
-    "date": "2025-09-23",
-    "time": "10:00 AM - 01:00 PM",
-    "start": "10:00 AM",
-    "end": "01:00 PM",
-    "location": "chem lawn",
-    "customTime": ""
-  },
-  {
     "title": "everything everywhere at ucsb",
     "day of week": "Tuesday",
     "date": "2025-09-23",
