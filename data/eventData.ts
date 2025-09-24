@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "everything everywhere at ucsb",
-    "day of week": "Tuesday",
-    "date": "2025-09-23",
-    "time": "03:00 PM - 06:00 PM",
-    "start": "03:00 PM",
-    "end": "06:00 PM",
-    "location": "hssb courtyard",
-    "customTime": ""
-  },
-  {
     "title": "mid-autumn festival",
     "day of week": "Friday",
     "date": "2025-10-03",
