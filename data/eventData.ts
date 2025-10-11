@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "speed dating: campfire connections",
-    "day of week": "Friday",
-    "date": "2025-10-10",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "top of lot 22",
-    "customTime": ""
-  },
-  {
     "title": "boba, brushes, & bracelets",
     "day of week": "Wednesday",
     "date": "2025-10-15",
