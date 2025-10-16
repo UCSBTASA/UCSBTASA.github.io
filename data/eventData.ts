@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "boba, brushes, & bracelets",
-    "day of week": "Wednesday",
-    "date": "2025-10-15",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "buchn 1910",
-    "customTime": ""
-  },
-  {
     "title": "sandy sports day",
     "day of week": "Sunday",
     "date": "2025-10-19",
