@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "sandy sports day",
-    "day of week": "Sunday",
-    "date": "2025-10-19",
-    "time": "01:00 PM - 03:00 PM",
-    "start": "01:00 PM",
-    "end": "03:00 PM",
-    "location": "meet at san nic, walk to goleta beach",
-    "customTime": ""
-  },
-  {
     "title": "GM #2",
     "day of week": "Monday",
     "date": "2025-10-20",
