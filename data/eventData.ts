@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "GM #2",
-    "day of week": "Monday",
-    "date": "2025-10-20",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "broida 1610",
-    "customTime": ""
-  },
-  {
     "title": "camp tasa game night",
     "day of week": "Thursday",
     "date": "2025-10-23",
