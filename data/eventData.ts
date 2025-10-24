@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "camp tasa game night",
-    "day of week": "Thursday",
-    "date": "2025-10-23",
-    "time": "07:30 PM - 09:30 PM",
-    "start": "07:30 PM",
-    "end": "09:30 PM",
-    "location": "srb mpr",
-    "customTime": ""
-  },
-  {
     "title": "intern panel",
     "day of week": "Tuesday",
     "date": "2025-10-28",
