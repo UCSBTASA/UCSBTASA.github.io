@@ -10,7 +10,6 @@ const MemberCoin = (props: any) => {
           flipEnabled ? "" : "group-hover:[transform:rotateY(180deg)]"
         }`}
       >
-
         <div className="absolute inset-0 rounded-full overflow-hidden">
           <Image
             src={props.imageUrl}
