@@ -7,7 +7,7 @@ const MemberCoin = (props: any) => {
     <div className="group h-72 w-72 [perspective:1000px] mx-auto">
       <div
         className={`relative h-full w-full rounded-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] ${
-          flipEnabled ? "" : "group-hover:[transform:rotateY(180deg)]"
+          flipEnabled ? "group-hover:[transform:rotateY(180deg)]" : ""
         }`}
       >
         <div className="absolute inset-0 rounded-full overflow-hidden">
