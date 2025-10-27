@@ -6,8 +6,11 @@ const MemberCoin = (props: any) => {
   return (
     <div className="group h-72 w-72 [perspective:1000px] mx-auto">
       <div
-        className={flipEnabled ?? `relative h-full w-full rounded-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] ${"group-hover:[transform:rotateY(180deg)]"}`}
+        className={`relative h-full w-full rounded-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] ${
+          flipEnabled ? "" : "group-hover:[transform:rotateY(180deg)]"
+        }`}
       >
+
         <div className="absolute inset-0 rounded-full overflow-hidden">
           <Image
             src={props.imageUrl}
