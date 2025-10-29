@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "intern panel",
-    "day of week": "Tuesday",
-    "date": "2025-10-28",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "arts 1349",
-    "customTime": ""
-  },
-  {
     "title": "beachside trailblazers",
     "day of week": "Wednesday",
     "date": "2025-10-29",
