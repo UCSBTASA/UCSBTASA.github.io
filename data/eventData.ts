@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "beachside trailblazers",
-    "day of week": "Wednesday",
-    "date": "2025-10-29",
-    "time": "05:00 PM - 07:00 PM",
-    "start": "05:00 PM",
-    "end": "07:00 PM",
-    "location": "manzi beach",
-    "customTime": ""
-  },
-  {
     "title": "GM #3",
     "day of week": "Monday",
     "date": "2025-11-03",
