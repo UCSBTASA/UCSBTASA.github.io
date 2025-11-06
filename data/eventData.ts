@@ -1,26 +1,6 @@
 const events = 
 [
   {
-    "title": "panda fundraiser",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
-    "location": "ucen",
-    "customTime": "TBD"
-  },
-  {
-    "title": "pre intern social",
-    "day of week": "Wednesday",
-    "date": "2025-11-05",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "girvetz 2127",
-    "customTime": ""
-  },
-  {
     "title": "mahjong & matcha",
     "day of week": "Thursday",
     "date": "2025-11-06",
