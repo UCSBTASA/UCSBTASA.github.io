@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "big/little reveal!!",
-    "day of week": "Saturday",
-    "date": "2025-11-08",
-    "time": "03:00 PM - 05:30 PM",
-    "start": "03:00 PM",
-    "end": "05:30 PM",
-    "location": "top of lot 22",
-    "customTime": ""
-  },
-  {
     "title": "intern applications close",
     "day of week": NaN,
     "date": "TBD",
