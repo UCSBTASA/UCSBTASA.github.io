@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "intern applications close",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
-    "location": "tbd",
-    "customTime": "TBD"
-  },
-  {
     "title": "hotpot night!!!",
     "day of week": "Wednesday",
     "date": "2025-11-12",
