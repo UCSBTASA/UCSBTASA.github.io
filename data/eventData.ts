@@ -1,13 +1,103 @@
 const events = 
 [
   {
-    "title": "study hall",
+    "title": "GM #1",
+    "day of week": "Monday",
+    "date": "2026-01-05",
+    "time": "08:00 PM - 10:00 PM",
+    "start": "08:00 PM",
+    "end": "10:00 PM",
+    "location": "tdw 1701",
+    "customTime": ""
+  },
+  {
+    "title": "speed dating",
+    "day of week": "Saturday",
+    "date": "2026-01-10",
+    "time": "03:00 PM - 05:00 PM",
+    "start": "03:00 PM",
+    "end": "05:00 PM",
+    "location": "manzi lawn la patera quad 2",
+    "customTime": ""
+  },
+  {
+    "title": "game night",
     "day of week": "Wednesday",
-    "date": "2025-12-03",
-    "time": "07:00 PM - 11:00 PM",
+    "date": "2026-01-14",
+    "time": "07:00 PM - 09:00 PM",
     "start": "07:00 PM",
-    "end": "11:00 PM",
-    "location": "girv 2127",
+    "end": "09:00 PM",
+    "location": "NH1105",
+    "customTime": ""
+  },
+  {
+    "title": "winter retreat!!",
+    "day of week": NaN,
+    "date": "TBD",
+    "time": "",
+    "start": "TBD",
+    "end": "TBD",
+    "location": "https://l.messenger.com/l.php?u=https%3A%2F%2Fforms.gle%2Fu1kUNvqn1xfmxDSV6&h=AT1p5uPhzMx5fRLec1JOVH9wWLgLQAbY_r2DnzIIZwkpO7K5U1lRFj6UnRlefUDmIRIntj2ADXOoa2oDOc1ijj4nTjgyd4q_Om4ctciCu7QbvTqinCpLoJ6xZ9vBW6ZqtLFur0aM1bMXRPCq7yFIOA",
+    "customTime": "TBD"
+  },
+  {
+    "title": "TASA ORTBO (& speed dating #2)",
+    "day of week": "Saturday",
+    "date": "2026-01-24",
+    "time": "01:00 PM - 03:00 PM",
+    "start": "01:00 PM",
+    "end": "03:00 PM",
+    "location": "student health lawn",
+    "customTime": ""
+  },
+  {
+    "title": "GM #2",
+    "day of week": "Monday",
+    "date": "2026-02-02",
+    "time": "08:00 PM - 10:00 PM",
+    "start": "08:00 PM",
+    "end": "10:00 PM",
+    "location": "North Hall 1006",
+    "customTime": ""
+  },
+  {
+    "title": "big/little reveal!",
+    "day of week": "Saturday",
+    "date": "2026-02-07",
+    "time": "03:00 PM - 05:00 PM",
+    "start": "03:00 PM",
+    "end": "05:00 PM",
+    "location": "top of lot22",
+    "customTime": ""
+  },
+  {
+    "title": "ice skating day!",
+    "day of week": "Tuesday",
+    "date": "2026-02-10",
+    "time": "07:00 PM - 10:00 PM",
+    "start": "07:00 PM",
+    "end": "10:00 PM",
+    "location": "ice in paradise",
+    "customTime": ""
+  },
+  {
+    "title": "fam dumpling making",
+    "day of week": NaN,
+    "date": "TBD",
+    "time": "",
+    "start": "TBD",
+    "end": "TBD",
+    "location": "tbd",
+    "customTime": "TBD"
+  },
+  {
+    "title": "GM #3",
+    "day of week": "Monday",
+    "date": "2026-02-23",
+    "time": "08:00 PM - 10:00 PM",
+    "start": "08:00 PM",
+    "end": "10:00 PM",
+    "location": "North Hall 1105",
     "customTime": ""
   }
 ];
