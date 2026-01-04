@@ -37,7 +37,7 @@ const events =
     "time": "",
     "start": "TBD",
     "end": "TBD",
-    "location": "https://l.messenger.com/l.php?u=https%3A%2F%2Fforms.gle%2Fu1kUNvqn1xfmxDSV6&h=AT1p5uPhzMx5fRLec1JOVH9wWLgLQAbY_r2DnzIIZwkpO7K5U1lRFj6UnRlefUDmIRIntj2ADXOoa2oDOc1ijj4nTjgyd4q_Om4ctciCu7QbvTqinCpLoJ6xZ9vBW6ZqtLFur0aM1bMXRPCq7yFIOA",
+    "location": "https://docs.google.com/forms/d/16-XyGE98gRnVm9u7p3FrWh5yWIOOE0dGtxYx6MZ2c18/edit?usp=drivesdk",
     "customTime": "TBD"
   },
   {
