@@ -97,7 +97,7 @@ const events =
     "time": "08:00 PM - 10:00 PM",
     "start": "08:00 PM",
     "end": "10:00 PM",
-    "location": "North Hall 1105",
+    "location": "Girv 1004",
     "customTime": ""
   }
 ];
