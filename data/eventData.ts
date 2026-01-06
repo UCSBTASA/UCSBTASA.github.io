@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "GM #1",
-    "day of week": "Monday",
-    "date": "2026-01-05",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "tdw 1701",
-    "customTime": ""
-  },
-  {
     "title": "speed dating",
     "day of week": "Saturday",
     "date": "2026-01-10",
@@ -99,6 +89,16 @@ const events =
     "end": "TBD",
     "location": "tbd",
     "customTime": "TBD"
+  },
+  {
+    "title": "GM #3",
+    "day of week": "Monday",
+    "date": "2026-02-23",
+    "time": "08:00 PM - 10:00 PM",
+    "start": "08:00 PM",
+    "end": "10:00 PM",
+    "location": "Girv 1004",
+    "customTime": ""
   }
 ];
 
