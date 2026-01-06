@@ -27,7 +27,7 @@ const events =
     "time": "07:00 PM - 09:00 PM",
     "start": "07:00 PM",
     "end": "09:00 PM",
-    "location": "NH1105",
+    "location": "NH 1105",
     "customTime": ""
   },
   {
@@ -39,6 +39,16 @@ const events =
     "end": "TBD",
     "location": "https://docs.google.com/forms/d/16-XyGE98gRnVm9u7p3FrWh5yWIOOE0dGtxYx6MZ2c18/edit?usp=drivesdk",
     "customTime": "TBD"
+  },
+  {
+    "title": "meet the fams",
+    "day of week": "Tuesday",
+    "date": "2026-01-20",
+    "time": "07:00 PM - 09:00 PM",
+    "start": "07:00 PM",
+    "end": "09:00 PM",
+    "location": "SRB MPR",
+    "customTime": ""
   },
   {
     "title": "TASA ORTBO (& speed dating #2)",
@@ -89,16 +99,6 @@ const events =
     "end": "TBD",
     "location": "tbd",
     "customTime": "TBD"
-  },
-  {
-    "title": "GM #3",
-    "day of week": "Monday",
-    "date": "2026-02-23",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "Girv 1004",
-    "customTime": ""
   }
 ];
 
