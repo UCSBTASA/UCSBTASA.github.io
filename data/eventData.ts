@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "speed dating",
-    "day of week": "Saturday",
-    "date": "2026-01-10",
-    "time": "03:00 PM - 05:00 PM",
-    "start": "03:00 PM",
-    "end": "05:00 PM",
-    "location": "manzi lawn la patera quad 2",
-    "customTime": ""
-  },
-  {
     "title": "game night",
     "day of week": "Wednesday",
     "date": "2026-01-14",
@@ -98,6 +88,16 @@ const events =
     "start": "08:00 PM",
     "end": "10:00 PM",
     "location": "Girv 1004",
+    "customTime": ""
+  },
+  {
+    "title": "dodgeball tournament",
+    "day of week": "Saturday",
+    "date": "2026-02-28",
+    "time": "03:00 PM - 05:00 PM",
+    "start": "03:00 PM",
+    "end": "05:00 PM",
+    "location": "student health lawn",
     "customTime": ""
   }
 ];
