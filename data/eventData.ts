@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "game night",
-    "day of week": "Wednesday",
-    "date": "2026-01-14",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "NH 1105",
-    "customTime": ""
-  },
-  {
     "title": "winter retreat!!",
     "day of week": NaN,
     "date": "TBD",
@@ -98,6 +88,16 @@ const events =
     "start": "08:00 PM",
     "end": "10:00 PM",
     "location": "Girv 1004",
+    "customTime": ""
+  },
+  {
+    "title": "dodgeball tournament",
+    "day of week": "Saturday",
+    "date": "2026-02-28",
+    "time": "03:00 PM - 05:00 PM",
+    "start": "03:00 PM",
+    "end": "05:00 PM",
+    "location": "student health lawn",
     "customTime": ""
   }
 ];
