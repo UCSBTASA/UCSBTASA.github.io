@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "winter retreat!!",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
-    "location": "https://docs.google.com/forms/d/16-XyGE98gRnVm9u7p3FrWh5yWIOOE0dGtxYx6MZ2c18/edit?usp=drivesdk",
-    "customTime": "TBD"
-  },
-  {
     "title": "meet the fams",
     "day of week": "Tuesday",
     "date": "2026-01-20",
@@ -98,6 +88,16 @@ const events =
     "start": "03:00 PM",
     "end": "05:00 PM",
     "location": "student health lawn",
+    "customTime": ""
+  },
+  {
+    "title": "mahjong and mocktails",
+    "day of week": "Thursday",
+    "date": "2026-03-05",
+    "time": "07:00 PM - 09:00 PM",
+    "start": "07:00 PM",
+    "end": "09:00 PM",
+    "location": "SRB MPR",
     "customTime": ""
   }
 ];
