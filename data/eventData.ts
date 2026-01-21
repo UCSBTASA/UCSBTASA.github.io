@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "meet the fams",
-    "day of week": "Tuesday",
-    "date": "2026-01-20",
-    "time": "07:30 PM - 09:30 PM",
-    "start": "07:30 PM",
-    "end": "09:30 PM",
-    "location": "SRB MPR",
-    "customTime": ""
-  },
-  {
     "title": "TASA ORTBO (& speed dating #2)",
     "day of week": "Saturday",
     "date": "2026-01-24",
