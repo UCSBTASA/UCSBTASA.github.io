@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "TASA ORTBO (& speed dating #2)",
-    "day of week": "Saturday",
-    "date": "2026-01-24",
-    "time": "01:00 PM - 03:00 PM",
-    "start": "01:00 PM",
-    "end": "03:00 PM",
-    "location": "student health lawn",
-    "customTime": ""
-  },
-  {
     "title": "boba+card making",
     "day of week": "Wednesday",
     "date": "2026-01-28",
