@@ -27,17 +27,37 @@ const events =
     "time": "03:00 PM - 05:00 PM",
     "start": "03:00 PM",
     "end": "05:00 PM",
-    "location": "top of lot22",
+    "location": "top of lot22, 3pm bigs, 3:30pm littles",
+    "customTime": ""
+  },
+  {
+    "title": "kaiju fundraiser",
+    "day of week": "Saturday",
+    "date": "2026-02-07",
+    "time": "05:00 PM - 10:00 PM",
+    "start": "05:00 PM",
+    "end": "10:00 PM",
+    "location": "tbd",
     "customTime": ""
   },
   {
     "title": "ice skating day!",
     "day of week": "Tuesday",
     "date": "2026-02-10",
-    "time": "07:00 PM - 10:00 PM",
-    "start": "07:00 PM",
+    "time": "08:00 PM - 10:00 PM",
+    "start": "08:00 PM",
     "end": "10:00 PM",
     "location": "ice in paradise",
+    "customTime": ""
+  },
+  {
+    "title": "lny celebration",
+    "day of week": "Friday",
+    "date": "2026-02-13",
+    "time": "07:00 PM - 09:00 PM",
+    "start": "07:00 PM",
+    "end": "09:00 PM",
+    "location": "corwin pavilion ucen",
     "customTime": ""
   },
   {
