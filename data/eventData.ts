@@ -11,6 +11,16 @@ const events =
     "customTime": ""
   },
   {
+    "title": "winter pickup big little form due!!!",
+    "day of week": NaN,
+    "date": "TBD",
+    "time": "",
+    "start": "TBD",
+    "end": "TBD",
+    "location": "tbd",
+    "customTime": "TBD"
+  },
+  {
     "title": "GM #2",
     "day of week": "Monday",
     "date": "2026-02-02",
@@ -88,16 +98,6 @@ const events =
     "start": "03:00 PM",
     "end": "05:00 PM",
     "location": "student health lawn",
-    "customTime": ""
-  },
-  {
-    "title": "mahjong and mocktails",
-    "day of week": "Thursday",
-    "date": "2026-03-05",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "SRB MPR",
     "customTime": ""
   }
 ];
