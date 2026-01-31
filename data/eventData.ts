@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "winter pickup big little form due!!!",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
-    "location": "tbd",
-    "customTime": "TBD"
-  },
-  {
     "title": "GM #2",
     "day of week": "Monday",
     "date": "2026-02-02",
