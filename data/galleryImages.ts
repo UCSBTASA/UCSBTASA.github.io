@@ -174,7 +174,7 @@ export const galleryImages2024_2025: GalleryImage[] = [
     id: 25,
     title: "Wet N Wild",
     imageUrl: "/gallery_photos/2024-2025/wet_n_wild.jpg",
-    link: "https://photos.app.goo.gl/H7S7exnUu1wNV7vk6",
+    link: "https://photos.app.goo.gl/intyGiY5Jj3wKRuk7",
     quarter: "Spring",
   }, 
   {
