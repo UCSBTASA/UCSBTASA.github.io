@@ -18,6 +18,8 @@ export function yearToRGB(year: string) {
             return "bg-[#C39CF3]";
         case "2025":
             return "bg-[#f7c19b]";
+        case "W26":
+            return "bg-[#ffc2d1]";
         default:
             return "bg-gray-500";
     }

@@ -2,7 +2,6 @@
     {
         "Fam": "hufuwu",
         "Heads": [
-            "zuhui gao",
             "nixon tse",
             "andrew yeh",
             "liam loberg",
@@ -17,22 +16,14 @@
         ],
         "Members": [
             {
-                "Name": "zuhui gao",
-                "Recruitment Year": "None",
-                "Big": "None",
-                "Fam": "hufuwu",
-                "Little": [
-                    "carter wang"
-                ]
-            },
-            {
                 "Name": "nixon tse",
                 "Recruitment Year": "None",
                 "Big": "None",
                 "Fam": "hufuwu",
                 "Little": [
                     "brendan chung",
-                    "dan le"
+                    "dan le",
+                    "zuhui gao"
                 ]
             },
             {
@@ -1075,6 +1066,15 @@
                 "Big": "nixon tse",
                 "Fam": "hufuwu",
                 "Little": []
+            },
+            {
+                "Name": "zuhui gao",
+                "Recruitment Year": "2024",
+                "Big": "nixon tse",
+                "Fam": "hufuwu",
+                "Little": [
+                    "carter wang"
+                ]
             },
             {
                 "Name": "harry tan",
