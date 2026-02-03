@@ -8,6 +8,86 @@ export interface GalleryImage {
   quarter: string;
 }
 
+export const galleryImages2025_2026: GalleryImage[] = [
+  {
+    id: 1,
+    title: "Mid-Autumn Festival",
+    imageUrl: "/gallery_photos/2025-2026/mid_autumn_festival_25-26.JPG",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 2,
+    title: "GM #1",
+    imageUrl: "/gallery_photos/2025-2026/fall_gm1_25-26.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 3,
+    title: "Speed Dating",
+    imageUrl: "/gallery_photos/2025-2026/fall_speed-dating_25-26.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 4,
+    title: "Camp TASA Game Night",
+    imageUrl: "/gallery_photos/2025-2026/fall_camp-tasa-gamenight_25-26.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 5,
+    title: "Beachside Trailblazers",
+    imageUrl: "/gallery_photos/2025-2026/fall_trailblazers_25-26.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 6,
+    title: "Pre-Intern Social",
+    imageUrl: "/gallery_photos/2025-2026/fall_pre-intern-social_25-26.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 7,
+    title: "Reveal!",
+    imageUrl: "/gallery_photos/2025-2026/fall_reveal_25-26.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 8,
+    title: "Hotpot Night (TO BE UPDATED)",
+    imageUrl: "/gallery_photos/2025-2026/.jpg",
+    link: "",
+    quarter: "Fall",
+  },
+  {
+    id: 9,
+    title: "Speed Dating",
+    imageUrl: "/gallery_photos/2025-2026/winter_speed-dating_25-26.jpg",
+    link: "https://photos.app.goo.gl/Mw74ERTjvUQBhQ4c8",
+    quarter: "Winter",
+  },
+  {
+    id: 10,
+    title: "Winter Retreat (TO BE UPDATED)",
+    imageUrl: "/gallery_photos/2025-2026/.jpg",
+    link: "",
+    quarter: "Winter",
+  },
+  {
+    id: 11,
+    title: "Meet the Fams",
+    imageUrl: "/gallery_photos/2025-2026/winter_meet-the-fams_25-26.JPG",
+    link: "https://photos.app.goo.gl/m1YzSiymozS75tSm9",
+    quarter: "Winter",
+  }
+];
+
 export const galleryImages2024_2025: GalleryImage[] = [
   {
     id: 1,
