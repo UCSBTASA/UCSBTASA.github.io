@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "GM #2",
-    "day of week": "Monday",
-    "date": "2026-02-02",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "Broida 1610",
-    "customTime": ""
-  },
-  {
     "title": "big/little reveal!",
     "day of week": "Saturday",
     "date": "2026-02-07",
