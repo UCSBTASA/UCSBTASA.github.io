@@ -47,7 +47,7 @@ export const galleryImages2025_2026: GalleryImage[] = [
   {
     id: 6,
     title: "Pre-Intern Social",
-    imageUrl: "/gallery_photos/2025-2026/fall_pre-intern-social_25-26.jpg",
+    imageUrl: "/gallery_photos/2024-2025/preinterncover.jpg",
     link: "",
     quarter: "Fall",
   },
@@ -60,8 +60,8 @@ export const galleryImages2025_2026: GalleryImage[] = [
   },
   {
     id: 8,
-    title: "Hotpot Night (TO BE UPDATED)",
-    imageUrl: "/gallery_photos/2025-2026/.jpg",
+    title: "Hotpot Night",
+    imageUrl: "gallery_photos/2024-2025/hotpotcover.jpg",
     link: "",
     quarter: "Fall",
   },
@@ -74,8 +74,8 @@ export const galleryImages2025_2026: GalleryImage[] = [
   },
   {
     id: 10,
-    title: "Winter Retreat (TO BE UPDATED)",
-    imageUrl: "/gallery_photos/2025-2026/.jpg",
+    title: "Winter Retreat",
+    imageUrl: "gallery_photos/2024-2025/winterretreatcover.JPG",
     link: "",
     quarter: "Winter",
   },
