@@ -7,7 +7,7 @@ const events =
     "time": "08:00 PM - 10:00 PM",
     "start": "08:00 PM",
     "end": "10:00 PM",
-    "location": "North Hall 1006",
+    "location": "Broida 1610",
     "customTime": ""
   },
   {
