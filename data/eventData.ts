@@ -51,6 +51,16 @@ const events =
     "customTime": "TBD"
   },
   {
+    "title": "hot springs hike w/ kasa",
+    "day of week": "Sunday",
+    "date": "2026-02-22",
+    "time": "12:00 PM - 04:00 PM",
+    "start": "12:00 PM",
+    "end": "04:00 PM",
+    "location": "tbd",
+    "customTime": ""
+  },
+  {
     "title": "GM #3",
     "day of week": "Monday",
     "date": "2026-02-23",
