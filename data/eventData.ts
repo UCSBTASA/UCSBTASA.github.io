@@ -42,13 +42,13 @@ const events =
   },
   {
     "title": "fam dumpling making",
-    "day of week": NaN,
-    "date": "TBD",
-    "time": "",
-    "start": "TBD",
-    "end": "TBD",
+    "day of week": "Friday",
+    "date": "2026-02-20",
+    "time": "05:00 PM - 08:00 PM",
+    "start": "05:00 PM",
+    "end": "08:00 PM",
     "location": "tbd",
-    "customTime": "TBD"
+    "customTime": ""
   },
   {
     "title": "hot springs hike w/ kasa",
