@@ -6,7 +6,7 @@ const Store = () => {
       name: "TASA Hoodie 2024",
       price: 45.0,
       imageFront: "/store/hoodiefront2024.png",
-      imageBack: "/store/hoodieback2024.JPG",
+      imageBack: "/store/hoodieback2025.JPG",
     },
     {
       name: "TASA T-Shirt 2024",
