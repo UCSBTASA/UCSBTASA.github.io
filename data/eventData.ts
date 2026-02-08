@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "kaiju fundraiser",
-    "day of week": "Saturday",
-    "date": "2026-02-07",
-    "time": "05:00 PM - 10:00 PM",
-    "start": "05:00 PM",
-    "end": "10:00 PM",
-    "location": "tbd",
-    "customTime": ""
-  },
-  {
     "title": "ice skating day!",
     "day of week": "Tuesday",
     "date": "2026-02-10",
