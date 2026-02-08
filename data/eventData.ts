@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "big/little reveal!",
-    "day of week": "Saturday",
-    "date": "2026-02-07",
-    "time": "03:00 PM - 05:00 PM",
-    "start": "03:00 PM",
-    "end": "05:00 PM",
-    "location": "top of lot22, 3pm bigs, 3:30pm littles",
-    "customTime": ""
-  },
-  {
     "title": "kaiju fundraiser",
     "day of week": "Saturday",
     "date": "2026-02-07",
