@@ -27,7 +27,7 @@ export const galleryImages2025_2026: GalleryImage[] = [
     id: 3,
     title: "Speed Dating",
     imageUrl: "/gallery_photos/2025-2026/fall_speed-dating_25-26.jpg",
-    link: "",
+    link: "https://photos.app.goo.gl/ittwho1RWpyyEzao8",
     quarter: "Fall",
   },
   {
@@ -41,7 +41,7 @@ export const galleryImages2025_2026: GalleryImage[] = [
     id: 5,
     title: "Beachside Trailblazers",
     imageUrl: "/gallery_photos/2025-2026/fall_trailblazers_25-26.jpg",
-    link: "",
+    link: "https://photos.app.goo.gl/4E9DdhB48KkDFT7F8",
     quarter: "Fall",
   },
   {
@@ -55,7 +55,7 @@ export const galleryImages2025_2026: GalleryImage[] = [
     id: 7,
     title: "Reveal!",
     imageUrl: "/gallery_photos/2025-2026/fall_reveal_25-26.jpg",
-    link: "",
+    link: "https://photos.app.goo.gl/va5Drk14z1duaf2i8",
     quarter: "Fall",
   },
   {
@@ -84,6 +84,13 @@ export const galleryImages2025_2026: GalleryImage[] = [
     title: "Meet the Fams",
     imageUrl: "/gallery_photos/2025-2026/winter_meet-the-fams_25-26.JPG",
     link: "https://photos.app.goo.gl/m1YzSiymozS75tSm9",
+    quarter: "Winter",
+  },
+  {
+    id: 12,
+    title: "Winter Reveal",
+    imageUrl: "/gallery_photos/2025-2026/winter_reveal_25-26.jpg",
+    link: "https://photos.app.goo.gl/H25MPQ8yQ55h32Tj8",
     quarter: "Winter",
   }
 ];
