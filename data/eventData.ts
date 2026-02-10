@@ -34,9 +34,9 @@ const events =
     "title": "hot springs hike w/ kasa",
     "day of week": "Sunday",
     "date": "2026-02-22",
-    "time": "12:00 PM - 04:00 PM",
-    "start": "12:00 PM",
-    "end": "04:00 PM",
+    "time": "11:30 AM - 03:30 PM",
+    "start": "11:30 AM",
+    "end": "03:30 PM",
     "location": "tbd",
     "customTime": ""
   },
