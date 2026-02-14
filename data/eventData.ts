@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "lny celebration",
-    "day of week": "Friday",
-    "date": "2026-02-13",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "corwin pavilion ucen",
-    "customTime": ""
-  },
-  {
     "title": "fam dumpling making",
     "day of week": "Friday",
     "date": "2026-02-20",
