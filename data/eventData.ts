@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "fam dumpling making",
-    "day of week": "Friday",
-    "date": "2026-02-20",
-    "time": "05:00 PM - 08:00 PM",
-    "start": "05:00 PM",
-    "end": "08:00 PM",
-    "location": "tbd",
-    "customTime": ""
-  },
-  {
     "title": "hot springs hike w/ kasa",
     "day of week": "Sunday",
     "date": "2026-02-22",
