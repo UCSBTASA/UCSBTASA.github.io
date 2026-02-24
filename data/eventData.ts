@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "GM #3",
-    "day of week": "Monday",
-    "date": "2026-02-23",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "Girv 1004",
-    "customTime": ""
-  },
-  {
     "title": "maid cafe",
     "day of week": "Thursday",
     "date": "2026-02-26",
