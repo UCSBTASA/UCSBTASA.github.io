@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "maid cafe",
-    "day of week": "Thursday",
-    "date": "2026-02-26",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "arts 1353",
-    "customTime": ""
-  },
-  {
     "title": "water world",
     "day of week": "Saturday",
     "date": "2026-02-28",
