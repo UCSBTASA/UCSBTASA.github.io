@@ -11,7 +11,7 @@ const events =
     "customTime": ""
   },
   {
-    "title": "dodgeball tournament",
+    "title": "water world",
     "day of week": "Saturday",
     "date": "2026-02-28",
     "time": "02:00 PM - 04:00 PM",
