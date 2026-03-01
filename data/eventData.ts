@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "water world",
-    "day of week": "Saturday",
-    "date": "2026-02-28",
-    "time": "02:00 PM - 04:00 PM",
-    "start": "02:00 PM",
-    "end": "04:00 PM",
-    "location": "student health lawn",
-    "customTime": ""
-  },
-  {
     "title": "mahjong and mocktails",
     "day of week": "Thursday",
     "date": "2026-03-05",
