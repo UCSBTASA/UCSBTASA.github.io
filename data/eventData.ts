@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "ice skating night",
-    "day of week": "Tuesday",
-    "date": "2026-03-31",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "Ice in Paradise",
-    "customTime": ""
-  },
-  {
     "title": "gm #1 (pie a staff!!)",
     "day of week": "Monday",
     "date": "2026-04-06",
