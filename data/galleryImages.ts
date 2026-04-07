@@ -74,23 +74,37 @@ export const galleryImages2025_2026: GalleryImage[] = [
   },
   {
     id: 10,
-    title: "Winter Retreat",
-    imageUrl: "gallery_photos/2024-2025/winterretreatcover.JPG",
-    link: "",
+    title: "Game Night",
+    imageUrl: "gallery_photos/2025-2026/W26_gameNight.JPG",
+    link: "https://photos.app.goo.gl/b7TXZEyrcDEvmtrK8",
     quarter: "Winter",
   },
   {
     id: 11,
+    title: "Winter Retreat",
+    imageUrl: "gallery_photos/2025-2026/winterretreatcover.JPG",
+    link: "https://photos.app.goo.gl/5wJsTBWNRbxvtiCv5",
+    quarter: "Winter",
+  },
+  {
+    id: 12,
     title: "Meet the Fams",
     imageUrl: "/gallery_photos/2025-2026/winter_meet-the-fams_25-26.JPG",
     link: "https://photos.app.goo.gl/m1YzSiymozS75tSm9",
     quarter: "Winter",
   },
   {
-    id: 12,
+    id: 13,
     title: "Winter Reveal",
     imageUrl: "/gallery_photos/2025-2026/winter_reveal_25-26.jpg",
     link: "https://photos.app.goo.gl/H25MPQ8yQ55h32Tj8",
+    quarter: "Winter",
+  },
+  {
+    id: 14,
+    title: "Lunar New Year Banquet",
+    imageUrl: "/gallery_photos/2025-2026/lny_banquet.JPG",
+    link: "https://photos.app.goo.gl/LsjqandzcWiJaxAt9",
     quarter: "Winter",
   }
 ];
