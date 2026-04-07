@@ -75,7 +75,7 @@ export const galleryImages2025_2026: GalleryImage[] = [
   {
     id: 10,
     title: "Game Night",
-    imageUrl: "gallery_photos/2025-2026/W26_gameNight.JPG",
+    imageUrl: "gallery_photos/2025-2026/W26_gameNight.jpg",
     link: "https://photos.app.goo.gl/b7TXZEyrcDEvmtrK8",
     quarter: "Winter",
   },
