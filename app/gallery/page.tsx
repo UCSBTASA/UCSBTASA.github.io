@@ -21,22 +21,23 @@ const GalleryPage: React.FC = () => {
           <h2 className="text-4xl mt-4 font-semibold text-center">
             Our Favorite Memories
           </h2>
+          
           <h2 className="text-2xl mt-4 font-semibold">2025-2026</h2>
-          {/*<GalleryYearSection
-            images={galleryImages2024_2025.slice().reverse()}
-            year="2024-2025"
+          {<GalleryYearSection
+            images={galleryImages2025_2026.slice().reverse()}
+            year="2025-2026"
             quarter="Spring"
             p = "high"
-          />*/}
+          />}
           <GalleryYearSection
             images={galleryImages2025_2026.slice().reverse()}
-            year="2024-2025"
+            year="2025-2026"
             quarter="Winter"
             p="high"
           />
           <GalleryYearSection
             images={galleryImages2025_2026.slice().reverse()}
-            year="2024-2025"
+            year="2025-2026"
             quarter="Fall"
             p="high"
           />
@@ -46,7 +47,7 @@ const GalleryPage: React.FC = () => {
             images={galleryImages2024_2025.slice().reverse()}
             year="2024-2025"
             quarter="Spring"
-            p = "high"
+            p = "low"
           />
           <GalleryYearSection
             images={galleryImages2024_2025.slice().reverse()}

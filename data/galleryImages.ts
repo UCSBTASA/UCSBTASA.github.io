@@ -106,6 +106,13 @@ export const galleryImages2025_2026: GalleryImage[] = [
     imageUrl: "/gallery_photos/2025-2026/lny_banquet.JPG",
     link: "https://photos.app.goo.gl/LsjqandzcWiJaxAt9",
     quarter: "Winter",
+  },
+  {
+    id: 15,
+    title: "Pie a Staff",
+    imageUrl: "/gallery_photos/2025-2026/S26_pie_a_staff.jpg",
+    link: "https://photos.app.goo.gl/F2pSW744vaP8Sj5d7",
+    quarter: "Spring",
   }
 ];
 
