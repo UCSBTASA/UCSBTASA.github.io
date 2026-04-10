@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "bowling night",
-    "day of week": "Thursday",
-    "date": "2026-04-09",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "bowlero",
-    "customTime": ""
-  },
-  {
     "title": "casino night",
     "day of week": "Sunday",
     "date": "2026-04-12",
