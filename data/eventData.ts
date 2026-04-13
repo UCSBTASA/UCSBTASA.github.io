@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "casino night",
-    "day of week": "Sunday",
-    "date": "2026-04-12",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "srb mpr",
-    "customTime": ""
-  },
-  {
     "title": "TCC",
     "day of week": "Tuesday",
     "date": "2026-04-14",
