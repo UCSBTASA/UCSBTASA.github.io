@@ -113,6 +113,13 @@ export const galleryImages2025_2026: GalleryImage[] = [
     imageUrl: "/gallery_photos/2025-2026/S26_pie_a_staff.jpg",
     link: "https://photos.app.goo.gl/F2pSW744vaP8Sj5d7",
     quarter: "Spring",
+  },
+  {
+    id: 16,
+    title: "Casino Night",
+    imageUrl: "/gallery_photos/2025-2026/s26_casino_night.jpg",
+    link: "https://photos.app.goo.gl/WwXNSvJvAZ6KFogH8",
+    quarter: "Spring",
   }
 ];
 
