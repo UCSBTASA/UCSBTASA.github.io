@@ -21,8 +21,8 @@ const Programs = () => {
     },
     {
       title: "Night Market",
-      image: "/programs/nightmarket2024.jpeg",
-      creds: "Photo Taken by Claire Vossler",
+      image: "/programs/nm_2025/nightmarket_2025.jpg",
+      creds: "Photo taken by Ethan Reeves",
       description:
         "Experience the vibrant cultural exchange at our yearly night market event, where we bring together diverse Asian organizations for an unforgettable Taiwanese-themed night market extravaganza.",
       slug: "night-market",
@@ -53,7 +53,7 @@ const Programs = () => {
                   {program.title}
                 </h2>
                 <Link
-                  href={"https://www.instagram.com/clairevosslerphotography"}
+                  href={"https://www.instagram.com/ethan_r.photo/"}
                   className="text-gray-400 text-sm mb-1 underline"
                 >
                   {program.creds}
