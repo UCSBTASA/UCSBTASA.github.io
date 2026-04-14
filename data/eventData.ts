@@ -1,36 +1,6 @@
 const events = 
 [
   {
-    "title": "gm #1 (pie a staff!!)",
-    "day of week": "Monday",
-    "date": "2026-04-06",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "broida 1610",
-    "customTime": ""
-  },
-  {
-    "title": "bowling night",
-    "day of week": "Thursday",
-    "date": "2026-04-09",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "bowlero",
-    "customTime": ""
-  },
-  {
-    "title": "casino night",
-    "day of week": "Sunday",
-    "date": "2026-04-12",
-    "time": "07:00 PM - 09:30 PM",
-    "start": "07:00 PM",
-    "end": "09:30 PM",
-    "location": "srb mpr",
-    "customTime": ""
-  },
-  {
     "title": "TCC",
     "day of week": "Tuesday",
     "date": "2026-04-14",
@@ -48,6 +18,16 @@ const events =
     "start": "11:00 AM",
     "end": "02:00 PM",
     "location": "lot 22 lawn",
+    "customTime": ""
+  },
+  {
+    "title": "tkm",
+    "day of week": "Saturday",
+    "date": "2026-04-18",
+    "time": "01:00 PM - 05:00 PM",
+    "start": "01:00 PM",
+    "end": "05:00 PM",
+    "location": "student health lawn",
     "customTime": ""
   },
   {
