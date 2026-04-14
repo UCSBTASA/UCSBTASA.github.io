@@ -24,9 +24,9 @@ const events =
     "title": "tkm",
     "day of week": "Saturday",
     "date": "2026-04-18",
-    "time": "01:00 PM - 05:00 PM",
+    "time": "01:00 PM - 03:00 PM",
     "start": "01:00 PM",
-    "end": "05:00 PM",
+    "end": "03:00 PM",
     "location": "student health lawn",
     "customTime": ""
   },
@@ -37,7 +37,7 @@ const events =
     "time": "04:00 PM - 08:00 PM",
     "start": "04:00 PM",
     "end": "08:00 PM",
-    "location": "tbd",
+    "location": "Corwin Pavilion, 6085 UCEN Rd, Isla Vista, CA 93117, USA",
     "customTime": ""
   },
   {
