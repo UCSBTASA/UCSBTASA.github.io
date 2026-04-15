@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "TCC",
-    "day of week": "Wednesday",
-    "date": "2026-04-15",
-    "time": "11:00 AM - 02:00 PM",
-    "start": "11:00 AM",
-    "end": "02:00 PM",
-    "location": "lot 22 lawn",
-    "customTime": ""
-  },
-  {
     "title": "tkm",
     "day of week": "Saturday",
     "date": "2026-04-18",
