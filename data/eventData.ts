@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "tkm",
-    "day of week": "Saturday",
-    "date": "2026-04-18",
-    "time": "01:00 PM - 03:00 PM",
-    "start": "01:00 PM",
-    "end": "03:00 PM",
-    "location": "student health lawn",
-    "customTime": ""
-  },
-  {
     "title": "NIGHT MARKET!!!!!",
     "day of week": "Friday",
     "date": "2026-04-24",
