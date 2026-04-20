@@ -34,9 +34,9 @@ const events =
     "title": "fam olympics",
     "day of week": "Saturday",
     "date": "2026-05-02",
-    "time": "01:00 PM - 03:00 PM",
-    "start": "01:00 PM",
-    "end": "03:00 PM",
+    "time": "11:00 AM - 01:00 PM",
+    "start": "11:00 AM",
+    "end": "01:00 PM",
     "location": "student health lawn",
     "customTime": ""
   }
