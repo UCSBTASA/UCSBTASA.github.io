@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "NIGHT MARKET!!!!!",
-    "day of week": "Friday",
-    "date": "2026-04-24",
-    "time": "04:00 PM - 08:00 PM",
-    "start": "04:00 PM",
-    "end": "08:00 PM",
-    "location": "Corwin Pavilion, 6085 UCEN Rd, Isla Vista, CA 93117, USA",
-    "customTime": ""
-  },
-  {
     "title": "gm #2",
     "day of week": "Monday",
     "date": "2026-04-27",
