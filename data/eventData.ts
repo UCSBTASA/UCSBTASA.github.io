@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "mahjong night",
-    "day of week": "Thursday",
-    "date": "2026-04-30",
-    "time": "08:00 PM - 10:00 PM",
-    "start": "08:00 PM",
-    "end": "10:00 PM",
-    "location": "srb mpr",
-    "customTime": ""
-  },
-  {
     "title": "tasa x nsu social",
     "day of week": "Friday",
     "date": "2026-05-01",
