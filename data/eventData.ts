@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "fam olympics",
-    "day of week": "Saturday",
-    "date": "2026-05-02",
-    "time": "11:00 AM - 01:00 PM",
-    "start": "11:00 AM",
-    "end": "01:00 PM",
-    "location": "student health lawn",
-    "customTime": ""
-  },
-  {
     "title": "karaoke night w hksa!",
     "day of week": "Saturday",
     "date": "2026-05-09",
