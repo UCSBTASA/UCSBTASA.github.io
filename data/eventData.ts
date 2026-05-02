@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "tasa x nsu social",
-    "day of week": "Friday",
-    "date": "2026-05-01",
-    "time": "09:00 PM - 12:00 AM",
-    "start": "09:00 PM",
-    "end": "12:00 AM",
-    "location": "tbd",
-    "customTime": ""
-  },
-  {
     "title": "fam olympics",
     "day of week": "Saturday",
     "date": "2026-05-02",
