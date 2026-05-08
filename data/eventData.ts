@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "thrift sale!",
-    "day of week": "Friday",
-    "date": "2026-05-08",
-    "time": "10:00 AM - 01:00 PM",
-    "start": "10:00 AM",
-    "end": "01:00 PM",
-    "location": "lot 22 lawn",
-    "customTime": ""
-  },
-  {
     "title": "karaoke night w hksa!",
     "day of week": "Saturday",
     "date": "2026-05-09",
