@@ -4,9 +4,9 @@ const events =
     "title": "gm #3: general elections",
     "day of week": "Monday",
     "date": "2026-05-11",
-    "time": "07:30 PM - 10:00 PM",
-    "start": "07:30 PM",
-    "end": "10:00 PM",
+    "time": "08:00 PM - 10:30 PM",
+    "start": "08:00 PM",
+    "end": "10:30 PM",
     "location": "buch 1930",
     "customTime": ""
   },
