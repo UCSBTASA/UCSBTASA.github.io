@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "cold springs hike w kasa",
-    "day of week": "Friday",
-    "date": "2026-05-15",
-    "time": "04:00 PM - 07:00 PM",
-    "start": "04:00 PM",
-    "end": "07:00 PM",
-    "location": "811 E Mountain Dr, Montecito, CA, 93108",
-    "customTime": ""
-  },
-  {
     "title": "hotpot night",
     "day of week": "Saturday",
     "date": "2026-05-16",
