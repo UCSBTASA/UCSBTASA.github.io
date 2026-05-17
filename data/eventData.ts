@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "hotpot night",
-    "day of week": "Saturday",
-    "date": "2026-05-16",
-    "time": "07:00 PM - 09:30 PM",
-    "start": "07:00 PM",
-    "end": "09:30 PM",
-    "location": "srb mpr",
-    "customTime": ""
-  },
-  {
     "title": "tea and calligraphy night",
     "day of week": "Thursday",
     "date": "2026-05-21",
