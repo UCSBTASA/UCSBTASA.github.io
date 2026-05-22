@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "tea and calligraphy night",
-    "day of week": "Thursday",
-    "date": "2026-05-21",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "arts 1353",
-    "customTime": ""
-  },
-  {
     "title": "senior appreciation",
     "day of week": "Wednesday",
     "date": "2026-05-27",
