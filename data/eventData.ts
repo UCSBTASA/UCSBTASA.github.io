@@ -1,16 +1,6 @@
 const events = 
 [
   {
-    "title": "senior appreciation",
-    "day of week": "Wednesday",
-    "date": "2026-05-27",
-    "time": "07:00 PM - 09:00 PM",
-    "start": "07:00 PM",
-    "end": "09:00 PM",
-    "location": "webb 1100",
-    "customTime": ""
-  },
-  {
     "title": "movie & popcorn night w hksa!",
     "day of week": "Thursday",
     "date": "2026-05-28",
