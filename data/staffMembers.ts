@@ -116,7 +116,7 @@ const staffMembers = [
     year: "Class of 2029",
     favChar: "",
     funFact: "My Kindle is my best friend",
-    imageUrl: "/staff_photos_26-27/jen_lin",
+    imageUrl: "/staff_photos_26-27/jen_lin.jpeg",
     imageUrlBack: "",
   },
   {
