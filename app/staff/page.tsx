@@ -45,7 +45,7 @@ const StaffPage = () => {
                     )}
                   </p>
                   <p className="text-md text-[#00000080] leading-16">
-                    <strong>TBD: </strong>
+                    <strong>Fav Hot Pot Ingredient: </strong>
                     {staff.favChar}
                   </p>
                   <p className="text-md text-[#00000080] leading-16">

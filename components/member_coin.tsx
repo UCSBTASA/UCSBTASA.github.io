@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // Feature flag: Flip animation for member coin
-const FLIP_ENABLED = false;
+const FLIP_ENABLED = true;
 
 const MemberCoin = (props: any) => {
     return(
