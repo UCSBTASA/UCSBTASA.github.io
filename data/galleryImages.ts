@@ -8,6 +8,30 @@ export interface GalleryImage {
   quarter: string;
 }
 
+export const galleryImages2026_2027: GalleryImage[] = [
+  {
+    id: 1,
+    title: "GM #1",
+    imageUrl: "/gallery_photos/2026-2027/gm1.JPG",
+    link: "https://photos.app.goo.gl/riGygZnWNHoTzgqj7",
+    quarter: "Fall",
+  },
+  {
+    id: 2,
+    title: "GM #2",
+    imageUrl: "/gallery_photos/2026-2027/gm2.JPG",
+    link: "https://photos.app.goo.gl/1ytNwoL1z6SMymf27",
+    quarter: "Fall",
+  },
+  {
+    id: 3,
+    title: "Sunset, Sports, & Speed Dating",
+    imageUrl: "/gallery_photos/2026-2027/sunset-sports-speed_dating.JPG",
+    link: "https://photos.app.goo.gl/C29yFxWZA8Su2huk7",
+    quarter: "Fall",
+  }
+];
+
 export const galleryImages2025_2026: GalleryImage[] = [
   {
     id: 1,
