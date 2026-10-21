@@ -37,7 +37,7 @@ const FadeInTransition = ({ children }: props) => {
   return (
     <div
       ref={elementRef}
-      className={`transition-opacity duration-1000 transform ${
+      className={`w-full transition-opacity duration-1000 ${
         isVisible ? "opacity-100" : "opacity-0 translate-y-2"
       }`}
     >

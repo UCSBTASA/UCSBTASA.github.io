@@ -17,7 +17,7 @@ const StaffPage = () => {
                 className="flex flex-col items-center justify-center"
               >
                 <ScrollTransition>
-                  <div>
+                  <div className="w-full">
                     <MemberCoin
                       imageUrl={staff.imageUrl}
                       imageUrlBack={staff.imageUrlBack}
