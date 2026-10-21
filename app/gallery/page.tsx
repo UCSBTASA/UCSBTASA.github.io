@@ -27,13 +27,13 @@ const GalleryPage: React.FC = () => {
           {<GalleryYearSection
             images={galleryImages2026_2027.slice().reverse()}
             year="2026-2027"
-            quarter="" // Set to Spring when we have spring photos
+            quarter="" // Set to "Spring" when we have spring photos
             p = "low"
           />}
           <GalleryYearSection
             images={galleryImages2026_2027.slice().reverse()}
             year="2027-2027"
-            quarter="" // Set to Winter when we have winter photos
+            quarter="" // Set to "Winter" when we have winter photos
             p="low"
           />
           <GalleryYearSection
