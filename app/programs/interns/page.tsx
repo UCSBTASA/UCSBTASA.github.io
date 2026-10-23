@@ -1,5 +1,20 @@
 import Image from "next/image";
 import internTestimonials from "@/data/internTestimonials";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import Link from "next/link";
 
 const Interns = () => {
@@ -73,29 +88,36 @@ const Interns = () => {
           <h2 className="text-3xl font-bold mb-4 uppercase decoration-[#f3dab9]">
             Intern Testimonials
           </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {internTestimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md  border-2 hover:shadow-lg transition duration-300"
-              >
-                <div className="flex items-center justify-center mb-4">
-                  <Image
-                    src={testimonial.imageSrc}
-                    alt={testimonial.name}
-                    width={150}
-                    height={150}
-                    className="rounded-full"
-                  />
-                </div>
-                <p className="mt-2 font-semibold">{testimonial.name}</p>
-                <p className="mt-2 font-semibold">
-                  Intern class of {testimonial.internYear}
-                </p>
-                <p className="mt-2 text-gray-700">{testimonial.experience}</p>
-              </div>
-            ))}
-          </div>
+          <Carousel className="w-full max-w-s">
+            <CarouselContent>
+              {internTestimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 flex">
+                  <div className="p-1">
+                    <Card className="h-full flex flex-col">
+                      <CardContent className="flex aspect-square items-center justify-center">
+                        <Image
+                          src={testimonial.imageSrc}
+                          alt={testimonial.name}
+                          width={150}
+                          height={150}
+                          className="rounded-full"
+                        />
+                      </CardContent>
+                      <CardContent>
+                        <p className="mt-2 font-semibold">{testimonial.name}</p>
+                        <p className="mt-2 font-semibold">
+                          Intern class of {testimonial.internYear}
+                        </p>
+                        <p className="mt-2 text-gray-700">{testimonial.experience}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </div>
