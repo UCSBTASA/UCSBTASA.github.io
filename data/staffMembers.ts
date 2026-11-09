@@ -159,7 +159,7 @@ const staffMembers = [
     id: 14,
     name: "Ben Co",
     position: "Co-Historian",
-    major: "Mechanicall Engineering",
+    major: "Mechanical Engineering",
     minor: "",
     year: "Class of 2027",
     favChar: "",
