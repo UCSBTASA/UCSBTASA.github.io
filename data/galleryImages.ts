@@ -50,6 +50,20 @@ export const galleryImages2026_2027: GalleryImage[] = [
     imageUrl: "/gallery_photos/2026-2027/fall_gm3.JPG",
     link: "https://photos.app.goo.gl/gYLdSs5UoGq957D68",
     quarter: "Fall",
+  },
+  {
+    id: 7,
+    title: "Fall Reveal!",
+    imageUrl: "/gallery_photos/2026-2027/fall_reveal.png",
+    link: "https://photos.app.goo.gl/NyXL7gEgDSzWv5Rv6",
+    quarter: "Fall",
+  },
+  {
+    id: 8,
+    title: "Bento Box Making",
+    imageUrl: "/gallery_photos/2026-2027/fall_bento_box_making.jpg",
+    link: "https://photos.app.goo.gl/FY2TTXijLoKT3Lwx5",
+    quarter: "Fall",
   }
   
 ];
