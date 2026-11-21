@@ -64,6 +64,13 @@ export const galleryImages2026_2027: GalleryImage[] = [
     imageUrl: "/gallery_photos/2026-2027/fall_bento_box_making.jpg",
     link: "https://photos.app.goo.gl/FY2TTXijLoKT3Lwx5",
     quarter: "Fall",
+  },
+  {
+    id: 9,
+    title: "Banquet & Stamp Carving",
+    imageUrl: "/gallery_photos/2026-2027/fall_banquet.JPG",
+    link: "https://photos.app.goo.gl/orbmv8vYXDyBN4tt6",
+    quarter: "Fall",
   }
   
 ];
